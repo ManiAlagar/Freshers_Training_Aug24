@@ -1,0 +1,23 @@
+Check first and last character same
+
+Create a cfml/html page to have a form with below elements.
+1.A textbox/textarea to have a string as input from user.
+2.A div next to the textbox/textarea to show the validation errors.
+3.Create a button next to the div.
+4.A div for showing results.
+
+
+Actions & hints:
+While clicking on the button, You need to validate the form with below rules
+1.Enter a string in given input box.
+2.If the validation fails, Tell the reason in DOM rather than an alert to the user why it fails.
+3.If the validation passes, you need to give alert both the characters are same.
+
+
+Validation rules :
+Below things should be done in appropriate situation, while we try to submit the form. Validation messages should be displayed in a DOM element.. 
+You should display the message in an alert when first and last charcters are same in the text field...
+- If the text field is empty, you need to display the message "Please enter a sentence".
+- If there is any special characters available in the text field, you need to display the message "Special Character(s) not allowed".
+- If there is any number available in the text field, you need to display the message "Number(s) not allowed".
+- If there is only one charcter provided in the text field, you need to display the message "Please enter more than one charcter".

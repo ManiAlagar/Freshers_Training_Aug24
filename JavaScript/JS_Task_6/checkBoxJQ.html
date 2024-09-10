@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $(".checkAll").click(function()
+ {
+ $('input[type="checkbox"]').prop("checked",true)
+ });
+
+ $(".unCheckAll").click(function()
+ {
+ $('input[type="checkbox"]').prop("checked",false)
+ }); 
+ 
+  $(".alterCheck").click(function()
+  {
+   $('input[type="checkbox"]').each(function()
+   {
+   this.checked=!this.checked
+   });
+  });
+});
+</script>
+</head>
+<body>
+<div >
+  <input type="checkbox" class="box"> One
+  <input type="checkbox" class="box" > Two
+  <input type="checkbox" class="box"> Three
+  <input type="checkbox" class="box" > Four
+  <input type="checkbox" class="box"> Five
+
+<div style="display:flex;column-gap:20px;margin-top:10px">
+  <button class="checkAll">Check-All
+  <button class="unCheckAll">Uncheck-All
+  <button class="alterCheck">Uncheck-All
+</div>
+
+</body>
+</html>

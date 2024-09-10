@@ -1,0 +1,19 @@
+Create a cfml/html page to have a form with below elements.
+1. A textbox/textarea to have a sentence as input from user like "I love my country"
+2. A div next to the textbox/textarea to show the validation errors.
+3. A button to find largest & smallest string from the given sentence.
+4. A div for showing results
+
+Actions & hints:
+    1. While clicking on the button, You need to validate the form with below rules.
+    2. If the validation passes, you need to find the largest & smallest from the given sentence & display the smallest & largest words in an single alert.
+    3. If the validation fails, Tell the reason in DOM rather than an alert to the user why it fails.
+    4. You might need to split the sentence into words using split().
+
+Validation rules:
+    1. Validation errors should displayed as a dom element.
+    2. If the text field is empty, you need to display the message "Please enter a sentence".
+    3. If there is any special characters available in the text field, you need to display the message "Special Character(s) not allowed".
+    4. If there is only one word provided in the text field, you need to display the message "Please enter a sentence which has more than one word".
+    5. Empty/blank space words needs to be ignored.
+    6. If all words are equal in length, you need to display the message "All words are equal in length".

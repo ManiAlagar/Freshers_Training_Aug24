@@ -1,0 +1,20 @@
+Reverse String
+
+Create a cfml/html page to have a form with below elements.
+1.A textbox to have the a sentence or string as input from user like 'javascript'.
+2.A div next to the textbox/textarea to show the validation errors.
+3.Create button next to the div.
+4.A div for showing results.
+
+Actions & hints:
+While clicking on the button, You need to validate the form with below rules
+1.Enter a string and click the submit button.
+2.If the validation passes,you need to display the reverse string of your given input.
+3.If the validation fails, Tell the reason in DOM rather than an alert to the user why it fails.
+
+Validation rules:
+    Below things should be done in appropriate situation, while we try to submit the form. Validation messages should be displayed in a DOM element..
+    You shouldn't display the message in an alert..
+    - If the text field is empty, you need to display the message "Please enter a sentence".
+    - If there is any special characters available in the text field, you need to display the message "Special Character(s) not allowed".
+    - If there is only one charcter provided in the text field, you need to display the message "Please enter more than one charcter".

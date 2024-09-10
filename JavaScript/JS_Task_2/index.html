@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check vowel or not</title>
+    <link rel="stylesheet" href="assets\css\style.css"> 
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5 my-auto P-2 w-50 border border-3 border-success rounded-4">
+        <h3 class="text-left"><u>Check Vowel or Not.</u></h3>
+        <label for="input">
+            <h4 class="mt-3 text-primary">Enter the character:</h4>
+        </label>
+        <input type="text" class="d-block p-3 mt-2 rounded-4 mx-auto w-100" id="input">
+        <h5 class="P-2 mt-3 text-center" id="output"></h5>
+        <div class="m-5 text-center">
+            <button onclick="validate()" class=" btn btn-success col-md-2">Submit</button>
+            <input onclick="reset()" type="reset" class="col-md-2 btn btn-danger pr-3">
+        </div>
+    </div>
+</body>
+
+</html>
