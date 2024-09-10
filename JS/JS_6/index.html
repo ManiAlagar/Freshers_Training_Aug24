@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_6</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+    <script src="assets\js\script.js"></script>
+</head>
+
+<body>
+    <div class="container p-3 rounded border bg-light">
+        <h3>Select or Deselect all or some checkboxes</h3>
+        <div class="p-3">
+            <div>
+                <label for="checkBox1">Checkbox 1:</label>
+                <input type="checkbox" name="checkBox" />
+            </div>
+            <div>
+                <label for="checkBox2">Checkbox 2:</label>
+                <input type="checkbox" name="checkBox" />
+            </div>
+            <div>
+                <label for="checkBox3">Checkbox 3:</label>
+                <input type="checkbox" name="checkBox" />
+            </div>
+            <div>
+                <label for="checkBox4">Checkbox 4:</label>
+                <input type="checkbox" name="checkBox"/>
+            </div>
+            <div>
+                <label for="checkBox5">Checkbox 5:</label>
+                <input type="checkbox" name="checkBox"/>
+            </div>
+        </div>
+        <div>
+            <button type="button" id='check_all' onclick="checkAll()" class="btn btn-info">Button-1</button>
+            <button type="button" id='uncheck_all' onclick="unCheckAll()" class="btn btn-info">Button-2</button>
+            <button type="button" id='checkAndUncheck' onclick="checkAndUncheck()" class="btn btn-info">Button-3</button>
+        </div>
+    </div>
+</body>
+
+</html>
