@@ -1,0 +1,131 @@
+Write queries to retrieve Data
+
+Query 1: Retrieve all tasks ordered by their start date
+
+Query 2: Retrieve the number of tasks for each project, ordered by the number of tasks in descending order
+
+Query 3: Retrieve the total number of tasks and total budget for projects, ordered by total budget.
+
+Query 4: Retrieve all projects with a status of 'In Progress' and a budget between $10,000 and $50,000.
+
+Query 5: Retrieve all tasks with a start date in 2024 and a status of 'Completed'
+
+Query 6: Retrieve all tasks with a due date in the next month and a status of 'Pending'
+
+Query 7: Retrieve all tasks that belong to the 'Website Redesign' project and have a high priority
+
+
+
+Query 8: Retrieve projects that have at least one task that is overdue (i.e., DueDate is in the past and Status is not 'Completed', 
+Note: Use Sub Query)
+
+
+Query 9: Retrieve tasks that belong to the most recent project started (i.e., the project with the latest StartDate)
+
+
+Query 10: Retrieve all projects that have both tasks with 'High' priority and tasks with 'Low' priority (Note: Use Subquery). 
+
+
+
+Query 11: Retrieve all tasks where the task name starts with 'Design'.
+
+Query 12:Retrieve  tasks where the task name contains 'Review' but does not start with 'Pre':
+
+Query 13: Retrieve tasks where the task name contains any letter from 'A' to 'M' followed by exactly three characters.
+
+
+
+
+
+
+	USE TASKS
+	INSERT INTO Task (TaskName, [Description], StartDate, DueDate,[Priority],[Status], ProjectID)
+	VALUES 
+		('Deisgn Armtech', 'Design phase for the new website', '2024-01-02', '2024-02-28', 'Low', 'Completed', 1)
+	
+	/* 1 */
+	SELECT  TaskID ,TaskName,StartDate FROM Task
+	ORDER BY StartDate ;
+	GO
+
+	/* 2 */
+	SELECT  P.ProjectName,COUNT(T.TaskName) AS Number_of_Task FROM  Project P
+	INNER JOIN Task T ON P.ProjectID = T.ProjectID 
+	GROUP BY T.ProjectID, P.ProjectName
+	ORDER BY  Number_of_Task DESC
+	GO
+
+	/* 3 */
+	SELECT P.ProjectName,COUNT(T.TaskName) AS Number_of_Task, P.Budget FROM  Project P
+	INNER JOIN Task T
+	ON P.ProjectID = T.ProjectID 
+	GROUP BY T.ProjectID, P.ProjectName,P.Budget
+	ORDER BY P.Budget
+	GO
+
+	/* 4 */
+	SELECT ProjectID,ProjectName,[Status],Budget FROM Project
+	WHERE [Status] ='In Progress' AND (Budget BETWEEN 10000 AND 50000);
+	GO
+
+	/* 5 */
+	SELECT TaskName,StartDate,[Status] FROM Task
+	WHERE [Status] = 'Completed' AND YEAR(StartDate)=2024;
+	GO
+
+	/* 6 */
+	SELECT TaskName,StartDate,DueDate,[Status] FROM Task
+	WHERE [Status] = 'Pending' AND ( MONTH(DueDate) = MONTH(StartDate)+1);
+	GO
+
+	/* 7 */
+	SELECT T.TaskName,T.[Priority] FROM  Project P
+	INNER JOIN Task T ON P.ProjectID = T.ProjectID 
+	WHERE P.ProjectName ='Website Redesign' AND T.[Priority]='High'
+	GO
+
+	/* 8 */
+	SELECT STRING_AGG(ProjectName,',') FROM Project 
+	WHERE
+	ProjectID IN (
+	SELECT ProjectID FROM Task
+    WHERE [Status] != 'Completed' AND GETDATE() > DueDate)
+	GO
+
+	/* 9 */
+	SELECT TaskName FROM Task
+	WHERE ProjectID = ( SELECT ProjectID FROM Project
+	WHERE StartDate = (SELECT max(StartDate) FROM Project) )
+	GO
+
+
+	SELECT TaskName FROM Task T
+	INNER JOIN Project P ON T.ProjectID = P.ProjectID
+	WHERE P.StartDate =  (SELECT max(StartDate) FROM Project)
+	GO
+
+	/* 10 */
+	SELECT P.ProjectName,T.TaskName,T.[Priority] FROM Project P
+	INNER JOIN Task T ON P.ProjectID = T.ProjectID
+	Group BY P.ProjectName,T.TaskName,T.[Priority]
+	GO
+
+
+	/* 11 */
+	SELECT TaskName FROM Task
+	WHERE TaskName LIKE 'Design%' 
+	GO
+
+	/* 12 */
+	SELECT TaskName FROM Task
+	WHERE TaskName LIKE '%Review%' AND TaskName NOT LIKE 'Pre%'
+    GO
+
+	/* 13 */
+	SELECT TaskName FROM Task
+	WHERE TaskName LIKE '%[A-M]___'
+    GO
+
+
+SELECT * FROM project
+SELECT * FROM Task
