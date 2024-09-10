@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.styleOne{
+    margin-top: 40px;
+}
+.container {
+    width: 850px;
+    height: 915px;
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #3b5a6b;
+    font-family: 'Trebuchet MS';
+    color: white;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h4{
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 15px;
+}
+.head {
+    font-weight: bold;
+    text-align: center;
+    font-size:51px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    line-height: 0%;
+}
+.headTwo {
+    font-weight: bolder;
+    text-align: center;
+    margin-top:  0;
+    font-size: 67px;
+    padding: 0;
+}
+
+
+input {
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid;
+    width: 100%;
+    background-color: #3b5a6b;
+    color: white;
+    opacity: 0.5;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    float: left;
+    margin-top: 25px;
+    opacity: 0.8;
+    font-size: small;
+}
+
+#add {
+    text-align: left;
+    font-size: 15px;
+    padding-top: 22px;
+    margin-left: 8px;
+}
+
+.dateFlex {
+    display: flex;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    column-gap: 20px;
+}
+
+#dob {
+    width: 70%;
+}
+
+#dateImg {
+    width: 20%;
+}
+
+.title h3 { 
+    font-weight: 300;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.divTwo label {
+    margin: 5px;
+    padding-bottom: 7px;
+}
+
+.title h1 {
+    font-weight: 500;
+    margin-top: 0;
+}
+.titleOne{
+    font-family: 'Trebuchet MS'!important;
+    letter-spacing: 2px;
+    margin-left: 2px;
+}
+form {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.rowTwo{
+    padding-top: 5px;
+}
+#logo {
+    
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+label {
+    padding-bottom: 20px;
+}
+::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+#labelCountry{
+    padding-top: 12px;
+}
+.divOne label {
+    font-size: medium;
+}
+#fullname,#country{
+    width: 97%;
+}
+#labelName,#labelCountry{
+    margin: 4px;
+}
+.row{
+    padding: 3px;
+}
+#medNo{
+    padding-top: 14px;
+}

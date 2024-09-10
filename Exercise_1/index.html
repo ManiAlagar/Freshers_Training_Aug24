@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="assets\CSS\styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <div>
+                <img src="assets\images\logo.png" alt="logo" id="logo"  width="105" height="130"/>
+            </div>
+            <div class="styleOne">
+                <h2 class="head">HEALTH CITY</h2>
+                <h2 class="headTwo">HOSPITAL</h2>
+            </div>
+        </div>
+        <div class="title">
+            <h1 class="titleOne">Vaccination Consent Form</h1>
+            <h4 class="titleOne">Patient Information</h4>
+        </div>
+        <form>
+            <div class="divOne">
+                <div>
+                    <label for="fullname" id="labelName" >Full Legal Name*</label>
+                </div>
+                <input type="text" name="fullname" id="fullname" />
+            </div>
+            <div class="row divOne">
+                <div class="column">
+                    <div><label for="dob" class="fstyle">Date of Birth*</label></div>
+                    <div class="dateFlex">
+                        <input type="text" name="dob" id="dob" placeholder="    DD    /    MM   /    YYYY">
+                        <img src="assets\images\date.png" id="dateImg" width="20" height="35"/>
+                    </div>
+                </div>
+                <div class="column">
+                    <div><label for="medNo" >Medical Number (if known)</label></div>
+                    <input type="tel" name="medNo" id="medNo" />
+                </div>
+
+            </div>
+            <div class="row divOne">
+                <div class="column" >
+                    <div><label for="phoneNo" >Phone Number*</label></div>
+                    <input type="tel" name="phoneNo" id="phone" />
+                </div>
+                <div class="column" >
+                    <div><label for="email" >Email Address*</label></div>
+                    <input type="email" name="email" id="email" />
+                </div>
+            </div>
+            <p id="add">Address*</p>
+            <div class="divTwo">
+                <div class="row rowOne">
+                    <div class="column">
+                        <div><label for="street" >Street*</label></div>
+                        <input type="text" name="street" id="street" />
+                    </div>
+                    <div class="column">
+                        <div><label for="city">City/Suburb</label></div>
+                        <input type="text" name="city" id="city" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column ">
+                        <div><label for="state" class="rowTwo">State*</label></div>
+                        <input type="text" name="state" id="state" />
+                    </div>
+                    <div class="column" >
+                        <div><label for="zip" class="rowTwo">Zip/Post code*</label></div>
+                        <input type="text" name="zip" id="zip" />
+                    </div>
+                </div>
+                <div>
+                    <div><label for="country" id="labelCountry">Country*</label></div>
+                    <input type="text" name="country" id="country" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
