@@ -1,0 +1,180 @@
+.outerFlexBox {
+  max-width: 36%;
+  margin: 1% auto;
+
+}
+
+form {
+  padding: 5% auto;
+  max-width: 100%;
+  font-family: 'Trebuchet MS';
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.logo {
+  margin: 2% auto 8% auto;
+  width: 230px;
+}
+
+.columnFlexBox {
+  display: flex;
+  width: 100%;
+}
+
+.inputs {
+  border-right: 1px solid #D3DADB;
+  border-left: 1px solid #D3DADB;
+  border-top: 2px solid #D3DADB;
+  border-radius: 5px;
+  padding: 3%;
+}
+
+div.dateInputs
+{
+  padding-bottom:1%;
+}
+
+.columnFlexBox .inputs {
+  width: 100%;
+}
+
+#interest {
+  width: 98%;
+  height: 150px;
+  margin: 2% 0;
+  padding: 1%;
+  border: none;
+  background-color: #00000012;
+}
+
+select.inputBox {
+  background-color: #00000012;
+  margin: 2% 0;
+  width: 100%;
+}
+
+.selectInputs {
+  padding: 3% 3% 1% 3%;
+}
+
+.inputBox {
+  width: 95%;
+  height: 32px;
+  padding: 1%;
+  border: none;
+  border-bottom: 1px solid #6e5c5c26;
+  color: #00000070;
+  font-size: 16px;
+}
+
+i {
+  color: #320da0;
+}
+
+.inputBox:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #6e5c5c26;
+
+}
+
+.dateFlexBox {
+  display: flex;
+  align-items: center;
+  margin: 2% 0;
+}
+
+#date {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 17px;
+  word-spacing: 14px;
+  letter-spacing: 1px;
+  width: 238px;
+  padding: 0 0 2px 15px;
+  opacity: 0.8;
+}
+
+#country {
+  padding: 0;
+  margin: 1% 0;
+  width: 97%;
+}
+
+.country {
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+
+.address .columnFlexBox .inputs {
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0.8;
+  border: none;
+  padding: 3% 0 2% 0;
+}
+
+.address .columnFlexBox .inputBox {
+  width: 95%;
+  height: 27px;
+  margin: 1% 0;
+  padding: 0%;
+  border: none;
+  border-bottom: 1px solid #6e5c5c26;
+  color: #00000070;
+  font-size: 16px;
+}
+
+i {
+
+  color: #320da0;
+  padding-left: 30px
+}
+
+.rangeFlexBox {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  color: #574b4b;
+  font-size: 14px;
+}
+
+#range {
+  accent-color: #070757;
+  display: inline;
+  width: 85%;
+  margin: 0%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  opacity: 0.7;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #070757;
+  color: white;
+  padding: 2.5% 4%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  text-align:right;
+  color: #574b4b78;
+  margin-right:8.5%;
+}

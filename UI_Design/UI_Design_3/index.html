@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="assets\css\stylesheet.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.6.0-web/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="outerFlexBox">
+
+        <!-- Logo section  -->
+
+        <div class="logo">
+
+            <img class="logo" src="assets\images\logo.png" alt="logo.png">
+
+        </div>
+
+        <!-- Basic Information section  -->
+        <form action="" class="content">
+            <div class="columnFlexBox">
+
+                <div class="inputs">
+
+                    <label for="firstName">
+                        First name?*
+                    </label>
+                    <input type="text" class="inputBox" id="firstName">
+
+                </div>
+
+                <div class="inputs">
+
+                    <label for="lastName">
+                        Last name*
+                    </label>
+                    <input type="text" class="inputBox" id="lastName">
+
+                </div>
+
+
+            </div>
+
+            <div class="inputs">
+
+                <label for="email">
+                    Email address*
+                </label>
+                <input type="email" class="inputBox" id="email">
+
+            </div>
+
+            <div class="inputs">
+
+                <label for="phone">
+                    Phone contact*
+                </label>
+                <input type="tel" class="inputBox" id="phone">
+
+            </div>
+            <!-- Address section  -->
+            <div class="address inputs">
+
+                <label>Current address*</label>
+
+                <div class="columnFlexBox">
+
+                    <div class="inputs">
+
+                        <label for="street">
+                            Street*
+                        </label>
+                        <input type="text" class="inputBox" id="street">
+
+                    </div>
+
+                    <div class="inputs">
+
+                        <label for="citySuburb">
+                            City/Suburb
+                        </label>
+                        <input type="text" class="inputBox" id="citySuburb">
+
+                    </div>
+
+                </div>
+
+                <div class="columnFlexBox">
+
+                    <div class="inputs">
+
+                        <label for="state">
+                            State*
+                        </label>
+                        <input type="text" class="inputBox" id="state">
+
+                    </div>
+
+                    <div class="inputs">
+
+                        <label for="ZipPostCode">
+                            Zip/Post Code*
+                        </label>
+                        <input type="tel" class="inputBox" id="ZipPostCode" maxlength="6" minlength="6">
+
+                    </div>
+                </div>
+
+                <div>
+
+                    <label for="country" class="country">
+                        Country*
+                    </label>
+                    <input type="text" class="inputBox" id="country">
+
+                </div>
+
+            </div>
+            <!-- Intrest section  -->
+            <div class="inputs ">
+
+                <label for="interest">
+                    Please list the property or properties of interest*
+                </label>
+                <input type="text" id="interest" class="inputBox">
+            </div>
+
+            <div class="inputs dateInputs">
+
+                <div>
+                    <label for="date">
+                        When would you like a viewing?*
+                    </label>
+                </div>
+                <div class="dateFlexBox">
+                    <input type="text" class="inputBox" id="date" placeholder="DD / MM / YYYY"><i
+                        class="fa-regular fa-calendar"></i>
+                </div>
+
+            </div>
+
+            <div class="selectInputs inputs">
+
+                <label for="location">
+                    Preference of location?*
+                </label>
+
+                <select class="inputBox" id="location">
+
+                    <option value="none" hidden> Select...</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Virudhunagar">Virudhunagar</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Tenkasi">Tenkasi</option>
+                    <option value="Kumbakonam">Kumbakonam</option>
+
+                </select>
+
+            </div>
+
+            <div class="selectInputs inputs">
+
+                <label for="propertyType">
+                    What kind of property are you looking for?*
+                </label>
+
+                <select class="inputBox" id="propertyType">
+
+                    <option value="none"  hidden> Select...</option>
+                    <option value="Apartment ">Apartment Property</option>
+                    <option value="Movable">Movable Property</option>
+                    <option value="Immovable">Immovable Property</option>
+                    <option value="Personal ">Personal Property</option>
+                    <option value="Real ">Real Property</option>
+
+                </select>
+
+            </div>
+
+            <div class="selectInputs inputs">
+
+                <label for="date">
+                    What is your budget?*
+                </label>
+
+                <select class="inputBox">
+
+                    <option value="none" hidden> Select...</option>
+                    <option>20L to 30L</option>
+                    <option>35L to 60L</option>
+                    <option>65L to 80L</option>
+                    <option>85L to 1cr</option>
+
+                </select>
+
+            </div>
+
+            <div class="inputs">
+
+                <label for="range">
+                    Additional comments or requests*
+                </label>
+                <div class="tooltip">
+
+                    <div class="tooltiptext">100</div>
+                    <div class="rangeFlexBox">
+                        <span>50000</span><input type="range" class="inputBox" value="100" id="range"><span>100</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="submitButton">
+
+                <input type="submit" value="Submit now">
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

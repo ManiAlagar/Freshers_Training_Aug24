@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health City Hospital</title>
+  <link rel="stylesheet" href="assets\css\FormStyle.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div>
+        <img class="logo" src="assets\images\logo.png" alt="logo.png" width="60px">
+      </div>
+
+      <div>
+          <h2 >HEALTH CITY</h2>
+          <h1 class="hospitalTitle">HOSPITAL</h1>
+      </div>
+
+    </div>
+
+    <h2 class="titleVaccination">
+      Vaccination Consent Form
+    </h2>
+
+    <p class="titlePatientInfo"><b>
+        Patient Information</b>
+    </p>
+
+    <form action="">
+      <div class="content">
+
+        <div class="inputs">
+          <label for="fullName">Full Legal Name*</label>
+          <input class="inputBox" type="text" id="fullname" required>
+        </div>
+
+        <div class="column">
+
+          <div class="inputs">
+            <label for="date" class="date">
+              Date of Birth*
+            </label>
+            <input class="inputBoxCal" type="text" id="date" placeholder="DD / MM / YYYY" required>
+
+            <img class="date" src="assets\images\calender.png" alt="logo.png" width="60px">
+          </div>
+
+          <div class="inputs">
+            <label for="medicalNumber">Medical number(if known)</label>
+            <input class="inputBox" type="tel" id="medicalNumber">
+          </div>
+
+        </div>
+
+        <div class="column">
+
+          <div class="inputs">
+            <label for="phone">Phone Number*</label>
+            <input class="inputBox" type="tel" id="phone" maxlength="10" minlength="10" required>
+          </div>
+
+          <div class="inputs">
+            <label for="email">Email Address*</label>
+            <input class="inputBox" type="email" id="email" required>
+          </div>
+
+        </div>
+
+        <div class="inputs address">
+          Address*
+        </div>
+
+        <div class="column font">
+          <div class="inputs">
+            <label for="street">Street*</label>
+            <input class="inputBox" type="text" id="street" required>
+          </div>
+
+          <div class="inputs">
+            <label for="city">City/Suburb</label>
+            <input class="inputBox" type="text" id="city">
+          </div>
+        </div>
+
+        <div class="column font">
+          <div class="inputs">
+            <label for="state">State*</label> <br>
+            <input class="inputBox" type="text" id="state" required>
+          </div>
+
+          <div class="inputs">
+            <label for="zip">Zip/Post Code*</label>
+            <input class="inputBox" type="tel" id="zip" maxlength="6" minlength="6" required>
+          </div>
+        </div>
+
+        <div class="inputs font">
+          <label for="country">Country*</label>
+          <input class="inputBox" type="text" id="country" required>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

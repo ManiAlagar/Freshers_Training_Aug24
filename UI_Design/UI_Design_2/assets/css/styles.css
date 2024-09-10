@@ -1,0 +1,205 @@
+body {
+    background-color: black;
+}
+
+.outer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 2% auto;
+    width: 90%;
+}
+
+.content {
+    background-color: white;
+    max-width: 49%;
+    border: 2px solid #f4f1f1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 20px;
+    padding: 3%;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    font-family:sans-serif;
+    font-weight:bolder;
+}
+
+
+.inputs {
+    display: block;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+span {
+    color: red;
+}
+
+.lunchCorner,
+.paymentCorner {
+    color: #201d1d;
+    margin-left: 37%;
+    font-size: 11px;
+    border-bottom: 2px solid lightgrey;
+}
+select.inputBox{
+    margin-top: 3%;
+    padding: 4% 1%;
+}
+.inputBox,
+input[type="date"] {
+    width: 93%;
+    padding: 4% 0%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #e8e4e4;
+    border-radius: 7px;
+    outline: none;
+}
+
+ul li {
+    display: inline;
+    padding-right: 15px;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    display: inline-block;
+    width: 93%;
+    padding: 4% 0%;
+    margin: 8px 0;
+    border: none;
+    font-weight: 200;
+    font-size: 8px;
+}
+
+
+
+input[type=date] {
+
+    display: inline-block;
+    width: 93%;
+    padding: 3% 0 2% 0;
+    margin: 8px 0;
+    border-radius: 7px;
+}
+
+.donate {
+    border: none;
+    width: 100%;
+    accent-color: #097121;
+}
+
+
+
+
+input[type=radio] {
+    accent-color: green;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+
+input[type="date"] {
+    color: green;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 5px;
+    padding-left: 5%;
+}
+
+a {
+    font-family: sans-serif;
+    color: #080707;
+    text-decoration: none;
+    border-bottom: 2px solid lightgray;
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+
+.slider {
+    appearance: none;
+    width: 45%;
+    height: 6px;
+    background: #1d951d;
+    margin: 0;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance:none;
+}
+
+.sliderAndThumb
+{
+    display:flex;
+    align-items: center;
+}
+.thumb
+{
+    height: 17px;
+    width: 75px;
+    border-radius: 3px;
+    background-color: #1d951d;
+    cursor: pointer;
+    color:white;
+    font-size:15px;
+    text-align:center;
+    font-weight:bold;
+    padding: 1% 1%;
+    word-spacing: 7px;
+}
+input[type=submit] {
+    padding: 2% 5%;
+    background-color: #1d952c;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none
+}
+
+input[type=reset] {
+
+    padding: 2% 5%;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #b1a7a7;
+    border: 1px solid #f1e5e5;
+    cursor: pointer;
+   
+}
+.buttons
+{
+    display:flex;
+    justify-content:end;
+    padding-top: 5%;
+}
+
+.mealFlexBox,.paymentFlexBox{
+    display:flex;
+    justify-content:space-between;
+    width: 93%;
+}

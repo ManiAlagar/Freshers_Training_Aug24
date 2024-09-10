@@ -1,0 +1,126 @@
+
+.container{
+    max-width: 40%;
+    background-color: rgb(26 64 92 / 87%);
+    color: rgba(255, 255, 255, 0.973);
+    margin: 2% auto;
+    padding: 2%;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+
+.content{
+    font-family:'Trebuchet MS';
+    margin: 1% auto;
+    padding: 0%;
+    width: 95%;
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+.logo{
+    margin: 49% 0 0 36%;
+    height: 82px;
+    width: 63px;
+}
+
+.header{
+    max-width: 96%;
+    display: flex;
+    column-gap: 6%;
+    font-size: 24px;
+    justify-content: center;
+    line-height: 40px;
+}
+
+.inputBox{
+    width: 100%;
+    margin: 3% 0 4% 0;
+    background-color:rgb(28 66 94 / 0%);
+    border: none;
+    border-bottom: 1px solid rgb(244 250 255 / 51%);
+    padding:1%;
+}
+#fullname,#country
+{
+  margin-top:0;  
+}
+.column{
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+.column .inputs{
+    width:50%;
+ }
+
+.column .inputBoxCal {
+    width: 77%;
+    background-color: rgb(28 66 94 / 0%);
+    border: none;
+    border-bottom: 1px solid rgb(244 250 255 / 52%);
+    margin: 5% 0  15% 0;
+    padding:2px;
+    padding-bottom: 3px;
+}
+
+
+.column .inputbox{
+    margin-top: 1%;
+}
+
+.font{
+    font-size: 12px;
+}
+
+
+.titleVaccination{
+    margin-top: 0px;
+    margin-bottom: 7%;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.titlePatientInfo{    
+    text-align: center; 
+    letter-spacing:1px
+}
+.hospitalTitle{
+    margin-top: 0;
+}
+.header h2{
+    margin-bottom:0;
+}
+
+img.date{
+    margin-left: 3%;
+    height: 23%;
+    width: 13%;
+}
+#medicalNumber
+{
+    margin-top: 4%;
+}
+
+.address{
+    margin: 4% 0 3% 0;
+   
+}
+input:focus{
+    background-color: rgb(28 66 94 / 0%);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(244 250 255 / 65%); 
+}
+
+input[type=date]::-webkit-calendar-picker-indicator
+{
+    display:none;
+}
+input::placeholder{
+    color:rgb(106, 107, 109);
+    padding-left:8%;
+    font-size:13px; 
+    word-spacing: 10px;
+}

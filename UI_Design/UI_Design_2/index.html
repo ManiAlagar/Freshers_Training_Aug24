@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets\css\styles.css">
+        <title>Payment Form</title>
+    </head>
+    <body>
+       <div class="outer">
+           <div class="sidebar">
+             <img src="assets\images\sidebar.png" alt="sidebar.png">
+            </div>
+     
+           <div class="content">
+                <form action="">
+                    <div class="row">
+                        <div class="inputs">
+
+                            <label for="firstName">
+                                FIRST NAME<Span>*</Span>
+                            </label>
+                            <input type="text" class="inputBox" id="firstName" required>
+
+                        </div>
+
+                        <div class="inputs">
+                            <div class="mealFlexBox">
+                                <div>
+                                 <label for="mealType">MEAL PREFERENCE </label>
+                                </div>
+                                <div>
+                                 <a href="#">Lunch detail</a>
+                                </div>
+                            </div>
+                            <select class="inputBox" name="mealType" id="mealType">
+                                <option value="veg" selected>Vegetarian</option>
+                                <option value="nonVeg">Non-Vegetarian</option>
+                                <option value="none">No Need</option>
+                            </select>
+
+                        </div>
+
+                        <div class="inputs">
+
+                            <label for="lastName">
+                                LAST NAME<Span>*</Span>
+                            </label>
+                            <input type="text" class="inputBox" id="firstName" required>
+
+                        </div>
+
+                        <div class="inputs">
+                            <div class="paymentFlexBox">
+                                
+                                <div><label for="paymentMode"> PAYMENT MODE</label></div>
+                                <div><a href="#">Payment Detail</a></div>
+                            
+                            </div>
+                        
+                            <ul type="none">
+                                <li> <input type="radio" name="paymentMode" checked>Cash</li>
+                                <li><input type="radio" name="paymentMode">Cheque</li>
+                                <li><input type="radio" name="paymentMode">Demand Draft</li>
+                            </ul> 
+                        </div>
+
+
+                        <div class="inputs">
+
+                            <label for="company">
+                                COMPANY
+                                <Span>*</Span>
+                            </label>
+                            <input type="text" class="inputBox" id="company" required>
+
+                        </div>
+
+                        <div class="inputs">
+                            <label for="DD-Cheque">
+                                DD / Cheque NO.
+                            </label>
+                            <input type="text" class="inputBox" id="DD-Cheque" minlength="6" maxlength="6">
+                        </div>
+
+                        <div class="inputs">
+
+                            <label for="email">
+                                EMAIL
+                                <Span>*</Span>
+                            </label>
+                            <input type="email" class="inputBox" id="email" required>
+                        </div>
+
+                        <div class="inputs">
+
+                            <label for="bankName">
+                                DRAWN ON(BANK NAME)
+                            </label>
+                            <input type="text" class="inputBox" id="bankName">
+
+                        </div>
+
+                        <div class="inputs">
+
+                            <label for="phone">
+                                PHONE NUMBER
+                                <span>*</span>
+                            </label>
+                            <input type="text" class="inputBox" id="phone" minlength="10" maxlength="10" required>
+
+                        </div>
+
+                        <div class="inputs">
+
+                            <label for="date">
+                                PAYABLE AT
+                            </label>
+                            <input type="text" class="inputBox" id="date" onfocus="(this.type='date')" onblur="(this.type='text')"id="date">
+                        </div>
+
+                        <div class="donate">
+
+                            <label for="donate">DONATE US</label>
+                            <div class="sliderAndThumb">
+                                <input type="range" class="slider" min="100" max="400" value="400" id="donate">
+                                <div class="thumb">&lt; &dollar;470 &gt;</div >
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="buttons"> 
+                        <input type="submit" value="SUBMIT">
+                        <input type="reset" value="RESET">
+                    </div>
+                   
+                </form>
+           </div>    
+       </div>
+    </body>
+</html>
