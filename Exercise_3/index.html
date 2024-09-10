@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="assets\CSS\style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web\css\all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgDiv">
+            <img src="assets\images\logo.png" width="350" height="190" />
+        </div>
+        <div>
+            <div class="nameField ">
+                <div class="fNameField divBox ">
+                    <div class="spaceField"><label for="fName">First name?<span>*</span></label></div>
+                    <input type="text" name="fName" id="fName" />
+                </div>
+                <div class="lNameField divBox">
+                    <div class="spaceField"><label for="lName">Last name*</label></div>
+                    <input type="text" name="lName" id="lName" />
+                </div>
+            </div>
+        </div>
+        <div class="divBox">
+            <div class="detail">
+                <div class="spaceField"><label for="email">Email address*</label></div>
+                <input type="email" name="email" id="email" />
+            </div>
+        </div>
+        <div class="divBox">
+            <div class="detail">
+                <div class="spaceField"><label for="phone">Phone contact*</label></div>
+                <input type="tel" name="phone" id="phone" />
+            </div>
+        </div>
+        <div class="divBox">
+            <div class="detailAdd">
+                <label class="addressField">Current address*</label>
+            </div>
+            <div class="addField">
+                <div class="column">
+                    <div class="currentAddress">
+                        <div class="spaceField"><label for="street">Street*</label></div>
+                        <input type="text" name="street" id="street" />
+                    </div>
+                    <div class="currentAddress">
+                        <div class="spaceField"><label for="state">State*</label></div>
+                        <input type="text" name="state" id="state" />
+                    </div>
+                    <div class="currentAddress">
+                        <div class="spaceField"><label for="country">Country*</label></div>
+                        <input type="text" name="country" id="country" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="currentAddress">
+                        <div class="spaceField"><label for="city">City/Suburb</label></div>
+                        <input type="text" name="city" id="city" />
+                    </div>
+                    <div class="currentAddress">
+                        <div class="spaceField"><label for="zip">Zip/Post Code*</label></div>
+                        <input type="tel" name="zip" id="zip" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lastContainer">
+            <div class="spaceField"><label>Please list the property or properties of interest*</label></div>
+            <input class="propField" type="text" />
+        </div>
+        <div class="lastContainer">
+            <div class="spaceField"><label>When would you like a viewing?*</label></div>
+            <input type="text" placeholder="    DD    /    MM    /    YYYY " class="date" /><i
+                class="fa-regular fa-calendar"></i>
+        </div>
+        <div class="lastContainer">
+            <div class="spaceField"><label>Preference of location?*</label></div>
+            <select>
+                <option hidden>Select...</option>
+                <option>Madurai</option>
+                <option>Chennai</option>
+                <option>Karaikudi</option>
+            </select>
+        </div>
+        <div class="lastContainer">
+            <div class="spaceField"><label>What kind of property are you looking for?*</label></div>
+            <select>
+                <option hidden>Select...</option>
+                <option>Property 1</option> 
+                <option>Property 2</option>
+                <option>Property 3</option>
+            </select>
+        </div>
+        <div class="lastContainer">
+            <div class="spaceField"><label>What is your budget?*</label></div>
+            <select>
+                <option hidden>Select...</option>
+                <option>Rs.1,00,000</option>
+                <option>Rs.2,00,000</option>
+                <option>Rs.3,00,000</option>
+            </select>
+        </div>
+        <div class="lastContainer">
+            <div class="spaceField"><label>Additional comments or requests*</label></div>
+            
+            <div class="range">
+                <div class="tooltiptext">100</div> 
+                <div class="rangeContainer">
+                    <label>50000</label> <input type="range" id="range" value="100" /> <output for="range">100</output>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="submit">Submit now</button>
+        </div>
+    </div>
+</body>
+
+</html>

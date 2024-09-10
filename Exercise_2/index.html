@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="assets\CSS\styles.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="divOne ">
+            <div>
+                <img src="assets\images\ex2.png" />
+            </div>
+        </div>
+        <div class="divTwo">
+            <form class="rowOne">
+                <div class="forms">
+                    <div class="columnOne">
+                        <div class="style">
+                            <label for="firstName">FIRST NAME<span>*</span></label>
+                            <input name="firstName" type="text" id="inputField" />
+                        </div>
+                        <div class="style">
+                            <label for="lastName">LAST NAME<span>*</span></label>
+                            <input type="text" name="lastName" id="inputField" />
+                        </div>
+                        <div class="style">
+                            <label for="company">COMPANY<span>*</span></label>
+                            <input type="text" name="company" id="inputField" />
+                        </div>
+                        <div class="style">
+                            <label for="email">EMAIL<span>*</span></label>
+                            <input type="email" name="email" id="inputField" />
+                        </div>
+                        <div class="style">
+                            <label for="phoneNumber">PHONE NUMBER<span>*</span></label>
+                            <input type="tel" name="phoneNumber" id="inputField" />
+                        </div>
+                    </div>
+                    <div class="columnOne">
+                        <div>
+                            <div class="meal">
+                                <label>MEAL PREFERENCE</label>
+                                <a href="#">Lunch Detail</a>
+                            </div>
+
+                            <select name="meal" >
+                                <option>Vegeterian</option>
+                                <option>Non-vegeterian</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="meal">
+                                <label>PAYMENT MODE</label>
+                                <a href="#">Payment Detail</a>
+                            </div>
+
+                            <div class="radio" >
+                                <div class="space">
+                                    <input type="radio" name="payment" checked />
+                                    <label for="cash" class="radio-inline" id="radioLabel">Cash</label>
+                                </div>
+                                <div class="space">
+                                    <input type="radio" name="payment" />
+                                    <label for="cheque" id="radioLabel">Cheque</label>
+                                </div>
+                                <div class="space">
+                                    <input type="radio" name="payment" />
+                                    <label for="dd" id="radioLabel">Demand Draf</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="chequeNo">DD / CHEQUE NO.</label>
+                            <input type="tel" name="chequeNo" id="inputField" />
+                        </div>
+                        <div>
+                            <label for="bank">DRAWN ON( BANK NAME)</label>
+                            <input type="text" name="bank" id="inputField" />
+                        </div>
+                        <div>
+                            <label for="payDate">PAYABLE AT</label>
+                            <input type="text" name="payDate" id="inputField" />
+                        </div>
+                    </div>
+                </div>
+                <div class="rangeField">
+                    <label for="progress">DONATE US</label><br>
+                    <div class="range">
+                        <div class="boxOne"></div>
+                        <div class="boxTwo"><b>
+                                < $ 470 >
+                            </b></div>
+                    </div>
+                </div>
+                <div class="btnStyle">
+                    <button type="submit" class="btnOne">
+                        <div class="fontBtn">SUBMIT</div>
+                    </button>
+                    <button type="reset">
+                        <div class="fontBtn">RESET</div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
