@@ -1,0 +1,97 @@
+using System;
+namespace MyApplication
+{
+//class 1 
+    public class  Arithmetic
+    {
+       public int AddNumbers(int a,int b)
+       { 
+             //within non-static method  of same class,calling non-static method
+             Console.WriteLine ( "SubtractNumbers function in class 1 Result: " + SubtractNumbers(5,2) );
+             return a + b;
+       }
+      
+       public int SubtractNumbers(int a,int b)
+       {
+            //within non-static method  of same class,calling static method
+            Console.WriteLine( "Multiply function in class 1 Result: " +  Multiply(55,10) );
+            return a - b;
+       }
+       
+        public static int Multiply(int a,int b)
+       {
+            //within static method of same class,calling non-static method
+            Arithmetic objectOne = new Arithmetic();
+            Console.WriteLine( "Divison function in class 1 Result: " +    objectOne.DivideNumbers(12,6) );
+            return a * b;
+       }
+      
+       
+         public int DivideNumbers(int a,int b)
+       {
+            //within non-static method of other class,calling static method
+            Console.WriteLine( "Add function in class 2 Result: " +   ArithmeticTwo.Add(10,12) );
+            return a / b;
+       }
+      
+    }
+
+//Class 2
+    public static class  ArithmeticTwo
+    {
+      
+       public static int Add(int a,int b)
+       { 
+            //within static method of same class
+            //Calling static method
+            Console.WriteLine ( "Subtract function in class 2 Result: " + Subtract(5,2) );
+            return a + b;
+       }
+
+       public static int Subtract(int a,int b)
+       {
+           
+            return a - b;
+       }
+       
+ 
+       public static int Multiply(int a,int b)
+       {
+        // within static method of other class,calling Non-static method
+                   Arithmetic objectOne = new Arithmetic();
+            Console.WriteLine( "Add function in class 1 Result: " + objectOne.DivideNumbers(10,2) );
+            return a - b;
+       }
+    
+       public static int Division(int a,int b)
+       {
+           //within static method of other class,calling static method
+            Console.WriteLine( "Add function in class 1 Result:" +
+            Arithmetic.Multiply(5,22) );
+            return a / b;
+        }
+    }
+//class 3
+    public class DisplayClass 
+    {
+        public void display()
+        {
+            //within non-static method of other class,calling non-static method
+            Console.WriteLine("Display method");
+            Arithmetic objectOne = new Arithmetic();
+            Console.WriteLine ( "AddNumbers function in class 1 result:" + objectOne.AddNumbers(5,8));
+        }
+    }
+    
+//Main Class
+    public class Program 
+    {
+        public  static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to C sharp...");
+            DisplayClass obj = new DisplayClass();
+            obj.display();
+        }
+    }
+   
+}
