@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\MitrahSoft\\C Sharp\\NonStaticAndStatic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F700C17E-52C9-4283-A583-7DCBDF4D7F61}|NonStaticAndStatic\\NonStaticAndStatic.csproj|e:\\projects\\mitrahsoft\\c sharp\\nonstaticandstatic\\nonstaticandstatic\\arithmetic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F700C17E-52C9-4283-A583-7DCBDF4D7F61}|NonStaticAndStatic\\NonStaticAndStatic.csproj|solutionrelative:nonstaticandstatic\\arithmetic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F700C17E-52C9-4283-A583-7DCBDF4D7F61}|NonStaticAndStatic\\NonStaticAndStatic.csproj|e:\\projects\\mitrahsoft\\c sharp\\nonstaticandstatic\\nonstaticandstatic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F700C17E-52C9-4283-A583-7DCBDF4D7F61}|NonStaticAndStatic\\NonStaticAndStatic.csproj|solutionrelative:nonstaticandstatic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F700C17E-52C9-4283-A583-7DCBDF4D7F61}|NonStaticAndStatic\\NonStaticAndStatic.csproj|e:\\projects\\mitrahsoft\\c sharp\\nonstaticandstatic\\nonstaticandstatic\\arithmetictwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F700C17E-52C9-4283-A583-7DCBDF4D7F61}|NonStaticAndStatic\\NonStaticAndStatic.csproj|solutionrelative:nonstaticandstatic\\arithmetictwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Arithmetic.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\NonStaticAndStatic\\NonStaticAndStatic\\Arithmetic.cs",
+              "RelativeDocumentMoniker": "NonStaticAndStatic\\Arithmetic.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\NonStaticAndStatic\\NonStaticAndStatic\\Arithmetic.cs*",
+              "RelativeToolTip": "NonStaticAndStatic\\Arithmetic.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T11:58:35.978Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\NonStaticAndStatic\\NonStaticAndStatic\\Program.cs",
+              "RelativeDocumentMoniker": "NonStaticAndStatic\\Program.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\NonStaticAndStatic\\NonStaticAndStatic\\Program.cs",
+              "RelativeToolTip": "NonStaticAndStatic\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T11:40:51.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArithmeticTwo.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\NonStaticAndStatic\\NonStaticAndStatic\\ArithmeticTwo.cs",
+              "RelativeDocumentMoniker": "NonStaticAndStatic\\ArithmeticTwo.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\NonStaticAndStatic\\NonStaticAndStatic\\ArithmeticTwo.cs",
+              "RelativeToolTip": "NonStaticAndStatic\\ArithmeticTwo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T11:55:48.433Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
