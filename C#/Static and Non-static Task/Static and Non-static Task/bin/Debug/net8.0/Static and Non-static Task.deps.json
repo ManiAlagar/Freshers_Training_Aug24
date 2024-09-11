@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Static and Non-static Task/1.0.0": {
+        "runtime": {
+          "Static and Non-static Task.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Static and Non-static Task/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
