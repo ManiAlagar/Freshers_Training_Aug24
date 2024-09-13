@@ -1,0 +1,14 @@
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\bin\Debug\net8.0\ConsoleAppDev.exe
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\bin\Debug\net8.0\ConsoleAppDev.deps.json
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\bin\Debug\net8.0\ConsoleAppDev.runtimeconfig.json
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\bin\Debug\net8.0\ConsoleAppDev.dll
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\bin\Debug\net8.0\ConsoleAppDev.pdb
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\obj\Debug\net8.0\ConsoleAppDev.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\obj\Debug\net8.0\ConsoleAppDev.AssemblyInfoInputs.cache
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\obj\Debug\net8.0\ConsoleAppDev.AssemblyInfo.cs
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\obj\Debug\net8.0\ConsoleAppDev.csproj.CoreCompileInputs.cache
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\obj\Debug\net8.0\ConsoleAppDev.dll
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\obj\Debug\net8.0\refint\ConsoleAppDev.dll
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\obj\Debug\net8.0\ConsoleAppDev.pdb
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\obj\Debug\net8.0\ConsoleAppDev.genruntimeconfig.cache
+C:\Users\Mitrah\source\repos\ConsoleAppDev\ConsoleAppDev\obj\Debug\net8.0\ref\ConsoleAppDev.dll
