@@ -1,32 +1,50 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using CsharpStruct;
 using TaskOne;
 public class Program
 {
+    public void demo()
+    {
+        Console.WriteLine("HI ");
+    }
     public static void Main(string[] arg)
     {
 
+        #region invoke constructor of struct
+        Console.WriteLine("-------Struct Implement--------");
+        
+        Employee emp = new Employee(1, "Brian");
+
+        Console.WriteLine("\nEmployee Name: " + emp.name);
+        Console.WriteLine("Employee Id: " + emp.id);
+       #endregion
+
         StringOperation stringObject = new();
         string Value = "Hello";
-        
-        int StringLength = stringObject.StringLength(Value);
-        Console.WriteLine($"Length of the {Value} : " + StringLength);
 
-        Console.Write("\nString Traverse : ");
+        //Console.WriteLine("\nString Manipulation:");
+        Console.WriteLine("\n\n------String Manipulation-------");
+
+        #region String Manipulation 
+        int StringLength = stringObject.StringLength(Value);
+        Console.WriteLine($"\nLength of the {Value} : " + StringLength);
+
+        Console.Write("\nString Traverse");
         Console.WriteLine(stringObject.TraverseString(Value));
 
         Console.Write("\nString Reverse : ");
         Console.WriteLine(stringObject.ReverseString(Value));
+        #endregion
 
         //MatrixOperation Class:
+        Console.Write("\n\n-------Matrix Operations---------");
+
         MatrixOperation MatrixObject = new();
         int[,] matrix = MatrixObject.MatrixGeneration();
 
-        Console.WriteLine("\nOpertions in Matrix:"); 
-        Console.WriteLine("1.Display the Matrix: \n2.Get element using index \n3.Add and modify the exisiting element in a index:");
+        Console.WriteLine("Opertions in Matrix:"); 
+        Console.WriteLine("\n1.Display the Matrix: \n2.Get element using index \n3.Add and modify the exisiting element in a index:");
         try
-        {
-            
+        {         
             bool flag = false;
             do
             {
@@ -52,7 +70,6 @@ public class Program
 
                             Console.Write($"The element in the index [{rowIndex}][{columnIndex}] : ");
                             Console.WriteLine("\"" + MatrixObject.GetMatrixElement(rowIndex, columnIndex, matrix) + "\" ");
-                            flag = false;
                             break;
                         }
 
@@ -63,8 +80,7 @@ public class Program
                             int rowIndex = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine("Enter the column index");
                             int columnIndex = Convert.ToInt32(Console.ReadLine());
-                            MatrixObject.ModifyMatrixElement(rowIndex, columnIndex, matrix);
-                            flag = false;
+                            MatrixObject.ModifyMatrixElement(rowIndex, columnIndex, matrix);                         
                             break;
                         }
 
@@ -77,16 +93,21 @@ public class Program
                         }
                 }
             } while (flag);
+
+            //Error code here to check exception handling...
             int RandomNUmber = 10;
             Console.WriteLine(RandomNUmber / 0);
         }
         catch (IndexOutOfRangeException)
         {
             Console.WriteLine("\nAccessing invalid indices in arrays");
+            return;
         }
         catch (DivideByZeroException e)
         {
-            Console.WriteLine("\n"+e.Message);
+            Console.WriteLine("\n" + e.Message);
         }
+
+        Console.WriteLine("\nExcecuting message after the handling the Message");
     }    
 }

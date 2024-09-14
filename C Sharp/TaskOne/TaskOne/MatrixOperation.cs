@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace TaskOne
+﻿namespace TaskOne
 {
-    internal class MatrixOperation
+    public class MatrixOperation
     {
         public void Display(int[,] matrix)
         {
@@ -33,6 +31,7 @@ namespace TaskOne
                     matrix[i, j] = randomNumber.Next(10,20); // Store user input in the 2D array
                 }
             }
+            Console.WriteLine("\nRandomly Generated Matrix:");
             Display(matrix);
             return matrix;
         }

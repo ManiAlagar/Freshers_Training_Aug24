@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TaskOne
+﻿namespace TaskOne
 {
     public class StringOperation
     {

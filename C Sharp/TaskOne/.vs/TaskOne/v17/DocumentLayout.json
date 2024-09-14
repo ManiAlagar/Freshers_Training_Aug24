@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|solutionrelative:taskone\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|e:\\git\\freshers_training_aug24\\c sharp\\taskone\\taskone\\matrixoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|solutionrelative:taskone\\matrixoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|e:\\git\\freshers_training_aug24\\c sharp\\taskone\\taskone\\stringoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|solutionrelative:taskone\\stringoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|e:\\git\\freshers_training_aug24\\c sharp\\taskone\\taskone\\structconcept.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|solutionrelative:taskone\\structconcept.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|e:\\git\\freshers_training_aug24\\c sharp\\taskone\\taskone\\typeconversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|solutionrelative:taskone\\typeconversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|e:\\git\\freshers_training_aug24\\c sharp\\taskone\\taskone\\stringoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|solutionrelative:taskone\\stringoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|e:\\git\\freshers_training_aug24\\c sharp\\taskone\\taskone\\matrixoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C676FBF8-4D0B-41D3-9C00-CCDD8273C0D7}|TaskOne\\TaskOne.csproj|solutionrelative:taskone\\matrixoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "StructConcept.cs",
+              "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\TaskOne\\TaskOne\\StructConcept.cs",
+              "RelativeDocumentMoniker": "TaskOne\\StructConcept.cs",
+              "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\TaskOne\\TaskOne\\StructConcept.cs",
+              "RelativeToolTip": "TaskOne\\StructConcept.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T06:15:21.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "StringOperation.cs",
               "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\TaskOne\\TaskOne\\StringOperation.cs",
               "RelativeDocumentMoniker": "TaskOne\\StringOperation.cs",
               "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\TaskOne\\TaskOne\\StringOperation.cs",
               "RelativeToolTip": "TaskOne\\StringOperation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T11:34:02.737Z"
             },
@@ -48,32 +64,32 @@
               "RelativeDocumentMoniker": "TaskOne\\Program.cs",
               "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\TaskOne\\TaskOne\\Program.cs",
               "RelativeToolTip": "TaskOne\\Program.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAAEgAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAUwGUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T11:18:36.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MatrixOperation.cs",
               "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\TaskOne\\TaskOne\\MatrixOperation.cs",
               "RelativeDocumentMoniker": "TaskOne\\MatrixOperation.cs",
               "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\TaskOne\\TaskOne\\MatrixOperation.cs",
               "RelativeToolTip": "TaskOne\\MatrixOperation.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAkAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T11:22:11.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TypeConversion.cs",
               "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\TaskOne\\TaskOne\\TypeConversion.cs",
               "RelativeDocumentMoniker": "TaskOne\\TypeConversion.cs",
               "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\TaskOne\\TaskOne\\TypeConversion.cs",
               "RelativeToolTip": "TaskOne\\TypeConversion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T11:20:01.031Z"
             }
