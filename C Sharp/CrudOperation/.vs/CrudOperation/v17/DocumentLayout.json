@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "CrudOperation\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Models\\Employee.cs",
+              "RelativeToolTip": "CrudOperation\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T14:57:28.379Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T15:04:42.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "CrudOperation\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "CrudOperation\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAApwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T11:24:22.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CrudOperation\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CrudOperation\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T06:56:58.992Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

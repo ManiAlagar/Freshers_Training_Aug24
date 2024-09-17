@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Table Data";
+}
+@using System.Data
+@model DataTable
+<table Border="3" cellpadding="10" cellspacing="5" collapse class="table table-striped table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>Actions </th>
+    </tr>
+    @foreach (DataRow row in Model.Rows)
+    {
+        <tr>
+            <td>@row["ID"]</td>
+            <td>@row["Name"]</td>
+            <td>@row["Gender"]</td>
+            <td>@row["Department"]</td>
+            <td><a class="btn btn-danger" onlcick="Delete()" >Delete</a></td>
+        </tr>
+    }
+</table>
+
+
+@* <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Delete">Delete *@

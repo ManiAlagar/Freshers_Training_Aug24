@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CrudOperation",
+    "\\CrudOperation\\bin",
+    "\\CrudOperation\\Controllers",
+    "\\CrudOperation\\Models",
+    "\\CrudOperation\\obj",
+    "\\CrudOperation\\Properties",
+    "\\CrudOperation\\Views",
+    "\\CrudOperation\\Views\\Home",
+    "\\CrudOperation\\Views\\Shared"
+  ],
+  "SelectedNode": "\\CrudOperation.sln",
+  "PreviewInSolutionExplorer": false
+}
