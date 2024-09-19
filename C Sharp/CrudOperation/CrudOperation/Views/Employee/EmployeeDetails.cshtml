@@ -3,7 +3,13 @@
 }
 @using System.Data
 @model DataTable
-<table Border="3" cellpadding="10" cellspacing="5" collapse class="table table-striped table-hover">
+
+
+<p>
+    <a class="btn btn-success" asp-action="Create"> Create New </a>
+</p>
+<table Border="2" cellpadding="10" cellspacing="5" collapse class="table table-bordered border-2 table-striped table-hover">
+
     <tr>
         <th>ID</th>
         <th>Name</th>
@@ -18,10 +24,53 @@
             <td>@row["Name"]</td>
             <td>@row["Gender"]</td>
             <td>@row["Department"]</td>
-            <td><a class="btn btn-danger" onlcick="Delete()" >Delete</a></td>
+            <td>
+                <a class="btn btn-primary" asp-controller="Employee" asp-action="Edit" asp-route-id="@row["ID"]">Edit</a>
+                <a class="btn btn-danger" onclick="deleteClick('@row["ID"]')">Delete</a>
+            </td>
         </tr>
     }
 </table>
 
 
-@* <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Delete">Delete *@
+<Script>
+    $(document).ready(function () {
+
+        
+
+    });
+    function deleteClick(id) {
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this record!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    $.ajax({
+                        url: "/Employee/Delete?id=" + id,
+                        type: "POST",
+                        contentType: false,
+                        dataType: "json",
+                        success: function (result) {
+                            swal("Poof! Your record has been deleted!", {
+                                icon: "success",
+                            });
+                            setTimeout(reload, 800);
+                        },
+                        error: function (errormessage) {
+                            console.log(errormessage.responseText);
+                        }
+                    });
+                } else {
+                    swal("Your record is safe!");
+                }
+            });
+    };
+
+    function reload() {
+        window.location.reload();
+    }
+</Script>

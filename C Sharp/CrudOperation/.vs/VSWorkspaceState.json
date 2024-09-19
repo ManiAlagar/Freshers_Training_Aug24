@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\CrudOperation",
-    "\\CrudOperation\\bin",
     "\\CrudOperation\\Controllers",
     "\\CrudOperation\\Models",
     "\\CrudOperation\\obj",
     "\\CrudOperation\\Properties",
     "\\CrudOperation\\Views",
+    "\\CrudOperation\\Views\\Employee",
     "\\CrudOperation\\Views\\Home",
     "\\CrudOperation\\Views\\Shared"
   ],
-  "SelectedNode": "\\CrudOperation.sln",
+  "SelectedNode": "\\CrudOperation\\Views\\_ViewStart.cshtml",
   "PreviewInSolutionExplorer": false
 }
