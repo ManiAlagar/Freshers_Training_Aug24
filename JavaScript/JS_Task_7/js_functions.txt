@@ -1,0 +1,24 @@
+Find largest number
+
+Create a cfml/html page to have a form with below elements.
+1.Create a textbox/textarea to have two numbers (i.e:1,2) with submit button.
+2.A div next to the textbox/textarea to show the validation errors.
+3.A button to find largest number from the given input.
+4.A div for showing results.
+
+Actions & hints:
+While clicking on the button, You need to validate the form with below rules
+1.Define a function that takes two numbers as arguments and returns the largest of them.
+2.If the validation passes, you need to find the largest number from given input.
+3.If the validation fails, Tell the reason in DOM rather than an alert to the user why it fails.
+4.You might be use the if-then-else construct available in Javascript.
+
+
+Validation rules:
+Below things should be done in appropriate situation, while we try to submit the form. Validation messages should be displayed in a DOM element.
+You shouldn't display the message in an alert.
+- If the text field is empty, you need to display the message "Please enter a number".
+- If there is any special characters available in the text field, you need to display the message "Special Character(s) not allowed".
+- If there is any letter available in the text field, you need to display the message "letter(s) not allowed".
+- If we given a input like 64  5, it should be considered as 645.
+- If both numbers are same in text field you need to display the message "both numbers are same".

@@ -1,0 +1,82 @@
+#result{
+  height: 20px;
+}
+form 
+{
+ margin: 10% auto;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ border:2px  outset inset;
+ background-color:rgb(221, 230, 105);
+}
+
+
+
+/* 
+function verify(event) {
+  event.preventDefault()
+  let numberInputs = document.getElementById('input').value.trim().replace(/\s+/g, "").replace(/,+/g, ",");
+  numbercollcetion = numberInputs.split(",")
+  const specialCharcterRgx = /[!~@#$%^&*`()\_+={}[\]:;"'.<>?\/|\\]/;
+  const letterRgx = /[A-Za-z]/
+  let message;
+  document.getElementById("result").style.color = "red";
+
+  if (numbercollcetion[0] == "") {
+      numbercollcetion.shift()
+  }
+  if (numbercollcetion[numbercollcetion.length - 1] == "") {
+      numbercollcetion.pop()
+  }
+  console.log(numbercollcetion)
+  if (numbercollcetion[0] == "-" || numbercollcetion[1] == "-") {
+      message = "Alert: ALert: Special character's not allowed";
+  }
+
+  else if (numbercollcetion.length == 0) {
+      message = "Alert: Please enter a number";
+  }
+  else if (letterRgx.test(numberInputs)) {
+      message = "ALert: Letter's not allowed";
+  }
+  else if (specialCharcterRgx.test(numberInputs)) {
+      message = "ALert: Special character's not allowed";
+  }
+  else if (numbercollcetion.length == 1) {
+      message = "ALert: Please enter more than one Number";
+  }
+  else {
+   
+       findLargest(numbercollcetion[0],numbercollcetion[1])
+
+
+
+
+ function findLargest(FirstNUmber,SecondNUmber)
+
+      // let largestNumber = numbercollcetion[0]
+      // if (numbercollcetion[0] == numbercollcetion[1]) {
+      //     message = "ALert: Both numbers are Same";
+
+      // }
+
+      // else if (Number(largestNumber) < Number(numbercollcetion[1])) {
+      //     largestNumber = numbercollcetion[1]
+      //     document.getElementById("result").style.color = "green"
+      //     message = "Largest Number is \"" + largestNumber + "\"";
+
+      // }
+      // else {
+      //     console.log(largestNumber)
+      //     message = "Largest Number is \"" + largestNumber + "\"";
+      //     document.getElementById("result").style.color = "green"
+
+      // }
+
+  }
+  document.getElementById("result").innerHTML = message;
+
+}
+
+function resetAll() {
+  document.getElementById("result").innerHTML = "";
+} */

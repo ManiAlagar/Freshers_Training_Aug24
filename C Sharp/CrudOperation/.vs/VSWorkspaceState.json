@@ -11,6 +11,6 @@
     "\\CrudOperation\\Views\\Home",
     "\\CrudOperation\\Views\\Shared"
   ],
-  "SelectedNode": "\\CrudOperation\\Views\\_ViewStart.cshtml",
+  "SelectedNode": "\\CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
   "PreviewInSolutionExplorer": false
 }

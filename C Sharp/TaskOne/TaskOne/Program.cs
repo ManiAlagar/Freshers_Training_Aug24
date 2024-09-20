@@ -19,16 +19,16 @@ public class Program
        #endregion
 
         StringOperation stringObject = new();
-        string Value = "Hello";
+        string Value = "Hi Hello";
 
         //Console.WriteLine("\nString Manipulation:");
         Console.WriteLine("\n\n------String Manipulation-------");
 
         #region String Manipulation 
         int StringLength = stringObject.StringLength(Value);
-        Console.WriteLine($"\nLength of the {Value} : " + StringLength);
+        Console.WriteLine($"\nLength of the {Value} : {StringLength} ");
 
-        Console.Write("\nString Traverse");
+        Console.Write("\nString Traverse : ");
         Console.WriteLine(stringObject.TraverseString(Value));
 
         Console.Write("\nString Reverse : ");
