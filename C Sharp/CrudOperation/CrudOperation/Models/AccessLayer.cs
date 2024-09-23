@@ -1,6 +1,5 @@
 ﻿using System.Data.SqlClient;
 using System.Data;
-using Microsoft.AspNetCore.Mvc;
 
 namespace CrudOperation.Models
 
@@ -15,32 +14,32 @@ namespace CrudOperation.Models
         }
 
         //To View all employees details    
-        public IEnumerable<Employee> ViewTable_Employee()
-        {
-            string connectionString = _configuration.GetConnectionString("SQLConnection");
-            List<Employee> EmployeeList = new List<Employee>();
+        //public IEnumerable<Employee> ViewTable_Employee()
+        //{
+        //    string connectionString = _configuration.GetConnectionString("SQLConnection");
+        //    List<Employee> EmployeeList = new List<Employee>();
 
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                SqlCommand cmd = new SqlCommand("EXEC ViewTable_Employee", con);
-                cmd.CommandType = CommandType.StoredProcedure;
+        //    using (SqlConnection con = new SqlConnection(connectionString))
+        //    {
+        //        SqlCommand cmd = new SqlCommand("EXEC ViewTable_Employee", con);
+        //        cmd.CommandType = CommandType.StoredProcedure;
 
-                con.Open();
-                SqlDataReader rdr = cmd.ExecuteReader();
+        //        con.Open();
+        //        SqlDataReader rdr = cmd.ExecuteReader();
 
-                while (rdr.Read())
-                {
-                    Employee employee = new Employee();
-     
-                    employee.Name = rdr["Name"].ToString();
-                    employee.Gender = rdr["Gender"].ToString();
-                    employee.Department = rdr["Department"].ToString();
+        //        while (rdr.Read())
+        //        {
+        //            Employee employee = new Employee();
 
-                    EmployeeList.Add(employee);
-                }
-            }
-            return EmployeeList;
-        }
+        //            employee.Name = rdr["Name"].ToString();
+        //            employee.Gender = rdr["Gender"].ToString();
+        //            employee.Department = rdr["Department"].ToString();
+
+        //            EmployeeList.Add(employee);
+        //        }
+        //    }
+        //    return EmployeeList;
+        //}
 
         public void AddEmployee(Employee employee)
         {
@@ -100,7 +99,7 @@ namespace CrudOperation.Models
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = sql;
-               
+
                 cmd.Parameters.AddWithValue("@ID", employee.Id);
                 cmd.Parameters.AddWithValue("@Name", employee.Name);
                 cmd.Parameters.AddWithValue("@Gender", employee.Gender);
@@ -124,7 +123,7 @@ namespace CrudOperation.Models
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = sql;
 
-                cmd.Parameters.AddWithValue("@ID",id);
+                cmd.Parameters.AddWithValue("@ID", id);
 
                 con.Open();
                 cmd.ExecuteNonQuery();

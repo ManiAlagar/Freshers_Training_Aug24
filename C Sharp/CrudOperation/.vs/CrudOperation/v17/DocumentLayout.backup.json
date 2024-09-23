@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\views\\employee\\employeedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\employee\\employeedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|c:\\users\\mitrah\\source\\repos\\crudoperation\\crudoperation\\models\\accesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\models\\accesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,45 +34,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\appsettings.json",
-              "RelativeDocumentMoniker": "CrudOperation\\appsettings.json",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\appsettings.json",
-              "RelativeToolTip": "CrudOperation\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-19T14:59:03.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
-              "RelativeDocumentMoniker": "CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
-              "RelativeToolTip": "CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-19T14:59:12.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "CrudOperation\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "CrudOperation\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Employee\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CrudOperation\\Views\\Employee\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Employee\\Edit.cshtml",
+              "RelativeToolTip": "CrudOperation\\Views\\Employee\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-19T14:54:51.616Z",
+              "WhenOpened": "2024-09-23T14:47:52.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "CrudOperation\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "CrudOperation\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAmwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T14:47:17.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "CrudOperation\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "CrudOperation\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T14:46:59.795Z",
               "EditorCaption": ""
             },
             {
@@ -79,22 +83,35 @@
               "RelativeDocumentMoniker": "CrudOperation\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CrudOperation\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-19T14:54:35.318Z",
+              "WhenOpened": "2024-09-23T14:46:28.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Program.cs",
-              "RelativeDocumentMoniker": "CrudOperation\\Program.cs",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Program.cs",
-              "RelativeToolTip": "CrudOperation\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EmployeeDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
+              "RelativeDocumentMoniker": "CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
+              "RelativeToolTip": "CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T14:14:26.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccessLayer.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Models\\AccessLayer.cs",
+              "RelativeDocumentMoniker": "CrudOperation\\Models\\AccessLayer.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\Models\\AccessLayer.cs",
+              "RelativeToolTip": "CrudOperation\\Models\\AccessLayer.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwCsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T13:42:21.316Z",
+              "WhenOpened": "2024-09-23T12:26:11.347Z",
               "EditorCaption": ""
             }
           ]

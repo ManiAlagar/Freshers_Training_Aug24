@@ -34,11 +34,8 @@
 
 
 <Script>
-    $(document).ready(function () {
 
-        
-
-    });
+  
     function deleteClick(id) {
         swal({
             title: "Are you sure?",
@@ -58,7 +55,7 @@
                             swal("Poof! Your record has been deleted!", {
                                 icon: "success",
                             });
-                            setTimeout(reload, 800);
+                            setTimeout(reload, 1000);
                         },
                         error: function (errormessage) {
                             console.log(errormessage.responseText);
@@ -74,3 +71,14 @@
         window.location.reload();
     }
 </Script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () { 
+       if('@TempData["message"]' == "Added"){
+          toastr.success('Added');
+       }
+       else{ }
+    });
+</script> 

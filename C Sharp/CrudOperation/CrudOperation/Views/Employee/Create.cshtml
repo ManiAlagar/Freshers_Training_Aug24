@@ -1,11 +1,11 @@
 ﻿
-@model CrudOperation.Models.Employee
+@model Employee
 
 @{
     ViewData["Title"] = "Create";
 }
 <h2>Create</h2>
-<h4>Employees</h4>
+<h4>Employee Detail</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -31,7 +31,7 @@
                 <span asp-validation-for="Department" class="text-danger"></span>
             </div>
             <div class="form-group mt-4">
-                <input type="submit" value="Create" class="btn btn-primary btn-sm" >
+                <input type="submit" value="Create" class="btn btn-primary btn-sm">
                 <a class="btn btn-sm btn-danger" asp-action="EmployeeDetails">Back to List</a>
             </div>
         </form>

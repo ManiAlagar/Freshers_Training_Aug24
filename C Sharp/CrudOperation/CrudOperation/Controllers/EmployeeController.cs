@@ -5,12 +5,12 @@ using CrudOperation.Models;
 
 namespace CrudOperation.Controllers
 {
-   
+
     public class EmployeeController : Controller
     {
         private readonly IConfiguration _configuration;
 
-      
+
         public EmployeeController(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -21,7 +21,6 @@ namespace CrudOperation.Controllers
             string sql = "EXEC ViewTable_Employee";
 
             DataTable dataTable = new DataTable();
-
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -72,8 +71,6 @@ namespace CrudOperation.Controllers
             return View(employee);
         }
 
-        //Delete Opeartion
-        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, [Bind] Employee employee)
@@ -91,16 +88,23 @@ namespace CrudOperation.Controllers
             return View(employee);
         }
 
+
+
+        //Delete Opeartion
         [HttpPost, ActionName("Delete")]
         public bool DeleteConfirmed(int? id)
         {
             AccessLayer objemployee = new AccessLayer(_configuration);
             objemployee.DeleteEmployee(id);
 
-            TempData["message"] = "Deleted Successfully"; 
-
             return true;
 
         }
+        public ActionResult AddToCart(int id)
+        {
+            TempData["message"] = "Added";
+            return RedirectToAction("EmployeeDetails");
+        }
+
     }
 }
