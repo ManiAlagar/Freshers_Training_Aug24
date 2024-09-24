@@ -29,11 +29,11 @@ namespace CrudOperation.Controllers
             {
                 string flag = objemployee.Check(login);
 
-                if (flag == "SUCCESS")
-                {
+               if (flag == "SUCCESS")
+               {
+                    TempData["Toastr"] = "Login Success";
                     return RedirectToAction("EmployeeDetails", "Employee", null);
-                }
-                else
+               }
                 ViewBag.msg = "ERROR";
             }
             return View(login);

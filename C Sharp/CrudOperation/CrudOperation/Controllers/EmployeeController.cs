@@ -2,10 +2,11 @@
 using System.Data.SqlClient;
 using System.Data;
 using CrudOperation.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CrudOperation.Controllers
 {
-
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly IConfiguration _configuration;
@@ -15,8 +16,16 @@ namespace CrudOperation.Controllers
         {
             _configuration = configuration;
         }
+        
+        
         public IActionResult EmployeeDetails()
+        
         {
+            if (TempData["Toastr"] == null)
+            {
+                TempData["Toastr"] = "Nothing";
+            }
+
             string connectionString = _configuration.GetConnectionString("SQLConnection");
             string sql = "EXEC ViewTable_Employee";
 
@@ -35,35 +44,37 @@ namespace CrudOperation.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            TempData["AddOrEdit"] = "Create";
+            return View("Edit");
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult Create([Bind] Employee employee)
         {
             AccessLayer objemployee = new AccessLayer(_configuration);
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 objemployee.AddEmployee(employee);
+                TempData["Toastr"] = "Created Successful";
                 return RedirectToAction("EmployeeDetails");
-            }
-            return View(employee);
+            ////}
+            //return View(employee);
+            //return RedirectToAction("EmployeeDetails");
         }
 
-     
-       //For Update operation
 
-       [HttpGet]
+        //For Update operation
+
+        [HttpGet]
         public IActionResult Edit(int? id)
         {
+            TempData["AddOrEdit"] = "Edit";
             AccessLayer objemployee = new AccessLayer(_configuration);
             if (id == null)
             {
                 return NotFound();
             }
             Employee employee = objemployee.GetEmployeeData(id);
-
             if (employee == null)
             {
                 return NotFound();
@@ -83,6 +94,7 @@ namespace CrudOperation.Controllers
             if (ModelState.IsValid)
             {
                 objemployee.UpdateEmployee(employee);
+                TempData["Toastr"] = "Updated Successful";
                 return RedirectToAction("EmployeeDetails");
             }
             return View(employee);
@@ -96,14 +108,8 @@ namespace CrudOperation.Controllers
         {
             AccessLayer objemployee = new AccessLayer(_configuration);
             objemployee.DeleteEmployee(id);
-
             return true;
 
-        }
-        public ActionResult AddToCart(int id)
-        {
-            TempData["message"] = "Added";
-            return RedirectToAction("EmployeeDetails");
         }
 
     }

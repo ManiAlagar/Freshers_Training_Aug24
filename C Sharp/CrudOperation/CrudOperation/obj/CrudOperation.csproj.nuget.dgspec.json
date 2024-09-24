@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {}
+    "E:\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {
+    "E:\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+        "projectUniqueName": "E:\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
         "projectName": "CrudOperation",
-        "projectPath": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+        "projectPath": "E:\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
         "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mitrah\\source\\repos\\CrudOperation\\CrudOperation\\obj\\",
+        "outputPath": "E:\\C Sharp\\CrudOperation\\CrudOperation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "toastr": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             }
           },
           "imports": [

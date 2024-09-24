@@ -57,7 +57,7 @@ namespace CrudOperation.Models
                 cmd.Parameters.AddWithValue("@Department", employee.Department);
 
                 con.Open();
-                cmd.ExecuteNonQuery();
+                var res = cmd.ExecuteNonQuery();
                 con.Close();
             }
         }
