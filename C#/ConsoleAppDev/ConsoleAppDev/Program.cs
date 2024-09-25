@@ -84,7 +84,7 @@ namespace ConsoleAppDev
             }
            
         }
-        static void math()
+        static void Math()
         {
             int x, y, mod;
             Console.Write("Enter a number: ");

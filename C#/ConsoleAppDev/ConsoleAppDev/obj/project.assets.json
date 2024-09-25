@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mitrah\\source\\repos\\ConsoleAppDev\\ConsoleAppDev\\ConsoleAppDev.csproj",
+      "projectUniqueName": "D:\\Freshers_Training_Aug24\\C#\\ConsoleAppDev\\ConsoleAppDev\\ConsoleAppDev.csproj",
       "projectName": "ConsoleAppDev",
-      "projectPath": "C:\\Users\\Mitrah\\source\\repos\\ConsoleAppDev\\ConsoleAppDev\\ConsoleAppDev.csproj",
+      "projectPath": "D:\\Freshers_Training_Aug24\\C#\\ConsoleAppDev\\ConsoleAppDev\\ConsoleAppDev.csproj",
       "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mitrah\\source\\repos\\ConsoleAppDev\\ConsoleAppDev\\obj\\",
+      "outputPath": "D:\\Freshers_Training_Aug24\\C#\\ConsoleAppDev\\ConsoleAppDev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,6 +28,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Freshers_Training_Aug24\\C#\\ConsoleAppDev\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB40DB4A-461F-4D50-A204-9C384D0446C6}|ConsoleAppDev\\ConsoleAppDev.csproj|d:\\freshers_training_aug24\\c#\\consoleappdev\\consoleappdev\\exceptionhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB40DB4A-461F-4D50-A204-9C384D0446C6}|ConsoleAppDev\\ConsoleAppDev.csproj|solutionrelative:consoleappdev\\exceptionhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExceptionHandling.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\ConsoleAppDev\\ConsoleAppDev\\ExceptionHandling.cs",
+              "RelativeDocumentMoniker": "ConsoleAppDev\\ExceptionHandling.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\ConsoleAppDev\\ConsoleAppDev\\ExceptionHandling.cs",
+              "RelativeToolTip": "ConsoleAppDev\\ExceptionHandling.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T05:43:21.757Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
