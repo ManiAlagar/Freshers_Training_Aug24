@@ -45,21 +45,16 @@ namespace CrudOperation.Controllers
         public IActionResult Create()
         {
             TempData["AddOrEdit"] = "Create";
-            return View("Edit");
+            return RedirectToAction("Edit");
         }
 
         [HttpPost]
         public IActionResult Create([Bind] Employee employee)
         {
             AccessLayer objemployee = new AccessLayer(_configuration);
-            //if (ModelState.IsValid)
-            //{
                 objemployee.AddEmployee(employee);
                 TempData["Toastr"] = "Created Successful";
                 return RedirectToAction("EmployeeDetails");
-            ////}
-            //return View(employee);
-            //return RedirectToAction("EmployeeDetails");
         }
 
 
@@ -68,18 +63,25 @@ namespace CrudOperation.Controllers
         [HttpGet]
         public IActionResult Edit(int? id)
         {
-            TempData["AddOrEdit"] = "Edit";
-            AccessLayer objemployee = new AccessLayer(_configuration);
-            if (id == null)
+            if (TempData["AddOrEdit"] != null)
             {
-                return NotFound();
+                return View();
             }
-            Employee employee = objemployee.GetEmployeeData(id);
-            if (employee == null)
+            else 
             {
-                return NotFound();
+                TempData["AddOrEdit"] = "Edit";
+                AccessLayer objemployee = new AccessLayer(_configuration);
+                if (id == null)
+                {
+                    return NotFound();
+                }
+                Employee employee = objemployee.GetEmployeeData(id);
+                if (employee == null)
+                {
+                    return NotFound();
+                }
+                return View(employee);
             }
-            return View(employee);
         }
 
         [HttpPost]
@@ -100,12 +102,11 @@ namespace CrudOperation.Controllers
             return View(employee);
         }
 
-
-
         //Delete Opeartion
         [HttpPost, ActionName("Delete")]
         public bool DeleteConfirmed(int? id)
         {
+            TempData["Toastr"] = "Updated Successful";
             AccessLayer objemployee = new AccessLayer(_configuration);
             objemployee.DeleteEmployee(id);
             return true;

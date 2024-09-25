@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {}
+    "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {}
   },
   "projects": {
-    "E:\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {
+    "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+        "projectUniqueName": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
         "projectName": "CrudOperation",
-        "projectPath": "E:\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+        "projectPath": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
         "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-        "outputPath": "E:\\C Sharp\\CrudOperation\\CrudOperation\\obj\\",
+        "outputPath": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",

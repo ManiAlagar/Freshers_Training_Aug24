@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K/FzfjG+KL0=",
+  "dgSpecHash": "Xj+KKB+rlt4=",
   "success": true,
-  "projectFilePath": "E:\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+  "projectFilePath": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mitrah\\.nuget\\packages\\jquery\\1.6.3\\jquery.1.6.3.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

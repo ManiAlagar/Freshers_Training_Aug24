@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CrudOperation.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 namespace CrudOperation.Controllers
 {
@@ -13,30 +16,50 @@ namespace CrudOperation.Controllers
             _configuration = configuration;
         }
 
-
-        public IActionResult Login()
+        //Login View Page
+        public IActionResult LogIn()
         {
             return View();
         }
 
-
+        //Step 3.For Authentication
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Login([Bind] Login login)
+        public async Task<IActionResult> LogIn([Bind] Login login)
         {
             LoginAccessLayer objemployee = new LoginAccessLayer(_configuration);
             if (ModelState.IsValid)
             {
                 string flag = objemployee.Check(login);
-
-               if (flag == "SUCCESS")
-               {
+                if (flag == "SUCCESS")
+                {
                     TempData["Toastr"] = "Login Success";
-                    return RedirectToAction("EmployeeDetails", "Employee", null);
-               }
+
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Name, login.UserName)
+                    };
+                    var claimsIdentity = new ClaimsIdentity(claims, "Login");
+
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+
+                    return RedirectToAction("EmployeeDetails", "Employee");
+                }
                 ViewBag.msg = "ERROR";
             }
-            return View(login);
+            return View("Login");
         }
+
+        public async Task<IActionResult> LogOut()
+        {
+            var claims = new List<Claim>
+            {
+                 new Claim(ClaimTypes.Name, String.Empty)
+            };
+
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("login");
+        }
+
     }
 }

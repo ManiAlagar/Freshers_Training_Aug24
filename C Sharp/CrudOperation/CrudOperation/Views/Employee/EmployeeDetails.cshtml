@@ -1,8 +1,9 @@
-﻿@{
+﻿@using System.Data
+@model DataTable
+
+@{
     ViewData["Title"] = "Table Data";
 }
-@using System.Data
-@model DataTable
 
 <p>
     <a class="btn btn-success" asp-action="Create"><i class="bi bi-person-plus"></i>  Add</a>

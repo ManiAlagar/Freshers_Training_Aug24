@@ -16,8 +16,8 @@
     <div class="col-md-4">
         <h1>Log in</h1>
         <section>
-             <hr />
-            <Form asp-action="Login">
+             <hr/>
+            <Form asp-action="LogIn">
                 <div class="form-group">
                     <label asp-for="UserName" class="control-label mt-3"></label>
                     <input  asp-for="UserName" type="text" class="form-control" placeholder="Username" />
@@ -29,11 +29,6 @@
                     <span asp-validation-for="Password"  asp-for="Password" class="text-danger"></span>
                 </div>
 
-               @*  @if(TempData["message"] != null)
-                   {
-                   <span class="text-danger"> @TempData["message"]</span>
-                } *@
-
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
                      <input class="btn btn-success mt-4" type="submit" value="Log in"/> 
@@ -44,6 +39,11 @@
     </div>
 </div>
 
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
 
 @{
     if (ViewBag.msg == "ERROR")
@@ -55,12 +55,5 @@
             timer: 1250
             });
         </script>
-    }
-}
-
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
