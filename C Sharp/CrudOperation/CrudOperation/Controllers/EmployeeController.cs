@@ -39,32 +39,13 @@ namespace CrudOperation.Controllers
             return View(dataTable);
         }
 
-
-        //For Create operation
-        [HttpGet]
-        public IActionResult Create()
-        {
-            TempData["AddOrEdit"] = "Create";
-            return RedirectToAction("Edit");
-        }
-
-        [HttpPost]
-        public IActionResult Create([Bind] Employee employee)
-        {
-            AccessLayer objemployee = new AccessLayer(_configuration);
-                objemployee.AddEmployee(employee);
-                TempData["Toastr"] = "Created Successful";
-                return RedirectToAction("EmployeeDetails");
-        }
-
-
-        //For Update operation
-
+        //For Create and Update operation
         [HttpGet]
         public IActionResult Edit(int? id)
         {
-            if (TempData["AddOrEdit"] != null)
+            if (id == null)
             {
+                TempData["AddOrEdit"] = "Create";
                 return View();
             }
             else 
@@ -86,27 +67,27 @@ namespace CrudOperation.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind] Employee employee)
+        public IActionResult Edit(int? id, [Bind] Employee employee)
         {
             AccessLayer objemployee = new AccessLayer(_configuration);
-            if (id != employee.Id)
-            {
-                return NotFound();
-            }
-            if (ModelState.IsValid)
-            {
-                objemployee.UpdateEmployee(employee);
-                TempData["Toastr"] = "Updated Successful";
+            TempData["Toastr"] = "Updated Successful";
+
+            if (id != null)
+                {
+                    objemployee.UpdateEmployee(employee);
+                }
+                else
+                {
+                    objemployee.AddEmployee(employee);
+                    TempData["Toastr"] = "Created Successful";
+                }
                 return RedirectToAction("EmployeeDetails");
-            }
-            return View(employee);
         }
 
         //Delete Opeartion
         [HttpPost, ActionName("Delete")]
         public bool DeleteConfirmed(int? id)
         {
-            TempData["Toastr"] = "Updated Successful";
             AccessLayer objemployee = new AccessLayer(_configuration);
             objemployee.DeleteEmployee(id);
             return true;

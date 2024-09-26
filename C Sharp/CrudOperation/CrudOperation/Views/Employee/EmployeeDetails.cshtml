@@ -4,9 +4,10 @@
 @{
     ViewData["Title"] = "Table Data";
 }
+@Html.Partial("Toastr")
 
 <p>
-    <a class="btn btn-success" asp-action="Create"><i class="bi bi-person-plus"></i>  Add</a>
+    <a class="btn btn-success" asp-controller="Employee" asp-action="Edit"> <i class="bi bi-person-plus"></i>  Add</a>
 </p>
 <table class="table table-bordered border-2 table-striped table-hover">
 
@@ -78,7 +79,7 @@
 @* For toastr messsage *@
 @section scripts 
   {
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   @*  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
  
     <script>
@@ -91,6 +92,6 @@
                 toastr.success('@TempData["Toastr"]');
             }
         });
-    </script> 
+    </script>  *@
 }
 
