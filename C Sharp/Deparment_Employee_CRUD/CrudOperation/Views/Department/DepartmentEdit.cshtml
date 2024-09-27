@@ -1,0 +1,32 @@
+﻿@model Department
+@{
+    ViewData["Title"] = TempData["AddOrEdit"];
+}
+<h2>@TempData["AddOrEdit"]</h2>
+<h4>Department Detail</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Department" asp-action="DepartmentEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DepartmentID" />
+            <div class="form-group">
+                <label asp-for="DepartmentName" class="control-label mb-2"></label>
+                <input asp-for="DepartmentName" class="form-control" />
+                <span asp-validation-for="DepartmentName" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-4">
+                <input type="submit" value="Save" class="btn btn-primary  btn-sm">
+                <a class="btn btn-sm btn-danger" asp-controller="Common" asp-action="CommonModel">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

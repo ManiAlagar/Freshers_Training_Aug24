@@ -1,0 +1,147 @@
+﻿@using System.Data
+@model CommonModel
+
+@Html.Partial("Toastr")
+
+@* Employee Details *@
+
+<h3>Employee Table</h3>
+
+<a class="btn btn-success mt-3 mb-3" asp-controller="Employee" asp-action="Edit"> <i class="bi bi-person-plus"></i>  Add</a>
+
+<table class="table table-bordered border-2 table-striped table-hover">
+
+    <tr class="bg-dark text-white text-center">
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>Actions </th>
+    </tr>
+    @foreach (var  row in Model.Employee)
+    {
+        <tr class="text-center">
+            @* <td>@row.Id</td> *@
+            <td>@row.Name</td>
+            <td>@row.Gender</td>
+            <td>@row.DepartmentName</td>
+            <th>
+                <a class="btn btn-primary btn-sm mr-2" asp-controller="Employee" asp-action="Edit" asp-route-id="@row.Id"> <i class="bi bi-pencil-square"></i></a>
+                <a class="btn btn-sm btn-danger" onclick="deleteEmployee(@row.Id)"> <i class="bi bi-person-dash-fill"></i></a>
+            </th>
+        </tr>
+    }
+</table>
+
+
+@* Department Details *@
+
+<h3 class="mt-5">Department Table</h3>
+<p>
+    <a class="btn btn-success mt-3" asp-controller="Department" asp-action="DepartmentEdit"> <i class="bi bi-person-plus"></i>  Add</a>
+</p>
+<table class="table table-bordered border-2 table-striped table-hover">
+
+    <tr class="bg-dark text-white text-center">
+        <th>Department</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var row in Model.Department)
+    {
+        <tr class="text-center">
+            <td>@row.DepartmentName</td>
+            <th>
+                <a class="btn btn-primary btn-sm mr-2" asp-controller="Department" asp-action="DepartmentEdit" asp-route-id="@row.DepartmentID"> <i class="bi bi-pencil-square"></i></a>
+                <a class="btn btn-sm btn-danger" onclick="deleteDepartment(@row.DepartmentID)"> <i class="bi bi-person-dash-fill"></i></a>
+            </th>
+        </tr>
+    }
+</table>
+
+
+
+<Script>
+
+    function deleteEmployee(id) {
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this record!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    $.ajax({
+                        url: "/Employee/Delete?id=" + id,
+                        type: "POST",
+                        contentType: false,
+                        dataType: "json",
+                        success: function (result) {
+                            swal("Poof! Your record has been deleted!", {
+                                icon: "success",
+                            });
+                            setTimeout(reload, 1000);
+                        },
+                        error: function (errormessage) {
+                            console.log(errormessage.responseText);
+                        }
+                    });
+                }
+                else {
+                    swal({
+                        text: "Your record is safe!",
+                        timer: 850
+                    });
+                }
+            });
+    };
+
+    function reload() {
+        window.location.reload();
+    }
+
+
+    function deleteDepartment(id) {
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this record!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    $.ajax({
+                        url: "/Department/Delete?id=" + id,
+                        type: "POST",
+                        contentType: false,
+                        dataType: "json",
+                        success: function (result) {
+                            swal("Poof! Your record has been deleted!", {
+                                icon: "success",
+                            });
+                            setTimeout(reload, 1000);
+                        },
+                        error: function (errormessage) {
+                            console.log(errormessage.responseText);
+                        }
+                    });
+                }
+                else {
+                    swal({
+                        text: "Your record is safe!",
+                        timer: 850
+                    });
+                }
+            });
+    };
+
+    function reload() {
+        window.location.reload();
+    }
+
+
+</Script>
+
+
+

@@ -1,0 +1,80 @@
+﻿@using System.Data
+@model DataTable
+@{
+    ViewData["Title"] = "Employee Details";
+}
+@Html.Partial("Toastr")
+
+<h1>Employee Table</h1>
+<p>
+    <a class="btn btn-success mt-3" asp-controller="Employee" asp-action="Edit"> <i class="bi bi-person-plus"></i>  Add</a>
+</p>
+<table class="table table-bordered border-2 table-striped table-hover">
+
+    <tr class="bg-dark text-white">
+        <th>Emp_ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>Actions </th>
+    </tr>
+    @foreach (DataRow row in Model.Rows)
+    {
+        <tr>
+            <td>@row["EMP_ID"]</td>
+            <td>@row["Name"]</td>
+            <td>@row["Gender"]</td>
+            <td>@row["DepartmentName"]</td>
+            <th>
+                <a class="btn btn-primary btn-sm mr-2" asp-controller="Employee" asp-action="Edit" asp-route-id="@row["ID"]"> <i class="bi bi-pencil-square"></i></a>
+                <a class="btn btn-sm btn-danger" onclick="deleteClick('@row["ID"]')"> <i class="bi bi-person-dash-fill"></i></a>
+            </th>
+        </tr>
+    }
+</table>
+
+<Script>
+
+    function deleteClick(id) {
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this record!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+            if (willDelete) {
+                $.ajax({
+                    url: "/Employee/Delete?id=" + id,
+                    type: "POST",
+                    contentType: false,
+                    dataType: "json",
+                    success: function (result) {
+                        swal("Poof! Your record has been deleted!", {
+                            icon: "success",
+                            timer: 1500
+                        });
+                        setTimeout(reload, 1000);
+                    },
+                    error: function (errormessage) {
+                        console.log(errormessage.responseText);
+                    }
+                });
+            } 
+            else {
+                swal({
+                    text:"Your record is safe!",
+                    timer: 850
+                });
+            }
+        });
+    };
+
+    function reload() {
+        window.location.reload();
+    }
+</Script>
+
+
+

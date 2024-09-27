@@ -1,0 +1,59 @@
+﻿﻿@using System.Collections.Generic
+@using Microsoft.AspNetCore.Http
+@model Login 
+
+@{
+    Layout = null;
+}
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CrudOperation.styles.css" asp-append-version="true" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+
+<div class="d-flex justify-content-center align-items-center  mt-5">
+    <div class="col-md-4">
+        <h1>Log in</h1>
+        <section>
+             <hr/>
+            <Form asp-action="LogIn">
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label mt-3"></label>
+                    <input  asp-for="UserName" type="text" class="form-control" placeholder="Username" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label  asp-for="Password" class="control-label mt-3"></label>
+                    <input type="password" asp-for="Password" class="form-control" placeholder="Password" />
+                    <span asp-validation-for="Password"  asp-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                     <input class="btn btn-success mt-4" type="submit" value="Log in"/> 
+          
+                </div>
+            </form> 
+         </section> 
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+@{
+    if (ViewBag.msg == "ERROR")
+    {
+        <script>
+            swal({
+            title: "Login Failed",
+            icon: "error",
+            timer: 1250
+            });
+        </script>
+    }
+}
