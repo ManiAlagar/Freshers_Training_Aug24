@@ -66,7 +66,7 @@ CREATE OR ALTER PROCEDURE DeleteTask(
 		BEGIN TRANSACTION;
 			DELETE FROM Task
 			WHERE TaskId = @ID;
-			COMMIT TRANSACTION;  
+		COMMIT TRANSACTION;  
 	  END TRY
 	  BEGIN CATCH
 			SELECT ERROR_MESSAGE() AS Error__message
@@ -154,3 +154,14 @@ CREATE or ALTER PROCEDURE UpdateOneTask(
 				@ProjectId=2;
 		GO
 		SELECT * FROM Task
+
+
+
+
+
+
+
+		with cte_name as
+		(
+		select max(salary)
+		from project)

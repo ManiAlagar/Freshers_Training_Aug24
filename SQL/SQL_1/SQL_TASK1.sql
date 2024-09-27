@@ -51,3 +51,25 @@ GO
 SELECT * FROM Task
 SELECT * FROM Project
 
+CREATE TABLE Proj
+(
+	ProjectId INT IDENTITY PRIMARY KEY,
+	ProjectName VARCHAR(25) UNIQUE,
+	StartDate DATE,
+	Budget DECIMAL(7, 2) NOT NULL,
+	[Status] VARCHAR(25) CONSTRAINT DefaultPendings DEFAULT 'Not Started'
+);
+
+INSERT INTO Proj (ProjectName, StartDate, Budget, [Status])
+VALUES 
+    ('Website Redesign', '2024-01-01',15000.00, 'In Progress'),
+    ('Mobile App Development', '2024-02-15',25000.00, 'Not Started')
+
+	SELECT * FROM Proj
+
+ALTER TABLE Proj
+ADD [Description] VARCHAR(255) NOT NULL DEFAULT 'proj';
+GO
+add constraint c_name not null 
+
+add constraint f_key foreign key (id) ref pro(col);

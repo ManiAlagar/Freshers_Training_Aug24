@@ -69,3 +69,5 @@ FROM Task
 WHERE [Priority]='High';
 SELECT * 
 FROM @TableVariable;
+
+

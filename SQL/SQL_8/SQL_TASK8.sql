@@ -38,7 +38,7 @@ END
 
 CLOSE db_cursor  
 DEALLOCATE db_cursor 
-
+ 
 
 --2
 DECLARE @id INT

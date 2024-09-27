@@ -80,3 +80,9 @@ FROM Project
 CROSS JOIN Task
 WHERE Project.ProjectId=Task.ProjectId
 GROUP BY ProjectName;
+
+		--with cte_name as
+		--(
+		--select max(ProjectId)
+		--from project)
+		--select * from cte_name
