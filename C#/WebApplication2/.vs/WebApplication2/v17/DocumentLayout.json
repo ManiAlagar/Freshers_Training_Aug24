@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\",
+  "WorkspaceRootPath": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\models\\employeecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\models\\employeecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\employeecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\views\\employee\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\views\\employee\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\employee\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|c:\\users\\mitrah\\source\\repos\\webapplication2\\webapplication2\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|d:\\freshers_training_aug24\\c#\\webapplication2\\webapplication2\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -56,102 +56,95 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Program.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Program.cs",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Program.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Program.cs",
               "RelativeToolTip": "WebApplication2\\Program.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:56:07.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T11:56:07.831Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\UserController.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Controllers\\UserController.cs",
               "RelativeToolTip": "WebApplication2\\Controllers\\UserController.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAIwDgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:50:23.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T11:50:23.641Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "EmployeeCrud.cs",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Models\\EmployeeCrud.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Models\\EmployeeCrud.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Models\\EmployeeCrud.cs",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Models\\EmployeeCrud.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Models\\EmployeeCrud.cs",
               "RelativeToolTip": "WebApplication2\\Models\\EmployeeCrud.cs",
               "ViewState": "AgIAABkAAAAAAAAAAIAwwDkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:26:07.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T11:26:07.601Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Employee\\Index.cshtml",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Employee\\Index.cshtml",
               "RelativeDocumentMoniker": "WebApplication2\\Views\\Employee\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Employee\\Index.cshtml",
               "RelativeToolTip": "WebApplication2\\Views\\Employee\\Index.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T11:21:50.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T11:21:50.531Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T11:21:38.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T11:21:38.165Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Manage.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Employee\\Manage.cshtml",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Employee\\Manage.cshtml",
               "RelativeDocumentMoniker": "WebApplication2\\Views\\Employee\\Manage.cshtml",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Employee\\Manage.cshtml",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Employee\\Manage.cshtml",
               "RelativeToolTip": "WebApplication2\\Views\\Employee\\Manage.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T11:09:23.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T11:09:23.759Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\User\\Login.cshtml",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\User\\Login.cshtml",
               "RelativeDocumentMoniker": "WebApplication2\\Views\\User\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\User\\Login.cshtml",
               "RelativeToolTip": "WebApplication2\\Views\\User\\Login.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T10:46:51.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T10:46:51.726Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\EmployeeController.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "WebApplication2\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAuwE8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwHsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T10:30:47.677Z",
               "EditorCaption": ""
@@ -160,27 +153,25 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Employee\\Edit.cshtml",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Employee\\Edit.cshtml",
               "RelativeDocumentMoniker": "WebApplication2\\Views\\Employee\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Employee\\Edit.cshtml",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Employee\\Edit.cshtml",
               "RelativeToolTip": "WebApplication2\\Views\\Employee\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T10:17:48.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T10:17:48.698Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Employee\\Create.cshtml",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Employee\\Create.cshtml",
               "RelativeDocumentMoniker": "WebApplication2\\Views\\Employee\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Employee\\Create.cshtml",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\WebApplication2\\WebApplication2\\Views\\Employee\\Create.cshtml",
               "RelativeToolTip": "WebApplication2\\Views\\Employee\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T10:15:22.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T10:15:22.429Z"
             }
           ]
         }

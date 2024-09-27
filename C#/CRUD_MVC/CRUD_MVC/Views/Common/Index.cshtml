@@ -1,0 +1,96 @@
+﻿@model CRUD_MVC.Models.CommonModel
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+   
+</head>
+<body>
+    <h2 class="text-center">Department Details</h2>
+    <div class="d-flex justify-content-between">
+        <p>
+            <a asp-action="Display" asp-controller="Department" class="btn btn-success">Create New</a>
+        </p>
+
+    </div>
+    <table class="table table-hover ">
+        <thead class="thead-dark">
+        <tr>
+            <th>
+                DepartmentName
+            </th>
+            <th>Action</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        @foreach (var item in Model.DepartmentList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DepartmentName)
+                </td>
+                <td>
+                        <a asp-action="Display" asp-controller="Department" asp-route-id="@item.DepartmentId" class=" bi bi-pencil-square btn-sm btn-primary"></a>
+
+                    <a class="bi bi-trash btn-sm btn-danger" id="delete" onclick="delFuncDept('@item.DepartmentId');"></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+    <h2 class="text-center">Employee Details</h2>
+    <div class="d-flex justify-content-between">
+        <p>
+            <a asp-action="Manage" asp-controller="Employee" class="btn btn-success">Create New</a>
+        </p>
+
+    </div>
+    <table class="table table-hover ">
+        <thead class="thead-dark">
+        <tr>
+            <th>
+                EmployeeName
+            </th>
+            <th>DepartmentName</th>
+            <th>City</th>
+            <th>Action</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model.EmployeeList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmployeeName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.DepartmentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    <a asp-action="Manage" asp-controller="Employee" asp-route-id="@item.EmployeeID" class=" bi bi-pencil-square btn-sm btn-primary"></a>
+                    <a class="bi bi-trash btn-sm btn-danger" id="delete" onclick="delFunction('@item.EmployeeID');"></a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+  
+</body>
+
+</html>
+
+
+
+
+    

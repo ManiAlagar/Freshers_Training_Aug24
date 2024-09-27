@@ -1,0 +1,80 @@
+﻿@model IEnumerable<CRUD_MVC.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+  
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+   
+</head>
+<body >
+<h2 class="text-center">Employee Details</h2>
+    <div class="d-flex justify-content-between">
+        <p>
+            <a asp-action="Manage" class="btn btn-success">Create New</a>
+        </p>
+        
+</div>
+
+    <table class="table table-hover ">
+        <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeName)
+            </th>
+               
+                <th>
+
+                    @Html.DisplayNameFor(model => model.DepartmentName)
+                </th>
+                @* <th>
+                    @Html.DisplayNameFor(model => model.DepartmentId)
+                </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmployeeName)
+                </td>
+                   
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DepartmentName)
+                    </td>
+                    @* <td>
+                        @Html.DisplayFor(modelItem => item.DepartmentId)
+                    </td> *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                        <a asp-action="Manage" asp-route-id="@item.EmployeeID"><button class=" bi bi-pencil-square btn-primary"></button></a>
+
+                        <button  class="bi bi-trash btn-danger" id="delete" onclick="delFunction('@item.EmployeeID');"></button>
+                        
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+    
+    
+</body>
+
+</html>
+
