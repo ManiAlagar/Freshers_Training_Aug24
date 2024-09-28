@@ -36,6 +36,7 @@ namespace CRUD_MVC.Models
                     employee.EmployeeName = rdr["EmployeeName"].ToString();
                     employee.DepartmentName = rdr["DepartmentName"].ToString();
                     employee.DepartmentId = Convert.ToInt32(rdr["DepartmentId"]);
+                    employee.PhoneNumber = Convert.ToInt64(rdr["PhoneNumber"]);
                     employee.City = rdr["City"].ToString();
 
                     lstemployee.Add(employee);
@@ -54,7 +55,7 @@ namespace CRUD_MVC.Models
 
                 cmd.Parameters.AddWithValue("@EmployeeID", employee.EmployeeID);
                 cmd.Parameters.AddWithValue("@EmployeeName", employee.EmployeeName);
-                //cmd.Parameters.AddWithValue("@DepartmentName", employee.DepartmentName);
+                cmd.Parameters.AddWithValue("@PhoneNumber", employee.PhoneNumber);
                 cmd.Parameters.AddWithValue("@DepartmentId", employee.DepartmentId);
                 cmd.Parameters.AddWithValue("@City", employee.City);
 
@@ -82,7 +83,7 @@ namespace CRUD_MVC.Models
                    
                     employee.EmployeeID = Convert.ToInt32(rdr["EmployeeID"]);
                     employee.EmployeeName = rdr["EmployeeName"].ToString();
-                    //employee.DepartmentName = rdr["DepartmentName"].ToString();
+                    employee.PhoneNumber = Convert.ToInt64(rdr["PhoneNumber"]);
                     employee.DepartmentId = Convert.ToInt32(rdr["DepartmentId"]);
                     employee.City = rdr["City"].ToString();
                 }
@@ -107,7 +108,7 @@ namespace CRUD_MVC.Models
         }
 
 
-        public void AddEmployee(Employee employee)
+        public string AddEmployee(Employee employee)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -115,13 +116,14 @@ namespace CRUD_MVC.Models
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@EmployeeName", employee.EmployeeName);
-                //cmd.Parameters.AddWithValue("@DepartmentName", employee.DepartmentName);
+                cmd.Parameters.AddWithValue("@PhoneNumber",employee.PhoneNumber);
                 cmd.Parameters.AddWithValue("@DepartmentId", employee.DepartmentId);
                 cmd.Parameters.AddWithValue("@City", employee.City);
 
                 con.Open();
-                cmd.ExecuteNonQuery();
+                var res= cmd.ExecuteScalar();
                 con.Close();
+                return res.ToString();
             }
         }
 

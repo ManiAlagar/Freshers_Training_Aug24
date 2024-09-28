@@ -11,6 +11,8 @@ namespace CRUD_MVC.Models
    
         public string City { get; set; }
 
+        public long PhoneNumber { get; set; }
+
         public int DepartmentId { get; set; }
 
         public string? DepartmentName { get; set; }

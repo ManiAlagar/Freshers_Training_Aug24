@@ -2737,11 +2737,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mitrah\\source\\repos\\CRUD_MVC\\CRUD_MVC\\CRUD_MVC.csproj",
+      "projectUniqueName": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\CRUD_MVC.csproj",
       "projectName": "CRUD_MVC",
-      "projectPath": "C:\\Users\\Mitrah\\source\\repos\\CRUD_MVC\\CRUD_MVC\\CRUD_MVC.csproj",
+      "projectPath": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\CRUD_MVC.csproj",
       "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mitrah\\source\\repos\\CRUD_MVC\\CRUD_MVC\\obj\\",
+      "outputPath": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",

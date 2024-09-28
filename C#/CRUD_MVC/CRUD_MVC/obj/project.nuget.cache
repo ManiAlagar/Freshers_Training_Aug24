@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "022ulSNSUTM=",
+  "dgSpecHash": "9HA3yxWnY5U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mitrah\\source\\repos\\CRUD_MVC\\CRUD_MVC\\CRUD_MVC.csproj",
+  "projectFilePath": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\CRUD_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mitrah\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\jquery\\1.6.3\\jquery.1.6.3.nupkg.sha512",

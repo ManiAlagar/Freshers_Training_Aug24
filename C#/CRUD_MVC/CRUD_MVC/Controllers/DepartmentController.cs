@@ -56,7 +56,7 @@ namespace CRUD_MVC.Controllers
                 }
                 else
                 {
-                    TempData["failure"] = "Already exists";
+                    TempData["failure"] = "Department Already exists";
                 }
                 
             }

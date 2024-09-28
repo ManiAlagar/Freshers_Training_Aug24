@@ -72,10 +72,20 @@ namespace CRUD_MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                TempData["success"] = "Created successfully";
+               
                 EmployeeCrud objemployee = new EmployeeCrud(configuration);
-                objemployee.AddEmployee(employee);
-                return RedirectToAction("Index", "Common");
+                var res = objemployee.AddEmployee(employee);
+                if (res == "failure")
+                {
+                    TempData["success"] = "Created successfully";
+                    return RedirectToAction("Index", "Common");
+                    
+                }
+                else
+                {
+                    TempData["failure"] = "Employee Already exists";
+                }
+               
 
             }
             return View(employee);
