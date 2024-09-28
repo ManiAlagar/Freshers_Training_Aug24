@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {}
+    "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\CrudOperation.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {
+    "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\CrudOperation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+        "projectUniqueName": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\CrudOperation.csproj",
         "projectName": "CrudOperation",
-        "projectPath": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+        "projectPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\CrudOperation.csproj",
         "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\obj\\",
+        "outputPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",

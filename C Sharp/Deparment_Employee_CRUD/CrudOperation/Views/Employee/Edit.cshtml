@@ -11,7 +11,7 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="ID" />
             <div class="form-group">
                 <label asp-for="Name" class="control-label mb-2"></label>
                 <input asp-for="Name" class="form-control" />
@@ -52,12 +52,3 @@
 }
 
 
-
-
-@* <select asp-for="DepartmentName" class="form-control">
-                    <option>-- Select Department --</option>
-                    <option value="1">Dot Net</option>
-                    <option value="2">React</option>
-                    <option value="3">Python</option>
-                    <option value="4">Go Lang</option>
-                </select> *@

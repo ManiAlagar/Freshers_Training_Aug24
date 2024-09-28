@@ -26,8 +26,8 @@ namespace CrudOperation.Controllers
             AccessLayer objemployee = new AccessLayer(_configuration);
             DepartmentAccess objDepartment = new DepartmentAccess(_configuration);
 
-            objCommonModel.Employee = JsonConvert.DeserializeObject<List<Employee>>(JsonConvert.SerializeObject(objemployee.EmployeeDetails()));
-            objCommonModel.Department = JsonConvert.DeserializeObject<List<Department>>(JsonConvert.SerializeObject(objDepartment.DepartmentDetails()));
+            objCommonModel.Employee = objemployee.EmployeeDetails().ToList();
+            objCommonModel.Department = objDepartment.DepartmentDetails().ToList();
 
             return View(objCommonModel);
         }

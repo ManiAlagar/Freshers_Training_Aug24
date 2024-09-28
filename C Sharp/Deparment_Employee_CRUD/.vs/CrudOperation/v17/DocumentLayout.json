@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\",
+  "WorkspaceRootPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\crudoperation\\crudoperation\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\deparment_employee_crud\\crudoperation\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\crudoperation\\crudoperation\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\crudoperation\\crudoperation\\views\\common\\commonmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\common\\commonmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\crudoperation\\crudoperation\\models\\departmentaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\deparment_employee_crud\\crudoperation\\models\\departmentaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\models\\departmentaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\crudoperation\\crudoperation\\models\\accesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\deparment_employee_crud\\crudoperation\\views\\shared\\toastr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\shared\\toastr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\deparment_employee_crud\\crudoperation\\controllers\\commoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\controllers\\commoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\deparment_employee_crud\\crudoperation\\models\\accesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\models\\accesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\crudoperation\\crudoperation\\controllers\\commoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\controllers\\commoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\deparment_employee_crud\\crudoperation\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\deparment_employee_crud\\crudoperation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\projects\\mitrahsoft\\c sharp\\deparment_employee_crud\\crudoperation\\views\\common\\commonmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\common\\commonmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,81 +42,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DepartmentAccess.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Models\\DepartmentAccess.cs",
-              "RelativeDocumentMoniker": "CrudOperation\\Models\\DepartmentAccess.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Models\\DepartmentAccess.cs",
-              "RelativeToolTip": "CrudOperation\\Models\\DepartmentAccess.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T14:26:01.09Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "Toastr.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Views\\Shared\\Toastr.cshtml",
+              "RelativeDocumentMoniker": "CrudOperation\\Views\\Shared\\Toastr.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Views\\Shared\\Toastr.cshtml",
+              "RelativeToolTip": "CrudOperation\\Views\\Shared\\Toastr.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T08:15:50.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T07:58:41.37Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "CrudOperation\\Controllers\\EmployeeController.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "CrudOperation\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAowEwAAAARAAAAAAAAAA==",
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "CrudOperation\\Controllers\\DepartmentController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "CrudOperation\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwBsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T13:42:23.915Z",
+              "WhenOpened": "2024-09-28T06:30:48.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Employee\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CrudOperation\\Views\\Employee\\Edit.cshtml",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Employee\\Edit.cshtml",
-              "RelativeToolTip": "CrudOperation\\Views\\Employee\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-27T13:52:34.266Z",
-              "EditorCaption": ""
+              "Title": "DepartmentAccess.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Models\\DepartmentAccess.cs",
+              "RelativeDocumentMoniker": "CrudOperation\\Models\\DepartmentAccess.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Models\\DepartmentAccess.cs",
+              "RelativeToolTip": "CrudOperation\\Models\\DepartmentAccess.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAIwGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T14:26:01.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "CrudOperation\\Controllers\\EmployeeController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "CrudOperation\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwFgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:42:23.915Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AccessLayer.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Models\\AccessLayer.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Models\\AccessLayer.cs",
               "RelativeDocumentMoniker": "CrudOperation\\Models\\AccessLayer.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Models\\AccessLayer.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Models\\AccessLayer.cs",
               "RelativeToolTip": "CrudOperation\\Models\\AccessLayer.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T13:42:14.083Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "CommonModel.cshtml",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Common\\CommonModel.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Views\\Common\\CommonModel.cshtml",
               "RelativeDocumentMoniker": "CrudOperation\\Views\\Common\\CommonModel.cshtml",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Common\\CommonModel.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Views\\Common\\CommonModel.cshtml",
               "RelativeToolTip": "CrudOperation\\Views\\Common\\CommonModel.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-27T13:39:37.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T13:39:37.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "CommonController.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Controllers\\CommonController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Controllers\\CommonController.cs",
               "RelativeDocumentMoniker": "CrudOperation\\Controllers\\CommonController.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\CrudOperation\\CrudOperation\\Controllers\\CommonController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\Controllers\\CommonController.cs",
               "RelativeToolTip": "CrudOperation\\Controllers\\CommonController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T13:29:15.262Z"
             }

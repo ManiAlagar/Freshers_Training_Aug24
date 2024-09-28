@@ -15,21 +15,6 @@ namespace CrudOperation.Controllers
             _configuration = configuration;
         }
 
-        //Select operation
-        //public IActionResult Index()
-
-        //{
-        //    if (TempData["Toastr"] == null)
-        //    {
-        //        TempData["Toastr"] = "Nothing";
-        //    }
-        //    DepartmentAccess objDepartment = new DepartmentAccess(_configuration);
-
-        //    return View(objDepartment.DepartmentDetails());
-        //}
-
-
-
         //For Create and Update operation
         [HttpGet]
         public IActionResult DepartmentEdit(int? id)
@@ -61,17 +46,26 @@ namespace CrudOperation.Controllers
         public IActionResult DepartmentEdit(int? id, [Bind] Department department)
         {
             DepartmentAccess objDepartment = new DepartmentAccess(_configuration);
-            TempData["Toastr"] = "Updated Successful";
+           
 
             if (id != null)
             {
-                objDepartment.UpdateDepartment(department);
+                string status = objDepartment.UpdateDepartment(department);
+                TempData["Toastr"] = "Updated Successful";
+                if (status == "Failure")
+                {
+                    TempData["Toastr"] = "Department already exists";
+                }
             }
             else
             {
-                objDepartment.AddDepartment(department);
+                string status =objDepartment.AddDepartment(department);
                 TempData["Toastr"] = "Created Successful";
-            }
+                if (status == "Failure")
+                {
+                    TempData["Toastr"] = "Department already exists";
+                }
+             }
             return RedirectToAction("CommonModel", "Common");
         }
 

@@ -19,22 +19,6 @@ namespace CrudOperation.Controllers
             _configuration = configuration;
         }
 
-        //public IActionResult CommonModel()
-        //{
-        //    if (TempData["Toastr"] == null)
-        //    {
-        //        TempData["Toastr"] = "Nothing";
-        //    }
-
-        //    CommonModel objCommonModel = new CommonModel();
-        //    AccessLayer objemployee = new AccessLayer(_configuration);
-        //    DepartmentAccess objDepartment = new DepartmentAccess(_configuration);
-
-        //    objCommonModel.Employee = JsonConvert.DeserializeObject<List<Employee>>(JsonConvert.SerializeObject(objemployee.EmployeeDetails()));
-        //    objCommonModel.Department = JsonConvert.DeserializeObject<List<Department>>(JsonConvert.SerializeObject(objDepartment.DepartmentDetails()));
-
-        //    return View(objCommonModel);
-        //}
 
 
         public IActionResult EmployeeDetails()
@@ -56,8 +40,10 @@ namespace CrudOperation.Controllers
 
             DepartmentAccess objDepartment = new DepartmentAccess(_configuration);
 
-            var Result = JsonConvert.DeserializeObject<List<Department>>(JsonConvert.SerializeObject(objDepartment.DepartmentDetails()))
-                .Select(d => new SelectListItem()
+            //var Result = JsonConvert.DeserializeObject<List<Department>>(JsonConvert.SerializeObject(objDepartment.DepartmentDetails()))
+
+            var Result = objDepartment.DepartmentDetails().ToList()
+           .Select(d => new SelectListItem()
                 {
                     Value = d.DepartmentID.ToString(),
                     Text = d.DepartmentName
@@ -99,6 +85,7 @@ namespace CrudOperation.Controllers
                 }
                 else
                 {
+
                     objemployee.AddEmployee(employee);
                     TempData["Toastr"] = "Created Successful";
             }

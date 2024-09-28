@@ -13,53 +13,60 @@ namespace CrudOperation.Models
             _configuration = configuration;
         }
 
-
-        //Select operation
-        public DataTable DepartmentDetails()
-
-        {  
-            string connectionString = _configuration.GetConnectionString("SQLConnection");
-            string sql = "ViewTable_Department";
-
-            DataTable dataTable = new DataTable();
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                SqlDataAdapter data = new SqlDataAdapter(sql, conn);
-                data.Fill(dataTable);
-            }
-            return dataTable;
-        }
-
-
-
-        //Get the details of a particular Department records  
-        public Department GetDepartmentData(int? id)
+        //Select operation in DepartmentTable
+        public IEnumerable<Department> DepartmentDetails()
         {
-            string connectionString = _configuration.GetConnectionString("SQLConnection");
-            Department department = new Department();
+            List<Department> DepartmentList = new List<Department>();
 
+            string connectionString = _configuration.GetConnectionString("SQLConnection");
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                string sqlQuery = "SELECT * FROM Department WHERE DepartmentID = " + id;
-                SqlCommand cmd = new SqlCommand(sqlQuery, con);
+                SqlCommand cmd = new SqlCommand("ViewTable_Department", con);
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 con.Open();
                 SqlDataReader rdr = cmd.ExecuteReader();
 
                 while (rdr.Read())
-                {   
+                {
+                    Department department = new Department();
+
                     department.DepartmentID = Convert.ToInt32(rdr["DepartmentID"]);
-                    department.DepartmentName =  rdr["DepartmentName"].ToString();
+                    department.DepartmentName = rdr["DepartmentName"].ToString();
+
+                    DepartmentList.Add(department);
                 }
             }
-            return department;
+            return DepartmentList;
         }
+
+            //Get the details of a particular Department records  
+            public Department GetDepartmentData(int? id)
+            {
+                string connectionString = _configuration.GetConnectionString("SQLConnection");
+                Department department = new Department();
+
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    string sqlQuery = "SELECT * FROM Department WHERE DepartmentID = " + id;
+                    SqlCommand cmd = new SqlCommand(sqlQuery, con);
+
+                    con.Open();
+                    SqlDataReader rdr = cmd.ExecuteReader();
+
+                    while (rdr.Read())
+                    {   
+                        department.DepartmentID = Convert.ToInt32(rdr["DepartmentID"]);
+                        department.DepartmentName =  rdr["DepartmentName"].ToString();
+                    }
+                }
+                return department;
+            }
 
 
 
         //Insert into operation
-        public void AddDepartment(Department department)
+        public string AddDepartment(Department department)
         {
             string connectionString = _configuration.GetConnectionString("SQLConnection");
 
@@ -74,21 +81,15 @@ namespace CrudOperation.Models
                 cmd.Parameters.AddWithValue("@Department", department.DepartmentName);
 
                 con.Open();
-                try
-                {
-                    var res = cmd.ExecuteNonQuery();               
-                    con.Close();
-                }
-                catch (Exception)
-                { 
-                    return;
-                }
-             
+              
+                var status = cmd.ExecuteScalar();
+
+                return status.ToString();            
             }
         }
 
         //Update operation
-        public void UpdateDepartment(Department department)
+        public string UpdateDepartment(Department department)
         {
             string connectionString = _configuration.GetConnectionString("SQLConnection");
             string sql = "Update_DepartmentDetails";
@@ -102,15 +103,9 @@ namespace CrudOperation.Models
                 cmd.Parameters.AddWithValue("@DepartmentID", department.DepartmentID);
                 cmd.Parameters.AddWithValue("@Department", department.DepartmentName);
                 con.Open();
-                try
-                {
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception)
-                {
-                    return;
-                }
-                con.Close();
+                var status = cmd.ExecuteScalar();
+
+                return status.ToString();
             }
         }
 
@@ -129,7 +124,15 @@ namespace CrudOperation.Models
                 cmd.Parameters.AddWithValue("@DepartmentID", id);
 
                 con.Open();
-                cmd.ExecuteNonQuery();
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+                    return;
+                }
+               
                 con.Close();
             }
         }

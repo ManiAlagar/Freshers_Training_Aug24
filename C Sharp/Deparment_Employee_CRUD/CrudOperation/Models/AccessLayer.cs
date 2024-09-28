@@ -15,22 +15,50 @@ namespace CrudOperation.Models
         }
 
 
-        public DataTable EmployeeDetails()
+        //public DataTable EmployeeDetails()
 
+        //{
+        //    string connectionString = _configuration.GetConnectionString("SQLConnection");
+        //    string sql = "EXEC ViewTable_Employee";
+
+        //    DataTable dataTable = new DataTable();
+        //    using (SqlConnection conn = new SqlConnection(connectionString))
+        //    {
+        //        conn.Open();
+        //        SqlDataAdapter data = new SqlDataAdapter(sql, conn);
+        //        data.Fill(dataTable);
+        //    }
+        //    return dataTable;
+        //}
+
+
+        //To View all employees details
+        public IEnumerable<Employee> EmployeeDetails()
         {
-
-
             string connectionString = _configuration.GetConnectionString("SQLConnection");
-            string sql = "EXEC ViewTable_Employee";
+            List<Employee> EmployeeList = new List<Employee>();
 
-            DataTable dataTable = new DataTable();
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                conn.Open();
-                SqlDataAdapter data = new SqlDataAdapter(sql, conn);
-                data.Fill(dataTable);
+                SqlCommand cmd = new SqlCommand("ViewTable_Employee", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                con.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    Employee employee = new Employee();
+
+                    employee.ID = Convert.ToInt32(rdr["ID"]);
+                    employee.Name = rdr["Name"].ToString();
+                    employee.Gender = rdr["Gender"].ToString();
+                    employee.DepartmentName = rdr["DepartmentName"].ToString();
+
+                    EmployeeList.Add(employee);
+                }
             }
-            return dataTable;
+            return EmployeeList;
         }
 
 
@@ -52,7 +80,7 @@ namespace CrudOperation.Models
 
                 con.Open();
                 var res = cmd.ExecuteNonQuery();
-                con.Close();
+               
             }
         }
 
@@ -75,7 +103,7 @@ namespace CrudOperation.Models
 
                 while (rdr.Read())
                 {
-                    employee.Id = Convert.ToInt32(rdr["ID"]);
+                    employee.ID = Convert.ToInt32(rdr["ID"]);
                     employee.Name = rdr["Name"].ToString();
                     employee.Gender = rdr["Gender"].ToString();
                     employee.DepartmentName = rdr["DepartmentID"].ToString();
@@ -96,7 +124,7 @@ namespace CrudOperation.Models
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = sql;
 
-                cmd.Parameters.AddWithValue("@ID", employee.Id);
+                cmd.Parameters.AddWithValue("@ID", employee.ID);
                 cmd.Parameters.AddWithValue("@Name", employee.Name);
                 cmd.Parameters.AddWithValue("@Gender", employee.Gender);
                 cmd.Parameters.AddWithValue("@DepartmentID", employee.DepartmentName);

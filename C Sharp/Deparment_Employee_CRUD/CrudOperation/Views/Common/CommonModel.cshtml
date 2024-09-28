@@ -20,13 +20,12 @@
     @foreach (var  row in Model.Employee)
     {
         <tr class="text-center">
-            @* <td>@row.Id</td> *@
-            <td>@row.Name</td>
+             <td>@row.Name</td>
             <td>@row.Gender</td>
             <td>@row.DepartmentName</td>
             <th>
-                <a class="btn btn-primary btn-sm mr-2" asp-controller="Employee" asp-action="Edit" asp-route-id="@row.Id"> <i class="bi bi-pencil-square"></i></a>
-                <a class="btn btn-sm btn-danger" onclick="deleteEmployee(@row.Id)"> <i class="bi bi-person-dash-fill"></i></a>
+                <a class="btn btn-primary btn-sm mr-2" asp-controller="Employee" asp-action="Edit" asp-route-id="@row.ID"> <i class="bi bi-pencil-square"></i></a>
+                <a class="btn btn-sm btn-danger" onclick="deleteEmployee(@row.ID)"> <i class="bi bi-person-dash-fill"></i></a>
             </th>
         </tr>
     }
