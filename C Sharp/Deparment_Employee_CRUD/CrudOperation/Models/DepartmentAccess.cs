@@ -110,7 +110,7 @@ namespace CrudOperation.Models
         }
 
         //Delete Operation
-        public void DeleteDepartment(int? id)
+        public string DeleteDepartment(int? id)
         {
             string connectionString = _configuration.GetConnectionString("SQLConnection");
             string sql = "Delete_Department";
@@ -126,14 +126,13 @@ namespace CrudOperation.Models
                 con.Open();
                 try
                 {
-                    cmd.ExecuteNonQuery();
+                   var status =  cmd.ExecuteScalar().ToString();
+                   return status;
                 }
                 catch (Exception)
                 {
-                    return;
+                    return "There is a relation for this department in employee table";
                 }
-               
-                con.Close();
             }
         }
     }

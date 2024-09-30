@@ -12,7 +12,9 @@
             if ('@TempData["Toastr"]' == "Nothing") {
 
             }
-            else if ('@TempData["Toastr"]' == "Department already exists") {
+            else if ('@TempData["Toastr"]' == "Department already exists" || '@TempData["Toastr"]'  == "Mobile Number already exists" || '@TempData["Toastr"]' == "Employee already exists"
+                || '@TempData["Toastr"]' == "There a relation for this department in employee table")
+            {
                 toastr.warning('@TempData["Toastr"]');
             }
             else if ('@TempData["Toastr"]' != null) {

@@ -14,24 +14,6 @@ namespace CrudOperation.Models
             _configuration = configuration;
         }
 
-
-        //public DataTable EmployeeDetails()
-
-        //{
-        //    string connectionString = _configuration.GetConnectionString("SQLConnection");
-        //    string sql = "EXEC ViewTable_Employee";
-
-        //    DataTable dataTable = new DataTable();
-        //    using (SqlConnection conn = new SqlConnection(connectionString))
-        //    {
-        //        conn.Open();
-        //        SqlDataAdapter data = new SqlDataAdapter(sql, conn);
-        //        data.Fill(dataTable);
-        //    }
-        //    return dataTable;
-        //}
-
-
         //To View all employees details
         public IEnumerable<Employee> EmployeeDetails()
         {
@@ -54,6 +36,7 @@ namespace CrudOperation.Models
                     employee.Name = rdr["Name"].ToString();
                     employee.Gender = rdr["Gender"].ToString();
                     employee.DepartmentName = rdr["DepartmentName"].ToString();
+                    employee.MobileNumber = rdr["MobileNumber"].ToString();
 
                     EmployeeList.Add(employee);
                 }
@@ -63,7 +46,7 @@ namespace CrudOperation.Models
 
 
 
-        public void AddEmployee(Employee employee)
+        public string AddEmployee(Employee employee)
         {
             string connectionString = _configuration.GetConnectionString("SQLConnection");
 
@@ -77,9 +60,14 @@ namespace CrudOperation.Models
                 cmd.Parameters.AddWithValue("@Name", employee.Name);
                 cmd.Parameters.AddWithValue("@Gender", employee.Gender);
                 cmd.Parameters.AddWithValue("@DepartmentID", employee.DepartmentName);
+                cmd.Parameters.AddWithValue("@MobileNumber", employee.MobileNumber);
 
                 con.Open();
-                var res = cmd.ExecuteNonQuery();
+
+
+                var status = cmd.ExecuteScalar();
+               
+                return status.ToString();
                
             }
         }
@@ -107,13 +95,14 @@ namespace CrudOperation.Models
                     employee.Name = rdr["Name"].ToString();
                     employee.Gender = rdr["Gender"].ToString();
                     employee.DepartmentName = rdr["DepartmentID"].ToString();
+                    employee.MobileNumber = rdr["MobileNumber"].ToString();
                 }
             }
             return employee;
         }
 
         //Update Operation
-        public void UpdateEmployee(Employee employee)
+        public string UpdateEmployee(Employee employee)
         {
             string connectionString = _configuration.GetConnectionString("SQLConnection");
             string sql = "Update_EmployeeDetails";
@@ -128,10 +117,21 @@ namespace CrudOperation.Models
                 cmd.Parameters.AddWithValue("@Name", employee.Name);
                 cmd.Parameters.AddWithValue("@Gender", employee.Gender);
                 cmd.Parameters.AddWithValue("@DepartmentID", employee.DepartmentName);
+                cmd.Parameters.AddWithValue("@MobileNumber", employee.MobileNumber);
 
                 con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
+                try
+                {
+                    var status = cmd.ExecuteScalar();
+                    return status.ToString();
+                }
+                catch
+                { 
+                    var status = "Number";
+                    return status;
+                }
+
+               
             }
         }
 

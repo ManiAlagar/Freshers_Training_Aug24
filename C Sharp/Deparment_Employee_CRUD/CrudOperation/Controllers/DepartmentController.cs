@@ -19,6 +19,10 @@ namespace CrudOperation.Controllers
         [HttpGet]
         public IActionResult DepartmentEdit(int? id)
         {
+            if (TempData["Toastr"] == null)
+            {
+                TempData["Toastr"] = "Nothing";
+            }
             if (id == null)
             {
                 TempData["AddOrEdit"] = "Create New Department";
@@ -46,7 +50,10 @@ namespace CrudOperation.Controllers
         public IActionResult DepartmentEdit(int? id, [Bind] Department department)
         {
             DepartmentAccess objDepartment = new DepartmentAccess(_configuration);
-           
+            if (TempData["Toastr"] == null)
+            {
+                TempData["Toastr"] = "Nothing";
+            }
 
             if (id != null)
             {
@@ -55,6 +62,7 @@ namespace CrudOperation.Controllers
                 if (status == "Failure")
                 {
                     TempData["Toastr"] = "Department already exists";
+                    return RedirectToAction("DepartmentEdit","Department");
                 }
             }
             else
@@ -64,6 +72,7 @@ namespace CrudOperation.Controllers
                 if (status == "Failure")
                 {
                     TempData["Toastr"] = "Department already exists";
+                    return RedirectToAction("DepartmentEdit", "Department");
                 }
              }
             return RedirectToAction("CommonModel", "Common");
@@ -76,7 +85,14 @@ namespace CrudOperation.Controllers
         {
 
             DepartmentAccess objDepartment = new DepartmentAccess(_configuration);
-            objDepartment.DeleteDepartment(id);
+            string status = objDepartment.DeleteDepartment(id);
+
+            if (status != null)
+            {
+                TempData["Toastr"] = "There a relation for this department in employee table";
+                return true;
+            }
+            else
             return true;
 
         }

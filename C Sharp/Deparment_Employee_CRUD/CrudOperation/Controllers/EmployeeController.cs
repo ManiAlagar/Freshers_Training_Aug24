@@ -40,6 +40,11 @@ namespace CrudOperation.Controllers
 
             DepartmentAccess objDepartment = new DepartmentAccess(_configuration);
 
+            if (TempData["Toastr"] == null)
+            {
+                TempData["Toastr"] = "Nothing";
+            }
+
             //var Result = JsonConvert.DeserializeObject<List<Department>>(JsonConvert.SerializeObject(objDepartment.DepartmentDetails()))
 
             var Result = objDepartment.DepartmentDetails().ToList()
@@ -77,20 +82,40 @@ namespace CrudOperation.Controllers
         public IActionResult Edit(int? id, [Bind] Employee employee)
         {
             AccessLayer objemployee = new AccessLayer(_configuration);
-            TempData["Toastr"] = "Updated Successful";
-
+       
             if (id != null)
+            {
+                string status = objemployee.UpdateEmployee(employee);
+                TempData["Toastr"] = "Updated Successful";
+                if (status == "Number")
                 {
-                    objemployee.UpdateEmployee(employee);
+                    TempData["Toastr"] = "Mobile Number already exists";
+                    return RedirectToAction("Edit", "Employee");
                 }
-                else
+                else if (status == "Employee")
                 {
-
-                    objemployee.AddEmployee(employee);
-                    TempData["Toastr"] = "Created Successful";
+                    TempData["Toastr"] = "Employee already exists";
+                    return RedirectToAction("Edit", "Employee");
+                }
             }
-                return RedirectToAction("CommonModel","Common");
+            else
+            {
+                string status = objemployee.AddEmployee(employee);
+                TempData["Toastr"] = "Created Successful";
+                if (status == "Number")
+                {
+                    TempData["Toastr"] = "Mobile Number already exists";
+                    return RedirectToAction("Edit", "Employee");
+                }
+                else if (status == "Employee")
+                {
+                    TempData["Toastr"] = "Employee already exists";
+                    return RedirectToAction("Edit", "Employee");
+                }
+            }
+            return RedirectToAction("CommonModel","Common");
         }
+
 
         //Delete Opeartion
         [HttpPost, ActionName("Delete")]
@@ -99,7 +124,6 @@ namespace CrudOperation.Controllers
             AccessLayer objemployee = new AccessLayer(_configuration);
             objemployee.DeleteEmployee(id);
             return true;
-
         }
 
     }

@@ -15,6 +15,7 @@
         <th>Name</th>
         <th>Gender</th>
         <th>Department</th>
+        <th>MobileNumber</th>
         <th>Actions </th>
     </tr>
     @foreach (var  row in Model.Employee)
@@ -23,6 +24,7 @@
              <td>@row.Name</td>
             <td>@row.Gender</td>
             <td>@row.DepartmentName</td>
+            <td>@row.MobileNumber</td>
             <th>
                 <a class="btn btn-primary btn-sm mr-2" asp-controller="Employee" asp-action="Edit" asp-route-id="@row.ID"> <i class="bi bi-pencil-square"></i></a>
                 <a class="btn btn-sm btn-danger" onclick="deleteEmployee(@row.ID)"> <i class="bi bi-person-dash-fill"></i></a>
@@ -115,7 +117,7 @@
                         type: "POST",
                         contentType: false,
                         dataType: "json",
-                        success: function (result) {
+                        success: function (result){
                             swal("Poof! Your record has been deleted!", {
                                 icon: "success",
                             });

@@ -1,9 +1,11 @@
 ﻿using CrudOperation.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace CrudOperation.Controllers
 {
+    [Authorize]
     public class CommonController : Controller
     {
         private readonly IConfiguration _configuration;
