@@ -86,7 +86,7 @@ namespace CRUD_MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                TempData["success"] = "Edited successfully";
+                TempData["success"] = "Updated successfully";
                 DepartmentCrud obj = new DepartmentCrud(configuration);
                 if (department.DepartmentId > 0)
                 {
