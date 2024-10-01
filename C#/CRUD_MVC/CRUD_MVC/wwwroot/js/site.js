@@ -60,8 +60,11 @@ function delFuncDept(id) {
                 type: "POST",
                 url: "/Department/Delete/" + Id,
                 contentType: "application/json;charset=UTF-8",
-                success: function () {
+                dataType: 'json',
+                success: function (response) {
+                    console.log(response);
                     setTimeout(myTimeout, 1000);
+
                     Swal.fire({
                         text: "Deleted",
                         icon: "success",

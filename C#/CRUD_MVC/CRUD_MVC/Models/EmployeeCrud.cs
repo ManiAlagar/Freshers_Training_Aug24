@@ -46,7 +46,7 @@ namespace CRUD_MVC.Models
             return lstemployee;
         }
 
-        public void UpdateEmployee(Employee employee)
+        public string UpdateEmployee(Employee employee)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -60,8 +60,9 @@ namespace CRUD_MVC.Models
                 cmd.Parameters.AddWithValue("@City", employee.City);
 
                 con.Open();
-                cmd.ExecuteNonQuery();
+                var res = cmd.ExecuteScalar();
                 con.Close();
+                return res.ToString();
             }
         }
 

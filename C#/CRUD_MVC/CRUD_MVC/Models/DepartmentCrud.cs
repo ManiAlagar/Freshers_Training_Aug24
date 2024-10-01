@@ -76,7 +76,7 @@ namespace CRUD_MVC.Models
             return department;
         }
 
-        public void DeleteDepartment(int? id)
+        public string DeleteDepartment(int? id)
         {
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -87,11 +87,12 @@ namespace CRUD_MVC.Models
                 cmd.Parameters.AddWithValue("@DepartmentId", id);
 
                 con.Open();
-                cmd.ExecuteNonQuery();
+                var res = cmd.ExecuteScalar();
                 con.Close();
+                return res.ToString();
             }
         }
-
+         
         public string AddDepartment(Department department)
         {
             using (SqlConnection con = new SqlConnection(connectionString))

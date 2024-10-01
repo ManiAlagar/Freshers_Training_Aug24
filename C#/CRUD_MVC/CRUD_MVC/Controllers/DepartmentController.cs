@@ -27,7 +27,11 @@ namespace CRUD_MVC.Controllers
         public IActionResult DeleteConfirmed(int? id)
         {
             DepartmentCrud obj = new DepartmentCrud(configuration);
-            obj.DeleteDepartment(id);
+            var res=obj.DeleteDepartment(id);
+            if (res == "success")
+            {
+                TempData["failure"] = "Cannot delete due to dependency";
+            }
             return RedirectToAction("Index", "Common");
         }
 
@@ -35,7 +39,7 @@ namespace CRUD_MVC.Controllers
         [HttpGet]
         public IActionResult Display()
         {
-            TempData["update"] = "update";
+           
             return View();
         }
 
@@ -69,7 +73,7 @@ namespace CRUD_MVC.Controllers
         public IActionResult Display(int id)
         {
             DepartmentCrud obj = new DepartmentCrud(configuration);
-            var lstdept = obj.GetAllDepartments().ToList().Select(x => new SelectListItem { Text = x.DepartmentName, Value = x.DepartmentId.ToString() }); ;
+            var lstdept = obj.GetAllDepartments().ToList().Select(x => new SelectListItem { Text = x.DepartmentName, Value = x.DepartmentId.ToString() }); 
             ViewBag.list = lstdept;
             Department department = obj.GetDepartmentData(id);
 
@@ -90,7 +94,7 @@ namespace CRUD_MVC.Controllers
                 DepartmentCrud obj = new DepartmentCrud(configuration);
                 if (department.DepartmentId > 0)
                 {
-                    
+                   
                     obj.UpdateDepartment(department);
                 }
                 else

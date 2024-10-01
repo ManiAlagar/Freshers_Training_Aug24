@@ -43,7 +43,7 @@ namespace CRUD_MVC.Controllers
         [HttpGet]
         public IActionResult Manage()
         {
-            TempData["edit"] = "edit";
+            
             DepartmentCrud obj = new DepartmentCrud(configuration);
             var lstdept = obj.GetAllDepartments().ToList().Select(x => new SelectListItem { Text = x.DepartmentName, Value = x.DepartmentId.ToString() }); //linq-- any, all, where, exists
             ViewBag.list = lstdept;
@@ -55,7 +55,7 @@ namespace CRUD_MVC.Controllers
         public IActionResult Manage(int id)
         {
             DepartmentCrud obj = new DepartmentCrud(configuration);
-            var lstdept = obj.GetAllDepartments().ToList().Select(x => new SelectListItem { Text = x.DepartmentName, Value = x.DepartmentId.ToString() }); ;
+            var lstdept = obj.GetAllDepartments().ToList().Select(x => new SelectListItem { Text = x.DepartmentName, Value = x.DepartmentId.ToString() }); 
             ViewBag.list = lstdept;
             EmployeeCrud objemployee = new EmployeeCrud(configuration);
             Employee employee = objemployee.GetEmployeeData(id);// GetEmployeeData returns a Employee object. otherwise we can use string ,int based on the return type of the method.
@@ -81,6 +81,10 @@ namespace CRUD_MVC.Controllers
                     return RedirectToAction("Index", "Common");
                     
                 }
+                else if (res == "number")
+                {
+                    TempData["failure"] = "Phone Number already exists";
+                }
                 else
                 {
                     TempData["failure"] = "Employee Already exists";
@@ -98,12 +102,22 @@ namespace CRUD_MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                TempData["success"] = "Updated successfully";
+                
                 EmployeeCrud objemployee = new EmployeeCrud(configuration);
                 if (employee.EmployeeID > 0)
                 {
-                    
-                    objemployee.UpdateEmployee(employee);
+
+                    var res = objemployee.UpdateEmployee(employee);
+                    if (res == "failure")
+                    {
+                        TempData["success"] = "Created successfully";
+                    }
+                   
+                    else
+                    {
+                        TempData["failure"] = "Phone number already exists";
+
+                    }
                 }
                 else
                 {
