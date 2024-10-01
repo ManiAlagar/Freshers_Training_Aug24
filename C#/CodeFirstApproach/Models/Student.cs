@@ -1,13 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CodeFirstApproach.Context
+namespace CodeFirstApproach.Models
 {
     public class Student
     {
         [Key]//primary key
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]//set identity
-        public int StudentId { get; set; } 
+        public int StudentId { get; set; }
         public string StudentName { get; set; }
         public long PhoneNumber { get; set; }
         [ForeignKey("Mark")]

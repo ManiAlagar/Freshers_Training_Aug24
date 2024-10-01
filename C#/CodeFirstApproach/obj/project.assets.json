@@ -4573,11 +4573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mitrah\\source\\repos\\CodeFirstApproach\\CodeFirstApproach\\CodeFirstApproach.csproj",
+      "projectUniqueName": "D:\\Freshers_Training_Aug24\\C#\\CodeFirstApproach\\CodeFirstApproach.csproj",
       "projectName": "CodeFirstApproach",
-      "projectPath": "C:\\Users\\Mitrah\\source\\repos\\CodeFirstApproach\\CodeFirstApproach\\CodeFirstApproach.csproj",
+      "projectPath": "D:\\Freshers_Training_Aug24\\C#\\CodeFirstApproach\\CodeFirstApproach.csproj",
       "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mitrah\\source\\repos\\CodeFirstApproach\\CodeFirstApproach\\obj\\",
+      "outputPath": "D:\\Freshers_Training_Aug24\\C#\\CodeFirstApproach\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
