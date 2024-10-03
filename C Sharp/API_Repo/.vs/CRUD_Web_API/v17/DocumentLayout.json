@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\MitrahSoft\\C Sharp\\API_Repo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00747131-5793-404E-BB1D-8C05988AAE06}|CRUD_Web_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\api_repo\\entity\\dbcontext\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00747131-5793-404E-BB1D-8C05988AAE06}|CRUD_Web_API.csproj|solutionrelative:entity\\dbcontext\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00747131-5793-404E-BB1D-8C05988AAE06}|CRUD_Web_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\api_repo\\entity\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00747131-5793-404E-BB1D-8C05988AAE06}|CRUD_Web_API.csproj|solutionrelative:entity\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00747131-5793-404E-BB1D-8C05988AAE06}|CRUD_Web_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\api_repo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00747131-5793-404E-BB1D-8C05988AAE06}|CRUD_Web_API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\API_Repo\\Entity\\DBContext\\UserContext.cs",
+              "RelativeDocumentMoniker": "Entity\\DBContext\\UserContext.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\API_Repo\\Entity\\DBContext\\UserContext.cs",
+              "RelativeToolTip": "Entity\\DBContext\\UserContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T13:39:23.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\API_Repo\\Entity\\Users.cs",
+              "RelativeDocumentMoniker": "Entity\\Users.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\API_Repo\\Entity\\Users.cs",
+              "RelativeToolTip": "Entity\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T13:39:02.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\API_Repo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\API_Repo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T13:33:42.512Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
