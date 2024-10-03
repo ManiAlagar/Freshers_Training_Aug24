@@ -1,12 +1,15 @@
 ﻿using CRUD_Web_API.Entity;
 using CRUD_Web_API.Entity.DBContext;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD_Web_API.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UserController : ControllerBase
     {
             private readonly UserContext context;
@@ -29,12 +32,12 @@ namespace CRUD_Web_API.Controllers
             public  IActionResult Get(int id)
             {
                 Users user = context.User.FirstOrDefault(u => u.ID == id);
-                if(user == null)
+                if(user != null)
                 {
-                    return NotFound("Record Not Found");
+                    return Ok(user);
+              
                 }
-                
-                return Ok(user);
+                return NotFound("Record Not Found");    
             }
             
 
@@ -51,7 +54,7 @@ namespace CRUD_Web_API.Controllers
                 
                 context.SaveChanges();
 
-                return Ok(user + "Created Successfuly");
+                return Ok(user);
             }
 
             [HttpPut("{id}")]
@@ -72,11 +75,12 @@ namespace CRUD_Web_API.Controllers
                 context.Update(user);
                 context.SaveChanges();
 
+
                 return Ok("Updated Successful");
             }
 
 
-            //DELETE METHOD
+            // DELETE METHOD
             [HttpDelete("Delete/{id}")]
             public IActionResult Delete(int id)
             {
@@ -89,7 +93,7 @@ namespace CRUD_Web_API.Controllers
                 
                 context.User.Remove(user);
                 context.SaveChanges();
-                return Ok();
+                return Ok("Record Deleted");
             }
     }
 }

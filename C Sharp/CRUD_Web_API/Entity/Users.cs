@@ -12,19 +12,15 @@ namespace CRUD_Web_API.Entity
         public int ID { get; set; }
 
         [Required]
-        [StringLength(20)]
         public string  UserName { get; set; }
    
         [Required]
-        [StringLength(20)]
         public string Password { get; set; }
 
         [Required]
-        [StringLength(30)]
         public string Email { get; set; }
         
         [Required]
-        [StringLength(10)]
         public string PhoneNumber { get; set; }
        
     }

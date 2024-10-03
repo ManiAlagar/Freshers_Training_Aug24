@@ -19,12 +19,12 @@
              <hr/>
             <Form asp-action="LogIn">
                 <div class="form-group">
-                    <label asp-for="UserName" class="control-label mt-3"></label>
+                    <label asp-for="UserName" class="control-label mt-3">USER NAME</label>
                     <input  asp-for="UserName" type="text" class="form-control" placeholder="Username" />
                     <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label  asp-for="Password" class="control-label mt-3"></label>
+                    <label  asp-for="Password" class="control-label mt-3">PASSWORD</label>
                     <input type="password" asp-for="Password" class="form-control" placeholder="Password" />
                     <span asp-validation-for="Password"  asp-for="Password" class="text-danger"></span>
                 </div>

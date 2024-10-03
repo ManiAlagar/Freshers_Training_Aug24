@@ -8,7 +8,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
             .AddCookie(options =>
             {
                 options.LoginPath = "/Login/LogIn";
-                options.LoginPath = "/Login/LogIn";
                 options.Cookie.Name = ".AspNetCore.Cookies";
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
                 options.SlidingExpiration = true;
