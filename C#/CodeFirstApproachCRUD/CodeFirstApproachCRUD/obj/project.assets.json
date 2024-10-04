@@ -4249,11 +4249,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mitrah\\source\\repos\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD.csproj",
+      "projectUniqueName": "D:\\Freshers_Training_Aug24\\C#\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD.csproj",
       "projectName": "CodeFirstApproachCRUD",
-      "projectPath": "C:\\Users\\Mitrah\\source\\repos\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD.csproj",
+      "projectPath": "D:\\Freshers_Training_Aug24\\C#\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD.csproj",
       "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mitrah\\source\\repos\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD\\obj\\",
+      "outputPath": "D:\\Freshers_Training_Aug24\\C#\\CodeFirstApproachCRUD\\CodeFirstApproachCRUD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
