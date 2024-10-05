@@ -4529,11 +4529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mitrah\\source\\repos\\DB_First_Approach\\DB_First_Approach.csproj",
+      "projectUniqueName": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\DB_First_Approach.csproj",
       "projectName": "DB_First_Approach",
-      "projectPath": "C:\\Users\\Mitrah\\source\\repos\\DB_First_Approach\\DB_First_Approach.csproj",
+      "projectPath": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\DB_First_Approach.csproj",
       "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mitrah\\source\\repos\\DB_First_Approach\\obj\\",
+      "outputPath": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",

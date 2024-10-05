@@ -35,8 +35,7 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-03T05:28:00.342Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -48,8 +47,7 @@
               "RelativeToolTip": "CrudOperation\\Models\\LoginAccessLayer.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwCIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T05:28:21.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T05:28:21.189Z"
             },
             {
               "$type": "Document",
@@ -59,7 +57,7 @@
               "RelativeDocumentMoniker": "CrudOperation\\Controllers\\LoginController.cs",
               "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Controllers\\LoginController.cs",
               "RelativeToolTip": "CrudOperation\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAiwDIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-03T05:28:19.074Z",
               "EditorCaption": ""

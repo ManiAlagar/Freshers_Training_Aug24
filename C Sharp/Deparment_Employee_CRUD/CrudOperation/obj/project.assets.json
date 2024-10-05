@@ -6002,11 +6002,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\CrudOperation.csproj",
+      "projectUniqueName": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\CrudOperation.csproj",
       "projectName": "CrudOperation",
-      "projectPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\CrudOperation.csproj",
+      "projectPath": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\CrudOperation.csproj",
       "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\obj\\",
+      "outputPath": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\Deparment_Employee_CRUD\\CrudOperation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
