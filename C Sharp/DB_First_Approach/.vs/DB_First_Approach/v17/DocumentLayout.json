@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|e:\\git\\freshers_training_aug24\\c sharp\\db_first_approach\\repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|solutionrelative:repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|e:\\git\\freshers_training_aug24\\c sharp\\db_first_approach\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|e:\\git\\freshers_training_aug24\\c sharp\\db_first_approach\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +17,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|e:\\git\\freshers_training_aug24\\c sharp\\db_first_approach\\repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|solutionrelative:repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|e:\\git\\freshers_training_aug24\\c sharp\\db_first_approach\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|e:\\git\\freshers_training_aug24\\c sharp\\db_first_approach\\repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|solutionrelative:repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -36,7 +44,7 @@
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwBQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwBQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T07:19:55.556Z",
               "IsPinned": true,
@@ -58,16 +66,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\Repository\\Implementation\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Implementation\\UserRepository.cs",
               "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\Repository\\Implementation\\UserRepository.cs",
               "RelativeToolTip": "Repository\\Implementation\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T07:30:02.054Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-07T04:56:14.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\DB_First_Approach\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T04:56:12.029Z",
               "EditorCaption": ""
             },
             {
@@ -80,7 +114,8 @@
               "RelativeToolTip": "Repository\\Interface\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T10:14:40.695Z"
+              "WhenOpened": "2024-10-04T10:14:40.695Z",
+              "EditorCaption": ""
             }
           ]
         }

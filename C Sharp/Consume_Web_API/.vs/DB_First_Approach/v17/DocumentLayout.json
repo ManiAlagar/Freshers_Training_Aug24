@@ -1,0 +1,112 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mitrah\\source\\repos\\DB_First_Approach\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|c:\\users\\mitrah\\source\\repos\\crud_user\\services\\implement\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|c:\\users\\mitrah\\source\\repos\\db_first_approach\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|c:\\users\\mitrah\\source\\repos\\crud_user\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|c:\\users\\mitrah\\source\\repos\\crud_user\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|c:\\users\\mitrah\\source\\repos\\crud_user\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|c:\\users\\mitrah\\source\\repos\\crud_user\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DB_First_Approach\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DB_First_Approach\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAqwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T15:31:23.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\CRUD_USER\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "..\\CRUD_USER\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T15:03:44.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "..\\CRUD_USER\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "..\\CRUD_USER\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T13:07:49.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Services\\Implement\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\CRUD_USER\\Services\\Implement\\UserService.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Services\\Implement\\UserService.cs",
+              "RelativeToolTip": "..\\CRUD_USER\\Services\\Implement\\UserService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwCIAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T13:07:09.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\CRUD_USER\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Controllers\\UserController.cs",
+              "RelativeToolTip": "..\\CRUD_USER\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T13:06:45.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "..\\CRUD_USER\\Views\\User\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\CRUD_USER\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "..\\CRUD_USER\\Views\\User\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T12:33:04.403Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

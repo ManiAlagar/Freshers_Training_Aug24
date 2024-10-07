@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\git\\freshers_training_aug24\\c sharp\\crudoperation\\crudoperation\\views\\employee\\employeedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\employee\\employeedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\git\\freshers_training_aug24\\c sharp\\crudoperation\\crudoperation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\git\\freshers_training_aug24\\c sharp\\crudoperation\\crudoperation\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\git\\freshers_training_aug24\\c sharp\\crudoperation\\crudoperation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\git\\freshers_training_aug24\\c sharp\\crudoperation\\crudoperation\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\git\\freshers_training_aug24\\c sharp\\crudoperation\\crudoperation\\models\\loginaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\models\\loginaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|e:\\git\\freshers_training_aug24\\c sharp\\crudoperation\\crudoperation\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC8EA897-219D-46B2-ADF9-8304348EBEBA}|CrudOperation\\CrudOperation.csproj|solutionrelative:crudoperation\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -32,15 +44,51 @@
               "RelativeDocumentMoniker": "CrudOperation\\Views\\Login\\Login.cshtml",
               "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Login\\Login.cshtml",
               "RelativeToolTip": "CrudOperation\\Views\\Login\\Login.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-03T05:28:00.342Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CrudOperation\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T12:05:10.68Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CrudOperation\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CrudOperation\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T12:05:49.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeDetails.cshtml",
+              "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
+              "RelativeDocumentMoniker": "CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
+              "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
+              "RelativeToolTip": "CrudOperation\\Views\\Employee\\EmployeeDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T11:58:07.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "LoginAccessLayer.cs",
               "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Models\\LoginAccessLayer.cs",
               "RelativeDocumentMoniker": "CrudOperation\\Models\\LoginAccessLayer.cs",
@@ -48,21 +96,19 @@
               "RelativeToolTip": "CrudOperation\\Models\\LoginAccessLayer.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwCIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T05:28:21.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T05:28:21.189Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LoginController.cs",
               "DocumentMoniker": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "CrudOperation\\Controllers\\LoginController.cs",
               "ToolTip": "E:\\git\\Freshers_Training_Aug24\\C Sharp\\CrudOperation\\CrudOperation\\Controllers\\LoginController.cs",
               "RelativeToolTip": "CrudOperation\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAiwDIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T05:28:19.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T05:28:19.074Z"
             }
           ]
         }
