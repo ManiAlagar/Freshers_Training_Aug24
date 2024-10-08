@@ -1,0 +1,63 @@
+C:\Users\Mitrah\source\repos\CRUD_USER\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Mitrah\source\repos\CRUD_USER\bin\Debug\net8.0\appsettings.json
+C:\Users\Mitrah\source\repos\CRUD_USER\bin\Debug\net8.0\CRUD_USER.staticwebassets.runtime.json
+C:\Users\Mitrah\source\repos\CRUD_USER\bin\Debug\net8.0\CRUD_USER.exe
+C:\Users\Mitrah\source\repos\CRUD_USER\bin\Debug\net8.0\CRUD_USER.deps.json
+C:\Users\Mitrah\source\repos\CRUD_USER\bin\Debug\net8.0\CRUD_USER.runtimeconfig.json
+C:\Users\Mitrah\source\repos\CRUD_USER\bin\Debug\net8.0\CRUD_USER.dll
+C:\Users\Mitrah\source\repos\CRUD_USER\bin\Debug\net8.0\CRUD_USER.pdb
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.AssemblyInfoInputs.cache
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.AssemblyInfo.cs
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.csproj.CoreCompileInputs.cache
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.RazorAssemblyInfo.cache
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.RazorAssemblyInfo.cs
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.CRUD_USER.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.build.CRUD_USER.props
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CRUD_USER.props
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CRUD_USER.props
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\scopedcss\bundle\CRUD_USER.styles.css
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\scopedcss\projectbundle\CRUD_USER.bundle.scp.css
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.dll
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\refint\CRUD_USER.dll
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.pdb
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\CRUD_USER.genruntimeconfig.cache
+C:\Users\Mitrah\source\repos\CRUD_USER\obj\Debug\net8.0\ref\CRUD_USER.dll
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.AssemblyInfoInputs.cache
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.AssemblyInfo.cs
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.csproj.CoreCompileInputs.cache
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.MvcApplicationPartsAssemblyInfo.cache
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.RazorAssemblyInfo.cache
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.RazorAssemblyInfo.cs
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.dll
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\refint\CRUD_USER.dll
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.pdb
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\appsettings.Development.json
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\appsettings.json
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.staticwebassets.runtime.json
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.exe
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.deps.json
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.runtimeconfig.json
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.dll
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.pdb
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets.build.json
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets.development.json
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.CRUD_USER.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.build.CRUD_USER.props
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CRUD_USER.props
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CRUD_USER.props
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\scopedcss\bundle\CRUD_USER.styles.css
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\scopedcss\projectbundle\CRUD_USER.bundle.scp.css
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.genruntimeconfig.cache
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\ref\CRUD_USER.dll
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.csproj.AssemblyReference.cache
+E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.csproj.Up2Date
