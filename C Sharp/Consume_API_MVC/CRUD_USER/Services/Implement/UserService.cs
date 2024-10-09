@@ -1,6 +1,10 @@
 ﻿using CRUD_USER.Helpers;
 using CRUD_USER.Models;
+using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Net.Http.Headers;
+using System.Security.Claims;
 using System.Text;
 using Users_CRUD.Web.Services.Interfaces;
 
@@ -9,22 +13,49 @@ namespace Users_CRUD.Web.Services.Implement
     public class UserService : IUserService
     {    
             private readonly HttpClient _client;
+            private readonly IHttpContextAccessor httpContextAccessor;
             public const string BasePath = "/api/User/GetAll";
 
-            public UserService(HttpClient client)
+            public UserService(HttpClient client, IHttpContextAccessor httpContextAccessor)
             {
-                _client = client /*?? throw new ArgumentNullException(nameof(client))*/;
+                _client = client ?? throw new ArgumentNullException(nameof(client));
+                this.httpContextAccessor = httpContextAccessor;
+
+                
             }
+
+            public async Task<string> Login(Login credenntial)
+            {
+
+                var response = await _client.GetAsync($" https://localhost:7213/api/Login/Login?UserName={credenntial.UserName}&Password={credenntial.Password}");
+                var result = await response.Content.ReadAsStringAsync();
+
+                var token = JsonConvert.DeserializeObject<TokenResponse>(result);
+
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return token.token;
+                }
+                return null;
+            }
+
 
             public async Task<IEnumerable<Users>> Get()
             {
-                var response = await _client.GetAsync("/api/User/GetAll");
+                var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
+                var response = await _client.GetAsync("/api/User/GetAll");
+             
                 return await response.ReadContentAsync<List<Users>>();
             }
 
             public async Task<Users> Get(int? id)
             {
+                var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",token);
+
                 var response = await _client.GetAsync($"api/User/GetByID?id={id}");
 
                 return await response.ReadContentAsync<Users>();
@@ -33,35 +64,37 @@ namespace Users_CRUD.Web.Services.Implement
 
             public async Task Create(Users entity)
             {
-                using var client = new HttpClient();
+                var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
                 var serializedData = JsonConvert.SerializeObject(entity);
                 var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
 
-                var response = await client.PostAsync("https://localhost:7213/api/User/Create", result);
-                var responseString = await response.Content.ReadAsStringAsync();
-
-                await response.ReadContentAsync<Users>();
-
-                response.EnsureSuccessStatusCode();
+                var response = await _client.PostAsync("https://localhost:7213/api/User/Create", result);
             }
 
             public async Task Edit(Users entity)
             {
-                using var client = new HttpClient();
+
+                var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
 
                 var serializedData = JsonConvert.SerializeObject(entity);
                 var result = new StringContent(serializedData, Encoding.UTF8,"application/json");
 
-                var response = await client.PutAsync($"https://localhost:7213/api/User/Edit/{entity.ID}",result);
-                var responseString = await response.Content.ReadAsStringAsync();
+                var response = await _client.PutAsync($"https://localhost:7213/api/User/Edit/{entity.ID}",result);
 
-               response.EnsureSuccessStatusCode();
             }
 
             public async Task Delete(int id)
             {
+                var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 var response = await _client.DeleteAsync($"/api/User/Delete/{id}");
             }
+
+
+         
     }
 }

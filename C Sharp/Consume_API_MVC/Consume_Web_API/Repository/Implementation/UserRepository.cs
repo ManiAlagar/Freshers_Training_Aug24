@@ -2,7 +2,7 @@
 using DB_First_Approach.Entity.DBContext;
 using DB_First_Approach.Services.Interface;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
+
 
 namespace DB_First_Approach.Repository.Implementation
 {

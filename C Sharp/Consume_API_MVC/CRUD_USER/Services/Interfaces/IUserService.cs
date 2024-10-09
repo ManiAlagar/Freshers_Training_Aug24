@@ -4,6 +4,8 @@ namespace Users_CRUD.Web.Services.Interfaces
 {
     public interface IUserService
     {
+        Task<string> Login(Login credential);
+
         Task<IEnumerable<Users>> Get();
 
         Task<Users> Get(int? id);
@@ -13,6 +15,5 @@ namespace Users_CRUD.Web.Services.Interfaces
         Task Edit(Users entity);
 
         Task Delete(int id);
-       
     }
 }

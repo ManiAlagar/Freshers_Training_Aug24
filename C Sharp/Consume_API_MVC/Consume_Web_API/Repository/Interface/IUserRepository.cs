@@ -4,6 +4,7 @@ namespace DB_First_Approach.Services.Interface
 {
     public interface IUserRepository
     {
+
         Task<IEnumerable<Users>> Get();
         Task<Users> Get(int id);
         Task Add(Users entity);

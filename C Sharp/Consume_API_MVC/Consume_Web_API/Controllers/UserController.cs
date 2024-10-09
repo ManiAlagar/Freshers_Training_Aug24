@@ -1,12 +1,13 @@
 ﻿using DB_First_Approach.Entity;
 using DB_First_Approach.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DB_First_Approach.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IUserService userService;
