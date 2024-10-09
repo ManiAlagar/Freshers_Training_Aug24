@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|c:\\users\\mitrah\\source\\repos\\dbfirstapproachcrudoperation\\mvcwithwebapi.web\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|solutionrelative:mvcwithwebapi.web\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|c:\\users\\mitrah\\source\\repos\\dbfirstapproachcrudoperation\\mvcwithwebapi.web\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|solutionrelative:mvcwithwebapi.web\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|c:\\users\\mitrah\\source\\repos\\dbfirstapproachcrudoperation\\mvcwithwebapi.web\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|solutionrelative:mvcwithwebapi.web\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|c:\\users\\mitrah\\source\\repos\\dbfirstapproachcrudoperation\\mvcwithwebapi.web\\views\\shared\\_notifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|solutionrelative:mvcwithwebapi.web\\views\\shared\\_notifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|c:\\users\\mitrah\\source\\repos\\dbfirstapproachcrudoperation\\mvcwithwebapi.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|solutionrelative:mvcwithwebapi.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|c:\\users\\mitrah\\source\\repos\\dbfirstapproachcrudoperation\\mvcwithwebapi.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|solutionrelative:mvcwithwebapi.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82912BA8-D3FA-4B7E-A032-EB2334B166A8}|DBFirstApproachCRUD\\DBFirstApproachCRUD.csproj|c:\\users\\mitrah\\source\\repos\\dbfirstapproachcrudoperation\\dbfirstapproachcrud\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82912BA8-D3FA-4B7E-A032-EB2334B166A8}|DBFirstApproachCRUD\\DBFirstApproachCRUD.csproj|solutionrelative:dbfirstapproachcrud\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82912BA8-D3FA-4B7E-A032-EB2334B166A8}|DBFirstApproachCRUD\\DBFirstApproachCRUD.csproj|c:\\users\\mitrah\\source\\repos\\dbfirstapproachcrudoperation\\dbfirstapproachcrud\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82912BA8-D3FA-4B7E-A032-EB2334B166A8}|DBFirstApproachCRUD\\DBFirstApproachCRUD.csproj|solutionrelative:dbfirstapproachcrud\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|c:\\users\\mitrah\\source\\repos\\dbfirstapproachcrudoperation\\mvcwithwebapi.web\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC37378-02B3-44D4-92D5-5A8B9E492A66}|MVCwithWebApi.Web\\MVCwithWebApi.Web.csproj|solutionrelative:mvcwithwebapi.web\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MVCwithWebApi.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MVCwithWebApi.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T14:03:39.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Notifications.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Views\\Shared\\_Notifications.cshtml",
+              "RelativeDocumentMoniker": "MVCwithWebApi.Web\\Views\\Shared\\_Notifications.cshtml",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Views\\Shared\\_Notifications.cshtml",
+              "RelativeToolTip": "MVCwithWebApi.Web\\Views\\Shared\\_Notifications.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T14:02:26.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "MVCwithWebApi.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "MVCwithWebApi.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T14:02:24.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Models\\TokenResponse.cs",
+              "RelativeDocumentMoniker": "MVCwithWebApi.Web\\Models\\TokenResponse.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Models\\TokenResponse.cs",
+              "RelativeToolTip": "MVCwithWebApi.Web\\Models\\TokenResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T13:00:37.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\DBFirstApproachCRUD\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "DBFirstApproachCRUD\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\DBFirstApproachCRUD\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "DBFirstApproachCRUD\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowBkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T10:26:05.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\DBFirstApproachCRUD\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "DBFirstApproachCRUD\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\DBFirstApproachCRUD\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "DBFirstApproachCRUD\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T09:54:36.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "MVCwithWebApi.Web\\Services\\Interfaces\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "MVCwithWebApi.Web\\Services\\Interfaces\\IStudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T09:40:40.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "MVCwithWebApi.Web\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Services\\StudentService.cs",
+              "RelativeToolTip": "MVCwithWebApi.Web\\Services\\StudentService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T07:19:49.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "MVCwithWebApi.Web\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\DBFirstApproachCRUDOperation\\MVCwithWebApi.Web\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "MVCwithWebApi.Web\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T07:19:41.218Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
