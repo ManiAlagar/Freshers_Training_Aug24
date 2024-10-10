@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model MVCwithWebApi.Web.Models.Student
+@if (TempData["view"] is not null)
+{
+    <h2>Manage</h2>
+    <h4>Student Details</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Display" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="StudentId" />
+                <div class="form-group">
+                    <label asp-for="StudentName" class="control-label"></label>
+                    <input asp-for="StudentName" class="form-control" />
+                    <span asp-validation-for="StudentName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-success mt-2 mb-2" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index" asp-controller="Student" class="btn btn-info ">Back to List</a>
+    </div>
+}
+else
+{
+    <h2>Create Student</h2>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Display" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="StudentId" />
+                <div class="form-group">
+                    <label asp-for="StudentName" class="control-label"></label>
+                    <input asp-for="StudentName" class="form-control" />
+                    <span asp-validation-for="StudentName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-success mt-2 mb-2" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index" asp-controller="Student" class="btn btn-info ">Back to List</a>
+    </div>
+}
