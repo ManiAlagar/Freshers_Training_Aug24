@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Users_CRUD.Web.Services.Interfaces;
+using CRUD_USER.Helpers;
 
 
 namespace CRUD_USER.Controllers
@@ -11,6 +12,7 @@ namespace CRUD_USER.Controllers
     public class LoginController : Controller
     {
         private readonly IUserService service;
+
 
         public LoginController(IUserService service)
         {
@@ -20,6 +22,8 @@ namespace CRUD_USER.Controllers
         {
             return View();
         }
+
+
 
         //Step 3.For Authentication
         [HttpPost]
@@ -45,6 +49,7 @@ namespace CRUD_USER.Controllers
                     return RedirectToAction("Index","User");
                 }
                 ViewBag.msg = "ERROR";
+                return View("Login");
             }
             return View("Login");
         }

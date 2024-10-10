@@ -1,6 +1,8 @@
 ﻿using CRUD_USER.Helpers;
 using CRUD_USER.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
@@ -21,7 +23,6 @@ namespace Users_CRUD.Web.Services.Implement
                 _client = client ?? throw new ArgumentNullException(nameof(client));
                 this.httpContextAccessor = httpContextAccessor;
 
-                
             }
 
             public async Task<string> Login(Login credenntial)
@@ -43,18 +44,31 @@ namespace Users_CRUD.Web.Services.Implement
 
             public async Task<IEnumerable<Users>> Get()
             {
-                var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
-                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            // var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
+            //_client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                var response = await _client.GetAsync("/api/User/GetAll");
-             
-                return await response.ReadContentAsync<List<Users>>();
+                 HTTPHelper obj = new(_client, httpContextAccessor);
+                 string url = "/api/User/GetAll";
+
+                 var data = await obj.Get(url);
+                    
+                if(data != "Unauthorized")
+                {
+                    var reposne = JsonConvert.DeserializeObject<List<Users>>(data);
+
+                    return reposne;
+                }
+
+              return null;
+
+                //var response = await _client.GetAsync("/api/User/GetAll");
+                /*return await response.ReadContentAsync<List<Users>>();*/
             }
 
             public async Task<Users> Get(int? id)
             {
                 var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
-                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",token);
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
                 var response = await _client.GetAsync($"api/User/GetByID?id={id}");
 
@@ -67,10 +81,16 @@ namespace Users_CRUD.Web.Services.Implement
                 var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
                 _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                var serializedData = JsonConvert.SerializeObject(entity);
-                var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
+                //var serializedData = JsonConvert.SerializeObject(entity);
+                //var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
 
-                var response = await _client.PostAsync("https://localhost:7213/api/User/Create", result);
+                HTTPHelper obj = new(_client, httpContextAccessor);
+                string url = "https://localhost:7213/api/User/Create";
+
+                await obj.Post(entity,url);
+                
+
+                //var response = await _client.PostAsync("https://localhost:7213/api/User/Create", result);
             }
 
             public async Task Edit(Users entity)
@@ -80,10 +100,15 @@ namespace Users_CRUD.Web.Services.Implement
                 _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
 
-                var serializedData = JsonConvert.SerializeObject(entity);
-                var result = new StringContent(serializedData, Encoding.UTF8,"application/json");
+                HTTPHelper obj = new(_client, httpContextAccessor);
+                string url = $"https://localhost:7213/api/User/Edit/{entity.ID}";
 
-                var response = await _client.PutAsync($"https://localhost:7213/api/User/Edit/{entity.ID}",result);
+                await obj.Put(entity, url);
+
+                //var serializedData = JsonConvert.SerializeObject(entity);
+                //var result = new StringContent(serializedData, Encoding.UTF8,"application/json");
+
+                //var response = await _client.PutAsync($"https://localhost:7213/api/User/Edit/{entity.ID}",result);
 
             }
 

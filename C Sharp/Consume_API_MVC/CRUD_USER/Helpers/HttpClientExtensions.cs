@@ -1,5 +1,8 @@
 ﻿using CRUD_USER.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ActionConstraints;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 
 namespace CRUD_USER.Helpers

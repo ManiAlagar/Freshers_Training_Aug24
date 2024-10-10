@@ -3,30 +3,23 @@
   "WorkspaceRootPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\Consume_Web_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\services\\implement\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\consume_web_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\helpers\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\helpers\\httphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\services\\implement\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\helpers\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\consume_web_api\\repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9F00803-5A00-4F7D-9590-6F62613D6F2A}|DB_First_Approach.csproj|solutionrelative:repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9135D044-11A8-46D5-B6D3-D054E538DDA2}|..\\CRUD_USER\\CRUD_USER.csproj|e:\\projects\\mitrahsoft\\c sharp\\consume_api_mvc\\crud_user\\views\\shared\\toastr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,17 +29,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Services\\Implement\\UserService.cs",
               "RelativeDocumentMoniker": "..\\CRUD_USER\\Services\\Implement\\UserService.cs",
               "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Services\\Implement\\UserService.cs",
               "RelativeToolTip": "..\\CRUD_USER\\Services\\Implement\\UserService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwDAAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T06:58:08.223Z",
               "IsPinned": true,
@@ -54,80 +47,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "..\\CRUD_USER\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "..\\CRUD_USER\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T14:55:59.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HttpClientExtensions.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Helpers\\HttpClientExtensions.cs",
-              "RelativeDocumentMoniker": "..\\CRUD_USER\\Helpers\\HttpClientExtensions.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Helpers\\HttpClientExtensions.cs",
-              "RelativeToolTip": "..\\CRUD_USER\\Helpers\\HttpClientExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:39:46.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Toastr.cshtml",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Views\\Shared\\Toastr.cshtml",
-              "RelativeDocumentMoniker": "..\\CRUD_USER\\Views\\Shared\\Toastr.cshtml",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Views\\Shared\\Toastr.cshtml",
-              "RelativeToolTip": "..\\CRUD_USER\\Views\\Shared\\Toastr.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T14:38:57.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "..\\CRUD_USER\\Controllers\\LoginController.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "..\\CRUD_USER\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwD0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:26:14.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\Consume_Web_API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\Consume_Web_API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:06:11.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "..\\CRUD_USER\\Controllers\\UserController.cs",
               "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Controllers\\UserController.cs",
               "RelativeToolTip": "..\\CRUD_USER\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T13:23:55.628Z",
+              "WhenOpened": "2024-10-10T06:34:07.063Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HTTPHelper.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Helpers\\HTTPHelper.cs",
+              "RelativeDocumentMoniker": "..\\CRUD_USER\\Helpers\\HTTPHelper.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Helpers\\HTTPHelper.cs",
+              "RelativeToolTip": "..\\CRUD_USER\\Helpers\\HTTPHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:19:45.648Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "..\\CRUD_USER\\Controllers\\LoginController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "..\\CRUD_USER\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:23:59.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HttpClientExtensions.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Helpers\\HttpClientExtensions.cs",
+              "RelativeDocumentMoniker": "..\\CRUD_USER\\Helpers\\HttpClientExtensions.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\Helpers\\HttpClientExtensions.cs",
+              "RelativeToolTip": "..\\CRUD_USER\\Helpers\\HttpClientExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T05:29:07.007Z",
               "EditorCaption": ""
             },
             {
@@ -138,7 +107,7 @@
               "RelativeDocumentMoniker": "Repository\\Implementation\\UserRepository.cs",
               "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\Consume_Web_API\\Repository\\Implementation\\UserRepository.cs",
               "RelativeToolTip": "Repository\\Implementation\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T13:22:27.059Z",
               "EditorCaption": ""

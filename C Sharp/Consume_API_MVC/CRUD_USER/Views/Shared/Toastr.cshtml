@@ -8,10 +8,10 @@
 <script>
     $(document).ready(function () {
 
-        // if ('@TempData["Toastr"]' == "Nothing") {
+        if ('@TempData["Toastr"]' == "Nothing") {
 
-        // }
-        // else 
+        }
+        else 
         if ('@TempData["Toastr"]' != null) {
             toastr.success('@TempData["Toastr"]');
         }
