@@ -1,0 +1,132 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\services\\implement\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\repository\\implement\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Controllers\\LoginController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAD4vx0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T15:00:16.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Program.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Program.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T14:29:29.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Repository\\Interface\\IUserRepository.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Repository\\Interface\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T14:08:28.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Interface\\IUserService.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Services\\Interface\\IUserService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Interface\\IUserService.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Services\\Interface\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T14:19:06.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Implement\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Repository\\Implement\\UserRepository.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Implement\\UserRepository.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Repository\\Implement\\UserRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T14:08:52.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Services\\Implement\\UserService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\UserService.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Services\\Implement\\UserService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T14:07:33.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\User\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Controllers\\User\\UserController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\User\\UserController.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Controllers\\User\\UserController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAawBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T13:57:18.433Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

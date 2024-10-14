@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\CRUD_USER.csproj",
+      "projectUniqueName": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\Consume_API_MVC\\CRUD_USER\\CRUD_USER.csproj",
       "projectName": "CRUD_USER",
-      "projectPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\CRUD_USER.csproj",
+      "projectPath": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\Consume_API_MVC\\CRUD_USER\\CRUD_USER.csproj",
       "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Consume_API_MVC\\CRUD_USER\\obj\\",
+      "outputPath": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\Consume_API_MVC\\CRUD_USER\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
