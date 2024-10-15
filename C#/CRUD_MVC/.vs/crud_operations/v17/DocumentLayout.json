@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "CRUD_MVC\\Models\\DepartmentCrud.cs",
               "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\DepartmentCrud.cs",
               "RelativeToolTip": "CRUD_MVC\\Models\\DepartmentCrud.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T08:27:31.35Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "CRUD_MVC\\Controllers\\DepartmentController.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAcwCoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T08:26:13.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T08:26:13.534Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "CRUD_MVC\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T05:17:26.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T05:17:26.507Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "CRUD_MVC\\Views\\Common\\Index.cshtml",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T05:03:50.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T05:03:50.068Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "CRUD_MVC\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T05:03:22.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T05:03:22.508Z"
             }
           ]
         }
