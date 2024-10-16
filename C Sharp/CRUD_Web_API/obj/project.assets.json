@@ -5213,11 +5213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\MitrahSoft\\C Sharp\\CRUD_Web_API\\CRUD_Web_API.csproj",
+      "projectUniqueName": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\CRUD_Web_API\\CRUD_Web_API.csproj",
       "projectName": "CRUD_Web_API",
-      "projectPath": "E:\\Projects\\MitrahSoft\\C Sharp\\CRUD_Web_API\\CRUD_Web_API.csproj",
+      "projectPath": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\CRUD_Web_API\\CRUD_Web_API.csproj",
       "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\MitrahSoft\\C Sharp\\CRUD_Web_API\\obj\\",
+      "outputPath": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\CRUD_Web_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",

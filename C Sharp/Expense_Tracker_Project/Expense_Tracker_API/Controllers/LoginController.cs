@@ -6,6 +6,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
+
 namespace Expense_Tracker_API.Controllers
 {
     [Route("api/[controller]")]
@@ -37,13 +38,14 @@ namespace Expense_Tracker_API.Controllers
         }
 
         //To Generate JWT token
-        private async Task<string> GenerateToken(Users Users)
+        private async Task<string> GenerateToken(Users entity)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             
             var claims = new[]  {
-            new Claim(ClaimTypes.NameIdentifier,Users.UserName),
+                new Claim("UserName",entity.UserName),
+                new Claim("UserID",entity.UserID.ToString()),
             };
 
             var token = new JwtSecurityToken(_config["Jwt:Issuer"],

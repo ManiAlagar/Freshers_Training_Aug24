@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Users_CRUD.Web.Services.Interfaces;
-using CRUD_USER.Helpers;
 
 
 namespace CRUD_USER.Controllers

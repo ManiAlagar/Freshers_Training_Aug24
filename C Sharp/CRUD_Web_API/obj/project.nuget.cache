@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SXW7U86ffvo=",
+  "dgSpecHash": "j50KEhmYKqI=",
   "success": true,
-  "projectFilePath": "E:\\Projects\\MitrahSoft\\C Sharp\\CRUD_Web_API\\CRUD_Web_API.csproj",
+  "projectFilePath": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\CRUD_Web_API\\CRUD_Web_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mitrah\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

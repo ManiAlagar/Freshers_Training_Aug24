@@ -23,10 +23,18 @@ namespace Expense_Tracker_API.Repository.Implement
             return await context.Users.FirstOrDefaultAsync(e => e.UserID == id);
         }
 
-        public async Task Add(Users user)
+        public async Task<bool> Add(Users user)
         {
-            await context.Users.AddAsync(user);
-            await context.SaveChangesAsync();
+
+            Users User = await context.Users.FirstOrDefaultAsync(e => e.Email == user.Email || e.MobileNumber == user.MobileNumber);
+
+            if (User == null)
+            {
+                await context.Users.AddAsync(user);
+                await context.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
 
 

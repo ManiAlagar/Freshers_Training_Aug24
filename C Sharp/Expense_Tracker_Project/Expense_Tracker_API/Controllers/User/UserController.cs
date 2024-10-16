@@ -36,18 +36,21 @@ namespace Expense_Tracker_API.Controllers.User
             return NotFound("Record Not Found");
         }
 
-
+        [AllowAnonymous]
         [HttpPost("Create")]
         public async Task<IActionResult> Create([FromBody] Users user)
         {
+
             if (user == null)
             {
                 return BadRequest("Employee is null");
             }
+            bool flag = await userService.Add(user);
 
-            await userService.Add(user);
+            if (flag)
+                return Ok();
 
-            return Ok(user);
+            return BadRequest();
         }
 
 
@@ -65,9 +68,5 @@ namespace Expense_Tracker_API.Controllers.User
 
             return Ok("Updated Successful");
         }
-
-
     }
-
-
 }

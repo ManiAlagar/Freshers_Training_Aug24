@@ -1,3 +1,8 @@
+using Expense_Tracker_MVC.Service.Implement;
+using Expense_Tracker_MVC.Service.Interface;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
+
 namespace Expense_Tracker_MVC
 {
     public class Program
@@ -6,8 +11,28 @@ namespace Expense_Tracker_MVC
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddTransient<IUserService, UserService>();
+            builder.Services.AddTransient<ICategoryService,CategoryService>();
+
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddHttpContextAccessor();
+
+
+            builder.Services.AddHttpClient<IUserService, UserService>(c =>
+            c.BaseAddress = new Uri("https://localhost:7273/"));
+
+            //1.configure the Cookie Authentication
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                        .AddCookie(options =>
+                        {
+                            options.LoginPath = "/Login/Login";
+                            options.Cookie.Name = ".AspNetCore.Cookies";
+                            options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+                            options.SlidingExpiration = true;
+                        });
 
             var app = builder.Build();
 
@@ -22,13 +47,14 @@ namespace Expense_Tracker_MVC
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseRouting();
 
+            app.UseRouting();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Login}/{action=Login}/{id?}");
 
             app.Run();
         }

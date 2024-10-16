@@ -28,3 +28,11 @@ E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\D
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.pdb
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.genruntimeconfig.cache
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\ref\Expense_Tracker_MVC.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.csproj.AssemblyReference.cache
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_.EAFA1F3B.Up2Date
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

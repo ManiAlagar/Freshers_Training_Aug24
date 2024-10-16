@@ -20,9 +20,15 @@ namespace Expense_Tracker_API
 
             builder.Services.AddHttpContextAccessor();
 
-            // Add services to the container.
+            // Add services to the container (Register interface Repo Pattern).
+
+            //FOR User
             builder.Services.AddTransient<IUserService,UserService>();
             builder.Services.AddTransient<IUserRepository, UserRepository>();
+
+            //FOR Category
+            builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
+            builder.Services.AddTransient<ICategoryService,CategoryService>();
 
 
             builder.Services.AddControllers();
@@ -34,7 +40,7 @@ namespace Expense_Tracker_API
 
             //Get connection String
             var connectionString = builder.Configuration.GetConnectionString("SQLConnection");
-            builder.Services.AddDbContext<UserContext>(x => x.UseSqlServer(connectionString));
+            builder.Services.AddDbContext<UserContext>(x =>  x.UseSqlServer(connectionString));
 
             //
             builder.Services.AddSwaggerGen(swagger =>
@@ -102,6 +108,7 @@ namespace Expense_Tracker_API
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

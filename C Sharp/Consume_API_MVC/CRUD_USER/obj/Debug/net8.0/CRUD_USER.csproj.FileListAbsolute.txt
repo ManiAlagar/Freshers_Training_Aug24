@@ -61,3 +61,37 @@ E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\ref\CR
 E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.csproj.AssemblyReference.cache
 E:\Projects\MitrahSoft\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.csproj.Up2Date
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\appsettings.Development.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\appsettings.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.staticwebassets.runtime.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.exe
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.deps.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.runtimeconfig.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\CRUD_USER.pdb
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.csproj.AssemblyReference.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.GeneratedMSBuildEditorConfig.editorconfig
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.AssemblyInfoInputs.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.AssemblyInfo.cs
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.csproj.CoreCompileInputs.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.MvcApplicationPartsAssemblyInfo.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.RazorAssemblyInfo.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.RazorAssemblyInfo.cs
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.sourcelink.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets.build.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets.development.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.CRUD_USER.Microsoft.AspNetCore.StaticWebAssets.props
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.build.CRUD_USER.props
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CRUD_USER.props
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CRUD_USER.props
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\staticwebassets.pack.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\scopedcss\bundle\CRUD_USER.styles.css
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\scopedcss\projectbundle\CRUD_USER.bundle.scp.css
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.csproj.Up2Date
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\refint\CRUD_USER.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.pdb
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\CRUD_USER.genruntimeconfig.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Consume_API_MVC\CRUD_USER\obj\Debug\net8.0\ref\CRUD_USER.dll

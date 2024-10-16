@@ -1,13 +1,8 @@
 ﻿using CRUD_USER.Helpers;
 using CRUD_USER.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
 using System.Security.Claims;
-using System.Text;
 using Users_CRUD.Web.Services.Interfaces;
 
 namespace Users_CRUD.Web.Services.Implement

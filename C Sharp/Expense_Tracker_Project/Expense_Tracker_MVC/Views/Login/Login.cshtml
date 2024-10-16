@@ -1,0 +1,83 @@
+﻿﻿@using System.Collections.Generic
+@using Microsoft.AspNetCore.Http
+@model Users
+@{
+    Layout = null;
+}
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Expense_Tracker_MVC.styles.css" asp-append-version="true" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<div class="d-flex justify-content-center align-items-center mt-5">
+    <div class="col-md-4 mt-5">
+        <h1>Expense Tracker</h1>
+        <section>
+             <hr/>
+            <Form asp-controller="Login" asp-action="Login">
+                <div class="form-group mb-4">
+                    <h6><label asp-for="UserName" class="control-label">USER NAME</label></h6>
+                    <input  asp-for="UserName" type="text" class="form-control" placeholder="Username" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <h6><label  asp-for="Password" class="control-label">PASSWORD</label></h6>
+                    <input type="password" asp-for="Password" class="form-control" placeholder="Password" />
+                    <span asp-validation-for="Password"  asp-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-offset-2 col-md-8">
+                     <input class="btn btn-block btn-Primary pl-5 mt-4 mb-4" type="submit" value="Log in"/> 
+                </div>
+
+                <div>
+                    <a class="btn btn-success " asp-controller="User" asp-action="Edit">Create New Account</a>
+                </div> 
+
+              
+            </form> 
+         </section> 
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+@{
+    if (ViewBag.msg == "ERROR")
+    {
+        <script>
+            swal({
+            title: "Login Failed",
+            icon: "error",
+            timer: 1250
+            });
+        </script>
+    }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+     <script>
+        $(document).ready(function () {
+            if('@TempData["Toastr"]' == "Nothing")
+            {
+               
+            }
+            else if('@TempData["Toastr"]' == "Account Created Successfully" || '@TempData["Toastr"]' ==  "Logged out")
+            {
+                toastr.success('@TempData["Toastr"]');
+            }
+            else 
+                toastr.warning('@TempData["Toastr"]');
+            console.log('@TempData["Toastr"]')
+        });
+    </script>
+
+}
+   
+
+
+ 

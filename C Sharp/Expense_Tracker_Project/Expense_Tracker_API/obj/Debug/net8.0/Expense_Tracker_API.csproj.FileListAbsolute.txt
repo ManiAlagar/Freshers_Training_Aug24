@@ -141,3 +141,11 @@ E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\obj\D
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\obj\Debug\net8.0\Expense_Tracker_API.pdb
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\obj\Debug\net8.0\Expense_Tracker_API.genruntimeconfig.cache
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\obj\Debug\net8.0\ref\Expense_Tracker_API.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Expense_Tracker_MVC.deps.json
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Expense_Tracker_MVC.runtimeconfig.json
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Expense_Tracker_MVC.staticwebassets.runtime.json
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Expense_Tracker_MVC.exe
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Expense_Tracker_API.staticwebassets.runtime.json
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Expense_Tracker_MVC.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Expense_Tracker_MVC.pdb

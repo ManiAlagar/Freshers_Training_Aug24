@@ -8,7 +8,7 @@ namespace Expense_Tracker_API.Services.Interface
 
         Task<Users> Get(int id);
 
-        Task Add(Users entity);
+        Task<bool> Add(Users user);
 
         Task Edit(Users entity);
     }
