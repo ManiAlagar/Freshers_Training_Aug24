@@ -57,21 +57,15 @@
                         <input asp-for="ContactNo" class="form-control " type="tel" />
                         <span asp-validation-for="ContactNo" class="text-danger"></span>
                     </div>
-                    <div class="form-group mt-2 mb-2">
+                    <div class="form-group mt-2">
                         <label class="control-label"><strong>Role:</strong></label>
                         <select asp-for="RoleId" class="form-control" asp-items=@ViewBag.list>
                         </select>
                     </div>
-                    
-                    <div class="form-group d-flex justify-content-center mt-4">
+                    <div class="form-group d-flex justify-content-center">
                         <input type="submit" value="Register" class="btn btn-success" />
                     </div>
-                    <div class="form-group d-flex justify-content-center mt-4">
-                        <p>Already have an account??</p>
-                    </div>
-                    <div class="form-group d-flex justify-content-center mt-4">
-                        <input type="submit" value="Login here" class="btn btn-success" asp-action="Login" />
-                    </div>
+
                 </form>
             </div>
             <div class="col-sm-4"></div>

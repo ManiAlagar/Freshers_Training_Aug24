@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\models\\departmentcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\models\\departmentcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\views\\employee\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\views\\employee\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\views\\department\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\views\\department\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\models\\employeecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\models\\employeecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\models\\departmentcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\models\\departmentcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,24 +46,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Department\\Display.cshtml",
+              "RelativeDocumentMoniker": "CRUD_MVC\\Views\\Department\\Display.cshtml",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Department\\Display.cshtml",
+              "RelativeToolTip": "CRUD_MVC\\Views\\Department\\Display.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-15T13:06:53.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeCrud.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\EmployeeCrud.cs",
+              "RelativeDocumentMoniker": "CRUD_MVC\\Models\\EmployeeCrud.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\EmployeeCrud.cs",
+              "RelativeToolTip": "CRUD_MVC\\Models\\EmployeeCrud.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T13:43:05.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "CRUD_MVC\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "CRUD_MVC\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T13:07:11.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Manage.cshtml",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Employee\\Manage.cshtml",
+              "RelativeDocumentMoniker": "CRUD_MVC\\Views\\Employee\\Manage.cshtml",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Employee\\Manage.cshtml",
+              "RelativeToolTip": "CRUD_MVC\\Views\\Employee\\Manage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-15T13:07:01.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DepartmentCrud.cs",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\DepartmentCrud.cs",
               "RelativeDocumentMoniker": "CRUD_MVC\\Models\\DepartmentCrud.cs",
               "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\DepartmentCrud.cs",
               "RelativeToolTip": "CRUD_MVC\\Models\\DepartmentCrud.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T08:27:31.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "CRUD_MVC\\Controllers\\DepartmentController.cs",
@@ -60,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CRUD_MVC\\Views\\Shared\\_Layout.cshtml",
@@ -68,12 +136,11 @@
               "RelativeToolTip": "CRUD_MVC\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T05:17:26.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T05:17:26.507Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Common\\Index.cshtml",
               "RelativeDocumentMoniker": "CRUD_MVC\\Views\\Common\\Index.cshtml",
@@ -81,12 +148,11 @@
               "RelativeToolTip": "CRUD_MVC\\Views\\Common\\Index.cshtml",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T05:03:50.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T05:03:50.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "CRUD_MVC\\Controllers\\UserController.cs",
@@ -94,8 +160,7 @@
               "RelativeToolTip": "CRUD_MVC\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T05:03:22.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T05:03:22.508Z"
             }
           ]
         }

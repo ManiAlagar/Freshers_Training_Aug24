@@ -3,12 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoremvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|solutionrelative:bookstoremvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoremvc\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|solutionrelative:bookstoremvc\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\repository\\implementation\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\repository\\implementation\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\repository\\interface\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\repository\\interface\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\service\\implementation\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\service\\implementation\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\service\\interface\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\service\\interface\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\context\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\context\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\repository\\implementation\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\repository\\implementation\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\service\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\service\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|c:\\users\\mitrah\\source\\repos\\bookstoreapplication\\bookstoreapplication\\service\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C23A6425-E204-4C0B-9B45-6745D5D8927E}|BookstoreApplication\\BookstoreApplication.csproj|solutionrelative:bookstoreapplication\\service\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +74,214 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreMVC\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "BookstoreMVC\\Controllers\\RoleController.cs",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreMVC\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "BookstoreMVC\\Controllers\\RoleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BookstoreApplication\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T14:28:33.222Z",
+              "WhenOpened": "2024-10-16T14:49:18.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Controllers\\RoleController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "BookstoreApplication\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:49:15.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "BookstoreApplication\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:49:07.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "BookstoreApplication\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:49:02.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Models\\Cart.cs",
+              "RelativeToolTip": "BookstoreApplication\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:46:36.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\BookController.cs",
+              "RelativeToolTip": "BookstoreApplication\\Controllers\\BookController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwEoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:45:43.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Context\\BookDBContext.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Context\\BookDBContext.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Context\\BookDBContext.cs",
+              "RelativeToolTip": "BookstoreApplication\\Context\\BookDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:45:31.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Repository\\Implementation\\BookRepository.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Repository\\Implementation\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Repository\\Implementation\\BookRepository.cs",
+              "RelativeToolTip": "BookstoreApplication\\Repository\\Implementation\\BookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:44:23.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Program.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Program.cs",
+              "RelativeToolTip": "BookstoreApplication\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:42:56.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Repository\\Implementation\\CartRepository.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Repository\\Implementation\\CartRepository.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Repository\\Implementation\\CartRepository.cs",
+              "RelativeToolTip": "BookstoreApplication\\Repository\\Implementation\\CartRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:05:59.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Service\\Implementation\\CartService.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Service\\Implementation\\CartService.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Service\\Implementation\\CartService.cs",
+              "RelativeToolTip": "BookstoreApplication\\Service\\Implementation\\CartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:05:13.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Service\\Implementation\\BookService.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Service\\Implementation\\BookService.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Service\\Implementation\\BookService.cs",
+              "RelativeToolTip": "BookstoreApplication\\Service\\Implementation\\BookService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:04:17.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICartService.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Service\\Interface\\ICartService.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Service\\Interface\\ICartService.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Service\\Interface\\ICartService.cs",
+              "RelativeToolTip": "BookstoreApplication\\Service\\Interface\\ICartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:03:34.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Service\\Interface\\IBookService.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Service\\Interface\\IBookService.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Service\\Interface\\IBookService.cs",
+              "RelativeToolTip": "BookstoreApplication\\Service\\Interface\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:03:29.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Repository\\Interface\\ICartRepository.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Repository\\Interface\\ICartRepository.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Repository\\Interface\\ICartRepository.cs",
+              "RelativeToolTip": "BookstoreApplication\\Repository\\Interface\\ICartRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T13:59:45.158Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreMVC\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "BookstoreMVC\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreMVC\\Controllers\\UserController.cs",
-              "RelativeToolTip": "BookstoreMVC\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "BookstoreApplication\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\Controllers\\CartController.cs",
+              "RelativeToolTip": "BookstoreApplication\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T14:28:28.264Z",
+              "WhenOpened": "2024-10-16T13:58:44.729Z",
               "EditorCaption": ""
             }
           ]

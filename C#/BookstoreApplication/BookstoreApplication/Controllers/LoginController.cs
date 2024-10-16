@@ -2,8 +2,10 @@
 using BookstoreApplication.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
 
 namespace BookstoreApplication.Controllers
@@ -25,24 +27,26 @@ namespace BookstoreApplication.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(User user)
+        public async Task<IActionResult> Login([FromBody] User user)
         {
-
             if (user.Username == null && user.Password == null)
             {
                 return BadRequest("Invalid client request");
             }
             User User = await GetUser(user.Username, user.Password);
-
             if (User != null)
             {
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
-                var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);//HMAC is a keyed hash that can be used with any hash algorithm
-                var token = new JwtSecurityToken(
-                    _configuration["Jwt:Issuer"],
-                    _configuration["Jwt:Audience"],
-                    expires: DateTime.UtcNow.AddMinutes(10),
-                    signingCredentials: signIn);
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var tokenKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+                var tokenDescriptor = new SecurityTokenDescriptor 
+                { 
+                    Subject = new ClaimsIdentity(
+                        new Claim[] {new Claim(ClaimTypes.NameIdentifier, User.Username),
+                        new Claim(ClaimTypes.Role, User.RoleId.ToString())}),
+                    Expires = DateTime.UtcNow.AddMinutes(10),
+                    SigningCredentials = new SigningCredentials(tokenKey, SecurityAlgorithms.HmacSha256)
+                    };
+                var token = tokenHandler.CreateToken(tokenDescriptor);
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
                 return Ok(new { Token = tokenString });
             }
@@ -50,8 +54,18 @@ namespace BookstoreApplication.Controllers
             {
                 return BadRequest("Invalid credentials");
             }
-
-
         }
     }
 }
+
+//var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+//var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+//var token = new JwtSecurityToken(
+//    _configuration["Jwt:Issuer"],
+//    _configuration["Jwt:Audience"],
+//    expires: DateTime.UtcNow.AddMinutes(10),
+//    signingCredentials: signIn);
+//var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
+//return Ok(new { Token = tokenString });
+

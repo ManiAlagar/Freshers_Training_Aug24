@@ -29,7 +29,8 @@ namespace BookstoreApplication.Repository.Implementation
                 Description=Book.Description,
                 Price = Book.Price,
                 Stock = Book.Stock,
-                PublishedDate = Book.PublishedDate
+                PublishedDate = Book.PublishedDate,
+                IsPublish=Book.IsPublish
             };
             await db.Books.AddAsync(newBook);
             await db.SaveChangesAsync();
@@ -65,6 +66,7 @@ namespace BookstoreApplication.Repository.Implementation
                 existingBook.Price = Book.Price;
                 existingBook.Stock = Book.Stock;
                 existingBook.PublishedDate = Book.PublishedDate;
+                existingBook.IsPublish = Book.IsPublish;
                 await db.SaveChangesAsync();
                 return existingBook;
             }

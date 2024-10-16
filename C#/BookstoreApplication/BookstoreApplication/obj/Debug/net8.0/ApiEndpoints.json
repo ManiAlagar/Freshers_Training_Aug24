@@ -119,6 +119,94 @@
     ]
   },
   {
+    "ContainingType": "BookstoreApplication.Controllers.CartController",
+    "Method": "AddItemToCart",
+    "RelativePath": "api/Cart/AddItemToCart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Cart",
+        "Type": "BookstoreApplication.Models.Cart",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookstoreApplication.Models.Cart",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookstoreApplication.Controllers.CartController",
+    "Method": "DeleteItemFromCart",
+    "RelativePath": "api/Cart/DeleteItemFromCart/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookstoreApplication.Models.Cart",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookstoreApplication.Controllers.CartController",
+    "Method": "GetAllCartItems",
+    "RelativePath": "api/Cart/GetAllCartItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookstoreApplication.Controllers.CartController",
+    "Method": "GetCartById",
+    "RelativePath": "api/Cart/GetCartById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookstoreApplication.Models.Cart",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "BookstoreApplication.Controllers.OrderController",
     "Method": "AddOrder",
     "RelativePath": "api/Order/AddOrder",

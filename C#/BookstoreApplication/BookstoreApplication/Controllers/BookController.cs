@@ -1,11 +1,14 @@
-﻿using BookstoreApplication.Models;
+﻿using BookstoreApplication.Common;
+using BookstoreApplication.Models;
 using BookstoreApplication.Service.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata;
+using Constant = BookstoreApplication.Common.Constant;
 
 namespace BookstoreApplication.Controllers
 {
-    
+    [Authorize(Roles="3")]
     [ApiController]
     [Route("api/[Controller]")]
     public class BookController : Controller
@@ -16,7 +19,8 @@ namespace BookstoreApplication.Controllers
         {
             this.BookService = BookService;
         }
-       
+        
+
         [HttpGet("GetAllBooks")]
         public async Task<IActionResult> GetAllBooks()
         {

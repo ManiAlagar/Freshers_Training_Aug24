@@ -14,8 +14,8 @@ namespace BookstoreMVC.Controllers
         public async Task<IActionResult> GetAllRoles()
         {
             var roles = await _service.GetAllRoles();
-            ViewBag.list = roles;
-            return (IActionResult)roles;
+            ViewData["list"] = roles;
+            return RedirectToAction("Register", "User");
         }
 
     }

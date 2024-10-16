@@ -5,14 +5,14 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSession();
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<IBookService, BookService>(c =>
-c.BaseAddress = new Uri("https://localhost:7092/"));
+c.BaseAddress = new Uri("http://localhost:5287/"));
 builder.Services.AddHttpClient<IUserService, UserService>(c =>
-c.BaseAddress = new Uri("https://localhost:7092/"));
+c.BaseAddress = new Uri("http://localhost:5287/"));
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -39,10 +39,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=User}/{action=Register}/{id?}");
+    pattern: "{controller=User}/{action=Login}/{id?}");
 
 app.Run();

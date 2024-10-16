@@ -1,4 +1,4 @@
-﻿using BookstoreMVC.Models;
+﻿ using BookstoreMVC.Models;
 using BookstoreMVC.Services.Interface;
 using Microsoft.AspNet.SignalR.Hubs;
 using Microsoft.AspNetCore.Mvc;
@@ -12,7 +12,7 @@ namespace BookstoreMVC.Controllers
         {
             _service = service;
         }
-
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var token = HttpContext.Session.GetString("token");
@@ -20,8 +20,19 @@ namespace BookstoreMVC.Controllers
             {
                 return View("Unauthorized");
             }
-            var students = await _service.GetAllBooks(token);
-            return View(students);
+            var books = await _service.GetAllBooks(token);
+            return View(books);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Publish()
+        {
+            var token = HttpContext.Session.GetString("token");
+            if (token == null)
+            {
+                return View("Unauthorized");
+            }
+            var books = await _service.GetAllBooks(token);
+            return View(books);
         }
 
         [HttpPost, ActionName("DeleteBook")]
@@ -50,6 +61,7 @@ namespace BookstoreMVC.Controllers
         {
             
             TempData["success"] = "Created successfully";
+            TempData["view"] = "create";
             var token = HttpContext.Session.GetString("token");
             if (token == null)
             {
@@ -57,7 +69,7 @@ namespace BookstoreMVC.Controllers
             }
             await _service.AddBook(book, token);
 
-            return RedirectToAction("Index", "Student");
+            return RedirectToAction("Index", "Book");
         }
 
         [HttpGet]
@@ -65,6 +77,7 @@ namespace BookstoreMVC.Controllers
         public async Task<IActionResult> Display(int id)
         {
             var token = HttpContext.Session.GetString("token");
+            TempData["view"] = "update";
             if (token == null)
             {
                 return View("Unauthorized");
@@ -77,34 +90,5 @@ namespace BookstoreMVC.Controllers
             return View(book);
         }
 
-        [HttpPost]
-        [Route("Student/Display/{id:int}")]
-        public async Task<IActionResult> Display(int id, [Bind] Book book)
-        {
-            if (book.BookId > 0)
-            {
-                TempData["success"] = "Updated successfully";
-                TempData["view"] = "update";
-                var token = HttpContext.Session.GetString("token");
-                if (token == null)
-                {
-                    return View("Unauthorized");
-                }
-                await _service.UpdateBook(id, book, token);
-
-            }
-            else
-            {
-                var token = HttpContext.Session.GetString("token");
-                if (token == null)
-                {
-                    return View("Unauthorized");
-                }
-                await _service.AddBook(book, token);
-            }
-            return RedirectToAction("Index", "Student");
-
-        }
-       
     }
 }

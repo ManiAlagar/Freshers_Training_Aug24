@@ -1,0 +1,80 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "";
+}
+@model BookstoreMVC.Models.User
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/WebApplication2.styles.css" asp-append-version="true" />
+
+<div class="mt-5">
+    <h2 class="text-center">Registration Form</h2>
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form class="form-horizontal" asp-action="Register">
+                    <div class="form-group mt-2 mb-2">
+                        <label class="control-label"><strong>FirstName:</strong></label>
+                        <input asp-for="FirstName" class="form-control " type="text" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label class="control-label"><strong>LastName:</strong></label>
+                        <input asp-for="LastName" class="form-control " type="text" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label class="control-label"><strong>Username:</strong></label>
+                        <input asp-for="Username" class="form-control " type="text" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label class="control-label"><strong>Email:</strong></label>
+                        <input asp-for="Email" class="form-control " type="email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label class="control-label"><strong>Password:</strong></label>
+                        <input asp-for="Password" class="form-control " type="password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label class="control-label"><strong>Address:</strong></label>
+                        <input asp-for="Address" class="form-control " type="text" />
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label class="control-label"><strong>Contact Number:</strong></label>
+                        <input asp-for="ContactNo" class="form-control " type="tel" />
+                        <span asp-validation-for="ContactNo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label class="control-label"><strong>Role:</strong></label>
+                        <select asp-for="RoleId" class="form-control" asp-items=@ViewBag.list>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group d-flex justify-content-center mt-4">
+                        <input type="submit" value="Register" class="btn btn-success" />
+                    </div>
+                    <div class="form-group d-flex justify-content-center mt-4">
+                        <p>Already have an account??</p>
+                    </div>
+                    <div class="form-group d-flex justify-content-center mt-4">
+                        <input type="submit" value="Login here" class="btn btn-success" asp-action="Login" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</div>

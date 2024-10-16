@@ -23,7 +23,12 @@ namespace BookstoreMVC.Controllers
         [HttpGet]
         public ActionResult Register()
         {
-           
+            if (TempData["list"] != null)
+            {
+                var list = TempData["list"];
+                ViewBag.List = list;
+                return View();
+            }
             return View();
         }
         [HttpPost]
@@ -49,7 +54,7 @@ namespace BookstoreMVC.Controllers
                 TempData["success"] = "Login successfully";
                 var token = await _service.Login(user);
                 HttpContext.Session.SetString("token", token);
-                return RedirectToAction("Index", "Book");
+                return RedirectToAction("Publish", "Book");
             }
             catch
             {

@@ -16,10 +16,17 @@ namespace BookstoreMVC.Services
         }
         public async Task<string> Login(User user)
         {
-            var stringContent = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
-            var response = await _client.PostAsync("/api/User/Login",stringContent);
-            var token = await response.Content.ReadAsStringAsync();
-            return token;
+            try
+            {
+                var stringContent = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
+                var response = await _client.PostAsync("/api/User/Login", stringContent);
+                var token = await response.Content.ReadAsStringAsync();
+                return token;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public async Task<string> Register(User user)
