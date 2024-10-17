@@ -13,6 +13,5 @@ namespace Expense_Tracker_MVC.Service.Interface
         Task Edit(Category entity);
 
         Task Delete(int id);
-
     }
 }

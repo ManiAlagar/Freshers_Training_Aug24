@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "J10o8beEfL0=",
+  "dgSpecHash": "W449Gt7Ml4E=",
   "success": true,
   "projectFilePath": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Expense_Tracker_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mitrah\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Mitrah\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

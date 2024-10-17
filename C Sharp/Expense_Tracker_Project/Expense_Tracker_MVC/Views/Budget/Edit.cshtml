@@ -1,0 +1,82 @@
+﻿@model Expense_Tracker_MVC.Models.Budget
+@{
+    ViewData["Title"] = @TempData["AddOrEdit"];
+}
+<h2>@TempData["AddOrEdit"]</h2>
+<h4>Budget Detail</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+   
+        <form asp-controller="Budget" asp-action="Edit">
+
+            @* <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="CategoryID"/> *@
+
+      @*       <div class="form-group">
+                <label asp-for="CategoryName" class="control-label mb-2"></label>
+                <input asp-for="CategoryName" class="form-control" />
+                <span asp-validation-for="CategoryName" class="text-danger"></span>
+            </div> *@
+
+
+            <div class="form-group mt-3">
+                <label asp-for="CategoryName" class="control-label mb-2"></label>
+
+                <select asp-for="CategoryName" class="form-control" asp-items='@ViewBag.CategoryList'> </select>
+
+                <span asp-validation-for="CategoryName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BudgetAmount" class="control-label mb-2"></label>
+                <input asp-for="BudgetAmount" class="form-control" />
+                <span asp-validation-for="BudgetAmount" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Balance" class="control-label mb-2"></label>
+                <input asp-for="Balance" class="form-control" />
+                <span asp-validation-for="Balance" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label mb-2"></label>
+                <input type="date" asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="EndDate" class="control-label mb-2"></label>
+                <input type="date" asp-for="EndDate" class="form-control" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-3">
+                <label asp-for="TimeFrame" class="control-label mb-2"></label>
+                <select asp-for="TimeFrame" class="form-control">
+                    <option disabled selected>-- Select Time Frame --</option>
+                    <option value="Daily">Daily</option>
+                    <option value="Month">Month</option>
+                    <option value="Yearly">Yearly</option>
+                </select>
+                <span asp-validation-for="TimeFrame" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="form-group mt-4">
+                <input type="submit" value="Save" class="btn btn-primary  btn-sm">
+                <a class="btn btn-sm btn-danger" asp-controller="Budget" asp-action="Index">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Projects/MitrahSoft/C Sharp/Expense_Tracker_Project/Expense_Tracker_MVC/Views/Budget/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVkZ2V0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/MitrahSoft/C Sharp/Expense_Tracker_Project/Expense_Tracker_MVC/Views/Budget/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVkZ2V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Projects/MitrahSoft/C Sharp/Expense_Tracker_Project/Expense_Tracker_MVC/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

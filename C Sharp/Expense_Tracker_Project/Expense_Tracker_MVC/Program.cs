@@ -11,8 +11,12 @@ namespace Expense_Tracker_MVC
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
             builder.Services.AddTransient<IUserService, UserService>();
+
             builder.Services.AddTransient<ICategoryService,CategoryService>();
+
+            builder.Services.AddTransient<IBudgetService, BudgetService>();
 
 
             // Add services to the container.

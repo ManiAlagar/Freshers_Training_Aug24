@@ -3,44 +3,68 @@
   "WorkspaceRootPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\repository\\implement\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\services\\implement\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\user\\userindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\user\\userindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\helpers\\categoryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:helpers\\categoryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\service\\implement\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:service\\implement\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\service\\implement\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:service\\implement\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\helpers\\categoryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:helpers\\categoryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\helpers\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:helpers\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\helpers\\budgethelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:helpers\\budgethelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\repository\\implement\\budgetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\services\\implement\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\models\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:models\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\services\\interface\\ibudgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\repository\\interface\\ibudgetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\repository\\implement\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\services\\implement\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\repository\\interface\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -49,19 +73,42 @@
       "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\services\\interface\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\services\\implement\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6A06E5D0-BA46-4A91-8E02-8970FFD43464}|..\\Expense_Tracker_API\\Expense_Tracker_API.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\budget\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\budget\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\service\\implement\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:service\\implement\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\service\\interface\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:service\\interface\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\budget\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\budget\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\service\\interface\\ibudgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:service\\interface\\ibudgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|e:\\projects\\mitrahsoft\\c sharp\\expense_tracker_project\\expense_tracker_mvc\\views\\shared\\toastr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097744B-5C26-4108-A4CC-5E2C9CC5506A}|Expense_Tracker_MVC.csproj|solutionrelative:views\\shared\\toastr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,84 +118,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\appsettings.json",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\appsettings.json",
-              "RelativeToolTip": "..\\Expense_Tracker_API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-16T15:14:05.137Z",
+              "DocumentIndex": 7,
+              "Title": "BudgetController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\BudgetController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BudgetController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\BudgetController.cs",
+              "RelativeToolTip": "Controllers\\BudgetController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIAzwCsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T06:58:24.918Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T12:45:34.333Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Controllers\\CategoryController.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "..\\Expense_Tracker_API\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAQwDwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T13:46:13.004Z",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\Login.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T15:41:10.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\CategoryService.cs",
-              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Services\\Implement\\CategoryService.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\CategoryService.cs",
-              "RelativeToolTip": "..\\Expense_Tracker_API\\Services\\Implement\\CategoryService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAD4vyMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T13:42:10.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Index.cshtml",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "UserIndex.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\User\\UserIndex.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\UserIndex.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\User\\UserIndex.cshtml",
+              "RelativeToolTip": "Views\\User\\UserIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T13:36:14.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwD4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:05:21.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Implement\\UserService.cs",
-              "RelativeDocumentMoniker": "Service\\Implement\\UserService.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Implement\\UserService.cs",
-              "RelativeToolTip": "Service\\Implement\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:03:32.588Z",
+              "WhenOpened": "2024-10-17T15:37:52.051Z",
               "EditorCaption": ""
             },
             {
@@ -159,139 +182,334 @@
               "RelativeDocumentMoniker": "Service\\Implement\\CategoryService.cs",
               "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Implement\\CategoryService.cs",
               "RelativeToolTip": "Service\\Implement\\CategoryService.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAiwD8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:52:22.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:46:01.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Implement\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Repository\\Implement\\CategoryRepository.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Implement\\CategoryRepository.cs",
-              "RelativeToolTip": "..\\Expense_Tracker_API\\Repository\\Implement\\CategoryRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T13:42:58.753Z",
+              "WhenOpened": "2024-10-17T10:44:08.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CategoryHelper.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Helpers\\CategoryHelper.cs",
-              "RelativeDocumentMoniker": "Helpers\\CategoryHelper.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Helpers\\CategoryHelper.cs",
-              "RelativeToolTip": "Helpers\\CategoryHelper.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwEEAAAAIAAAAAAAAAA==",
+              "Title": "BudgetService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Implement\\BudgetService.cs",
+              "RelativeDocumentMoniker": "Service\\Implement\\BudgetService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Implement\\BudgetService.cs",
+              "RelativeToolTip": "Service\\Implement\\BudgetService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAtwCMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:38:50.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Category\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Edit.cshtml",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Category\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Category\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T14:12:29.907Z",
+              "WhenOpened": "2024-10-17T13:26:17.372Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "HttpClientExtensions.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Helpers\\HttpClientExtensions.cs",
-              "RelativeDocumentMoniker": "Helpers\\HttpClientExtensions.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Helpers\\HttpClientExtensions.cs",
-              "RelativeToolTip": "Helpers\\HttpClientExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "BudgetHelper.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Helpers\\BudgetHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\BudgetHelper.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Helpers\\BudgetHelper.cs",
+              "RelativeToolTip": "Helpers\\BudgetHelper.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAEcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:46:00.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Interface\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Services\\Interface\\ICategoryService.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Interface\\ICategoryService.cs",
-              "RelativeToolTip": "..\\Expense_Tracker_API\\Services\\Interface\\ICategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T13:53:05.413Z",
+              "WhenOpened": "2024-10-17T10:14:27.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Category.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Title": "BudgetRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Implement\\BudgetRepository.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Repository\\Implement\\BudgetRepository.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Implement\\BudgetRepository.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Repository\\Implement\\BudgetRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAIAzwEsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:23:22.773Z",
+              "WhenOpened": "2024-10-17T13:55:47.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T12:32:50.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Edit.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "Views\\User\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T11:43:40.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BudgetController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\BudgetController.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Controllers\\BudgetController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\BudgetController.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Controllers\\BudgetController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA6wDIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:47:32.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Interface\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Repository\\Interface\\ICategoryRepository.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Interface\\ICategoryRepository.cs",
-              "RelativeToolTip": "..\\Expense_Tracker_API\\Repository\\Interface\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Title": "BudgetService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\BudgetService.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Services\\Implement\\BudgetService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\BudgetService.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Services\\Implement\\BudgetService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAnwBwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T13:46:01.965Z",
+              "WhenOpened": "2024-10-17T10:53:10.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Login\\Login.cshtml",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Login\\Login.cshtml",
-              "RelativeToolTip": "Views\\Login\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T13:37:32.753Z",
+              "DocumentIndex": 6,
+              "Title": "CategoryHelper.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Helpers\\CategoryHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\CategoryHelper.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Helpers\\CategoryHelper.cs",
+              "RelativeToolTip": "Helpers\\CategoryHelper.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:28:50.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Budget.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Models\\Budget.cs",
+              "RelativeDocumentMoniker": "Models\\Budget.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Models\\Budget.cs",
+              "RelativeToolTip": "Models\\Budget.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T15:13:36.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Services\\Implement\\UserService.cs",
-              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\UserService.cs",
-              "RelativeToolTip": "..\\Expense_Tracker_API\\Services\\Implement\\UserService.cs",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\User\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Controllers\\User\\UserController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\User\\UserController.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Controllers\\User\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T13:42:08.321Z",
+              "WhenOpened": "2024-10-17T15:13:01.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IBudgetService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Interface\\IBudgetService.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Services\\Interface\\IBudgetService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Interface\\IBudgetService.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Services\\Interface\\IBudgetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:48:35.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Interface\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Repository\\Interface\\ICategoryRepository.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Interface\\ICategoryRepository.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Repository\\Interface\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:57:45.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Implement\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Repository\\Implement\\CategoryRepository.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Implement\\CategoryRepository.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Repository\\Implement\\CategoryRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:55:32.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IBudgetRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Interface\\IBudgetRepository.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Repository\\Interface\\IBudgetRepository.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Repository\\Interface\\IBudgetRepository.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Repository\\Interface\\IBudgetRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAnwA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:53:25.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Interface\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Services\\Interface\\ICategoryService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Interface\\ICategoryService.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Services\\Interface\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:54:28.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\CategoryService.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Services\\Implement\\CategoryService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Services\\Implement\\CategoryService.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Services\\Implement\\CategoryService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:53:05.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Controllers\\CategoryController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:47:46.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "..\\Expense_Tracker_API\\Controllers\\LoginController.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "..\\Expense_Tracker_API\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T12:46:02.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Budget\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Budget\\Edit.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Budget\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Budget\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T11:34:03.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Interface\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "Service\\Interface\\ICategoryService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Interface\\ICategoryService.cs",
+              "RelativeToolTip": "Service\\Interface\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:24:23.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Budget\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Budget\\Index.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Budget\\Index.cshtml",
+              "RelativeToolTip": "Views\\Budget\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T11:04:44.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Interface\\IUserService.cs",
+              "RelativeDocumentMoniker": "Service\\Interface\\IUserService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Interface\\IUserService.cs",
+              "RelativeToolTip": "Service\\Interface\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:25:12.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IBudgetService.cs",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Interface\\IBudgetService.cs",
+              "RelativeDocumentMoniker": "Service\\Interface\\IBudgetService.cs",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Service\\Interface\\IBudgetService.cs",
+              "RelativeToolTip": "Service\\Interface\\IBudgetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:39:59.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Toastr.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Shared\\Toastr.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Toastr.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Shared\\Toastr.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Toastr.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T11:15:31.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Edit.cshtml",
+              "ToolTip": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T11:33:25.552Z",
               "EditorCaption": ""
             }
           ]

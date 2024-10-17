@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Expense_Tracker_API.Entity;
 
 namespace Expense_Tracker_API
 {
@@ -22,6 +23,9 @@ namespace Expense_Tracker_API
 
             // Add services to the container (Register interface Repo Pattern).
 
+            //Dapper
+            builder.Services.AddSingleton<DapperContext>();
+
             //FOR User
             builder.Services.AddTransient<IUserService,UserService>();
             builder.Services.AddTransient<IUserRepository, UserRepository>();
@@ -30,6 +34,15 @@ namespace Expense_Tracker_API
             builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
             builder.Services.AddTransient<ICategoryService,CategoryService>();
 
+            //FOR Budget
+            builder.Services.AddTransient<IBudgetRepository,BudgetRepository>();
+            builder.Services.AddTransient<IBudgetService, BudgetService>();
+
+
+
+
+           
+            
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

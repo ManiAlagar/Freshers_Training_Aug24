@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Expense_Tracker_MVC.Models.Budget>
+@Html.Partial("Toastr")
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<h2>Budget Details</h2>
+<p>
+    <a class="btn btn-success mt-4" asp-controller="Budget" asp-action="Edit"> <i class="bi bi-person-plus"></i>  Add</a>
+</p>
+<table class="table table-bordered border-2 table-striped table-hover">
+    <tdead>
+        <tr class="bg-dark text-white">
+            <th>Category Name</th>
+            <th>BudgetAmount</th>
+            <th>Balance</th>
+            <th>StartDate</th>
+            <th>EndDate</th>
+            <th>TimeFrame</th>
+            <th>Action</th>
+        </tr>
+    </tdead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryName</td>
+                <td>@item.BudgetAmount</td>
+                <td>@item.Balance</td>
+                <td>@item.StartDate.ToString("dd-MM-yyyy")</td>
+                <td>@item.EndDate.ToString("dd-MM-yyyy")</td>
+                <td>@item.TimeFrame</td>
+                <th>
+                    <a class="btn btn-primary btn-sm mr-2" asp-controller="Budget" asp-action="Edit" asp-route-id="@item.Id"> <i class="bi bi-pencil-square"></i>Edit</a>
+                    <a class="btn btn-sm btn-danger" onclick="deleteClick('@item.Id')"> <i class="bi bi-person-dash-fill"></i>Delete</a>
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<Script>
+
+    function deleteClick(id) {
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this record!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    $.ajax({
+                            url: "/Budget/Delete?id=" + id,
+                        type: "POST",
+                        contentType: false,
+                        dataType: "json",
+                        success: function (result) {
+                            swal("Poof! Your record has been deleted!", {
+                                icon: "success",
+                                timer: 1000
+                            });
+                            setTimeout(reload, 1000);
+                        },
+                        error: function (errormessage) {
+                            console.log(errormessage.responseText);
+                        }
+                    });
+                }
+                else {
+                    swal({
+                        text: "Your record is safe!",
+                        timer: 850
+                    });
+                }
+            });
+    };
+
+    function reload() {
+        window.location.reload();
+    }
+</Script>
+
+

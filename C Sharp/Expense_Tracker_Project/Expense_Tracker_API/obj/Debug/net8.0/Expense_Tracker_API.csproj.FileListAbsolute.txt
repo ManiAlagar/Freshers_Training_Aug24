@@ -149,3 +149,4 @@ E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\D
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Expense_Tracker_MVC.dll
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Expense_Tracker_MVC.pdb
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_API\bin\Debug\net8.0\Dapper.dll
