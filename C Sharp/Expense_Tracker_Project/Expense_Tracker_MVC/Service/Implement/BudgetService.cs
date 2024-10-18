@@ -61,6 +61,10 @@ namespace Expense_Tracker_MVC.Service.Implement
 
         public async Task Edit(Budget entity)
         {
+            var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
+            entity.UserID = Convert.ToInt32(UserID);
+            entity.CategoryID = Convert.ToInt32(entity.CategoryName);
+
             BudgetHelper obj = new(client, httpContextAccessor);
             string url = $"https://localhost:7273/api/Budget/Edit/{entity.Id}";
 

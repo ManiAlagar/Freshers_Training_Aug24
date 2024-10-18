@@ -23,7 +23,7 @@
                             <a class="nav-link text-white-50" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50" asp-controller="Expense" asp-action="">Expense</a>
+                            <a class="nav-link text-white-50" asp-controller="Expense" asp-action="Index">Expense</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white-50" asp-controller="Budget" asp-action="Index">Budget</a>
@@ -43,6 +43,7 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            @Html.Partial("Toastr")
         </main>
     </div>
 

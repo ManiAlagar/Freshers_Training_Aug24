@@ -4,7 +4,6 @@ namespace Expense_Tracker_API.Services.Interface
 {
     public interface IBudgetService
     {
-       
         Task<IEnumerable<Budget>> Get(int id);
 
         Task<Budget> GetByID(int id);

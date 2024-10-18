@@ -17,6 +17,7 @@ namespace Expense_Tracker_API.Controllers
             this.budgetService = budgetService;
         }
 
+        // GetAllDetails METHOD
         [HttpGet("Get")]
         public async Task<IEnumerable<Budget>> Get(int id)
         {
@@ -26,6 +27,7 @@ namespace Expense_Tracker_API.Controllers
 
         }
 
+        // GETByID METHOD
         [HttpGet("GetByID")]
         public async Task<Budget> GetByID(int id)
         {
@@ -33,6 +35,7 @@ namespace Expense_Tracker_API.Controllers
             return entity;
         }
 
+        // CREATE METHOD
         [HttpPost("Create")]
         public async Task<IActionResult> Create([FromBody] Budget entity)
         {
@@ -46,15 +49,16 @@ namespace Expense_Tracker_API.Controllers
             return Ok(entity);
         }
 
+        // EDIT METHOD
         [HttpPut("Edit/{id}")]
         public async Task<IActionResult> update(int id, [FromBody] Budget entity)
         {
-            Budget budget = await budgetService.GetByID(id);
+            //Budget budget = await budgetService.GetByID(id);
 
-            if (budget == null)
-            {
-                return NotFound("The Employee record couldn't be found.");
-            }
+            //if (budget == null)
+            //{
+            //    return NotFound("The Employee record couldn't be found.");
+            //}
 
             await budgetService.Edit(entity);
 

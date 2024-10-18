@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
 
-namespace Exception.Helpers
+namespace Helper.Helpers
 {
     public class HTTPHelper
     {
@@ -75,9 +75,5 @@ namespace Exception.Helpers
                 
         }
 
-        internal async Task<bool> Post(Category entity, string url)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

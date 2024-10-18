@@ -38,11 +38,11 @@ namespace Expense_Tracker_API
             builder.Services.AddTransient<IBudgetRepository,BudgetRepository>();
             builder.Services.AddTransient<IBudgetService, BudgetService>();
 
+            //FOR Expense
+            builder.Services.AddTransient<IExpenseRepository, ExpenseRepository>();
+            builder.Services.AddTransient<IExpenseService, ExpenseService>();
 
 
-
-           
-            
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

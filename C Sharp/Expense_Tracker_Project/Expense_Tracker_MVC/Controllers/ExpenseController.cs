@@ -3,17 +3,17 @@ using Expense_Tracker_MVC.Service.Implement;
 using Expense_Tracker_MVC.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Newtonsoft.Json;
 
 namespace Expense_Tracker_MVC.Controllers
 {
-    public class BudgetController : Controller
+    public class ExpenseController : Controller
     {
-        private readonly IBudgetService budgetService;
+
+        private readonly IExpenseService expenseService;
         private readonly ICategoryService categoryService;
-        public BudgetController(IBudgetService budgetService, ICategoryService categoryService)
+        public ExpenseController(IExpenseService expenseService, ICategoryService categoryService)
         {
-            this.budgetService = budgetService;
+            this.expenseService = expenseService;
             this.categoryService = categoryService;
         }
         public async Task<IActionResult> Index()
@@ -22,18 +22,11 @@ namespace Expense_Tracker_MVC.Controllers
             {
                 TempData["Toastr"] = "Nothing";
             }
-            var entity = await budgetService.Get();
+            var entity = await expenseService.Get();
 
             return View(entity);
         }
 
-
-        [HttpGet]
-        private async Task<Budget> Get(int? id)
-        {
-            var entity = await budgetService.GetByID(id);
-            return entity;
-        }
 
 
         [HttpGet]
@@ -63,42 +56,10 @@ namespace Expense_Tracker_MVC.Controllers
                 {
                     return NotFound();
                 }
-                Budget entity = await budgetService.GetByID(id);
+                var entity = await expenseService.GetByID(id);
                 entity.CategoryName = entity.CategoryID.ToString();
                 return View(entity);
             }
-        }
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int? id, [Bind] Budget entity)
-        {
-
-            TempData["Toastr"] = "Updated Successful";
-
-            if (id != null)
-            {
-                entity.Id = (int)id;
-
-                await budgetService.Edit(entity);
-            }
-            else
-            {
-                await budgetService.Create(entity);
-                TempData["Toastr"] = "Created Successful";
-            }
-            return RedirectToAction("Index");
-        }
-
-
-
-
-        [HttpPost, ActionName("Delete")]
-        public async Task<bool> DeleteConfirmed(int id)
-        {
-            await budgetService.Delete(id);
-            return true;
         }
     }
 }

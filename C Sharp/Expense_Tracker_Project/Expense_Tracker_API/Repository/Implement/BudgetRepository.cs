@@ -32,7 +32,7 @@ namespace Expense_Tracker_API.Repository.Implement
         }
 
         public async Task<Budget> GetByID(int id)
-        {
+        {   
             var query = $"BudgetByID {id}";
 
             using (var connection = _context.CreateConnection())
@@ -41,8 +41,6 @@ namespace Expense_Tracker_API.Repository.Implement
                 return entity;
             }
         }
-
-
 
         public async Task Delete(int id)
         {
@@ -74,20 +72,37 @@ namespace Expense_Tracker_API.Repository.Implement
 
         public async  Task Edit(Budget entity)
         {
-            Budget budget = await GetByID(entity.Id);
+            //entity.CategoryID = Convert.ToInt32(entity.CategoryName);
+            //Budget budget = await GetByID(entity.Id);
 
-            budget.CategoryID = Convert.ToInt32(entity.CategoryName);
-            //budget.CategoryID = entity.CategoryID;
-            budget.BudgetAmount = entity.BudgetAmount;
-            budget.StartDate = entity.StartDate;
-            budget.EndDate = entity.EndDate;
-            budget.TimeFrame = entity.TimeFrame;
-
-           
-            context.Budget.Update(budget);
+            //budget.CategoryID = Convert.ToInt32(entity.CategoryName);
+            ////budget.CategoryID = entity.CategoryID;
+            //budget.BudgetAmount = entity.BudgetAmount;
+            //budget.StartDate = entity.StartDate;
+            //budget.EndDate = entity.EndDate;
+            //budget.TimeFrame = entity.TimeFrame;
 
 
-            await context.SaveChangesAsync();
+            //context.Budget.Update(budget);
+
+
+
+            var query = $"EXEC Update_Budget" +
+              $" @ID = {entity.Id}," + 
+              $" @UserID = {entity.UserID}," +
+              $"@CategoryID = {entity.CategoryID}," +
+              $"@BudgetAmount = {entity.BudgetAmount}," +
+              $"@Balance = {entity.Balance}," +
+              $"@StartDate = '{entity.StartDate.ToString("yyyy-MM-dd")}'," +
+              $"@EndDate = '{entity.EndDate.ToString("yyyy-MM-dd")}'," +
+              $"@TimeFrame = '{entity.TimeFrame}'";
+
+            using (var connection = _context.CreateConnection())
+            {
+                var status = await connection.ExecuteAsync(query);
+            }
+
+             context.SaveChangesAsync();
         }
     }
 }
