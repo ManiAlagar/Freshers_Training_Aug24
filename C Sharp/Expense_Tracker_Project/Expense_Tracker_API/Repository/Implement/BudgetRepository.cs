@@ -2,6 +2,7 @@
 using Expense_Tracker_API.Entity;
 using Expense_Tracker_API.Entity.DBContext;
 using Expense_Tracker_API.Repository.Interface;
+using Microsoft.EntityFrameworkCore;
 using static Dapper.SqlMapper;
 
 
@@ -25,11 +26,12 @@ namespace Expense_Tracker_API.Repository.Implement
 
             using (var connection = _context.CreateConnection())
             {
-               
+
                 var entity = await connection.QueryAsync<Budget>(query);
                 return entity.ToList();
             }
         }
+
 
         public async Task<Budget> GetByID(int id)
         {   
@@ -44,10 +46,26 @@ namespace Expense_Tracker_API.Repository.Implement
 
         public async Task Delete(int id)
         {
-            Budget entity = await GetByID(id);
 
-            context.Budget.Remove(entity);
-            await context.SaveChangesAsync();
+            //Budget entity = await GetByID(id);
+
+            //context.Budget.Remove(entity);
+            //await context.SaveChangesAsync();
+
+            try
+            {
+                var query = $"Delete_Budget {id}";
+
+                using (var connection = _context.CreateConnection())
+                {
+                    var entity = await connection.QueryAsync<Budget>(query);
+                }
+            }
+            catch (Exception Message)
+            {
+                throw Message;
+            }
+
         }
 
         public async Task Add(Budget entity)
@@ -72,21 +90,6 @@ namespace Expense_Tracker_API.Repository.Implement
 
         public async  Task Edit(Budget entity)
         {
-            //entity.CategoryID = Convert.ToInt32(entity.CategoryName);
-            //Budget budget = await GetByID(entity.Id);
-
-            //budget.CategoryID = Convert.ToInt32(entity.CategoryName);
-            ////budget.CategoryID = entity.CategoryID;
-            //budget.BudgetAmount = entity.BudgetAmount;
-            //budget.StartDate = entity.StartDate;
-            //budget.EndDate = entity.EndDate;
-            //budget.TimeFrame = entity.TimeFrame;
-
-
-            //context.Budget.Update(budget);
-
-
-
             var query = $"EXEC Update_Budget" +
               $" @ID = {entity.Id}," + 
               $" @UserID = {entity.UserID}," +
@@ -101,8 +104,7 @@ namespace Expense_Tracker_API.Repository.Implement
             {
                 var status = await connection.ExecuteAsync(query);
             }
-
-             context.SaveChangesAsync();
+             await context.SaveChangesAsync();
         }
     }
 }

@@ -38,5 +38,12 @@ namespace Expense_Tracker_API.Services.Implement
             await expenseRepository.Edit(entity);
         }
 
+        //public async Task<Expenses> CheckCategory(int CategoryID)
+        //{
+        //     var entity =  await expenseRepository.CheckCategory(CategoryID);
+        //    return entity;
+
+        //}
+
     }
 }

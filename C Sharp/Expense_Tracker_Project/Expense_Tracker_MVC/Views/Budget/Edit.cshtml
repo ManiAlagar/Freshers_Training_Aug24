@@ -27,11 +27,11 @@
             </div>
 
 
-            <div class="form-group">
+        @*     <div class="form-group">
                 <label asp-for="Balance" class="control-label mb-2"></label>
                 <input asp-for="Balance" class="form-control" />
                 <span asp-validation-for="Balance" class="text-danger"></span>
-            </div>
+            </div> *@
 
             <div class="form-group">
                 <label asp-for="StartDate" class="control-label mb-2"></label>
@@ -50,9 +50,10 @@
                 <label asp-for="TimeFrame" class="control-label mb-2"></label>
                 <select asp-for="TimeFrame" class="form-control">
                     <option disabled selected>-- Select Time Frame --</option>
-                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
                     <option value="Month">Month</option>
                     <option value="Yearly">Yearly</option>
+                    <option value="Other">Others</option>
                 </select>
                 <span asp-validation-for="TimeFrame" class="text-danger"></span>
             </div>

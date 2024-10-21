@@ -30,7 +30,7 @@
                 <td>@item.Date.ToString("dd-MM-yyyy")</td>
 
                 <th>
-                    <a class="btn btn-primary btn-sm mr-2" asp-controller="Expense" asp-action="Edit" asp-route-id="@item.Id"> <i class="bi bi-pencil-square"></i>Edit</a>
+                   @*  <a class="btn btn-primary btn-sm mr-2" asp-controller="Expense" asp-action="Edit" asp-route-id="@item.Id"> <i class="bi bi-pencil-square"></i>Edit</a> *@
                     <a class="btn btn-sm btn-danger" onclick="deleteClick('@item.Id')"> <i class="bi bi-person-dash-fill"></i>Delete</a>
                 </th>
             </tr>

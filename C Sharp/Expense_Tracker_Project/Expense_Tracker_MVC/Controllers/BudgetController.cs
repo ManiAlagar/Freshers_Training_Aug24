@@ -11,6 +11,7 @@ namespace Expense_Tracker_MVC.Controllers
     {
         private readonly IBudgetService budgetService;
         private readonly ICategoryService categoryService;
+        
         public BudgetController(IBudgetService budgetService, ICategoryService categoryService)
         {
             this.budgetService = budgetService;
@@ -96,7 +97,7 @@ namespace Expense_Tracker_MVC.Controllers
 
         [HttpPost, ActionName("Delete")]
         public async Task<bool> DeleteConfirmed(int id)
-        {
+        { 
             await budgetService.Delete(id);
             return true;
         }

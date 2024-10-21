@@ -60,7 +60,7 @@ namespace Expense_Tracker_MVC.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, [Bind] Category entity)
-        {
+       {
 
             TempData["Toastr"] = "Updated Successful";
 

@@ -49,19 +49,26 @@ namespace Expense_Tracker_MVC.Service.Implement
 
 
 
-        public Task Create(Expenses entity)
+        public async Task Create(Expenses entity)
         {
-            throw new NotImplementedException();
+            var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
+            entity.UserID = Convert.ToInt32(UserID);
+            entity.CategoryID = Convert.ToInt32(entity.CategoryName);
+
+            ExpenseHelper obj = new(client, httpContextAccessor);
+
+            string url = "https://localhost:7273/api/Expense/Create";
+
+            await obj.Post(entity, url);
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            BudgetHelper obj = new(client, httpContextAccessor);
+            obj.isValid();
+
+            var response = await client.DeleteAsync($"https://localhost:7273/api/Expense/Delete/{id}");
         }
 
-        public Task Edit(Expenses entity)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

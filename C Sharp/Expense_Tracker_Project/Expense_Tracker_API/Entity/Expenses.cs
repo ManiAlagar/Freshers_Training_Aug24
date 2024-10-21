@@ -8,7 +8,7 @@
 
         public int CategoryID { get; set; }
 
-        public decimal AmountSpend { get; set; }
+        public decimal? AmountSpend { get; set; }
 
         public decimal Amount { get; set; }
 

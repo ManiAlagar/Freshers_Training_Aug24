@@ -12,6 +12,5 @@ namespace Expense_Tracker_MVC.Service.Interface
 
         Task Create(Expenses entity);
 
-        Task Edit(Expenses entity);
     }
 }

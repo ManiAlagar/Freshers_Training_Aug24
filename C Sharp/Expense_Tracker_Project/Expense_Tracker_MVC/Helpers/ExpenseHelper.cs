@@ -1,5 +1,8 @@
-﻿using System.Net.Http.Headers;
+﻿using Expense_Tracker_MVC.Models;
+using Newtonsoft.Json;
+using System.Net.Http.Headers;
 using System.Security.Claims;
+using System.Text;
 
 namespace Expense_Tracker_MVC.Helpers
 {
@@ -40,6 +43,22 @@ namespace Expense_Tracker_MVC.Helpers
             var response = await _client.GetAsync(url);
             var data = await response.Content.ReadAsStringAsync();
             return data;
+        }
+
+
+        public async Task<bool> Post(Expenses entity, string url)
+        {
+
+            var serializedData = JsonConvert.SerializeObject(entity);
+            var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
+
+            var response = await _client.PostAsync(url, result);
+
+            if (response.StatusCode != System.Net.HttpStatusCode.OK)
+            {
+                return false;
+            }
+            return true;
         }
 
     }

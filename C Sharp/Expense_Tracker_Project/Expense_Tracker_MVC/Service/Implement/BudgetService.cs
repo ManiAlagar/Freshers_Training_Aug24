@@ -51,6 +51,7 @@ namespace Expense_Tracker_MVC.Service.Implement
             var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
             entity.UserID = Convert.ToInt32(UserID);
             entity.CategoryID = Convert.ToInt32(entity.CategoryName);
+            entity.Balance = entity.BudgetAmount;
 
             BudgetHelper obj = new(client, httpContextAccessor);
 
@@ -81,5 +82,7 @@ namespace Expense_Tracker_MVC.Service.Implement
             var response = await client.DeleteAsync($"https://localhost:7273/api/Budget/Delete/{id}");
         
         }
+
+
     }
 }

@@ -66,10 +66,12 @@ namespace Expense_Tracker_API.Repository.Implement
         {
             try
             {
-                var entity = await GetByID(id);
+                var query = $"Delete_Expense {id}";
 
-                context.Expenses.Remove(entity);
-                await context.SaveChangesAsync();
+                using (var connection = _context.CreateConnection())
+                {
+                    var entity = await connection.QueryAsync<Expenses>(query);
+                }
             }
             catch (Exception Message)
             {
@@ -78,9 +80,20 @@ namespace Expense_Tracker_API.Repository.Implement
         }
 
 
-        public Task Add(Expenses entity)
+        public async Task Add(Expenses entity)
         {
-            throw new NotImplementedException();
+            var query = $"EXEC Insert_Expense" +
+                $" @UserID = {entity.UserID}," +
+                $"@CategoryID = {entity.CategoryID}," +
+                $"@Amount = {entity.Amount}," +
+                $"@AmountSpend = null ," +
+                $"@Description = '{entity.Description}'," +
+                $"@Date = '{entity.Date.ToString("yyyy-MM-dd")}'";
+
+            using (var connection = _context.CreateConnection())
+            {
+                 var status = await connection.ExecuteAsync(query);
+            }
         }
 
         public Task Edit(Expenses entity)

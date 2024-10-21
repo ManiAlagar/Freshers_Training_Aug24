@@ -61,5 +61,35 @@ namespace Expense_Tracker_MVC.Controllers
                 return View(entity);
             }
         }
+
+          [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int? id, [Bind] Expenses entity)
+        {
+
+            //TempData["Toastr"] = "Updated Successful";
+
+            //if (id != null)
+            //{
+            //    entity.Id = (int)id;
+
+            //    await expenseService.Edit(entity);
+            //}
+            //else
+            //{
+                await expenseService.Create(entity);
+                TempData["Toastr"] = "Created Successful";
+            //}
+            return RedirectToAction("Index");
+        }
+
+
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<bool> DeleteConfirmed(int id)
+        {
+            await expenseService.Delete(id);
+            return true;
+        }
     }
 }
