@@ -1,10 +1,13 @@
 ﻿using BookstoreApplication.Models;
+using BookstoreApplication.Service.Implementation;
 using BookstoreApplication.Service.Interface;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookstoreApplication.Controllers
 {
-
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : Controller
@@ -14,13 +17,14 @@ namespace BookstoreApplication.Controllers
         {
             this.orderService = orderService;
         }
-        
+        [Authorize(Roles = "1,3")]
         [HttpGet("GetAllOrders")]
         public async Task<IActionResult> GetAllOrders()
         {
             try
             {
-                return Ok(await orderService.GetAllOrders());
+                var res = Ok(new ApiResponse<IEnumerable<Order>>("Retreived successfully", 200, await orderService.GetAllOrders()));
+                return res;
             }
             catch (Exception)
             {
@@ -29,25 +33,27 @@ namespace BookstoreApplication.Controllers
             }
         }
 
+        [Authorize(Roles = "1,3")]
         [HttpPost("AddOrder")]
-        public async Task<ActionResult<Order>> AddOrder(Order Order)
+        public async Task<ActionResult<int>> AddOrder(string Address)
         {
             try
             {
-                if (Order == null)
+                if (Address == null)
                     return BadRequest();
 
-                var created = await orderService.AddOrder(Order);
-                return created;
+                var created = await orderService.AddOrder(Address);
+                var res = new ApiResponse<int>("Added successfully", 200, created);
+                return Ok(res);
 
             }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                "Error creating new user record");
+                "Error creating new order record");
             }
         }
-
+        [Authorize(Roles = "1,3")]
         [HttpGet]
         [Route("GetOrderById/{id:int}")]
         public async Task<ActionResult<Order?>> GetOrderById([FromRoute] int id)
@@ -57,7 +63,7 @@ namespace BookstoreApplication.Controllers
             {
                 var result = await orderService.GetOrderById(id);
 
-                if (result == null) return NotFound();
+                if (result == null) return NotFound(); 
 
                 return result;
             }
@@ -67,11 +73,31 @@ namespace BookstoreApplication.Controllers
                     "Error retrieving data from the database");
             }
         }
+        [Authorize(Roles = "1,3")]
+        [HttpGet("GetBooksFromOrder/{id:int}")]  
+        public async Task<IActionResult> GetBooksFromOrder([FromRoute] int id)
 
+        {
+            try
+            {
+                var result = await orderService.GetBooksFromOrder(id);
 
+                if (result == null) return NotFound();
+
+                var res = new ApiResponse<IEnumerable<Order>>("success", 200, result);
+                return Ok(res);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
+        }
+
+        [Authorize(Roles = "1,3")]
         [HttpDelete]
         [Route("DeleteOrder/{id:int}")]
-        public async Task<ActionResult<Order?>> DeleteOrder([FromRoute] int id)
+        public async Task<ActionResult<int>> DeleteOrder([FromRoute] int id)
         {
             try
             {
@@ -79,9 +105,11 @@ namespace BookstoreApplication.Controllers
 
                 if (Order == null)
                 {
-                    return NotFound($"Student with Id = {id} not found");
+                    return NotFound($"Item with Id = {id} not found");
                 }
-                return await orderService.DeleteOrder(id);
+                var deleted =await orderService.DeleteOrder(id);
+                var res = new ApiResponse<int>("Deleted successfully", 200, deleted);
+                return Ok(res);
 
             }
             catch (Exception)
@@ -90,22 +118,19 @@ namespace BookstoreApplication.Controllers
                     "Error deleting data");
             }
         }
-
-        [HttpPut]
-        [Route("UpdateOrder/{id:int}")]
-        public async Task<ActionResult<Order?>> UpdateOrder([FromRoute] int id, Order Order)
+        
+        [HttpPost("UpdateOrder")]
+        public async Task<ActionResult<int?>> UpdateOrder([FromQuery] int orderId, int statusId)
         {
             try
             {
-                if (id == null)
-                    return BadRequest("Book ID mismatch");
+                if (orderId == null)
+                    return BadRequest("order ID mismatch");
 
-                var OrderToUpdate = await orderService.GetOrderById(id);
 
-                if (OrderToUpdate == null)
-                    return NotFound($"Student with Id = {id} not found");
-
-                return await orderService.UpdateOrder(id, Order);
+                
+                var res = await orderService.UpdateOrder(orderId, statusId);
+                return res;
             }
             catch (Exception)
             {

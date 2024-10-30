@@ -26,8 +26,8 @@ var configuration = new ConfigurationBuilder()
 var jwtIssuer = builder.Configuration.GetSection("Jwt:Issuer").Get<string>();
 var jwtKey = builder.Configuration.GetSection("Jwt:Key").Get<string>();
 
-
-
+builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
@@ -39,6 +39,10 @@ builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IConfigRepository, ConfigRepository>();
+builder.Services.AddScoped<IConfigService, ConfigService>();
+builder.Services.AddScoped<IStatusRepository, StatusRepository>();
+builder.Services.AddScoped<IStatusService, StatusService>();
 
 builder.Services.AddDbContext<BookDBContext>(item =>
         item.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -97,6 +101,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors(
+       options => options.AllowAnyMethod()
+   );
 
 
 app.UseHttpsRedirection();

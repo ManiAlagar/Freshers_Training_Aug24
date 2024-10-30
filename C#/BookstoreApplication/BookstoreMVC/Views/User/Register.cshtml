@@ -5,15 +5,23 @@
     ViewData["Title"] = "Index";
     Layout = "";
 }
-@model BookstoreMVC.Models.User
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/BookstoreMVC.styles.css" asp-append-version="true" />
+<link href="toastr.css" rel="stylesheet" />
+<script src="toastr.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
 <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/WebApplication2.styles.css" asp-append-version="true" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+
+@model BookstoreMVC.Models.User
+
+
 
 <div class="mt-5">
     <h2 class="text-center">Registration Form</h2>
@@ -21,54 +29,87 @@
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <form class="form-horizontal" asp-action="Register">
+                <form class="form-horizontal"  method="Post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group mt-2 mb-2">
-                        <label class="control-label"><strong>FirstName:</strong></label>
+                        <label asp-for="FirstName" class="control-label"></label>
                         <input asp-for="FirstName" class="form-control " type="text" />
                         <span asp-validation-for="FirstName" class="text-danger"></span>
                     </div>
                     <div class="form-group mt-2 mb-2">
-                        <label class="control-label"><strong>LastName:</strong></label>
-                        <input asp-for="LastName" class="form-control " type="text" />
+                        <label asp-for="LastName" class="control-label"></label>
+                        <input asp-for="LastName" class="form-control " type="text"  />
                         <span asp-validation-for="LastName" class="text-danger"></span>
                     </div>
                     <div class="form-group mt-2 mb-2">
-                        <label class="control-label"><strong>Username:</strong></label>
-                        <input asp-for="Username" class="form-control " type="text" />
+                        <label asp-for="Username"  class="control-label"></label>
+                        <input asp-for="Username" class="form-control " type="text"  />
                         <span asp-validation-for="Username" class="text-danger"></span>
                     </div>
                     <div class="form-group mt-2 mb-2">
-                        <label class="control-label"><strong>Email:</strong></label>
-                        <input asp-for="Email" class="form-control " type="email" />
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control " type="email"  />
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
                     <div class="form-group mt-2 mb-2">
-                        <label class="control-label"><strong>Password:</strong></label>
-                        <input asp-for="Password" class="form-control " type="password" />
+                        <label asp-for="Password"  class="control-label"></label>
+                        <input asp-for="Password" class="form-control " type="password"  />
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
                     <div class="form-group mt-2 mb-2">
                         <label class="control-label"><strong>Address:</strong></label>
-                        <input asp-for="Address" class="form-control " type="text" />
+                        <input asp-for="Address" class="form-control " type="text"  />
                         <span asp-validation-for="Address" class="text-danger"></span>
                     </div>
                     <div class="form-group mt-2 mb-2">
                         <label class="control-label"><strong>Contact Number:</strong></label>
-                        <input asp-for="ContactNo" class="form-control " type="tel" />
+                        <input asp-for="ContactNo" class="form-control " type="number"  />
                         <span asp-validation-for="ContactNo" class="text-danger"></span>
                     </div>
                     <div class="form-group mt-2">
                         <label class="control-label"><strong>Role:</strong></label>
-                        <select asp-for="RoleId" class="form-control" asp-items=@ViewBag.list>
+                        <select asp-for="RoleId" class="form-control" asp-items=@ViewBag.role>
                         </select>
                     </div>
-                    <div class="form-group d-flex justify-content-center">
+                    <div class="form-group d-flex justify-content-center m-3">
                         <input type="submit" value="Register" class="btn btn-success" />
                     </div>
-
+                    <div class="form-group d-flex justify-content-center mb-2">
+                        <p>Already an user?</p>
+                        <a href="/User/Login" class="btn-sm btn-info">Signin here</a>
+                    </div>
+                    
                 </form>
             </div>
             <div class="col-sm-4"></div>
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('form').submit(function (e) {
+            var data = $(this).serializeArray();
+            var jsObj = {};
+            $.each(data, function (feild, value) {
+                jsObj[value.name] = value.value;
+            });
+
+            $.ajax({
+                url: "User/Register",
+                method: "post",
+                dataType: "json",
+                data: jsObj,
+                success: function (response) {
+                    console.log(response);
+                }
+            });
+            e.preventDefault();
+        });
+</script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

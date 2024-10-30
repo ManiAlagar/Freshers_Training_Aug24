@@ -89,6 +89,32 @@
   },
   {
     "ContainingType": "BookstoreApplication.Controllers.BookController",
+    "Method": "IsPublish",
+    "RelativePath": "api/Book/IsPublish",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookstoreApplication.Controllers.BookController",
     "Method": "UpdateBook",
     "RelativePath": "api/Book/UpdateBook/{id}",
     "HttpMethod": "PUT",
@@ -127,9 +153,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Cart",
-        "Type": "BookstoreApplication.Models.Cart",
-        "IsRequired": true
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -172,6 +198,16 @@
   },
   {
     "ContainingType": "BookstoreApplication.Controllers.CartController",
+    "Method": "Discount",
+    "RelativePath": "api/Cart/Discount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookstoreApplication.Controllers.CartController",
     "Method": "GetAllCartItems",
     "RelativePath": "api/Cart/GetAllCartItems",
     "HttpMethod": "GET",
@@ -182,7 +218,7 @@
   },
   {
     "ContainingType": "BookstoreApplication.Controllers.CartController",
-    "Method": "GetCartById",
+    "Method": "GetCartItemById",
     "RelativePath": "api/Cart/GetCartById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -207,6 +243,47 @@
     ]
   },
   {
+    "ContainingType": "BookstoreApplication.Controllers.CartController",
+    "Method": "UpdateQuantity",
+    "RelativePath": "api/Cart/UpdateQuantity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartItemId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "quantity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookstoreApplication.Models.Cart",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookstoreApplication.Controllers.ConfigController",
+    "Method": "GetAllConfigValuesAsync",
+    "RelativePath": "api/Config/GetAllConfigValues",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BookstoreApplication.Controllers.OrderController",
     "Method": "AddOrder",
     "RelativePath": "api/Order/AddOrder",
@@ -215,14 +292,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Order",
-        "Type": "BookstoreApplication.Models.Order",
-        "IsRequired": true
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "BookstoreApplication.Models.Order",
+        "Type": "System.Int32",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -248,7 +325,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookstoreApplication.Models.Order",
+        "Type": "System.Int32",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -266,6 +343,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookstoreApplication.Controllers.OrderController",
+    "Method": "GetBooksFromOrder",
+    "RelativePath": "api/Order/GetBooksFromOrder/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -336,6 +429,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BookstoreApplication.Controllers.StatusController",
+    "Method": "GetAllOrderStatus",
+    "RelativePath": "api/Status/GetAllOrderStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BookstoreApplication.Controllers.UserController",
     "Method": "GetUserById",
     "RelativePath": "api/User/GetUserById/{id}",
@@ -370,8 +473,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "BookstoreApplication.Models.User",
+        "Name": "LoginModel",
+        "Type": "BookstoreApplication.Models.LoginModel",
         "IsRequired": true
       }
     ],

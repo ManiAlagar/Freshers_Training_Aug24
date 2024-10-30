@@ -32,6 +32,11 @@ namespace BookstoreApplication.Service.Implementation
             return await BookRepository.DeleteBook(id);
         }
 
+        public async Task<bool> IsPublish(int BookId)
+        {
+            return await BookRepository.IsPublish(BookId);
+        }
+
 
     }
 }

@@ -5,8 +5,11 @@ namespace BookstoreApplication.Repository.Interface
     public interface ICartRepository
     {
         Task<IEnumerable<Cart>> GetAllCartItems();
-        Task<Cart> AddItemToCart(Cart Cart);
+        Task<Cart> AddItemToCart(int bookId);
         Task<Cart> DeleteItemFromCart(int id);
-        Task<Cart> GetCartById(int Id);
+        Task<Cart> GetCartItemById(int Id);
+        Task<Cart> UpdateQuantity(int cartItemId, int quantity);
+
+        Task<IEnumerable<Discount>> Discount();
     }
 }

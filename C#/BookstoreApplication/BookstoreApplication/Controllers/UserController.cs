@@ -1,11 +1,12 @@
 ﻿using BookstoreApplication.Models;
 using BookstoreApplication.Service.Interface;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookstoreApplication.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class UserController : Controller
     {
         private readonly IUserService userService;
@@ -22,8 +23,9 @@ namespace BookstoreApplication.Controllers
                 if (User == null)
                     return BadRequest();
                  
-                var created = await userService.Register(User);
-                return created;
+                var result = await userService.Register(User);
+                var res = new ApiResponse<User>("Registered successfully", 200, result);
+                return Ok(res);
 
             }
             catch (Exception)

@@ -23,17 +23,17 @@ namespace BookstoreApplication.Controllers
         }
         private async Task<User> GetUser(string Username, string Password)
         {
-            return await _context.Users.FirstOrDefaultAsync(u => u.Username == Username && u.Password == Password);
+            return await _context.Users.FirstOrDefaultAsync(u => u.Username == Username && u.Password == Password );
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login([FromBody] User user)
+        public async Task<IActionResult> Login([FromBody] LoginModel LoginModel)
         {
-            if (user.Username == null && user.Password == null)
+            if (LoginModel.Username == null && LoginModel.Password == null )
             {
                 return BadRequest("Invalid client request");
             }
-            User User = await GetUser(user.Username, user.Password);
+            User User = await GetUser(LoginModel.Username, LoginModel.Password);
             if (User != null)
             {
                 var tokenHandler = new JwtSecurityTokenHandler();
@@ -41,14 +41,20 @@ namespace BookstoreApplication.Controllers
                 var tokenDescriptor = new SecurityTokenDescriptor 
                 { 
                     Subject = new ClaimsIdentity(
-                        new Claim[] {new Claim(ClaimTypes.NameIdentifier, User.Username),
-                        new Claim(ClaimTypes.Role, User.RoleId.ToString())}),
-                    Expires = DateTime.UtcNow.AddMinutes(10),
+                        new Claim[] {
+                        new Claim(ClaimTypes.Name, User.Username),
+                        new Claim(ClaimTypes.Role, User.RoleId.ToString()),
+                        new Claim(ClaimTypes.NameIdentifier, User.UserId.ToString()),
+                        new Claim("Roles", User.RoleId.ToString()),
+                        new Claim("Role", User.RoleId.ToString()),
+                        }),
+                    Expires = DateTime.UtcNow.AddMinutes(55),
                     SigningCredentials = new SigningCredentials(tokenKey, SecurityAlgorithms.HmacSha256)
                     };
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
-                return Ok(new { Token = tokenString });
+                
+                return Ok(new { message = "Login successfully" ,Token = tokenString, RoleId= (int)User.RoleId });
             }
             else
             {
@@ -57,15 +63,4 @@ namespace BookstoreApplication.Controllers
         }
     }
 }
-
-//var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
-//var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-//var token = new JwtSecurityToken(
-//    _configuration["Jwt:Issuer"],
-//    _configuration["Jwt:Audience"],
-//    expires: DateTime.UtcNow.AddMinutes(10),
-//    signingCredentials: signIn);
-//var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
-//return Ok(new { Token = tokenString });
 

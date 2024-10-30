@@ -8,6 +8,7 @@
 *@
 @{
 }
+
 @model BookstoreMVC.Models.Book
 @if (TempData["view"] !=null)
 {
@@ -21,12 +22,7 @@
                 <div class="form-group">
                     <label asp-for="Title" class="control-label"></label>
                     <input asp-for="Title" class="form-control" />
-                    <span asp-validation-for="Title" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="AuthorName" class="control-label"></label>
-                    <input asp-for="AuthorName" class="form-control" />
-                    <span asp-validation-for="AuthorName" class="text-danger"></span>
+                    <span asp-validation-for="Title" class="text-danger" ></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Description" class="control-label"></label>
@@ -71,11 +67,6 @@ else
                     <span asp-validation-for="Title" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="AuthorName" class="control-label"></label>
-                    <input asp-for="AuthorName" class="form-control" />
-                    <span asp-validation-for="AuthorName" class="text-danger"></span>
-                </div>
-                <div class="form-group">
                     <label asp-for="Description" class="control-label"></label>
                     <input asp-for="Description" class="form-control" />
                     <span asp-validation-for="Description" class="text-danger"></span>
@@ -101,4 +92,10 @@ else
     <div>
         <a asp-action="Index" asp-controller="Book" class="btn btn-info ">Back to List</a>
     </div>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

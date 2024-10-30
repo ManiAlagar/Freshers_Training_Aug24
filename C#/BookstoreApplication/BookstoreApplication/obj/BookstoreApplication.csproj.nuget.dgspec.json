@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj": {}
+    "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj": {
+    "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj",
+        "projectUniqueName": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj",
         "projectName": "BookstoreApplication",
-        "projectPath": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj",
+        "projectPath": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj",
         "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mitrah\\source\\repos\\BookstoreApplication\\BookstoreApplication\\obj\\",
+        "outputPath": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,9 +46,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "DataAnnotationsExtensions": {
+              "target": "Package",
+              "version": "[5.0.1.27, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -73,6 +89,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "toastr": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             }
           },
           "imports": [

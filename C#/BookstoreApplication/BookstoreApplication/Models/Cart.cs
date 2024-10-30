@@ -7,13 +7,22 @@ namespace BookstoreApplication.Models
     public class Cart
     {
         [Key]
-        public int CartId { get; set; }
+        public int CartItemId { get; set; }
         [ForeignKey("User")]
         public int UserId { get; set; }
         [ForeignKey("Book")]
         public int BookId { get; set; }
-        public string Quantity { get; set; }
-        public decimal discount { get; set; }
-        public decimal Shipping { get; set; }
+        public int Quantity { get; set; } 
+        public string Status { get; set; }
+
+        [NotMapped]
+        public int Stock { get; set; }
+        [NotMapped]
+        public string Title { get; set; }
+
+        public decimal? Price { get; set; }
+
     }
+
+    
 }

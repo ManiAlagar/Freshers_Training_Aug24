@@ -1,4 +1,6 @@
-﻿using BookstoreApplication.Models;
+﻿
+
+using BookstoreMVC.Models;
 
 namespace BookstoreMVC.Services.Interface
 {

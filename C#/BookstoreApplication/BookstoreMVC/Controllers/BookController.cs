@@ -1,7 +1,9 @@
-﻿ using BookstoreMVC.Models;
+﻿using BookstoreApplication.Models;
+using BookstoreMVC.Models;
 using BookstoreMVC.Services.Interface;
 using Microsoft.AspNet.SignalR.Hubs;
 using Microsoft.AspNetCore.Mvc;
+using Book = BookstoreMVC.Models.Book;
 
 namespace BookstoreMVC.Controllers
 {
@@ -15,27 +17,25 @@ namespace BookstoreMVC.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var token = HttpContext.Session.GetString("token");
-            if (token == null)
+            try
             {
-                return View("Unauthorized");
+                var token = HttpContext.Session.GetString("token");
+                var role = HttpContext.Session.GetString("roleId");
+                TempData["role"] = role;
+                if (token == null)
+                {
+                    return View("Unauthorized", "Shared");
+                }
+                var books = await _service.GetAllBooks(token);
+                return View(books);
             }
-            var books = await _service.GetAllBooks(token);
-            return View(books);
-        }
-        [HttpGet]
-        public async Task<IActionResult> Publish()
-        {
-            var token = HttpContext.Session.GetString("token");
-            if (token == null)
+            catch (Exception ex)
             {
-                return View("Unauthorized");
+                throw;
             }
-            var books = await _service.GetAllBooks(token);
-            return View(books);
         }
 
-        [HttpPost, ActionName("DeleteBook")]
+        [HttpPost, ActionName("DeleteBook")] 
         public async Task<bool> DeleteBook(int id)
         {
 
@@ -44,13 +44,18 @@ namespace BookstoreMVC.Controllers
             return true;
         }
 
+
+
+        
+
+
         [HttpGet]
         public IActionResult Display()
         {
             var token = HttpContext.Session.GetString("token");
             if (token == null)
             {
-                return View("Unauthorized");
+                return View("Unauthorized", "Shared");
             }
             return View();
         }
@@ -65,7 +70,7 @@ namespace BookstoreMVC.Controllers
             var token = HttpContext.Session.GetString("token");
             if (token == null)
             {
-                return View("Unauthorized");
+                return View("Unauthorized", "Shared");
             }
             await _service.AddBook(book, token);
 
@@ -73,14 +78,14 @@ namespace BookstoreMVC.Controllers
         }
 
         [HttpGet]
-        [Route("Student/Display/{id}")]
+        [Route("Cart/Display/{id}")]
         public async Task<IActionResult> Display(int id)
         {
             var token = HttpContext.Session.GetString("token");
             TempData["view"] = "update";
             if (token == null)
             {
-                return View("Unauthorized");
+                return View("Unauthorized", "Shared");
             }
             var book = await _service.GetBookById(id, token);
             if (book == null)
@@ -90,5 +95,43 @@ namespace BookstoreMVC.Controllers
             return View(book);
         }
 
+
+        [HttpPost]
+        [Route("Cart/Display/{id:int}")]
+        public async Task<IActionResult> Display(int id, [Bind] Book book)
+        {
+            if (book.BookId > 0)
+            {
+                TempData["success"] = "Updated successfully";
+                TempData["view"] = "update";
+                var token = HttpContext.Session.GetString("token");
+                if (token == null)
+                {
+                    return View("Unauthorized", "Shared");
+                }
+                await _service.UpdateBook(id, book, token);
+
+            }
+            else
+            {
+                var token = HttpContext.Session.GetString("token");
+                if (token == null)
+                {
+                    return View("Unauthorized", "Shared");
+                }
+                await _service.AddBook(book, token);
+            }
+            return RedirectToAction("Index", "Book");
+
+        }
+
+        [HttpPost, ActionName("IsPublish")]
+        public async Task<bool> IsPublish([FromQuery] string bookId)
+        {
+
+            var token = HttpContext.Session.GetString("token") ?? throw new NotAuthorizedException("Bearer");
+            await _service.IsPublish(Convert.ToInt32(bookId), token);
+            return true;
+        }
     }
 }

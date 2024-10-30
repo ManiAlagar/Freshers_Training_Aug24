@@ -5,42 +5,127 @@
 }
 @model IEnumerable<BookstoreMVC.Models.Book>
 
+
+ @if (TempData["role"].ToString() == "2" || TempData["role"].ToString() == "3"){
 <p>
+        <h3>Books</h3>
     <a asp-action="Display" asp-controller="Book" class="  btn btn-primary">Create New</a>
 </p>
+ }
+
+@if (TempData["role"].ToString() == "1")
+{
+    <p>
+        <h3>My Books</h3>
+       
+    </p>
+}
 
 <table class="table">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>AuthorName</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Stock</th>
-            <th>Actions</th>
+           
+            @if (TempData["role"].ToString() == "1")
+            {
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            }
+            @if (TempData["role"].ToString() == "3"){
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Publish</th>
+                <th>Actions</th>
+            }
+            @if (TempData["role"].ToString() == "2")
+            {
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            }
         </tr>
     </thead>
     <tbody>
+        
         @foreach (var item in Model)
         {
-            <tr>
-                <td>@item.Title</td>
-                <td>@item.AuthorName</td>
-                <td>@item.Description</td>
-                <td>@item.Price</td>
-                <td>@item.Stock</td>
-                <td>
-                    <a asp-action="Display" asp-controller="Book" asp-route-id="@item.BookId" class=" bi bi-pencil-square btn-sm btn-primary"></a>
-                    <a class="bi bi-trash btn-sm btn-danger" id="delete" onclick="delFunction('@item.BookId');"></a>
-                </td>
-            </tr>
+           
+                    @if (TempData["role"].ToString() == "1")
+                    {
+                        <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Username</td>
+                        <td>@item.Description</td>
+                        <td>@item.Price</td>
+                        <td>@item.Stock</td>
+
+                        @if (@item.isAddedToCart == true)
+                        {
+                            <td>
+                                <a id="addtocart">Item Added</a>
+                            </td>
+                        }
+                        @if (@item.isAddedToCart == false)
+                        {
+                           <td>
+                                <a id="addtocart" onclick="addToCartFunction('@item.BookId');" class="btn-sm btn-info">Add to cart</a>
+                           </td>
+                        }
+                        </tr>
+                    }
+                    @if (TempData["role"].ToString() == "2")
+                    {
+                        <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Description</td>
+                        <td>@item.Price</td>
+                        <td>@item.Stock</td>
+                        <td>
+                            <a asp-action="Display" asp-controller="Book" asp-route-id="@item.BookId" class=" bi bi-pencil-square btn-sm btn-primary"></a>
+                            <a class="bi bi-trash btn-sm btn-danger" id="delete" onclick="delFunction('@item.BookId');"></a>
+                        </td>
+                        </tr>
+                    }
+                    @if (TempData["role"].ToString() == "3")
+                    {
+                        <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Username</td>
+                        <td>@item.Description</td>
+                        <td>@item.Price</td>
+                        <td>@item.Stock</td>
+                        <td>
+                        @if (@item.IsPublish == true)
+                        {
+                            <a>Published</a>
+                        }
+                        @if (@item.IsPublish == false)
+                        {
+                            <a id="publish" class="btn-sm btn-warning " onclick="Publish('@item.BookId');">Publish</a>
+                        }
+                        
+                        </td>
+                        <td>
+                            <a asp-action="Display" asp-controller="Book" asp-route-id="@item.BookId" class=" bi bi-pencil-square btn-sm btn-primary"></a>
+                            <a class="bi bi-trash btn-sm btn-danger" id="delete" onclick="delFunction('@item.BookId');"></a>
+                        </td>
+                        </tr>
+                    }
+              
         }
     </tbody>
 </table>
 <script type="text/javascript">
     function delFunction(id) {
         let Id = parseInt(id);
-        console.log(Id);
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -81,4 +166,49 @@
     function myTimeout() {
         location.reload();
     }
+    function Publish(id) {
+        var bookId = id;
+       // alert(bookId);
+        $.ajax({
+            type: "POST",
+            url: "/Book/IsPublish?bookId=" + bookId,
+            contentType: "application/json;charset=UTF-8",
+            success:function(){
+                setTimeout(myTimeout, 1000);
+                    Swal.fire({
+                            text: "Book Published successfully",
+                            icon: "success",
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+            }, error: function (error) {
+                console.error();
+                alert("error", error);
+            }
+        });
+    }
+
+        function addToCartFunction(id) {
+            var bookId = id;
+            //$("#addtocart").addClass('disabled');
+            $.ajax({
+                type: "POST",
+                url: "/Cart/AddItemToCart?bookId=" + bookId,
+                contentType: "application/json;charset=UTF-8",
+                success:function(){
+                    // alert("success");
+                    setTimeout(myTimeout, 1000);
+                    Swal.fire({
+                            text: "Book added to cart successfully",
+                            icon: "success",
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                }, error: function (error) {
+                    console.error();
+                    alert("error", error);
+                }
+            });
+        }
+
 </script>

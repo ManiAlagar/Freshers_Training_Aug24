@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\views\\department\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\views\\department\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\models\\employeecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\models\\employeecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\models\\employeecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\models\\employeecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\views\\department\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|solutionrelative:crud_mvc\\views\\department\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2527B199-312C-4E82-9615-6ACA6F31D613}|CRUD_MVC\\CRUD_MVC.csproj|d:\\freshers_training_aug24\\c#\\crud_mvc\\crud_mvc\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,36 +50,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "CRUD_MVC\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "CRUD_MVC\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:22:02.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Display.cshtml",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Department\\Display.cshtml",
               "RelativeDocumentMoniker": "CRUD_MVC\\Views\\Department\\Display.cshtml",
               "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Department\\Display.cshtml",
               "RelativeToolTip": "CRUD_MVC\\Views\\Department\\Display.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T13:06:53.044Z"
+              "WhenOpened": "2024-10-15T13:06:53.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "EmployeeCrud.cs",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\EmployeeCrud.cs",
               "RelativeDocumentMoniker": "CRUD_MVC\\Models\\EmployeeCrud.cs",
               "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\EmployeeCrud.cs",
               "RelativeToolTip": "CRUD_MVC\\Models\\EmployeeCrud.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T13:43:05.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "CRUD_MVC\\Controllers\\EmployeeController.cs",
@@ -83,12 +101,11 @@
               "RelativeToolTip": "CRUD_MVC\\Controllers\\EmployeeController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowDAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T13:07:11.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T13:07:11.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Manage.cshtml",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Employee\\Manage.cshtml",
               "RelativeDocumentMoniker": "CRUD_MVC\\Views\\Employee\\Manage.cshtml",
@@ -96,12 +113,11 @@
               "RelativeToolTip": "CRUD_MVC\\Views\\Employee\\Manage.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T13:07:01.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T13:07:01.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DepartmentCrud.cs",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Models\\DepartmentCrud.cs",
               "RelativeDocumentMoniker": "CRUD_MVC\\Models\\DepartmentCrud.cs",
@@ -109,12 +125,11 @@
               "RelativeToolTip": "CRUD_MVC\\Models\\DepartmentCrud.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T08:27:31.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T08:27:31.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "CRUD_MVC\\Controllers\\DepartmentController.cs",
@@ -126,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CRUD_MVC\\Views\\Shared\\_Layout.cshtml",
@@ -138,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Views\\Common\\Index.cshtml",
               "RelativeDocumentMoniker": "CRUD_MVC\\Views\\Common\\Index.cshtml",
@@ -150,13 +165,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "CRUD_MVC\\Controllers\\UserController.cs",
               "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\CRUD_MVC\\CRUD_MVC\\Controllers\\UserController.cs",
               "RelativeToolTip": "CRUD_MVC\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T05:03:22.508Z",
               "EditorCaption": ""

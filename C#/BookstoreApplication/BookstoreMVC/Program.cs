@@ -1,6 +1,7 @@
 using BookstoreMVC.Services;
 using BookstoreMVC.Services.Interface;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,10 +10,26 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSession();
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient<IBookService, BookService>(c =>
-c.BaseAddress = new Uri("http://localhost:5287/"));
-builder.Services.AddHttpClient<IUserService, UserService>(c =>
-c.BaseAddress = new Uri("http://localhost:5287/"));
+//builder.Services.AddHttpClient<IBookService, BookService>(c =>
+//c.BaseAddress = new Uri("http://localhost:5287/"));
+//builder.Services.AddHttpClient<IUserService, UserService>(c =>
+//c.BaseAddress = new Uri("http://localhost:5287/"));
+//builder.Services.AddHttpClient<ICartService, CartService>(c =>
+//c.BaseAddress = new Uri("http://localhost:5287/"));
+//builder.Services.AddHttpClient<IOrderService, OrderService>(c =>
+//c.BaseAddress = new Uri("http://localhost:5287/"));
+//builder.Services.AddHttpClient<IConfigService, ConfigService>(c =>
+//c.BaseAddress = new Uri("http://localhost:5287/"));
+//builder.Services.AddHttpClient<IRoleService, RoleService>(c =>
+//c.BaseAddress = new Uri("http://localhost:5287/"));
+builder.Services.AddTransient<IBookService, BookService>();
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<ICartService, CartService>();
+builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddTransient<IConfigService, ConfigService>();
+builder.Services.AddTransient<IRoleService, RoleService>();
+builder.Services.AddTransient<IStatusService, StatusService>();
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -20,7 +37,7 @@ builder.Services.AddAuthentication(options =>
 })
 .AddCookie(options =>
 {
-    options.LoginPath = "/api/login";
+    options.LoginPath = "/login";
 
 });
 
@@ -48,3 +65,8 @@ app.MapControllerRoute(
     pattern: "{controller=User}/{action=Login}/{id?}");
 
 app.Run();
+
+app.UseCors(
+       options => options.AllowAnyMethod()
+   );
+app.UseMvc();

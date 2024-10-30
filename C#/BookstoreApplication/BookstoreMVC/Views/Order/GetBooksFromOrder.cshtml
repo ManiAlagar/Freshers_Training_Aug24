@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<BookstoreMVC.Models.Order>
+<div class="text-center m-3">
+    <h3>My ordered books</h3>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price Details</th>
+            
+        </tr>
+    </thead >
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td > @item.Title </td >
+            <td > @item.Quantity </td >
+            <td>@item.Total</td>
+           
+        </tr>
+        }
+    </tbody >
+</table >
+
+ @* <div class="text-end m-3">
+     <div>
+         <label><b>Shipping :</b></label><span> @Html.DisplayFor(Shipping => Model.Shipping)</span>
+     </div>
+     <div>
+         <label><b>Discount(in %) :</b></label><span>@Html.DisplayFor(Discount => Model.Discount)</span>
+     </div>
+     <div>
+         <label><b>Total Amount :</b></label><span> @Html.DisplayFor(TotalAmount => Model.TotalAmount)</span>
+     </div>
+
+ </div> *@
+
+
+
+<div class="text-center">
+    <a href="/Order/Index" class="btn btn-secondary">Back to Orders</a>
+</div>
+

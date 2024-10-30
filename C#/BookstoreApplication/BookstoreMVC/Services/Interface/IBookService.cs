@@ -10,7 +10,8 @@ namespace BookstoreMVC.Services.Interface
         Task UpdateBook(int id, Book Book, string? token);
         Task DeleteBook(int Id, string? token);
         Task<Book> GetBookById(int Id, string? token);
-        
-        
+        Task IsPublish(int id, string token);
+        //---
+
     }
 }

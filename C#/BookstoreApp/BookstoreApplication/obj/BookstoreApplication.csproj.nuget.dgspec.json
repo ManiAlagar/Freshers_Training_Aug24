@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj": {}
+    "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\BookstoreApplication\\BookstoreApplication.csproj": {}
   },
   "projects": {
-    "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj": {
+    "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\BookstoreApplication\\BookstoreApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj",
+        "projectUniqueName": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\BookstoreApplication\\BookstoreApplication.csproj",
         "projectName": "BookstoreApplication",
-        "projectPath": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\BookstoreApplication.csproj",
+        "projectPath": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\BookstoreApplication\\BookstoreApplication.csproj",
         "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-        "outputPath": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreApplication\\obj\\",
+        "outputPath": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\BookstoreApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",

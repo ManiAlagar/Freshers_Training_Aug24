@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\",
+  "WorkspaceRootPath": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|d:\\freshers_training_aug24\\c#\\bookstoreapplication\\bookstoremvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|d:\\freshers_training_aug24\\c#\\bookstoreapp\\bookstoremvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|solutionrelative:bookstoremvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|d:\\freshers_training_aug24\\c#\\bookstoreapplication\\bookstoremvc\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|d:\\freshers_training_aug24\\c#\\bookstoreapp\\bookstoremvc\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FE3F239-2E80-4372-B832-B1B80274A6EF}|BookstoreMVC\\BookstoreMVC.csproj|solutionrelative:bookstoremvc\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "RoleController.cs",
-              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreMVC\\Controllers\\RoleController.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\BookstoreMVC\\Controllers\\RoleController.cs",
               "RelativeDocumentMoniker": "BookstoreMVC\\Controllers\\RoleController.cs",
-              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreMVC\\Controllers\\RoleController.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\BookstoreMVC\\Controllers\\RoleController.cs",
               "RelativeToolTip": "BookstoreMVC\\Controllers\\RoleController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -36,9 +36,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreMVC\\Controllers\\UserController.cs",
+              "DocumentMoniker": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\BookstoreMVC\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "BookstoreMVC\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApplication\\BookstoreMVC\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Freshers_Training_Aug24\\C#\\BookstoreApp\\BookstoreMVC\\Controllers\\UserController.cs",
               "RelativeToolTip": "BookstoreMVC\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

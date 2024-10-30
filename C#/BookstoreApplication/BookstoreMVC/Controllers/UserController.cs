@@ -1,18 +1,24 @@
-﻿using BookstoreApplication.Repository.Interface;
+﻿
 using BookstoreMVC.Models;
 using BookstoreMVC.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Newtonsoft.Json.Linq;
+
 
 namespace BookstoreMVC.Controllers
 {
     public class UserController : Controller
     {
         private readonly IUserService _service;
+        private readonly IRoleService service;
 
-        public UserController(IUserService service)
+
+        public UserController(IUserService service, IRoleService __service)
         {
-            _service = service;
+            this._service = service;
+            this.service = __service;
         }
         
         [HttpGet]
@@ -21,24 +27,39 @@ namespace BookstoreMVC.Controllers
             return View();
         }
         [HttpGet]
-        public ActionResult Register()
+        public async Task<ActionResult> Register()
         {
-            if (TempData["list"] != null)
+            var roles = await service.GetAllRoles();
+            var res = roles.Where(u=>u.RoleName!= "Admin").Select(u => new SelectListItem
             {
-                var list = TempData["list"];
-                ViewBag.List = list;
-                return View();
-            }
+                Value = u.RoleId.ToString(),
+                Text = u.RoleName
+            });
+            ViewBag.role = res;
             return View();
+            
         }
         [HttpPost]
         public async Task<ActionResult> Register([Bind] User user)
         {
             try
             {
-                TempData["success"] = "Registered successfully";
-                await _service.Register(user);
-                return RedirectToAction("Login", "User");
+                if (ModelState.IsValid)
+                {
+                    TempData["success"] = "Registered successfully";
+                    await _service.Register(user);
+                    return RedirectToAction("Login", "User");
+                }
+                else {
+                    var roles = await service.GetAllRoles();
+                    var res = roles.Where(u => u.RoleName != "Admin").Select(u => new SelectListItem
+                    {
+                        Value = u.RoleId.ToString(),
+                        Text = u.RoleName
+                    });
+                    ViewBag.role = res;
+                    return View(user);
+                }
             }
             catch
             {
@@ -47,14 +68,23 @@ namespace BookstoreMVC.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> Login([Bind] User user)
+        public async Task<IActionResult> Login([Bind] LoginModel user)
         {
             try
             {
+                
+                if (!ModelState.IsValid)
+                {
+                    TempData["failure"] = "Enter your details ";
+                    return View();
+                }
                 TempData["success"] = "Login successfully";
                 var token = await _service.Login(user);
-                HttpContext.Session.SetString("token", token);
-                return RedirectToAction("Publish", "Book");
+                var res = JObject.Parse(token);
+                HttpContext.Session.SetString("token", res["token"].ToString());
+                HttpContext.Session.SetString("roleId", res["roleId"].ToString());
+                return RedirectToAction("Index", "Book");
+
             }
             catch
             {
@@ -68,7 +98,7 @@ namespace BookstoreMVC.Controllers
         {
             TempData["success"] = "logged out Successfully";
             HttpContext.Session.Clear();
-            return RedirectToAction("Register", "User");
+            return RedirectToAction("Login", "User");
         }
     }
 }

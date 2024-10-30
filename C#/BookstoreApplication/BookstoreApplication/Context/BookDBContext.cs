@@ -12,5 +12,8 @@ namespace BookstoreApplication.Context
         public DbSet<Order> Orders { get; set; }    
         public DbSet<Status> Statuses { get; set; }
         public DbSet<Cart> Cart { get; set; }
+        public DbSet<Config> Config { get; set; }
     }
+
+
 }

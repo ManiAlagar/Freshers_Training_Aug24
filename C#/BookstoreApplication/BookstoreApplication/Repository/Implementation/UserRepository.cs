@@ -14,20 +14,29 @@ namespace BookstoreApplication.Repository.Implementation
         }
         public async Task<User> Register(User User)
         {
-            var newUser = new User()
+            try
             {
-                FirstName = User.FirstName,
-                LastName = User.LastName,
-                Username = User.Username,
-                Email = User.Email,
-                Password = User.Password,
-                Address=User.Address,
-                ContactNo=User.ContactNo,
-                RoleId=User.RoleId
-            };
-            await db.Users.AddAsync(newUser);
-            await db.SaveChangesAsync();
-            return newUser;
+                
+                var newUser = new User()
+                {
+                    FirstName = User.FirstName,
+                    LastName = User.LastName,
+                    Username = User.Username,
+                    Email = User.Email,
+                    Password = User.Password,
+                    Address = User.Address,
+                    ContactNo = User.ContactNo,
+                    RoleId = User.RoleId
+                };
+                await db.Users.AddAsync(newUser);
+                await db.SaveChangesAsync();
+                return newUser;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         public async Task<User?> GetUserById(int Id)
         {

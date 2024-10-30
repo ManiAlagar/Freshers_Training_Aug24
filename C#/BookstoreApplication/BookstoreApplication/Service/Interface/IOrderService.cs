@@ -1,13 +1,16 @@
 ﻿using BookstoreApplication.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BookstoreApplication.Service.Interface
 {
     public interface IOrderService
     {
         Task<IEnumerable<Order>> GetAllOrders();
-        Task<Order> AddOrder(Order Order);
+        Task<int> AddOrder(string Address);
         Task<Order> GetOrderById(int Id);
-        Task<Order> DeleteOrder(int id);
-        Task<Order> UpdateOrder(int Id, Order Order);
+        Task<int> DeleteOrder(int id);
+        Task<int> UpdateOrder(int OrderId, int StatusId);
+        Task<IEnumerable<Order>> GetBooksFromOrder(int id);
+       
     }
 }

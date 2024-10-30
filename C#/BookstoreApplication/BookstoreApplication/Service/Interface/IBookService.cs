@@ -12,6 +12,8 @@ namespace BookstoreApplication.Service.Interface
         Task<Book> GetBookById(int bookId);
         Task<Book> DeleteBook(int id);
         Task<Book> UpdateBook(int bookId, Book book);
+        Task<bool> IsPublish(int bookId);
+        
     }
 }
  
