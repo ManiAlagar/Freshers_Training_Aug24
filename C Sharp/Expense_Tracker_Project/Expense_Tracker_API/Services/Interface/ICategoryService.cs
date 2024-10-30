@@ -6,12 +6,14 @@ namespace Expense_Tracker_API.Services.Interface
     {
         Task<IEnumerable<Category>> Get(int id);
 
+        //Task<IEnumerable<CategorySpend>> GetCategorySpend(int id);
+
         Task<Category> GetByID(int id);
 
-        Task Add(Category entity);
+        Task<string> Add(Category entity);
 
-        Task Edit(Category entity);
+        Task<string> Edit(Category entity);
 
-        Task Delete(int id);
+        Task<string> Delete(int id);
     }
 }

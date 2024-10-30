@@ -23,19 +23,19 @@ namespace Expense_Tracker_API.Services.Implement
             return await budgetRepository.GetByID(id);
         }
 
-        public async Task Add(Budget entity)
+        public async Task<string> Add(Budget entity)
         {
-            await budgetRepository.Add(entity);
+            return await budgetRepository.Add(entity);
         }
 
-        public async Task Edit(Budget entity)
+        public async Task<string> Edit(Budget entity)
         {
-            await budgetRepository.Edit(entity);
+           return  await budgetRepository.Edit(entity);
         }
 
-        public async Task Delete(int id)
+        public async Task<string> Delete(int id)
         {
-            await budgetRepository.Delete(id);
+           return  await budgetRepository.Delete(id);
         }
 
 

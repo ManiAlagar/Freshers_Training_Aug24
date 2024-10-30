@@ -4,8 +4,9 @@
     {
         public int Id { get; set; }
 
+        public int UserID { get; set; }
         public string ConfigurationKey { get; set; }
 
-        public int ConfigurationValue { get; set; }
+        public string ConfigurationValue { get; set; }
     }
 }

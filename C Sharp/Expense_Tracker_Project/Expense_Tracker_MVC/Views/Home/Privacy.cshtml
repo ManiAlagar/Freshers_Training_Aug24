@@ -4,3 +4,35 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script>
+		window.onload = function () {
+
+		var chart = new CanvasJS.Chart("MonthlyChart", {
+			animationEnabled: true,
+			title: {
+				text: "Amount Spend By Month"
+			},
+			toolTip: {
+				shared: true
+			},
+				data: @Html.Raw(ViewBag.DataPoints)
+		});
+		chart.render();
+
+		}
+	</script>
+</head>
+<body>
+	<div id="MonthlyChart" style="height: 370px; width: 100%;"></div>
+	<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+</html>

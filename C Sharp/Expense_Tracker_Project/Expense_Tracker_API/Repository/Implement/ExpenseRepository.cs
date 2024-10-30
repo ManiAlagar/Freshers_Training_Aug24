@@ -2,7 +2,6 @@
 using Expense_Tracker_API.Entity;
 using Expense_Tracker_API.Entity.DBContext;
 using Expense_Tracker_API.Repository.Interface;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace Expense_Tracker_API.Repository.Implement
@@ -17,6 +16,28 @@ namespace Expense_Tracker_API.Repository.Implement
             this._context = _context;
         }
         
+        //Get All Expense By Monthly
+        public async Task<IEnumerable<Expenses>> GetMonthly(int id)
+        {
+            try
+            {
+                var query = $"Monthly_Records {id}";
+
+                using (var connection = _context.CreateConnection())
+                {
+
+                    var entity = await connection.QueryAsync<Expenses>(query);
+
+                    return entity.ToList();
+                }
+            }
+            catch (Exception message)
+            {
+                throw message;
+            }
+        }  
+        
+        
         //Get All Expense
         public async Task<IEnumerable<Expenses>> Get(int id)
         {
@@ -28,8 +49,11 @@ namespace Expense_Tracker_API.Repository.Implement
                 {
 
                     var entity = await connection.QueryAsync<Expenses>(query);
+
                     return entity.ToList();
                 }
+
+
 
             }
             catch (Exception message)
@@ -80,7 +104,7 @@ namespace Expense_Tracker_API.Repository.Implement
         }
 
 
-        public async Task Add(Expenses entity)
+        public async Task<string> Add(Expenses entity)
         {
             var query = $"EXEC Insert_Expense" +
                 $" @UserID = {entity.UserID}," +
@@ -92,8 +116,11 @@ namespace Expense_Tracker_API.Repository.Implement
 
             using (var connection = _context.CreateConnection())
             {
-                 var status = await connection.ExecuteAsync(query);
+                var status = await connection.ExecuteScalarAsync(query);
+                return status.ToString();
             }
+
+            
         }
 
         public Task Edit(Expenses entity)

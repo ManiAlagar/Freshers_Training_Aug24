@@ -49,17 +49,17 @@ namespace Helper.Helpers
 
         public async Task<bool> Post(Users entity,string url)
         {
-          
+                isValid();
                 var serializedData = JsonConvert.SerializeObject(entity);
                 var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
 
                 var response = await _client.PostAsync(url, result);
 
-            if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
-            {
-                return false;            
-            }
-            return true;
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                {
+                    return false;            
+                }
+                return true;
         }
 
 

@@ -36,6 +36,7 @@ namespace Expense_Tracker_MVC.Service.Implement
         public async Task<Category> Get(int? id)
         {
             CategoryHelper obj = new(client, httpContextAccessor);
+            var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
 
             var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
@@ -47,7 +48,7 @@ namespace Expense_Tracker_MVC.Service.Implement
         }
 
 
-        public async Task Create(Category entity)
+        public async Task<string> Create(Category entity)
         {
             var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
             entity.UserId = Convert.ToInt32(UserID);
@@ -56,18 +57,19 @@ namespace Expense_Tracker_MVC.Service.Implement
    
             string url = "https://localhost:7273/api/Category/Create";
 
-            await obj.Post(entity, url);
+            return await obj.Post(entity, url);
         }
 
-        public async Task Edit(Category entity)
+        public async Task<string> Edit(Category entity)
         {
             CategoryHelper obj = new(client, httpContextAccessor);
             string url = $"https://localhost:7273/api/Category/Edit/{entity.CategoryID}";
 
-            await obj.Put(entity, url);
+             var status = await obj.Put(entity, url);
+             return status;
         }
 
-        public async Task Delete(int id)
+        public async Task<string> Delete(int id)
         {
             CategoryHelper obj = new(client, httpContextAccessor);
 
@@ -77,6 +79,8 @@ namespace Expense_Tracker_MVC.Service.Implement
         
 
             var response = await client.DeleteAsync($"https://localhost:7273/api/Category/Delete/{id}");
+
+            return  await response.Content.ReadAsStringAsync();
         }
 
 

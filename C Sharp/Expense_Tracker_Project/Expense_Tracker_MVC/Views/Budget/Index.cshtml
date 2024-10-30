@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<Expense_Tracker_MVC.Models.Budget>
-@Html.Partial("Toastr")
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -31,7 +30,7 @@
                 <td>@item.EndDate.ToString("dd-MM-yyyy")</td>
                 <td>@item.TimeFrame</td>
                 <th>
-                    <a class="btn btn-primary btn-sm mr-2" asp-controller="Budget" asp-action="Edit" asp-route-id="@item.Id"> <i class="bi bi-pencil-square"></i>Edit</a>
+                    <a class="btn btn-primary btn-sm mr-2" asp-controller="Budget" asp-action="Edit" asp-route-id="@item.CategoryID"> <i class="bi bi-pencil-square"></i>Edit</a>
                     <a class="btn btn-sm btn-danger" onclick="deleteClick('@item.Id')"> <i class="bi bi-person-dash-fill"></i>Delete</a>
                 </th>
             </tr>
@@ -59,11 +58,11 @@
                         contentType: false,
                         dataType: "json",
                         success: function (result) {
-                            swal("Poof! Your record has been deleted!", {
-                                icon: "success",
-                                timer: 1000
-                            });
-                            setTimeout(reload, 1000);
+                            // swal("Poof! Your record has been deleted!", {
+                            //     icon: "success",
+                            //     timer: 1000
+                            // });
+                             setTimeout(reload, 400);
                         },
                         error: function (errormessage) {
                             console.log(errormessage.responseText);

@@ -1,5 +1,4 @@
 ﻿using Expense_Tracker_MVC.Models;
-using Expense_Tracker_MVC.Service.Implement;
 using Expense_Tracker_MVC.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,18 +9,19 @@ namespace Expense_Tracker_MVC.Controllers
     {
 
         private readonly IExpenseService expenseService;
-        private readonly ICategoryService categoryService;
-        public ExpenseController(IExpenseService expenseService, ICategoryService categoryService)
+        private readonly IBudgetService budgetService;
+        public ExpenseController(IExpenseService expenseService, IBudgetService budgetService)
         {
             this.expenseService = expenseService;
-            this.categoryService = categoryService;
+            this.budgetService = budgetService;
         }
         public async Task<IActionResult> Index()
-        {
-            if (TempData["Toastr"] == null)
-            {
-                TempData["Toastr"] = "Nothing";
-            }
+        { 
+             TempData["Toastr"] = "Nothing";
+
+            if (TempData["ExpenseToastr"] == null)
+                TempData["ExpenseToastr"] = "Nothing";
+            
             var entity = await expenseService.Get();
 
             return View(entity);
@@ -32,11 +32,16 @@ namespace Expense_Tracker_MVC.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
+            TempData["Toastr"] = "Nothing";
+
 
             //List in select area
-            var Res = await categoryService.Get();
+            var status = await budgetService.Get();
 
-            var Result = Res.ToList().Select(d => new SelectListItem()
+            if (status == null)
+                return RedirectToAction("Index","Login");
+
+            var Result = status.ToList().Select(d => new SelectListItem()
             {
                 Value = d.CategoryID.ToString(),
                 Text = d.CategoryName
@@ -62,25 +67,16 @@ namespace Expense_Tracker_MVC.Controllers
             }
         }
 
-          [HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, [Bind] Expenses entity)
         {
 
-            //TempData["Toastr"] = "Updated Successful";
+            string status =  await expenseService.Create(entity);
 
-            //if (id != null)
-            //{
-            //    entity.Id = (int)id;
+            TempData["ExpenseToastr"] = status;
 
-            //    await expenseService.Edit(entity);
-            //}
-            //else
-            //{
-                await expenseService.Create(entity);
-                TempData["Toastr"] = "Created Successful";
-            //}
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","CommonModel");
         }
 
 

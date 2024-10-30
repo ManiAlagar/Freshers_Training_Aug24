@@ -31,6 +31,18 @@ namespace Expense_Tracker_MVC.Service.Implement
             return JsonConvert.DeserializeObject<IEnumerable<Expenses>>(data);
 
         }
+        public async Task<IEnumerable<Expenses>> GetMonthly()
+        {
+            var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
+
+            ExpenseHelper obj = new(client, httpContextAccessor);
+            string url = $"https://localhost:7273/api/Expense/GetMonthly?id={UserID}";
+
+            var data = await obj.Get(url);
+
+            return JsonConvert.DeserializeObject<IEnumerable<Expenses>>(data);
+
+        }
 
 
         public async  Task<Expenses> GetByID(int? id)
@@ -49,7 +61,7 @@ namespace Expense_Tracker_MVC.Service.Implement
 
 
 
-        public async Task Create(Expenses entity)
+        public async Task<string> Create(Expenses entity)
         {
             var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
             entity.UserID = Convert.ToInt32(UserID);
@@ -59,7 +71,9 @@ namespace Expense_Tracker_MVC.Service.Implement
 
             string url = "https://localhost:7273/api/Expense/Create";
 
-            await obj.Post(entity, url);
+            string  status =  await obj.Post(entity, url);
+           
+            return status;
         }
 
         public async Task Delete(int id)

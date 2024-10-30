@@ -19,12 +19,11 @@ namespace Expense_Tracker_MVC.Controllers
         [HttpGet]
         public async Task<IActionResult>  Index()
         {
-            if (TempData["Toastr"] == null)
-            {
+           if (TempData["Toastr"] == null)
+           {
                 TempData["Toastr"] = "Nothing";
-            }
+           }
             var entity = await categoryService.Get();
-
             return View(entity);
         }
 
@@ -39,6 +38,11 @@ namespace Expense_Tracker_MVC.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
+            if (TempData["Toastr"] == null)
+            {
+                TempData["Toastr"] = "Nothing";
+            }
+
             if (id == null)
             {
                 TempData["AddOrEdit"] = "Create";
@@ -62,18 +66,21 @@ namespace Expense_Tracker_MVC.Controllers
         public async Task<IActionResult> Edit(int? id, [Bind] Category entity)
        {
 
-            TempData["Toastr"] = "Updated Successful";
+            TempData["Toastr"] = "Category Already Exists";
 
             if (id != null)
             {
-                entity.CategoryID = (int) id;
+               entity.CategoryID = (int) id;
                               
-                await categoryService.Edit(entity);
+               var status = await categoryService.Edit(entity);
+                if (status != "Failure")
+                   TempData["Toastr"] = "Updated Successfully";
             }
             else
             {
-                await categoryService.Create(entity);
-                TempData["Toastr"] = "Created Successful";
+                var status =  await categoryService.Create(entity);
+                if (status != "Failure") 
+                 TempData["Toastr"] = "Created Successfully";
             }
             return RedirectToAction("Index");
         }
@@ -82,7 +89,11 @@ namespace Expense_Tracker_MVC.Controllers
         [HttpPost, ActionName("Delete")]
         public async Task<bool> DeleteConfirmed(int id)
         {
-             await categoryService.Delete(id);
+            TempData["Toastr"] = "Deleted Successfully";
+            var status = await categoryService.Delete(id);
+
+            if(status == "Failure")
+                TempData["Toastr"] = "Category has relation in Budget";
             return true;
         }
     }

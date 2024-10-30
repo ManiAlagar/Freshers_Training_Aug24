@@ -46,32 +46,35 @@ namespace Expense_Tracker_MVC.Helpers
         }
 
 
-        public async Task<bool> Post(Category entity, string url)
+        public async Task<string> Post(Category entity, string url)
         {
-
+            isValid();
             var serializedData = JsonConvert.SerializeObject(entity);
             var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
 
             var response = await _client.PostAsync(url, result);
 
-            if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
-            {
-                return false;
-            }
-            return true;
+            var status = await response.Content.ReadAsStringAsync();
+
+            //if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+            //{
+            //    return false;
+            //}
+            return status;
         }
 
 
-        public async Task Put(Category entity, string url)
+        public async Task<string> Put(Category entity, string url)
         {
-            if (isValid() != null)
-            {
-                var serializedData = JsonConvert.SerializeObject(entity);
-                var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
+            isValid();
+            var serializedData = JsonConvert.SerializeObject(entity);
+            var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
 
-                var response = await _client.PutAsync(url, result);
-            }
+            var response = await _client.PutAsync(url, result);
 
+            var status = await response.Content.ReadAsStringAsync();
+
+            return status;
         }
     }
 }

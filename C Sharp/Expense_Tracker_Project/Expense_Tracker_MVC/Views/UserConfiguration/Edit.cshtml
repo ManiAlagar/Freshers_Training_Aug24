@@ -1,0 +1,43 @@
+﻿@model Expense_Tracker_MVC.Models.UserConfiguration
+
+@{
+  
+    ViewData["Title"] = @TempData["AddOrEdit"];
+}
+
+
+<div class="row">
+    <div class="col-md-4 ">
+        <div class="text-center m-5">
+            <h2>@TempData["AddOrEdit"]</h2>
+            <h4>User Detail</h4>
+            <hr />
+        </div>
+
+        <form asp-controller="" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="ConfigurationKey" class="control-label mb-2"></label>
+                <input asp-for="ConfigurationKey" class="form-control" />
+                <span asp-validation-for="ConfigurationKey" class="text-danger"></span>
+            </div>
+
+              <div class="form-group">
+                <label asp-for="ConfigurationValue" class="control-label mb-2"></label>
+                <input asp-for="ConfigurationValue" class="form-control" />
+                <span asp-validation-for="ConfigurationValue" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-4">
+                <input type="submit" value="Save" class="btn btn-primary  btn-sm">
+                <a class="btn btn-sm btn-danger" asp-controller="Login" asp-action="Login">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

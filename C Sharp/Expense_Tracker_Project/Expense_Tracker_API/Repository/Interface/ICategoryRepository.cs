@@ -8,10 +8,10 @@ namespace Expense_Tracker_API.Repository.Interface
 
         Task<Category> GetByID(int id);
 
-        Task Add(Category entity);
+        Task<string> Add(Category entity);
 
-        Task Edit(Category entity);
+        Task<string> Edit(Category entity);
       
-        Task Delete(int id);
+        Task<string> Delete(int id);
     }
 }

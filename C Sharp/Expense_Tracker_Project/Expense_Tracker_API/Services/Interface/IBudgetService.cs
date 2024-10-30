@@ -8,10 +8,10 @@ namespace Expense_Tracker_API.Services.Interface
 
         Task<Budget> GetByID(int id);
 
-        Task Add(Budget entity);
+        Task<string> Add(Budget entity);
 
-        Task Edit(Budget entity);
+        Task<string> Edit(Budget entity);
 
-        Task Delete(int id);
+        Task<string> Delete(int id);
     }
 }

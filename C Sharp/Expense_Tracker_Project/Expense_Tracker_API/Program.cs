@@ -43,6 +43,15 @@ namespace Expense_Tracker_API
             builder.Services.AddTransient<IExpenseService, ExpenseService>();
 
 
+            //FOR UserConfiguration
+            builder.Services.AddTransient<IConfigurationRepository, ConfigurationRepository>();
+            builder.Services.AddTransient<IConfigurationService, ConfigurationService>();
+
+            //FOR CategorySpend
+            builder.Services.AddTransient<ICategorySpendRepository, CategorySpendRepository>();
+            builder.Services.AddTransient<ICategorySpendService, CategorySpendService>();
+
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -122,6 +131,12 @@ namespace Expense_Tracker_API
             app.UseHttpsRedirection();
 
             app.UseAuthentication();
+            app.UseCors(policy =>
+            {
+                policy.AllowAnyHeader();
+                policy.AllowAnyMethod();
+                policy.AllowAnyOrigin();
+            });
             app.UseAuthorization();
 
 

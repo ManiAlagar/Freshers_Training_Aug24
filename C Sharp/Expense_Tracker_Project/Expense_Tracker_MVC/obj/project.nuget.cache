@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PFDVmm0aI1I=",
+  "dgSpecHash": "jsQEt91Prdk=",
   "success": true,
   "projectFilePath": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Expense_Tracker_MVC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mitrah\\.nuget\\packages\\microsoft.azure.amqp\\2.6.9\\microsoft.azure.amqp.2.6.9.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.1.2\\microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.1.2\\microsoft.identitymodel.jsonwebtokens.7.1.2.nupkg.sha512",
     "C:\\Users\\Mitrah\\.nuget\\packages\\microsoft.identitymodel.logging\\7.1.2\\microsoft.identitymodel.logging.7.1.2.nupkg.sha512",

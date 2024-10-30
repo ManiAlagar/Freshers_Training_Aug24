@@ -46,19 +46,31 @@ namespace Expense_Tracker_MVC.Helpers
         }
 
 
-        public async Task<bool> Post(Expenses entity, string url)
+        public async Task<string> Post(Expenses entity, string url)
         {
-
+            isValid();
+            var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
+            if (!string.IsNullOrWhiteSpace(token))
+            {
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            }
             var serializedData = JsonConvert.SerializeObject(entity);
             var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
 
             var response = await _client.PostAsync(url, result);
 
-            if (response.StatusCode != System.Net.HttpStatusCode.OK)
-            {
-                return false;
-            }
-            return true;
+            var a = await  response.Content.ReadAsStringAsync();
+
+            dynamic status = JsonConvert.DeserializeObject(a);
+
+            return status["status"];
+
+            ////if (response.StatusCode != System.Net.HttpStatusCode.OK)
+            ////{
+            ////    return false;
+            ////}
+            //return response.ToString();
+
         }
 
     }

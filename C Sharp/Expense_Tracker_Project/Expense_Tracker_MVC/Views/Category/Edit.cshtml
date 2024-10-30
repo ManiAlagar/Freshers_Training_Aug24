@@ -12,17 +12,18 @@
         <input type="hidden" asp-for="UserId" />
         <input type="hidden" asp-for="CategoryID" />
 
-        <form asp-controller="Category" asp-action="Edit">
+        <form asp-controller="Category" asp-action="Edit"s>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="UserId" />
             <div class="form-group">
                 <label asp-for="CategoryName" class="control-label mb-2"></label>
-                <input asp-for="CategoryName" class="form-control"/>
-                <span asp-validation-for="CategoryName" class="text-danger"></span>
+                <input id="categoryName" asp-for="CategoryName" class="form-control"  onchange="Validation()" />
+                <span id="error" class="text-danger"></span>
+                <span asp-validation-for="CategoryName" class="text-danger"></span> 
             </div>
 
             <div class="form-group mt-4">
-                <input type="submit" value="Save" class="btn btn-primary  btn-sm">
+                <input type="submit" value="Save" class="btn btn-primary  btn-sm" id="Submit">
                 <a class="btn btn-sm btn-danger" asp-controller="Category" asp-action="Index">Back to List</a>
             </div>
         </form>
@@ -33,3 +34,52 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $(window).keydown(function (event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                return false;
+            }
+        });
+    });
+
+    function Validation() {
+        $("#Submit").removeClass('disabled');
+        $("#error").hide();
+
+        var inputValue = $("#categoryName").val().trim()
+        const specialCharcterRgx = /[!~#$%^&*`()\-_+={}[\]:;"'<>,.?\/|\\]/;
+        const numberRgx = /[0-9]/g;
+
+        if (inputValue == "") {
+            $("#error").text("Please enter Category Name.");
+            $("#error").show();
+            $("#Submit").addClass('disabled');
+        }
+        else if (specialCharcterRgx.test(inputValue) || numberRgx.test(inputValue)) {
+            $("#error").text("Please use only Alphabet");
+            $("#Submit").addClass('disabled');
+            $("#error").show();
+        }
+        else if (numberRgx.test(inputValue))
+        {
+            $("#error").text("Please use only Alphabet");
+            $("#Submit").addClass('disabled');
+            $("#error").show();
+        }
+        else {
+            $("#error").hide();
+            $("#Submit").removeClass('disabled');
+        }
+
+    }
+
+</script>

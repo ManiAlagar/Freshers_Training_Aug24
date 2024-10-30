@@ -5,10 +5,12 @@ namespace Expense_Tracker_API.Services.Interface
     public interface IExpenseService
     {
         Task<IEnumerable<Expenses>> Get(int id);
+
+        Task<IEnumerable<Expenses>> GetMonthly(int id);
         
         Task<Expenses> GetByID(int id);
 
-        Task Add(Expenses entity);
+        Task<string> Add(Expenses entity);
 
         Task Edit(Expenses entity);
 

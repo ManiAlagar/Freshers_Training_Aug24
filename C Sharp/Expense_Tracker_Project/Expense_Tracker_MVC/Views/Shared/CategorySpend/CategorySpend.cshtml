@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Expense_Tracker_MVC.Models.CategorySpend>
+
+
+<h2 class="mt-5 mb-5">Amount Spend Based on category</h2>
+<table class="mx-auto table w-50 table-bordered border-2 table-striped table-hover">
+    <tdead>
+        <tr class="bg-dark text-white">
+            <td>CategoryName</td>
+            <td>AmountSpend</td>
+         
+        </tr>
+    </tdead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryName</td>
+                <td>@item.AmountSpend</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

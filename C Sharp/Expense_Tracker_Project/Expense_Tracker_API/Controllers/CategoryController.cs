@@ -1,12 +1,15 @@
 ﻿
 using Expense_Tracker_API.Entity;
 using Expense_Tracker_API.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 
 
 namespace Expense_Tracker_API.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class CategoryController : ControllerBase
     {
@@ -43,9 +46,9 @@ namespace Expense_Tracker_API.Controllers
                 return BadRequest("Employee is null");
             }
 
-            await categoryService.Add(entity);
+            string status = await categoryService.Add(entity);
 
-            return Ok(entity);
+            return Ok(status);
         }
 
         [HttpPut("Edit/{id}")]
@@ -58,9 +61,9 @@ namespace Expense_Tracker_API.Controllers
                 return NotFound("The Employee record couldn't be found.");
             }
 
-            await categoryService.Edit(entity);
+            string status = await categoryService.Edit(entity);
 
-            return Ok("Updated Successful");
+            return Ok(status);
         }
 
         // DELETE METHOD
@@ -68,9 +71,9 @@ namespace Expense_Tracker_API.Controllers
         public async Task<IActionResult> Delete(int id)
         {
            
-            await categoryService.Delete(id);
+            var status = await categoryService.Delete(id);
 
-            return Ok("Record Deleted");
+            return Ok(status);
         }
     }
 }

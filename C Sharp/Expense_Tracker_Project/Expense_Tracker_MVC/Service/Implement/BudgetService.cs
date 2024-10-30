@@ -28,16 +28,23 @@ namespace Expense_Tracker_MVC.Service.Implement
 
             var data = await obj.Get(url);
 
-            return JsonConvert.DeserializeObject<IEnumerable<Budget>>(data);
+            try
+            {
 
-        }
+                return JsonConvert.DeserializeObject<IEnumerable<Budget>>(data);
+            }
+            catch { return null; }
+
+		}
 
         public async Task<Budget> GetByID(int? id)
         {
+
             BudgetHelper obj = new(client, httpContextAccessor);
 
-            var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            //var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
+            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            obj.isValid();
 
 
             var response = await client.GetAsync($"https://localhost:7273/api/Budget/GetByID?id={id}");
@@ -46,7 +53,7 @@ namespace Expense_Tracker_MVC.Service.Implement
         }
 
 
-        public async Task Create(Budget entity)
+        public async Task<string> Create(Budget entity)
         {
             var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
             entity.UserID = Convert.ToInt32(UserID);
@@ -57,10 +64,10 @@ namespace Expense_Tracker_MVC.Service.Implement
 
             string url = "https://localhost:7273/api/Budget/Create";
 
-            await obj.Post(entity, url);
+            return await obj.Post(entity, url);
         }
 
-        public async Task Edit(Budget entity)
+        public async Task<string> Edit(Budget entity)
         {
             var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
             entity.UserID = Convert.ToInt32(UserID);
@@ -69,18 +76,27 @@ namespace Expense_Tracker_MVC.Service.Implement
             BudgetHelper obj = new(client, httpContextAccessor);
             string url = $"https://localhost:7273/api/Budget/Edit/{entity.Id}";
 
-            await obj.Put(entity, url);
+            return await obj.Put(entity, url);
         }
 
 
-        public async Task Delete(int id)
+        public async Task<string> Delete(int id)
         {
 
             BudgetHelper obj = new(client, httpContextAccessor);
             obj.isValid();
 
             var response = await client.DeleteAsync($"https://localhost:7273/api/Budget/Delete/{id}");
-        
+
+            var a = await response.Content.ReadAsStringAsync();
+
+            //dynamic status = JsonConvert.DeserializeObject(a);
+
+            return a;
+
+
+
+            return response.ToString();
         }
 
 

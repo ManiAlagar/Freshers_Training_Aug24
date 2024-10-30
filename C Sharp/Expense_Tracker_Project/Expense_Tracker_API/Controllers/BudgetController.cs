@@ -1,13 +1,13 @@
 ﻿using Expense_Tracker_API.Entity;
 using Expense_Tracker_API.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics.Metrics;
+
 
 namespace Expense_Tracker_API.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class BudgetController : ControllerBase
     {
@@ -29,10 +29,10 @@ namespace Expense_Tracker_API.Controllers
 
         // GETByID METHOD
         [HttpGet("GetByID")]
-        public async Task<Budget> GetByID(int id)
+        public async Task<IActionResult> GetByID(int id)
         {
             var entity  = await budgetService.GetByID(id);
-            return entity;
+            return Ok(entity);
         }
 
         // CREATE METHOD
@@ -44,9 +44,9 @@ namespace Expense_Tracker_API.Controllers
                 return BadRequest("Employee is null");
             }
 
-            await budgetService.Add(entity);
+            string status = await budgetService.Add(entity);
 
-            return Ok(entity);
+            return Ok(status);
         }
 
         // EDIT METHOD
@@ -60,9 +60,9 @@ namespace Expense_Tracker_API.Controllers
             //    return NotFound("The Employee record couldn't be found.");
             //}
 
-            await budgetService.Edit(entity);
+            string status = await budgetService.Edit(entity);
 
-            return Ok("Updated Successful");
+            return Ok(status);
         }
 
 
@@ -70,9 +70,8 @@ namespace Expense_Tracker_API.Controllers
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-
-            await budgetService.Delete(id);
-            return Ok("Record Deleted");
+            string status = await budgetService.Delete(id);
+            return Ok(status);
         }
 
     }

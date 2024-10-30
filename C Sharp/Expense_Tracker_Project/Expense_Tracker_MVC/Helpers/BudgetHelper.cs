@@ -40,36 +40,54 @@ namespace Expense_Tracker_MVC.Helpers
             {
                 return "Unauthorized";
             }
+            
             var response = await _client.GetAsync(url);
             var data = await response.Content.ReadAsStringAsync();
             return data;
         }
 
-        public async Task<bool> Post(Budget entity, string url)
+        public async Task<string> Post(Budget entity, string url)
         {
+            isValid();
+            //var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
+
+            //_client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var serializedData = JsonConvert.SerializeObject(entity);
             var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
 
             var response = await _client.PostAsync(url, result);
 
-            if (response.StatusCode != System.Net.HttpStatusCode.OK)
-            {
-                return false;
-            }
-            return true;
+            var status = await response.Content.ReadAsStringAsync();
+
+            //dynamic status = JsonConvert.DeserializeObject(a);
+
+           
+
+
+            //if (response.StatusCode != System.Net.HttpStatusCode.OK)
+            //{
+            //    return false;
+            //}
+            return status;
         }
 
 
-        public async Task Put(Budget entity, string url)
+        public async Task<string> Put(Budget entity, string url)
         {
-            if (isValid() != null)
-            {
-                var serializedData = JsonConvert.SerializeObject(entity);
-                var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
+            isValid();
+            var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
 
-                var response = await _client.PutAsync(url, result);
-            }
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+            var serializedData = JsonConvert.SerializeObject(entity);
+            var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
+
+            var response = await _client.PutAsync(url, result);
+            var status = await response.Content.ReadAsStringAsync();
+
+
+            return status;
 
         }
     }

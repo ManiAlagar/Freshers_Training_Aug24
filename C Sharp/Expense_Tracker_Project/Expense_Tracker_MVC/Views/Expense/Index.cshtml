@@ -14,7 +14,6 @@
             <th>Category Name</th>
             <th>Description</th>
             <th>Amount</th>
-            <th>AmountSpend</th>
             <th>Date</th>
             <th>Action</th>
         </tr>
@@ -26,7 +25,6 @@
                 <td>@item.CategoryName</td>
                 <td>@item.Description</td>
                 <td>@item.Amount</td>
-                <td>@item.AmountSpend</td>
                 <td>@item.Date.ToString("dd-MM-yyyy")</td>
 
                 <th>
@@ -37,6 +35,11 @@
         }
     </tbody>
 </table>
+
+
+@Html.Partial("Index")
+
+
 
 
 
@@ -58,11 +61,8 @@
                         contentType: false,
                         dataType: "json",
                         success: function (result) {
-                            swal("Poof! Your record has been deleted!", {
-                                icon: "success",
-                                timer: 1000
-                            });
-                            setTimeout(reload, 1000);
+                           
+                            setTimeout(reload, 200);
                         },
                         error: function (errormessage) {
                             console.log(errormessage.responseText);
@@ -84,3 +84,23 @@
 </Script>
 
 
+@{
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+
+        <script>
+            $(document).ready(function () {
+
+                if ('@TempData["ExpenseToastr"]' == "Nothing") {
+
+                }
+                else if ('@TempData["ExpenseToastr"]' == "Created successful") {
+                     toastr.success('@TempData["ExpenseToastr"]');
+                }
+                else 
+                {
+                     toastr.info('@TempData["Toastr"]');
+                }
+            });
+        </script>
+}

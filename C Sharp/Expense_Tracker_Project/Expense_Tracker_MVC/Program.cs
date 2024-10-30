@@ -20,6 +20,8 @@ namespace Expense_Tracker_MVC
 
             builder.Services.AddTransient<IExpenseService, ExpenseService>();
 
+            builder.Services.AddTransient<ICategorySpendService, CategorySpendService>();
+
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

@@ -16,6 +16,11 @@ namespace Expense_Tracker_API.Services.Implement
             this.categoryRepository = categoryRepository;
         }
 
+        //public async Task<IEnumerable<CategorySpend>> GetCategorySpend(int id)
+        //{
+        //    return await categoryRepository.GetCategorySpend(id);
+        //}
+
         public async Task<IEnumerable<Category>> Get(int id)
         {
             return await categoryRepository.Get(id);
@@ -26,20 +31,20 @@ namespace Expense_Tracker_API.Services.Implement
             return await categoryRepository.GetByID(id);
         }
 
-        public async Task Add(Category entity)
+        public async Task<string> Add(Category entity)
         {
-            await categoryRepository.Add(entity);
+           return  await categoryRepository.Add(entity);
         }
 
-        public async Task Edit(Category entity)
+        public async Task<string> Edit(Category entity)
         {
-            await categoryRepository.Edit(entity);
+            return await categoryRepository.Edit(entity);
         }
 
 
-        public async Task Delete(int id)
+        public async Task<string> Delete(int id)
         {
-            await categoryRepository.Delete(id);
+            return await categoryRepository.Delete(id);
         }
     }
 }

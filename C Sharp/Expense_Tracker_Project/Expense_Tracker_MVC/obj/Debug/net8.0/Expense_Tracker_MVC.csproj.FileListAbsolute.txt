@@ -36,3 +36,4 @@ E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\D
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll

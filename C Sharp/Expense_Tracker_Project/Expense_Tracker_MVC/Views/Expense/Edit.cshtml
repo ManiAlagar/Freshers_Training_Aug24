@@ -1,34 +1,42 @@
-﻿@model Expense_Tracker_MVC.Models.Expenses
+﻿<using (Html.BeginForm(null, null, FormMethod.Post, new { id = "myForm"}))>
+
+@model Expense_Tracker_MVC.Models.Expenses
 @{
     ViewData["Title"] = @TempData["AddOrEdit"];
 }
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <h2>@TempData["AddOrEdit"]</h2>
 <h4>Expense Detail</h4>
-<hr/>
+    <hr />
+
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-controller="Expense" asp-action="Edit">
+            <form asp-controller="Expense" asp-action="Edit" id="myForm">
 
             <div class="form-group mt-3">
                 <label asp-for="CategoryName" class="control-label mb-2"></label>
 
-                <select asp-for="CategoryName" class="form-control" asp-items='@ViewBag.CategoryList'> </select>
-
-                <span asp-validation-for="CategoryName" class="text-danger"></span>
+                    <select asp-for="CategoryName" class="form-control" id="task" asp-items='@ViewBag.CategoryList' onchange="run()"> </select>
+                    <span asp-validation-for="CategoryName" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Amount" class="control-label mb-2"></label>
-                <input asp-for="Amount" class="form-control" />
-                <span asp-validation-for="Amount" class="text-danger"></span>
+                 <input oninput="validateAmount()" id="amount" asp-for="Amount" class="form-control" onchange="run()" />
+            
+                 <span id="Amounterror" class="text-danger"></span>
+                 <span asp-validation-for="Amount" class="text-danger"></span>
             </div>
-
-          @*   <div class="form-group">
-                <label asp-for="AmountSpend" class="control-label mb-2"></label>
-                <input asp-for="AmountSpend" class="form-control" />
-                <span asp-validation-for="AmountSpend" class="text-danger"></span>
-            </div> *@
+            <div class="d-none">
+                <input id="balAmount" class="form-control" />
+                <input id="startDate" class="form-control" />
+                <input id="endDate" class="form-control" />
+                <input id="categoryName" class="form-control" />
+            </div>
 
             <div class="form-group">
                 <label asp-for="Description" class="control-label mb-2"></label>
@@ -38,15 +46,20 @@
 
             <div class="form-group">
                 <label asp-for="Date" class="control-label mb-2"></label>
-                <input type="date" asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger"></span>
-            </div>
+                    <input oninput="validateDate()" id="date" type="date" asp-for="Date" class="form-control"/>
+                <span  class="text-danger"></span>
 
+                    @* <span id="dateerror" asp-validation-for="Date"  class="text-danger hidden"></span>  *@
+                    <span id="dateerror"   class="text-danger "></span>
+                    @* <span id="AmounterrorOne" class="text-danger"></span> *@
+                    <span asp-validation-for="Date" class="text-danger"></span> 
+            </div>
 
             <div class="form-group mt-4">
-                <input type="submit" value="Save" class="btn btn-primary  btn-sm">
-                <a class="btn btn-sm btn-danger" asp-controller="Expense" asp-action="Index">Back to List</a>
+                    <input type="submit" class="btn btn-primary  btn-sm"  id="submit" >
+                <a class="btn btn-sm btn-danger" asp-controller="CommonModel" asp-action="Index">Back to List</a>
             </div>
+
         </form>
     </div>
 </div>
@@ -55,3 +68,114 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+
+
+    <script>
+
+        // function submit() {
+
+        //     var amountValid = validateAmount()
+        //     var dateValid = validateDate()
+
+
+        //     if (amountValid && dateValid) {
+        //         $("#myForm").submit();
+        //     }
+
+        // }
+
+     
+        //Amount Validation
+        function validateAmount() {
+       
+            $("#submit").addClass('disabled');
+            var flag = 1;
+            var balAmount = $("#balAmount").val();
+            var amount = ($("#amount").val());
+            var categoryName = ($("#categoryName").val());
+
+            if (balAmount == 0) {
+                $("#Categoryerror").text("You have spend all Amount in " + categoryName + "category");
+                $("#Categoryerror").show();
+                isSubmitted = false;
+
+            }
+
+            if (amount <= 0) {
+                $("#Amounterror").text("Please enter valid Amount (more than Zero)");
+                $("#Amounterror").show();
+                isSubmitted = false;
+            }
+            else if (parseInt($("#amount").val()) > parseInt(balAmount) || parseInt($("#amount").val()) == 0) {
+                $("#Amounterror").text("Amount cannot be more than balance amount : " + balAmount);
+                $("#Amounterror").show();
+                isSubmitted = false;
+            }
+            else {
+                $("#Amounterror").hide();
+                $("#submit").removeClass('disabled');
+                isSubmitted = true;
+            }
+
+
+            return isSubmitted;
+        }
+
+        //Date Validation
+        function validateDate() {
+            const date = $("#date").val();
+
+            var sd = $("#startDate").val();
+            var startDate = new Date(sd).toLocaleDateString('en-CA');
+
+            var endDate = new Date($("#endDate").val()).toLocaleDateString('en-CA');
+
+            if (date >= startDate && date <= endDate) {
+                $("#dateerror").hide();
+                $("#submit").removeClass('disabled');
+                console.log('true')
+            }
+            else {
+                $("#dateerror").text("Date must be between the duartion in Budget");
+                // $("#dateerror").removeClass('hidden')
+                $("#dateerror").show();
+
+                $("#submit").addClass('disabled');
+             
+            }
+        }
+
+
+        function run() {
+            var e = document.getElementById("task");
+            var id = e.options[e.selectedIndex].value;
+            var name = e.options[e.selectedIndex].text;
+            console.log(id + 'Name : ' + name);
+
+            var data = $.ajax({
+                url: "https://localhost:7269/Budget/Get?id=" + id,
+                type: "GET",
+                contenttype: false,
+                datatype: "json",
+                success: function (result) {
+                    console.log("result", result);
+                    if (result != null) {
+                       
+                        $("#balAmount").val(result.balance);
+                        $("#startDate").val(result.startDate);
+                        $("#endDate").val(result.endDate);
+                        $("#categoryName").val(result.CategoryName);
+                    }
+                },
+                error: function (errormessage) {
+                    console.log(errormessage);
+                }
+            });
+            console.log(data)
+        } run();
+
+
+    </script>
+
+

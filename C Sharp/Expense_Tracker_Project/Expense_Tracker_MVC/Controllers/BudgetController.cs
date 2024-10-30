@@ -1,12 +1,14 @@
 ﻿using Expense_Tracker_MVC.Models;
 using Expense_Tracker_MVC.Service.Implement;
 using Expense_Tracker_MVC.Service.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 
 namespace Expense_Tracker_MVC.Controllers
 {
+    [Authorize]
     public class BudgetController : Controller
     {
         private readonly IBudgetService budgetService;
@@ -29,8 +31,8 @@ namespace Expense_Tracker_MVC.Controllers
         }
 
 
-        [HttpGet]
-        private async Task<Budget> Get(int? id)
+        [HttpGet, ActionName("Get")]
+        public async Task<Budget> Get(int? id)
         {
             var entity = await budgetService.GetByID(id);
             return entity;
@@ -40,6 +42,7 @@ namespace Expense_Tracker_MVC.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
+            TempData["Toastr"] = "Nothing";
 
             //List in select area
             var Res = await categoryService.Get();
@@ -61,9 +64,17 @@ namespace Expense_Tracker_MVC.Controllers
             {
                 TempData["AddOrEdit"] = "Edit";
                 if (id == null)
-                {
+                {   
                     return NotFound();
                 }
+
+                //var a = await response.Content.ReadAsStringAsync();
+
+                //dynamic status = JsonConvert.DeserializeObject(a);
+
+                //return status["status"];
+
+
                 Budget entity = await budgetService.GetByID(id);
                 entity.CategoryName = entity.CategoryID.ToString();
                 return View(entity);
@@ -75,19 +86,27 @@ namespace Expense_Tracker_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, [Bind] Budget entity)
         {
+            TempData["Toastr"] = "Budget already Exists for the category";
 
-            TempData["Toastr"] = "Updated Successful";
 
             if (id != null)
             {
                 entity.Id = (int)id;
 
-                await budgetService.Edit(entity);
+                string status = await budgetService.Edit(entity);
+
+                //TempData["Toastr"] = $"Budget is Exists for the {entity.CategoryName} category";
+                if (status != "Failure")
+                    TempData["Toastr"] = "Updated Successful";
+                
             }
             else
             {
-                await budgetService.Create(entity);
-                TempData["Toastr"] = "Created Successful";
+               var status = await budgetService.Create(entity);
+              
+
+                if (status == "Success")
+                    TempData["Toastr"] = "Created Successful";
             }
             return RedirectToAction("Index");
         }
@@ -97,8 +116,14 @@ namespace Expense_Tracker_MVC.Controllers
 
         [HttpPost, ActionName("Delete")]
         public async Task<bool> DeleteConfirmed(int id)
-        { 
-            await budgetService.Delete(id);
+        {
+           
+            string status = await budgetService.Delete(id);
+            TempData["Toastr"] = "Deleted Successful";
+            if (status == "Failure")
+            {
+                TempData["Toastr"] = "Cannot delete this Bugdet it has relation in Expense details";
+            }
             return true;
         }
     }

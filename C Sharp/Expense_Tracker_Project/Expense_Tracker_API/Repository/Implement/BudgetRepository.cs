@@ -44,34 +44,10 @@ namespace Expense_Tracker_API.Repository.Implement
             }
         }
 
-        public async Task Delete(int id)
+       
+
+        public async Task<string> Add(Budget entity)
         {
-
-            //Budget entity = await GetByID(id);
-
-            //context.Budget.Remove(entity);
-            //await context.SaveChangesAsync();
-
-            try
-            {
-                var query = $"Delete_Budget {id}";
-
-                using (var connection = _context.CreateConnection())
-                {
-                    var entity = await connection.QueryAsync<Budget>(query);
-                }
-            }
-            catch (Exception Message)
-            {
-                throw Message;
-            }
-
-        }
-
-        public async Task Add(Budget entity)
-        {
-            //    await context.Budget.AddAsync(entity);
-            //    await context.SaveChangesAsync();
 
             var query = $"EXEC Insert_Budget" +
                 $" @UserID = {entity.UserID}," +
@@ -84,11 +60,12 @@ namespace Expense_Tracker_API.Repository.Implement
 
             using (var connection = _context.CreateConnection())
             {
-                await connection.ExecuteAsync(query);
+                var status = await connection.ExecuteScalarAsync(query);
+                return status.ToString();
             }
         }
 
-        public async  Task Edit(Budget entity)
+        public async  Task<string> Edit(Budget entity)
         {
             var query = $"EXEC Update_Budget" +
               $" @ID = {entity.Id}," + 
@@ -102,9 +79,30 @@ namespace Expense_Tracker_API.Repository.Implement
 
             using (var connection = _context.CreateConnection())
             {
-                var status = await connection.ExecuteAsync(query);
+                var status = await connection.ExecuteScalarAsync(query);
+                return status.ToString();
             }
-             await context.SaveChangesAsync();
+             //await context.SaveChangesAsync();
+        }
+
+        public async Task<string> Delete(int id)
+        {
+            try
+            {
+                var query = $"Delete_Budget {id}";
+
+                using (var connection = _context.CreateConnection())
+                {
+                    var status = await connection.ExecuteScalarAsync(query);
+
+                    return status.ToString();
+                }
+            }
+            catch (Exception Message)
+            {
+                throw Message;
+            }
+
         }
     }
 }

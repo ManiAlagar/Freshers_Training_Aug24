@@ -17,5 +17,13 @@
         public DateTime Date { get; set; }
 
         public string CategoryName { get; set; }
-    }
+
+        public decimal CategorySpend { get; set; }
+
+		public Decimal BudgetAmount { get; set; }
+
+		public int Category_Count { get; set; }
+
+		public string Month_Name { get; set; }
+	}
 }

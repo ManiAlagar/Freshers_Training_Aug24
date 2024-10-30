@@ -13,7 +13,11 @@ namespace Expense_Tracker_API.Services.Implement
             this.expenseRepository = expenseRepository;
         }
 
-        public async Task<IEnumerable<Expenses>> Get(int id)
+        public async Task<IEnumerable<Expenses>> GetMonthly(int id)
+        {
+            return await expenseRepository.GetMonthly(id);
+        }
+           public async Task<IEnumerable<Expenses>> Get(int id)
         {
             return await expenseRepository.Get(id);
         }
@@ -28,22 +32,15 @@ namespace Expense_Tracker_API.Services.Implement
             await expenseRepository.Delete(id);
         }
 
-        public async  Task Add(Expenses entity)
+        public async  Task<string> Add(Expenses entity)
         {
-            await expenseRepository.Add(entity);
+            return await expenseRepository.Add(entity);
         }
 
         public async Task Edit(Expenses entity)
         {
             await expenseRepository.Edit(entity);
         }
-
-        //public async Task<Expenses> CheckCategory(int CategoryID)
-        //{
-        //     var entity =  await expenseRepository.CheckCategory(CategoryID);
-        //    return entity;
-
-        //}
 
     }
 }
