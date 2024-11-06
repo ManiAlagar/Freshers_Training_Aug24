@@ -191,3 +191,10 @@ D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\obj\Debug\net8.0
 D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\obj\Debug\net8.0\BookstoreMVC.pdb
 D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\obj\Debug\net8.0\BookstoreMVC.genruntimeconfig.cache
 D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\obj\Debug\net8.0\ref\BookstoreMVC.dll
+D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\bin\Debug\net8.0\JsonSubTypes.dll
+D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\bin\Debug\net8.0\MailKit.dll
+D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\bin\Debug\net8.0\mailslurp.dll
+D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\bin\Debug\net8.0\MimeKit.dll
+D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\bin\Debug\net8.0\Polly.dll
+D:\Freshers_Training_Aug24\C#\BookstoreApplication\BookstoreMVC\bin\Debug\net8.0\RestSharp.dll

@@ -10,6 +10,7 @@ using System.Net;
 using System.Security.Claims;
 using System.Web.Http;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BookstoreApplication.Repository.Implementation
 {
@@ -39,7 +40,7 @@ namespace BookstoreApplication.Repository.Implementation
 
                     var title = await connection.QuerySingleOrDefaultAsync<string>(name, new { bookId });
                     var stocks = await connection.QuerySingleOrDefaultAsync<int>(stock, new { bookId });
-                    var amount = await connection.QuerySingleOrDefaultAsync<int>(amt, new { bookId });
+                    var amount = await connection.QuerySingleOrDefaultAsync<decimal>(amt, new { bookId });
                    
 
                     if ( stocks > 0)
@@ -87,7 +88,7 @@ namespace BookstoreApplication.Repository.Implementation
             {
                 var roleId = httpContextAccessor.HttpContext.User.Claims.SingleOrDefault(u => u.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role").Value;
                 var userId = httpContextAccessor.HttpContext.User.Claims.SingleOrDefault(u => u.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier").Value;
-                if(roleId=="1")//customer
+                if(roleId=="1" || roleId=="2")//customer
                 {
                     using (var connection = _context.CreateConnection())
                     {
@@ -128,24 +129,27 @@ namespace BookstoreApplication.Repository.Implementation
             return cart;
         }
 
-        public async Task<Cart> UpdateQuantity(int cartId, int quantity)
+        public async Task<int> UpdateQuantity(int cartId, int quantity)
         {
             var price = "select BOOKS.price from books join cart on books.BookId=cart.bookid where cart.CartItemId=@cartId;";
+            var query = "select stock from books join cart on cart.BookId = Books.BookId where cart.CartItemId=@cartId";
+
             using (var connection = _context.CreateConnection())
             {
 
                 var BookPrice = await connection.QuerySingleOrDefaultAsync<decimal>(price, new { cartId });
+                var stock= await connection.QuerySingleOrDefaultAsync<int>(query, new { cartId });
                 try
                 {
                     var cart = await db.Cart.FindAsync(cartId);
-                    if (cart != null && quantity > 0)
+                    if (cart != null && quantity > 0 && quantity <=stock)
                     {
                         cart.Quantity = quantity;
                         cart.Price = BookPrice * quantity;
                         await db.SaveChangesAsync();
-                        return cart;
+                        return 1;
                     }
-                    return cart;
+                    return stock;
                 }
                 catch (Exception)
                 {

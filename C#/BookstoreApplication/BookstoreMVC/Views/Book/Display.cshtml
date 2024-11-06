@@ -19,16 +19,18 @@
             <form asp-action="Display" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" asp-for="BookId" />
-                <div class="form-group">
-                    <label asp-for="Title" class="control-label"></label>
-                    <input asp-for="Title" class="form-control" />
-                    <span asp-validation-for="Title" class="text-danger" ></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Description" class="control-label"></label>
-                    <input asp-for="Description" class="form-control" />
-                    <span asp-validation-for="Description" class="text-danger"></span>
-                </div>
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label" ></label>
+                       <input asp-for="Title" class="form-control" id="title" />
+                        <input asp-for="IsPublish" class="form-control" hidden id="PUBLISH" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-control" id="desc" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+               
                 <div class="form-group">
                     <label asp-for="Price" class="control-label"></label>
                     <input asp-for="Price" class="form-control" />
@@ -94,8 +96,18 @@ else
     </div>
 }
 
+
+
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+<script type="text/javascript">
+    var value = $('#PUBLISH').val();
+        if (value == "True") {
+            $('#title').attr('readonly', true);
+            $('#desc').attr('readonly', true);
+        }
+
+    </script>
 }

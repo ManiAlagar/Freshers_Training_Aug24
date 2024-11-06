@@ -6,7 +6,7 @@ namespace BookstoreMVC.Models
     {
         public IEnumerable<Cart> items { get; set; }
         public Discount discount { get; set; }
-        [Required]
-        public string? Address { get; set; }
+        [Required(ErrorMessage = "Address is required")]
+        public string Address { get; set; }
     }
 }

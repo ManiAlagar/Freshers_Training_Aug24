@@ -8,7 +8,7 @@ namespace BookstoreApplication.Repository.Interface
         Task<Cart> AddItemToCart(int bookId);
         Task<Cart> DeleteItemFromCart(int id);
         Task<Cart> GetCartItemById(int Id);
-        Task<Cart> UpdateQuantity(int cartItemId, int quantity);
+        Task<int> UpdateQuantity(int cartItemId, int quantity);
 
         Task<IEnumerable<Discount>> Discount();
     }

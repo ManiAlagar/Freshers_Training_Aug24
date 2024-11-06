@@ -19,7 +19,7 @@ namespace BookstoreMVC.Controllers
         [HttpPost, ActionName("AddItemToCart")]
         public async Task<bool> AddItemToCart([FromQuery]string bookId)
         {
-
+            TempData["success"] = "Added successfully";
             var token = HttpContext.Session.GetString("token") ?? throw new NotAuthorizedException("Bearer");
             await _service.AddItemToCart(Convert.ToInt32(bookId), token);
             return true;
@@ -34,11 +34,13 @@ namespace BookstoreMVC.Controllers
             var token = HttpContext.Session.GetString("token");
             var role = HttpContext.Session.GetString("roleId");
             TempData["role"] = role;
-            if (token == null || role=="3" || role=="2")
+            if (token == null || role=="3" || role == "2")
             {
                 return View("Unauthorized", "Shared");
             }
             var items = await _service.GetAllCartItems(token);
+            int count = items.Count();
+            ViewBag.count= count;
             var discount = await _service.Discount(token);
             foreach(var i in discount)
             {
@@ -49,7 +51,6 @@ namespace BookstoreMVC.Controllers
 
             var discountRes = new Discount()
             {
-                //DiscountOfffer = discountoffer,
                 DiscountOfffer = Convert.ToInt32(discountoffer),
                 Shipping = shipping,
                 Amount= amount
@@ -67,7 +68,7 @@ namespace BookstoreMVC.Controllers
         [HttpPost, ActionName("DeleteItemFromCart")]
         public async Task<bool> DeleteItemFromCart([FromQuery]string cartItemId)
         {
-
+            TempData["success"] = "Item removed successfully";
             var token = HttpContext.Session.GetString("token") ?? throw new NotAuthorizedException("Bearer");
             await _service.DeleteItemFromCart(Convert.ToInt32(cartItemId), token);
             return true;
@@ -93,11 +94,19 @@ namespace BookstoreMVC.Controllers
         }
 
         [HttpPost, ActionName("UpdateQuantity")]
-        public async Task<bool> UpdateQuantity(int cartItemId,int quantity)
+        public async Task<int> UpdateQuantity(int cartItemId,int quantity)
         {
             var token = HttpContext.Session.GetString("token") ?? throw new NotAuthorizedException("Bearer");
-            await _service.UpdateQuantity(cartItemId, quantity,token);
-            return true;
+            var res=await _service.UpdateQuantity(cartItemId, quantity,token);
+            if (res == 1)
+            {
+                TempData["success"] = "Quantity updated successfully";
+            }
+            else
+            {
+                TempData["failure"] = $"Only {res} books are available in the stock";
+            }
+            return res;
         }
 
 

@@ -32,14 +32,14 @@ namespace BookstoreMVC.Controllers
                 var token = HttpContext.Session.GetString("token");
                 var role = HttpContext.Session.GetString("roleId");
                 TempData["role"] = role;
-                
-                if (token == null|| role=="2")
+
+                if (token == null || role == "2")
                 {
                     return View("Unauthorized", "Shared");
                 }
                 if (role == "1")
                 {
-                    
+
                     var customerOrder = await _service.GetAllOrders(token);
                     return View(customerOrder);
                 }
@@ -63,17 +63,35 @@ namespace BookstoreMVC.Controllers
 
             try
             {
-                TempData["success"] = "Order placed successfully";
-                var token = HttpContext.Session.GetString("token") ?? throw new NotAuthorizedException("Bearer");
-                await _service.AddOrder(Address, token);
-                return 1;
+                if (ModelState.IsValid)
+                {
+                    
+                    var token = HttpContext.Session.GetString("token") ?? throw new NotAuthorizedException("Bearer");
+                    int res=await _service.AddOrder(Address, token);
+                    if(res == 1)
+                    {
+                        TempData["success"] = "Order placed successfully";
+                    }
+                    else
+                    {
+                        TempData["failure"] = "Add items to cart";
+                    }
+                    return res;
+                }
+                else
+                {
+                    TempData["failure"] = "Enter Valid Address";
+                    RedirectToAction("Index","Cart");
+                    return 0;
+                }
+
             }
             catch (Exception)
             {
 
                 throw;
             }
-           
+
         }
 
         [HttpPost, ActionName("DeleteOrder")]
@@ -98,9 +116,21 @@ namespace BookstoreMVC.Controllers
         [HttpGet, ActionName("GetBooksFromOrder")]
         public async Task<IActionResult> GetBooksFromOrder([FromRoute] int id)
         {
+            decimal shipping = 0;
+            decimal discountoffer = 0;
+            decimal amount = 0;
             var token = HttpContext.Session.GetString("token") ?? throw new NotAuthorizedException("Bearer");
-            var books=await _service.GetBooksFromOrder(id,token);
-            return View(books);
+            var orders = await _service.GetBooksFromOrder(id, token);
+            foreach (var i in orders)
+            {
+                shipping = i.Shipping;
+                discountoffer = i.Discount;
+                amount = i.TotalAmount;
+            }
+            ViewBag.Shipping = shipping;
+            ViewBag.Discount = discountoffer;
+            ViewBag.Amount = amount;
+            return View(orders);
 
         }
 
@@ -108,11 +138,11 @@ namespace BookstoreMVC.Controllers
 
 
         [HttpPost, ActionName("UpdateOrder")]
-        public async Task<bool> UpdateOrder(int orderId,int statusId)
+        public async Task<bool> UpdateOrder(int orderId, int statusId)
         {
 
             var token = HttpContext.Session.GetString("token") ?? throw new NotAuthorizedException("Bearer");
-            await _service.UpdateOrder(orderId, statusId, token);
+            await _service.UpdateOrder(Convert.ToInt32(orderId), statusId, token);
             return true;
         }
 
@@ -128,27 +158,3 @@ namespace BookstoreMVC.Controllers
 
     }
 }
-// /api/Order/GetAllOrders /api/Order/AddOrder /api/Order/GetAllOrders /api/Order/GetOrderById/ /api/Order/DeleteOrder /api/Order/UpdateOrder
-// /api/Order/GetBooksFromOrder/
-//@model IEnumerable<BookstoreMVC.Models.Order>
-//<div>
-//    <h6>My ordered books</h6>
-//</div>
-
-//<table class= "table" >
-//    < thead >
-//        < tr >
-//            < th > Title </ th >
-//            < th > Quantity </ th >
-//        </ tr >
-//    </ thead >
-//     < tbody >
-//         @foreach(var item in Model)
-//         {
-//             < tr >
-//                 < td > @item.Title </ td >
-//                 < td > @item.Quantity </ td >
-//             </ tr >
-//         }
-//     </ tbody >
-//</ table >

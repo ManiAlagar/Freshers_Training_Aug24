@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor httpContextAccessor
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -29,20 +31,58 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        
-                        
-                        <li class="nav-item active">
+
+                        @if (httpContextAccessor.HttpContext.Session.GetString("roleId") == "1")
+                        {
+                            <li class="nav-item active">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="Index">Book</a>
                         </li>
+                            
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="Index">Cart</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="Index">Order</a>
                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
-                         </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Profile">Profile</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
+                        </li>
+                        }
+                        
+                        @if (httpContextAccessor.HttpContext.Session.GetString("roleId") == "3")
+                         {
+                             <li class="nav-item active">
+                                 <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="Index">Book</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="Index">Order</a>
+                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Config" asp-action="Index">Configurations</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Profile">Profile</a>
+                            </li>
+                             <li class="nav-item">
+                                 <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
+                             </li>
+                         }
+                        
+                        @if (httpContextAccessor.HttpContext.Session.GetString("roleId") == "2")
+                         {
+                             <li class="nav-item active">
+                                 <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="Index">Book</a>
+                             </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Profile">Profile</a>
+                            </li>
+                             <li class="nav-item">
+                                 <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
+                             </li>
+                         }
                     </ul>
                 </div>
             </div>

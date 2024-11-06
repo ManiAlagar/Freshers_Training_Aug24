@@ -47,6 +47,7 @@ namespace BookstoreApplication.Controllers
                         new Claim(ClaimTypes.NameIdentifier, User.UserId.ToString()),
                         new Claim("Roles", User.RoleId.ToString()),
                         new Claim("Role", User.RoleId.ToString()),
+                       
                         }),
                     Expires = DateTime.UtcNow.AddMinutes(55),
                     SigningCredentials = new SigningCredentials(tokenKey, SecurityAlgorithms.HmacSha256)
@@ -54,7 +55,7 @@ namespace BookstoreApplication.Controllers
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
                 
-                return Ok(new { message = "Login successfully" ,Token = tokenString, RoleId= (int)User.RoleId });
+                return Ok(new { message = "Login successfully" ,Token = tokenString, RoleId= (int)User.RoleId ,UserId=(int)User.UserId});
             }
             else
             {

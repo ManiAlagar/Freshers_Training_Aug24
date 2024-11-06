@@ -13,7 +13,7 @@
         <tr>
             <th>Title</th>
             <th>Quantity</th>
-            <th>Price Details</th>
+             
             
         </tr>
     </thead >
@@ -23,25 +23,25 @@
         <tr>
             <td > @item.Title </td >
             <td > @item.Quantity </td >
-            <td>@item.Total</td>
+           
            
         </tr>
         }
     </tbody >
 </table >
 
- @* <div class="text-end m-3">
-     <div>
-         <label><b>Shipping :</b></label><span> @Html.DisplayFor(Shipping => Model.Shipping)</span>
-     </div>
-     <div>
-         <label><b>Discount(in %) :</b></label><span>@Html.DisplayFor(Discount => Model.Discount)</span>
-     </div>
-     <div>
-         <label><b>Total Amount :</b></label><span> @Html.DisplayFor(TotalAmount => Model.TotalAmount)</span>
-     </div>
+  <div class="text-end m-3">
+      <div>
+          <label><b>Shipping :</b></label><span> @ViewBag.Shipping</span>
+      </div>
+      <div>
+        <label><b>Discount(in %) :</b></label><span>@ViewBag.Discount</span>
+      </div>
+      <div>
+        <label><b>Total Amount :</b></label>@ViewBag.Amount</span>
+      </div>
 
- </div> *@
+  </div>
 
 
 

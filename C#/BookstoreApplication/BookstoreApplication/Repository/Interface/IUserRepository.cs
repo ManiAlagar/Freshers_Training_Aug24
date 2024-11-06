@@ -4,7 +4,8 @@ namespace BookstoreApplication.Repository.Interface
 {
     public interface IUserRepository
     {
-         Task<User> Register(User User);
+         Task<int> Register(User User);
         Task<User> GetUserById(int Id);
+        Task<int> UpdateUser(int bookId, User user);
     }
 }

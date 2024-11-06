@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<BookstoreMVC.Models.Config>
+
+    
+<h3>Configurations</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Config Key</th>
+            <th>Config Value</th>
+            
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ConfigKey</td>
+                <td>@item.ConfigValue</td>
+                <td>
+                    <a asp-action="Edit" asp-controller="Config" asp-route-id="@item.Id" class=" bi bi-pencil-square btn-sm btn-primary"></a>
+                </td>
+            </tr>
+        }
+        <tr></tr>
+    </tbody>
+</table>

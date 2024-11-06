@@ -30,6 +30,50 @@ namespace BookstoreApplication.Controllers
             }
         }
 
-        
+        [HttpPut]
+        [Route("UpdateConfig/{id:int}")]
+        public async Task<ActionResult<int?>> UpdateConfig([FromRoute] int id,Config config)
+        {
+            try
+            {
+                if (id == null)
+                    return BadRequest("UpdateConfig ID mismatch");
+
+                var ToUpdate = await _configService.GetConfigById(id);
+
+                if (ToUpdate == null)
+                    return NotFound($"UpdateConfig with Id = {id} not found");
+
+                var updated = await _configService.UpdateConfig(id, config);
+                var res = new ApiResponse<int>("Updated successfully", 200, updated);
+                return Ok(res);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error updating data");
+            }
+        }
+
+
+        [HttpGet]
+        [Route("GetConfigById/{id:int}")]
+        public async Task<ActionResult<Config?>> GetConfigById([FromRoute] int id)
+
+        {
+            try
+            {
+                var result = await _configService.GetConfigById(id);
+
+                if (result == null) return NotFound();
+
+                return result;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
+        }
     }
 }

@@ -25,9 +25,9 @@ namespace BookstoreApplication.Service.Implementation
         {
             return await orderRepository.GetOrderById(Id);
         }
-        public async Task<int> UpdateOrder(int OrderId, int StatusId)
+        public async Task<int> UpdateOrder(int orderId, int statusId)
         {
-            return await orderRepository.UpdateOrder(OrderId, StatusId);
+            return await orderRepository.UpdateOrder(orderId, statusId);
         }
         public async Task<int> DeleteOrder(int id)
         {

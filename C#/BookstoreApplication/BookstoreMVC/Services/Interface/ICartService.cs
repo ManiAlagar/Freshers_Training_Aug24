@@ -11,7 +11,7 @@ namespace BookstoreMVC.Services.Interface
         Task AddItemToCart(int id, string token);
         Task DeleteItemFromCart(int id, string? token);
         Task<Cart> GetCartItemById(int Id, string? token);
-        Task UpdateQuantity(int id, int quantity,string token);
+        Task<int> UpdateQuantity(int id, int quantity,string token);
         Task<IEnumerable<Discount>> Discount(string? token);
     }
 }

@@ -38,14 +38,17 @@ namespace BookstoreMVC.Services
             dynamic res= JsonConvert.DeserializeObject(responseContent, typeof(ApiResponse<List<Book>>));
             return res.data;
         }
-        public async Task AddBook(Book Book, string? token)
+       
+        public async Task<int> AddBook(Book Book, string? token)
         {
             //var tokenRes = JsonConvert.DeserializeObject<TokenResponse>(token);
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var stringContent = new StringContent(JsonConvert.SerializeObject(Book), Encoding.UTF8, "application/json");
             var response = await _client.PostAsync("/api/Book/AddBook", stringContent);
             string responseContent = await response.Content.ReadAsStringAsync();
-            
+            dynamic result = JsonConvert.DeserializeObject(responseContent, typeof(ApiResponse<int>));
+            return result.data;
+
         }
         public async Task<Book> GetBookById(int Id, string? token)
         {
@@ -54,20 +57,25 @@ namespace BookstoreMVC.Services
             var response = await _client.GetAsync("/api/Book/GetBookById/" + Id);
             return await response.ReadContentAsync<Book>();
         }
-        public async Task UpdateBook(int id, Book Book, string? token)
+        public async Task<int> UpdateBook(int id, Book Book, string? token)
         {
             //var tokenRes = JsonConvert.DeserializeObject<TokenResponse>(token);
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var stringContent = new StringContent(JsonConvert.SerializeObject(Book), Encoding.UTF8, "application/json");
             var response = await _client.PutAsync("/api/Book/UpdateBook/" + id, stringContent);
-            var responseContent = await response.Content.ReadAsStringAsync();
+            string responseContent = await response.Content.ReadAsStringAsync();
+            dynamic result = JsonConvert.DeserializeObject(responseContent, typeof(ApiResponse<int>));
+            return result.data;
         }
 
-        public async Task DeleteBook(int id, string? token)
+        public async Task<int> DeleteBook(int id, string? token)
         {
             //var tokenRes = JsonConvert.DeserializeObject<TokenResponse>(token);
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _client.DeleteAsync("/api/Book/DeleteBook/" + id);
+            string responseContent = await response.Content.ReadAsStringAsync();
+            dynamic result = JsonConvert.DeserializeObject(responseContent, typeof(ApiResponse<int>));
+            return result.data;
         }
 
         

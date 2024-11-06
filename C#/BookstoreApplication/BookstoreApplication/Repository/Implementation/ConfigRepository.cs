@@ -25,5 +25,29 @@ namespace BookstoreApplication.Repository.Implementation
                 throw;
             }
         }
+
+        public async Task<Config> GetConfigById(int Id)
+        {
+            var val = await db.Config.FindAsync(Id);
+            return val;
+        }
+
+        public async Task<int> UpdateConfig(int Id, Config config)
+        {
+            
+            var existing = await db.Config.FindAsync(Id);
+            if (existing != null)
+            {
+                existing.ConfigValue = config.ConfigValue;
+                await db.SaveChangesAsync();
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
+
     }
 }

@@ -38,7 +38,7 @@ namespace BookstoreApplication.Repository.Implementation
                 using (var connection = _context.CreateConnection())
                 {
                     var orders = await connection.QueryAsync<Order>(query);
-                    if (roleId == "1")//customers
+                    if (roleId == "1" || roleId=="2")//customers
                     {
                         return orders.Where(a => a.UserId == Convert.ToInt32(userId)).ToList();
                     }
@@ -65,22 +65,22 @@ namespace BookstoreApplication.Repository.Implementation
 
         }
 
-    
-
-
-
 
         public async Task<int> AddOrder(string Address)
         {
             var userId = httpContextAccessor.HttpContext.User.Claims.SingleOrDefault(u => u.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier").Value;
             int UserId = Convert.ToInt32(userId);
+
+            var query = "if exists(select 1 from cart where [status]='Pending')select 'success' else select 'failure' as res";
             using (var connection = _context.CreateConnection())
             {
+
+                var result=  connection.QueryFirstOrDefault<string>(query);
                 var queryParameters = new DynamicParameters();
                 queryParameters.Add("@Address", Address);
                 queryParameters.Add("@UserId", UserId);
 
-                try
+                if(result =="success")
                 {
                     var res = await connection.QueryAsync<int>(
                     "AddOrder",
@@ -88,10 +88,10 @@ namespace BookstoreApplication.Repository.Implementation
                     commandType: CommandType.StoredProcedure);
                     return 1;
                 }
-                catch
-                {
-                    throw new HttpResponseException(HttpStatusCode.BadRequest);
+                else {
+                    return 0;
                 }
+                    
 
             }
         }
@@ -128,14 +128,16 @@ namespace BookstoreApplication.Repository.Implementation
             }
         }
 
-        public async Task<int> UpdateOrder(int OrderId, int StatusId)
+        public async Task<int> UpdateOrder(int orderId, int statusId)
         {
+            var userId = httpContextAccessor.HttpContext.User.Claims.SingleOrDefault(u => u.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier").Value;
+            int UserId = Convert.ToInt32(userId);
             using (var connection = _context.CreateConnection())
             {
                 var queryParameters = new DynamicParameters();
-                queryParameters.Add("@orderId", OrderId);
-                queryParameters.Add("@statusId", StatusId);
-
+                queryParameters.Add("@orderId", orderId);
+                queryParameters.Add("@statusId", statusId);
+                queryParameters.Add("@userId", UserId);
                 try
                 {
                     var res = await connection.QueryAsync<int>(

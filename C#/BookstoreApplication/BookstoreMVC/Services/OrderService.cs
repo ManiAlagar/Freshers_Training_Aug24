@@ -1,6 +1,7 @@
 ﻿
 using BookstoreMVC.Models;
 using BookstoreMVC.Services.Interface;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Text;
@@ -19,11 +20,13 @@ namespace BookstoreMVC.Services
             _client.BaseAddress = new Uri("http://localhost:5287/");
         }
 
-        public async Task AddOrder(string address, string? token)
+        public async Task<int> AddOrder(string address, string? token)
         {
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _client.PostAsync("/api/Order/AddOrder?Address=" + address, null);
-            var responseContent = await response.Content.ReadAsStringAsync();
+            string responseContent = await response.Content.ReadAsStringAsync();
+            dynamic result = JsonConvert.DeserializeObject(responseContent, typeof(ApiResponse<int>));
+            return result.data;
         }
 
         public async Task DeleteOrder(int id, string? token)
@@ -37,7 +40,7 @@ namespace BookstoreMVC.Services
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _client.GetAsync("/api/Order/GetAllOrders");
             string responseContent = await response.Content.ReadAsStringAsync();
-            dynamic result = JsonConvert.DeserializeObject(responseContent, typeof(ApiResponse<List<Order>>));
+            dynamic result = JsonConvert.DeserializeObject(responseContent, typeof(ApiResponse<List<Order>>));// ApiResponse<int>
             return result.data;
         }
 
@@ -53,11 +56,11 @@ namespace BookstoreMVC.Services
         {
             
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            
-            var response = await _client.PostAsync("/api/Book/UpdateOrder/" +  );
-            var responseContent = await response.Content.ReadAsStringAsync();
+           
+            var response = await _client.PostAsync("/api/Order/UpdateOrder?orderId=" + orderId+ "&statusId=" + statusId,null);
         }
 
-        /api/Cart/UpdateQuantity? cartItemId = " + id + " & quantity = "+quantity,null
+
+
     }
 }

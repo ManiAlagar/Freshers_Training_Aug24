@@ -14,13 +14,13 @@ namespace BookstoreMVC.Models
         [Required(ErrorMessage = "Username is required")]
         public string Username { get; set; }
         [Required(ErrorMessage = "Email is required")]
+        [RegularExpression(@"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$", ErrorMessage = "Provided email is not valid")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Password is required")]
-        [MaxLength(6)]
-        public string Password { get; set; }
+        public string? Password { get; set; }
         [Required(ErrorMessage = "Address is required")]
         public string Address { get; set; }
         [Required(ErrorMessage = "ContactNo is required")]
+        
         [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$",
                    ErrorMessage = "Provided phone number not valid")]
         public long ContactNo { get; set; }

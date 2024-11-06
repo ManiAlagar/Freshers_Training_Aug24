@@ -61,11 +61,13 @@ namespace BookstoreMVC.Services
             var responseContent = await response.Content.ReadAsStringAsync();
         }
 
-        public async Task UpdateQuantity(int id,int quantity, string? token)
+        public async Task<int> UpdateQuantity(int id,int quantity, string? token)
         {
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _client.PostAsync("/api/Cart/UpdateQuantity?cartItemId=" + id + "&quantity="+quantity,null);
-
+            string responseContent = await response.Content.ReadAsStringAsync();
+            dynamic result = JsonConvert.DeserializeObject(responseContent, typeof(ApiResponse<int>));
+            return result.data;
         }
 
         

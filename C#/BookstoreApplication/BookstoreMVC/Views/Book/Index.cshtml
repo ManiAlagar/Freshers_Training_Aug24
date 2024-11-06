@@ -16,7 +16,7 @@
 @if (TempData["role"].ToString() == "1")
 {
     <p>
-        <h3>My Books</h3>
+        <h3> Books</h3>
        
     </p>
 }
@@ -57,28 +57,39 @@
         
         @foreach (var item in Model)
         {
-           
-                    @if (TempData["role"].ToString() == "1")
+
+            @if (TempData["role"].ToString() == "1" )
                     {
                         <tr>
                         <td>@item.Title</td>
                         <td>@item.Username</td>
                         <td>@item.Description</td>
                         <td>@item.Price</td>
-                        <td>@item.Stock</td>
+                    <td>
+                        @if (@item.Stock > 1)
+                        {
+                        @item.Stock
+                        }
+                        @if (@item.Stock < 1)
+                        {
+                        <span>Out of stock</span>
+                        }
+                    </td>
+                   
+                       <td>
+                        @if (@item.isAddedToCart == true || ((@item.isAddedToCart == true || @item.isAddedToCart == false) && item.Stock < 1))
+                        {
+                       
+                            <a id="addtocart" class="btn-sm btn-secondary">Not available</a>
+                        }
 
-                        @if (@item.isAddedToCart == true)
+                        @if (@item.isAddedToCart == false && item.Stock > 1)
                         {
-                            <td>
-                                <a id="addtocart">Item Added</a>
-                            </td>
+                       
+                            <a id="addtocart" onclick="addToCartFunction('@item.BookId');" class="btn-sm btn-info">Add to cart</a>
+                       
                         }
-                        @if (@item.isAddedToCart == false)
-                        {
-                           <td>
-                                <a id="addtocart" onclick="addToCartFunction('@item.BookId');" class="btn-sm btn-info">Add to cart</a>
-                           </td>
-                        }
+                       </td>
                         </tr>
                     }
                     @if (TempData["role"].ToString() == "2")
@@ -87,9 +98,18 @@
                         <td>@item.Title</td>
                         <td>@item.Description</td>
                         <td>@item.Price</td>
-                        <td>@item.Stock</td>
+                    <td>
+                        @if (@item.Stock > 1)
+                        {
+                            @item.Stock
+                        }
+                        @if (@item.Stock < 1)
+                        {
+                            <span>Out of stock</span>
+                        }
+                    </td>
                         <td>
-                            <a asp-action="Display" asp-controller="Book" asp-route-id="@item.BookId" class=" bi bi-pencil-square btn-sm btn-primary"></a>
+                            <a asp-action="Display" asp-controller="Book" asp-route-id="@item.BookId" class=" bi bi-pencil-square btn-sm btn-primary" ></a>
                             <a class="bi bi-trash btn-sm btn-danger" id="delete" onclick="delFunction('@item.BookId');"></a>
                         </td>
                         </tr>
@@ -101,7 +121,16 @@
                         <td>@item.Username</td>
                         <td>@item.Description</td>
                         <td>@item.Price</td>
-                        <td>@item.Stock</td>
+                    <td>
+                        @if (@item.Stock >= 1)
+                        {
+                            @item.Stock
+                        }
+                        @if (@item.Stock < 1)
+                        {
+                            <span>Out of stock</span>
+                        }
+                    </td>
                         <td>
                         @if (@item.IsPublish == true)
                         {
@@ -114,7 +143,8 @@
                         
                         </td>
                         <td>
-                            <a asp-action="Display" asp-controller="Book" asp-route-id="@item.BookId" class=" bi bi-pencil-square btn-sm btn-primary"></a>
+
+                            <a asp-action="Display" asp-controller="Book" asp-route-id="@item.BookId" class=" bi bi-pencil-square btn-sm btn-primary" ></a>
                             <a class="bi bi-trash btn-sm btn-danger" id="delete" onclick="delFunction('@item.BookId');"></a>
                         </td>
                         </tr>
@@ -124,6 +154,16 @@
     </tbody>
 </table>
 <script type="text/javascript">
+
+     // function fieldValidation(val) {
+     //       $('#title').attr('readonly', true);
+     // }
+           // let publishValue=val;
+           //   alert(publishValue);
+           //     if(publishValue==true){
+           //         document.getElementById('title').readOnly = true;
+           //         document.getElementById('desc').readOnly = true;
+           //     }
     function delFunction(id) {
         let Id = parseInt(id);
         Swal.fire({
@@ -142,12 +182,6 @@
                     contentType: "application/json;charset=UTF-8",
                     success: function () {
                         setTimeout(myTimeout, 1000);
-                        Swal.fire({
-                            text: "Deleted",
-                            icon: "success",
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
                     },
                     error: function () {
                         Swal.fire({
@@ -198,17 +232,18 @@
                 success:function(){
                     // alert("success");
                     setTimeout(myTimeout, 1000);
-                    Swal.fire({
-                            text: "Book added to cart successfully",
-                            icon: "success",
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
                 }, error: function (error) {
                     console.error();
                     alert("error", error);
                 }
             });
         }
+       
 
 </script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

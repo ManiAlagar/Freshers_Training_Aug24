@@ -55,7 +55,7 @@ namespace BookstoreApplication.Controllers
         }
         [Authorize(Roles = "1")]
         [HttpPost("UpdateQuantity")]
-        public async Task<ActionResult<Cart>> UpdateQuantity([FromQuery] int cartItemId, int quantity)
+        public async Task<ActionResult<int>> UpdateQuantity([FromQuery] int cartItemId, int quantity)
         {
             try
             {
@@ -63,7 +63,7 @@ namespace BookstoreApplication.Controllers
                     return BadRequest();
 
                 var created = await _cartService.UpdateQuantity(cartItemId, quantity);
-                var res = new ApiResponse<Cart>("Updated successfully", 200, created);
+                var res = new ApiResponse<int>("Updated successfully", 200, created);
                 return Ok(res);
 
             }

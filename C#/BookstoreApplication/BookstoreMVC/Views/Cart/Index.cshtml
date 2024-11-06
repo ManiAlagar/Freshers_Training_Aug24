@@ -8,8 +8,10 @@
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
 @model BookstoreMVC.Models.CartRes
-<h3>Cart</h3>
 
+ @if(ViewBag.count!=0)
+        {
+            <h3>My Cart</h3>
 <table class="table">
     <thead>
         <tr>
@@ -20,22 +22,23 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.items)
-        {
-            <tr>
-                <td>@item.Title</td>
-                <td>
-                    <a id="increase" onclick="increase(@item.CartItemId,@item.Quantity);" class="bi bi-plus btn-sm " ></a>
-                    <input type="text" id="quantity" class="btn btn-sm"  value="@item.Quantity" />
-                    <a id="decrease" class="bi bi-dash btn-sm " onclick="decrease(@item.CartItemId,@item.Quantity);"></a>
-                </td>
-                <td>@item.Price</td>
-                <td>
-                        <a class="bi bi-trash btn-sm btn-danger" id="delCartItem" onclick="delCartItem(@item.CartItemId);"></a>
-                </td>
-            </tr>
-        }
-        <tr></tr>
+       
+             @foreach (var item in Model.items)
+                {
+                    <tr>
+                        <td>@item.Title</td>
+                        <td>
+                            <a id="decrease" class="bi bi-dash btn-sm " onclick="decrease(@item.CartItemId,@item.Quantity);"></a>
+                            <input type="text" id="quantity" class="btn btn-sm"  value="@item.Quantity" />
+                            <a id="increase" onclick="increase(@item.CartItemId,@item.Quantity);" class="bi bi-plus btn-sm "></a>
+                        </td>
+                        <td>@item.Price</td>
+                        <td>
+                                <a class="bi bi-trash btn-sm btn-danger" id="delCartItem" onclick="delCartItem(@item.CartItemId);"></a>
+                        </td>
+                    </tr>
+                }
+
     </tbody>
 </table>
 
@@ -53,18 +56,34 @@
     
 </div>
 
-<div class="text-center">
-    <h3 class="m-3">Confirm your order here</h3>
-    <label><b>Address :</b></label>
-    <input type="text" id="address"/>
-    <div class="m-3">
-        <a class=" btn-sm btn-success" onclick="order()">Order now</a>
+<form class="form-horizontal" method="Post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="text-center form-group">
+        <h3 class="m-3">Confirm your order here</h3>
+        <label><b>Address :</b></label>
+        <input asp-for="Address" type="text" id="address" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+        <div class="m-3">
+            <a class=" btn-sm btn-success" onclick="order()">Order now</a>
+        </div>
     </div>
-</div>
+</form>
+                
+                
+        }
+        else
+        {
+            <div class="text-center m-5">
+                <h4>Cart is Empty</h4>
+                <a href="/Book/Index" class="btn btn-secondary">Add some books</a>
+            </div>
+        }
 
 <script type="text/javascript">   
     function order(){
         let Address=document.getElementById("address").value;
+        // alert("Address");
+        // console.log(Address);
         $.ajax({
             type: "POST",
             datatype: "json",
@@ -192,3 +211,9 @@
     });
 });
 </script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -26,19 +26,19 @@
         <tr>
             @if (TempData["role"].ToString() == "3")
             {
+                <th>ID</th>
                 <th>Customer Name</th>
                 <th>Date</th>
-                <th>Address</th>
+                <th>Address</th> 
+                
                 <th>Amount</th>
                 <th>Action</th>
             }
             @if (TempData["role"].ToString() == "1")
             {
-                <th>OrderId</th>
+               
                 <th>Date</th>
-                <th>Discount</th>
-                <th>Shipping</th>
-                <th>Amount</th>
+                <th>Address</th>
                 <th>Status</th>
                 <th>Action</th>
             }
@@ -50,58 +50,54 @@
             @if (TempData["role"].ToString() == "3")
             {
                 <tr>
+                    <td>@item.OrderId</td>
                     <td>@item.Username</td>
-                    <td>@item.Ordered_Date</td>
+                    <td>@item.Ordered_Date.ToShortDateString()</td>
                     <td>@item.Address</td>
                     
                     <td>@item.TotalAmount</td>
-                    @* @if (item.StatusId == 1 || item.StatusId == 2 || item.StatusId == 3)
-                    {
-                        <td>
-                            <a class=" btn-sm btn-danger" id="delOrder" onclick="delOrder(@item.OrderId);"> Cancel</a>
-                            <a href="/Order/GetBooksFromOrder/@item.OrderId" class="btn-sm btn-primary ms-2">View Details</a>
-                        </td>
-                    }
-                    @if (item.StatusId == 4)
-                    {
-                        <td>
-                            Cancelled
-                            <a href="/Order/GetBooksFromOrder/@item.OrderId" class="btn-sm btn-primary ms-2">View Details</a>
-                        </td>
-                    } *@
                    <td>
-                        <select asp-items=@ViewBag.statuses onchange="update(@item.StatusId)"></select>
-                        @if (@item.StatusId > 0)
-                        {
-                            <a class=" btn-sm btn-primary" id="updateStatus" onclick="updateStatus(@item.OrderId,@item.StatusId);"> Save</a>
-                        }
+                        <select id="dropdown" onchange="updateStatus(@item.OrderId,this.value)" class="btn-sm btn-warning">
+                             <option disabled>Select</option>
+                             
+                             @foreach (var i in @ViewBag.statuses)
+                             {
+                                @if (i.Value.ToString()==item.StatusId.ToString())
+                                {
+                                   <option value="@i.Value" selected id="selectedOpt">@i.Text</option>
+                                }
+                                else
+                                {
+                                    @if (item.StatusId == 3 || item.StatusId == 4)
+                                    {
+                                        <option value="@i.Value" disabled id="nonSelectedOpt">@i.Text</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@i.Value"  id="nonSelectedOpt">@i.Text</option>
+                                    }
+                                }
+                                
+                             }
+                           
+                         </select>
+                        <a href="/Order/GetBooksFromOrder/@item.OrderId" class="btn-sm btn-primary ms-2">View Details</a>
+                       
                     </td> 
                 </tr>
             }
-
+          
             @if (TempData["role"].ToString() == "1")
             {
                 <tr>
-                    <td>@item.OrderId</td>
-                    <td>@item.Ordered_Date</td>
-                    <td>@item.Discount</td>
-                    <td>@item.Shipping</td>
-                    <td>@item.TotalAmount</td>
+
+                    <td>@item.Ordered_Date.ToShortDateString()</td>
+                    <td>@item.Address</td>
                     <td>@item.status</td>
-                    @if (item.StatusId == 1 )
-                    {
-                        <td>
-                            <a class=" btn-sm btn-danger" id="delOrder" onclick="delOrder(@item.OrderId);"> Cancel</a>
-                            <a href="/Order/GetBooksFromOrder/@item.OrderId" class="  btn-sm btn-primary ms-2">View Details</a>
-                        </td>
-                    }
-                    @if (item.StatusId == 4)
-                    {
-                        <td>
-                            Cancelled
-                            <a href="/Order/GetBooksFromOrder/@item.OrderId" class="  btn-sm btn-primary ms-2">View Details</a>
-                        </td>
-                    }
+                    <td>
+                         <a href="/Order/GetBooksFromOrder/@item.OrderId" class="  btn-sm btn-primary ms-2">View Details</a>
+                    </td>
+                        
                 </tr>
                 
             }
@@ -153,16 +149,17 @@
             location.reload();
         }
 
-    function updateStatus(id) {
-        let delItem = id.toString();
+    function updateStatus(id,value) {
+        let orderId=id;
+        let statusId=parseInt(value);
         $.ajax({
             type: "POST",
             datatype: "json",
             contentType: "application/json;charset=UTF-8",
-            url: "/Order/UpdateOrder?orderId=" + delItem,
-            success: function () {
+            url: "/Order/UpdateOrder?orderId=" + orderId + "&statusId=" + statusId,
+            success: function (response) {
                 setTimeout(myTimeout, 1000);
-
+                console.log(response);                                                               
             },
             error: function () {
                 alert("error")
@@ -171,3 +168,22 @@
     }
 
 </script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+       <script type="text/javascript">
+
+
+
+        // var value = $('#selectedOpt').val();
+        // if (value == "4" || value == "3") {
+        //     $("#dropdown").prop("disabled", true);
+        // }
+        
+       </script>
+
+
+}

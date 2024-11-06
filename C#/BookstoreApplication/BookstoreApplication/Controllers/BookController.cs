@@ -36,9 +36,24 @@ namespace BookstoreApplication.Controllers
                  "Error retrieving data from the database");
             }
         }
+
+
+        [HttpGet("Books")]
+        public async Task<IActionResult> Books()
+        {
+            try
+            {
+                return Ok(new ApiResponse<IEnumerable<Book>>("message", 200, await BookService.Books()));
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                 "Error retrieving data from the database");
+            }
+        }
         [Authorize(Roles="2,3")]
         [HttpPost("AddBook")]
-        public async Task<ActionResult<Book>> AddBook(Book Book)
+        public async Task<ActionResult<int>> AddBook(Book Book)
         {
             try
             {
@@ -46,7 +61,7 @@ namespace BookstoreApplication.Controllers
                     return BadRequest();
 
                 var created = await BookService.AddBook(Book);
-                var res = new ApiResponse<Book>("Created successfully", 200,created);
+                var res = new ApiResponse<int>("Created successfully", 200,created);
                 return Ok(res);
                  
             }
@@ -80,7 +95,7 @@ namespace BookstoreApplication.Controllers
         [Authorize(Roles = "2,3")]
         [HttpDelete]
         [Route("DeleteBook/{id:int}")]
-        public async Task<ActionResult<Book?>> DeleteBook([FromRoute] int id)
+        public async Task<ActionResult<int?>> DeleteBook([FromRoute] int id)
         {
             try
             {
@@ -91,7 +106,7 @@ namespace BookstoreApplication.Controllers
                     return NotFound($"Book with Id = {id} not found");
                 }
                 var deleted= await BookService.DeleteBook(id);
-                var res = new ApiResponse<Book>("Deleted successfully", 200, deleted);
+                var res = new ApiResponse<int>("Deleted successfully", 200, deleted);
                 return Ok(res);
 
             }
@@ -104,7 +119,7 @@ namespace BookstoreApplication.Controllers
         [Authorize(Roles = "2,3")]
         [HttpPut]
         [Route("UpdateBook/{id:int}")]
-        public async Task<ActionResult<Book?>> UpdateBook([FromRoute] int id, Book Book)
+        public async Task<ActionResult<int?>> UpdateBook([FromRoute] int id, Book Book)
         {
             try
             {
@@ -117,7 +132,7 @@ namespace BookstoreApplication.Controllers
                     return NotFound($"Book with Id = {id} not found");
 
                 var updated =await BookService.UpdateBook(id, Book);
-                var res = new ApiResponse<Book>("Updated successfully", 200, updated);
+                var res = new ApiResponse<int>("Updated successfully", 200, updated);
                 return Ok(res);
             }
             catch (Exception)

@@ -9,12 +9,11 @@ namespace BookstoreMVC.Models
         [Required(ErrorMessage = "Title is required")]
         public string Title { get; set; }
         public int? UserId { get; set; }
-        [Required(ErrorMessage = "Description is required")]
         public string Description { get; set; }
-        [Required]
-        [Range(0, 10000)]
+        [Required(ErrorMessage = "Enter valid Price amount")]
+        [Range(0.1, 10000)]
         public decimal Price { get; set; }
-        [Range(0, 100)]
+        [RegularExpression(@"(\s*[0-9]{0,6})", ErrorMessage = "Enter valid count")]
         public int Stock { get; set; }
         public bool? IsPublish { get; set; } = false;
         public DateTime? PublishedDate { get; set; } = null;

@@ -17,7 +17,7 @@ namespace BookstoreApplication.Controllers
         {
             this.orderService = orderService;
         }
-        [Authorize(Roles = "1,3")]
+        [Authorize(Roles = "1,2,3")]
         [HttpGet("GetAllOrders")]
         public async Task<IActionResult> GetAllOrders()
         {
@@ -33,7 +33,7 @@ namespace BookstoreApplication.Controllers
             }
         }
 
-        [Authorize(Roles = "1,3")]
+        [Authorize(Roles = "1,2,3")]
         [HttpPost("AddOrder")]
         public async Task<ActionResult<int>> AddOrder(string Address)
         {
@@ -53,7 +53,7 @@ namespace BookstoreApplication.Controllers
                 "Error creating new order record");
             }
         }
-        [Authorize(Roles = "1,3")]
+        [Authorize(Roles = "1,2,3")]
         [HttpGet]
         [Route("GetOrderById/{id:int}")]
         public async Task<ActionResult<Order?>> GetOrderById([FromRoute] int id)
@@ -73,7 +73,7 @@ namespace BookstoreApplication.Controllers
                     "Error retrieving data from the database");
             }
         }
-        [Authorize(Roles = "1,3")]
+        [Authorize(Roles = "1,2,3")]
         [HttpGet("GetBooksFromOrder/{id:int}")]  
         public async Task<IActionResult> GetBooksFromOrder([FromRoute] int id)
 
@@ -94,7 +94,7 @@ namespace BookstoreApplication.Controllers
             }
         }
 
-        [Authorize(Roles = "1,3")]
+        [Authorize(Roles = "1,2,3")]
         [HttpDelete]
         [Route("DeleteOrder/{id:int}")]
         public async Task<ActionResult<int>> DeleteOrder([FromRoute] int id)
@@ -120,7 +120,7 @@ namespace BookstoreApplication.Controllers
         }
         
         [HttpPost("UpdateOrder")]
-        public async Task<ActionResult<int?>> UpdateOrder([FromQuery] int orderId, int statusId)
+        public async Task<ActionResult<int?>> UpdateOrder([FromQuery] int orderId, [FromQuery] int statusId)
         {
             try
             {
@@ -131,6 +131,7 @@ namespace BookstoreApplication.Controllers
                 
                 var res = await orderService.UpdateOrder(orderId, statusId);
                 return res;
+
             }
             catch (Exception)
             {

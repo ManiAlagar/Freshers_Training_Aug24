@@ -4,7 +4,8 @@ namespace BookstoreApplication.Service.Interface
 {
     public interface IUserService
     {
-        Task<User> Register(User User);
+        Task<int> Register(User User);
         Task<User> GetUserById(int Id);
+        Task<int> UpdateUser(int UserId, User user);
     }
 }

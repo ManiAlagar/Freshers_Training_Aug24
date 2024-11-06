@@ -34,7 +34,7 @@ namespace BookstoreApplication.Service.Implementation
             return await _cartRepository.GetCartItemById(Id);
         }
 
-        public async Task<Cart> UpdateQuantity(int cartId, int quantity)
+        public async Task<int> UpdateQuantity(int cartId, int quantity)
         {
             return await _cartRepository.UpdateQuantity(cartId, quantity);
         }
