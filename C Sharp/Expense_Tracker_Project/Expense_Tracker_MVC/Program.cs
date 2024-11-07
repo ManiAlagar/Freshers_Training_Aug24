@@ -40,6 +40,7 @@ namespace Expense_Tracker_MVC
                             options.Cookie.Name = ".AspNetCore.Cookies";
                             options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
                             options.SlidingExpiration = true;
+
                         });
 
             var app = builder.Build();

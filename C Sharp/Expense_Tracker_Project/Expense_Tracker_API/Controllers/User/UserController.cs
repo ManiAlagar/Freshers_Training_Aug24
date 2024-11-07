@@ -64,9 +64,9 @@ namespace Expense_Tracker_API.Controllers.User
                 return NotFound("The Employee record couldn't be found.");
             }
             entity.UserID = id;
-            await userService.Edit(entity);
+            bool status = await userService.Edit(entity);
 
-            return Ok("Updated Successful");
+            return Ok(status);
         }
     }
 }

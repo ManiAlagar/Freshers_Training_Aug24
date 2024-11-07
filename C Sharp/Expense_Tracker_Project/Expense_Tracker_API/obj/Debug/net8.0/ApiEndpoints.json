@@ -365,7 +365,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "UserName",
+        "Name": "Email",
         "Type": "System.String",
         "IsRequired": false
       },

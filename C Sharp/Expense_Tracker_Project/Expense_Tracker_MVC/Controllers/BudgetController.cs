@@ -86,27 +86,44 @@ namespace Expense_Tracker_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, [Bind] Budget entity)
         {
-            TempData["Toastr"] = "Budget already Exists for the category";
+            
 
-
-            if (id != null)
+            if (ModelState.IsValid)
             {
-                entity.Id = (int)id;
+                TempData["Toastr"] = "Budget already Exists for the category";
+                if (id != null)
+                {
 
-                string status = await budgetService.Edit(entity);
+                    entity.Id = (int)id;
 
-                //TempData["Toastr"] = $"Budget is Exists for the {entity.CategoryName} category";
-                if (status != "Failure")
-                    TempData["Toastr"] = "Updated Successful";
-                
+                    string status = await budgetService.Edit(entity);
+
+
+                    //TempData["Toastr"] = $"Budget is Exists for the {entity.CategoryName} category";
+                    if (status == "Failure")
+                        TempData["Toastr"] = "Budget already Exists for the category";
+
+                    else if (status == "Success")
+                        TempData["Toastr"] = "Updated Successful";
+                    else
+                        TempData["Toastr"] = status;
+
+                }
+                else
+                {
+                    var status = await budgetService.Create(entity);
+
+
+                    if (status == "Success")
+                        TempData["Toastr"] = "Created Successful";
+                }
+
             }
             else
             {
-               var status = await budgetService.Create(entity);
-              
-
-                if (status == "Success")
-                    TempData["Toastr"] = "Created Successful";
+                TempData["Toastr"] = "End date should be greater than Start date ";
+                TempData["AddOrEdit"] = "Create";
+                return View(entity);
             }
             return RedirectToAction("Index");
         }

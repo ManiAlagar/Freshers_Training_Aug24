@@ -15,32 +15,40 @@
         <tr class="bg-dark text-white">
             <td>Category Name</td>
             <td>Amount Spend</td>
+            <td>Balance</td>
 
         </tr>
     </tdead>
     <tbody>
-
-
-        @if (Model.Expenses == null)
+        @if(Model.CategorySpend.Count() > 0)
         {
-            <h4>No records available in Expense</h4>
-        }
-        else
             @foreach (var item in Model.CategorySpend)
             {
-
                 <tr>
                     <td>@item.CategoryName</td>
                     <td>@item.AmountSpend</td>
+                    <td>@item.Balance</td>
+               
                 </tr>
             }
+        }
+        else
+        {
+              <tr>
+                    <td colspan="2" class="text-center">
+                    No records Available
+                    </td>
+              </tr>
+        }
+
+
     </tbody>
 </table>
 
 
 <h2>Expense Details</h2>
 <p>
-    <a class="btn btn-success mt-4" asp-controller="Expense" asp-action="Edit"> <i class="bi bi-person-plus"></i> Add</a>
+    <a class="btn btn-success mt-4" asp-controller="Expense" asp-action="Edit"> <i class="bi bi-bookmark-plus-fill"></i>  Add</a>
 </p>
 <table class="table table-bordered border-2 table-striped table-hover">
     <tdead>
@@ -48,27 +56,36 @@
             <th>Category Name</th>
             <th>Description</th>
             <th>Amount</th>
-            <th>Date</th>
+            <th>Spend Date</th>
             <th>Action</th>
         </tr>
     </tdead>
     <tbody>
-      
-        @foreach (var item in Model.Expenses)
+         @if (Model.Expenses.Count() > 0)
+        {
+            @foreach (var item in Model.Expenses)
+            {
+                <tr>
+                    <td>@item.CategoryName</td>
+                    <td>@item.Description</td>
+                    <td>@item.Amount</td>
+                    <td>@item.Date.ToString("dd-MM-yyyy")</td>
+
+                    <th>
+                        <a class="btn btn-sm btn-danger" onclick="deleteClick('@item.Id')"> <i class="bi bi-bag-x"></i> Delete</a>
+                    </th>
+                </tr>
+            }
+        }
+        else
         {
             <tr>
-                <td>@item.CategoryName</td>
-                <td>@item.Description</td>
-                <td>@item.Amount</td>
-                <td>@item.Date.ToString("dd-MM-yyyy")</td>
-
-                <th>
-                    @*  <a class="btn btn-primary btn-sm mr-2" asp-controller="Expense" asp-action="Edit" asp-route-id="@item.Id"> <i class="bi bi-pencil-square"></i>Edit</a> *@
-                    <a class="btn btn-sm btn-danger" onclick="deleteClick('@item.Id')"> <i class="bi bi-person-dash-fill"></i>Delete</a>
-                </th>
+                <td colspan="5" class="text-center">
+                    <marquee width="25%" behavior="alternate"> No records available in Expenses</marquee>
+                </td>
             </tr>
         }
-      
+
     </tbody>
 </table>
 

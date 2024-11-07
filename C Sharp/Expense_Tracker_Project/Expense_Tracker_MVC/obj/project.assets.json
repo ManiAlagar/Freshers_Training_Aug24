@@ -290,11 +290,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Expense_Tracker_MVC.csproj",
+      "projectUniqueName": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Expense_Tracker_MVC.csproj",
       "projectName": "Expense_Tracker_MVC",
-      "projectPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Expense_Tracker_MVC.csproj",
+      "projectPath": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\Expense_Tracker_MVC.csproj",
       "packagesPath": "C:\\Users\\Mitrah\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\MitrahSoft\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\obj\\",
+      "outputPath": "E:\\git\\GIT DATA\\Freshers_Training_Aug24\\C Sharp\\Expense_Tracker_Project\\Expense_Tracker_MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrah\\AppData\\Roaming\\NuGet\\NuGet.Config",

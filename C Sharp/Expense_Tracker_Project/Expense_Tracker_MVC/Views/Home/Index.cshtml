@@ -2,20 +2,22 @@
     ViewData["Title"] = "Home Page";
 }
 <div class="text-center mb-5">
-    <h1 class="display-4">Welcome To Expense Tracker</h1>
+    <h3 class="display-4">Welcome To Expense Tracker</h3>
 @*     <a class="btn btn-primary btn-sm mr-2" asp-controller="Home" asp-action="Chart"> <i class="bi bi-pencil-square"></i>Report</a>
  *@
  <div>
-		<div id="chartContainer" style="height: 370px; width: 50%;"></div>
+	
+		<div id="MonthlyChart" style="height: 370px; width: 100%;"></div>
+		<div id="chartContainer" class="mt-5 ml-4" style="height: 370px; width: 100%;"></div>
 		<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 		<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
  </div>
 
 
- <a class="btn btn-primary btn-sm mr-2" asp-controller="Home" asp-action="Privacy"> <i class="bi bi-pencil-square"></i>Report</a>
+ @* <a class="btn btn-primary btn-sm mr-2" asp-controller="Home" asp-action="Privacy"> <i class="bi bi-pencil-square"></i>Report</a> *@
 
 
-	<div id="MonthlyChart" style="height: 370px; width: 50%;"></div>
+	@* <div id="MonthlyChart" style="height: 370px; width: 100%;"></div> *@
 
 	
 
@@ -24,7 +26,7 @@
 <script>
 	window.onload = function () {
 	var chart = new CanvasJS.Chart("chartContainer", {
-				theme: "dark1", // "light1", "light2", "dark1", "dark2"
+			theme: "light1", // "light1", "light2", "dark1", "dark2"
 		exportEnabled: false,
 		animationEnabled: true,
 		title: {
@@ -44,7 +46,7 @@
 	}
 
 	var chart = new CanvasJS.Chart("MonthlyChart", {
-		theme: "dark1", // "light1", "light2", "dark1", "dark2"
+		theme: "light1", // "light1", "light2", "dark1", "dark2"
 		exportEnabled: false,
 		animationEnabled: true,
 		title: {

@@ -2,7 +2,7 @@
 
 namespace Expense_Tracker_MVC.Models
 {
-    public class Budget
+    public class Budget : IValidatableObject
     {
         public int Id { get; set; }
 
@@ -21,6 +21,14 @@ namespace Expense_Tracker_MVC.Models
         public string TimeFrame { get; set; }
 
         public string CategoryName { get; set; }
+
+        IEnumerable<ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
+        {
+            if (EndDate < StartDate)
+            {
+                yield return new ValidationResult("EndDate must be greater than StartDate");
+            }
+        }
     }
 }
 

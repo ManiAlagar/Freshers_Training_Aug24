@@ -10,6 +10,9 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using Expense_Tracker_API.Entity;
+//using MailKit.Net.Smtp;
+
+//using MailKit.Security;
 
 namespace Expense_Tracker_API
 {

@@ -5,7 +5,7 @@
 
 <h2>Budget Details</h2>
 <p>
-    <a class="btn btn-success mt-4" asp-controller="Budget" asp-action="Edit"> <i class="bi bi-person-plus"></i>  Add</a>
+    <a class="btn btn-success mt-4" asp-controller="Budget" asp-action="Edit"> <i class="bi bi-bag"></i>  Add</a>
 </p>
 <table class="table table-bordered border-2 table-striped table-hover">
     <tdead>
@@ -20,21 +20,33 @@
         </tr>
     </tdead>
     <tbody>
-        @foreach (var item in Model)
+        @if (Model.Count() > 0)
+        {
+            @foreach (var item in Model)
+            { 
+                <tr>
+                    <td>@item.CategoryName</td>
+                    <td>@item.BudgetAmount</td>
+                    <td>@item.Balance</td>
+                    <td>@item.StartDate.ToString("dd-MM-yyyy")</td>
+                    <td>@item.EndDate.ToString("dd-MM-yyyy")</td>
+                    <td>@item.TimeFrame</td>
+                    <th>
+                        <a class="btn btn-primary btn-sm mr-2" asp-controller="Budget" asp-action="Edit" asp-route-id="@item.CategoryID"> <i class="bi bi-pencil-square"></i> Edit</a>
+                        <a class="btn btn-sm btn-danger" onclick="deleteClick('@item.Id')"> <i class="bi bi-bag-dash-fill"></i> Delete</a>
+                    </th>
+                </tr>
+            }
+        }
+        else
         {
             <tr>
-                <td>@item.CategoryName</td>
-                <td>@item.BudgetAmount</td>
-                <td>@item.Balance</td>
-                <td>@item.StartDate.ToString("dd-MM-yyyy")</td>
-                <td>@item.EndDate.ToString("dd-MM-yyyy")</td>
-                <td>@item.TimeFrame</td>
-                <th>
-                    <a class="btn btn-primary btn-sm mr-2" asp-controller="Budget" asp-action="Edit" asp-route-id="@item.CategoryID"> <i class="bi bi-pencil-square"></i>Edit</a>
-                    <a class="btn btn-sm btn-danger" onclick="deleteClick('@item.Id')"> <i class="bi bi-person-dash-fill"></i>Delete</a>
-                </th>
+                <td colspan="7" class="text-center">
+                    <marquee width="32%" behavior="alternate"> No records available in budget</marquee>
+                </td>
             </tr>
         }
+     
     </tbody>
 </table>
 

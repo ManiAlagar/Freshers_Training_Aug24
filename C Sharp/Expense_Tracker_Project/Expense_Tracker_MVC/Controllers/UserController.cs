@@ -2,6 +2,7 @@
 using Expense_Tracker_MVC.Service.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Text;
 
 namespace Expense_Tracker_MVC.Controllers
 {
@@ -16,17 +17,23 @@ namespace Expense_Tracker_MVC.Controllers
 
         //Get By UserID
         [HttpGet]
-        private async Task<Users> Get(int? id)
+        public async Task<IActionResult> Index(int? id)
         {
+            if (TempData["Toastr"] == null)
+            {
+                TempData["Toastr"] = "Nothing";
+            }
             var User = await userService.Get(id);
-            return User;
+            return View(User);
         }
 
         [AllowAnonymous]
         //For Create and Update operation
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
-        {
+        {         
+                TempData["Toastr"] = "Nothing";
+            
             if (id == null)
             {
                 TempData["AddOrEdit"] = "Create";
@@ -39,7 +46,7 @@ namespace Expense_Tracker_MVC.Controllers
                 {
                     return NotFound();
                 }
-                Users user = await Get(id);
+                Users user = await userService.Get(id);
                 if (user == null)
                 {
                     return NotFound();
@@ -54,23 +61,60 @@ namespace Expense_Tracker_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, [Bind] Users entity)
         {
-
-            TempData["Toastr"] = "Updated Successful";
+              
 
             if (id != null)
             {
-                //Users user = await Get(id);               
-                await userService.Edit(entity);
+
+                bool flag = await userService.Edit(entity);
+                if (flag)
+                    TempData["Toastr"] = "Updated Successfully";
+                else
+                    TempData["Toastr"] = "Email or MobileNumber Already exists";
+                return RedirectToAction("Index", "User");
+
             }
             else
-            { 
-                bool flag = await userService.Create(entity);
-                TempData["Toastr"] = "Email or MobileNumber Already exists";
-                if (flag)
-                    TempData["Toastr"] = "Account Created Successfully";
-                return RedirectToAction("Login","Login");
+            {
+                if(ModelState.IsValid)
+                {
+                    @TempData["AddOrEdit"] = "Create";
+                    entity.Password = RandomString(8, true);
+
+                    bool flag = await userService.Create(entity);
+                    TempData["Toastr"] = "Email or MobileNumber Already exists";
+                    if (flag)
+                        TempData["Toastr"] = "Account Created Successfully";
+
+                        return RedirectToAction("Login", "Login");
+                    
+                 
+                }
+                else
+                {
+                    TempData["AddOrEdit"] = "Create";
+                    return View(entity);
+                }
+                    
+                
             }
-            return RedirectToAction("Index","Home");
         }
+
+        public string RandomString(int size, bool lowerCase)
+        {
+            StringBuilder builder = new StringBuilder();
+            Random random = new Random();
+            char ch;
+            for (int i = 0; i < size; i++)
+            {
+                ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)));
+                builder.Append(ch);
+            }
+            if (lowerCase)
+                return builder.ToString().ToLower();
+            return builder.ToString();
+        }
+
+
     }
 }

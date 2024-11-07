@@ -50,6 +50,7 @@ namespace Helper.Helpers
         public async Task<bool> Post(Users entity,string url)
         {
                 isValid();
+                entity.UserID = 0;
                 var serializedData = JsonConvert.SerializeObject(entity);
                 var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
 
@@ -63,16 +64,17 @@ namespace Helper.Helpers
         }
 
 
-        public async Task Put(Users entity, string url)
+        public async Task<bool>  Put(Users entity, string url)
         {
-            if (isValid() != null)
-            {
-                var serializedData = JsonConvert.SerializeObject(entity);
-                var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
-
-                var response = await _client.PutAsync(url, result);
-            }
+            isValid();
                 
+            var serializedData = JsonConvert.SerializeObject(entity);
+            var result = new StringContent(serializedData, Encoding.UTF8, "application/json");
+
+            var response = await _client.PutAsync(url, result);
+
+            var data = await response.Content.ReadAsStringAsync();
+            return Convert.ToBoolean(data);
         }
 
     }

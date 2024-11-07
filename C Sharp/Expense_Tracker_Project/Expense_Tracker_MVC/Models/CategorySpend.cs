@@ -7,5 +7,8 @@
         public string CategoryName { get; set; }
 
         public decimal AmountSpend { get; set; }
+
+        public decimal Balance { get; set; }
+
     }
 }

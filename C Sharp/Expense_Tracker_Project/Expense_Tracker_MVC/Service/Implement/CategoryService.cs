@@ -27,7 +27,6 @@ namespace Expense_Tracker_MVC.Service.Implement
 
             var data = await obj.Get(url);
 
-            //var reponse = ;
 
             return JsonConvert.DeserializeObject<IEnumerable<Category>>(data);
  

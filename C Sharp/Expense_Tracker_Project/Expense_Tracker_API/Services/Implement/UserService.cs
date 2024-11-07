@@ -28,9 +28,9 @@ namespace Expense_Tracker_API.Services.Implement
             return await userRepository.Add(entity);
         }
 
-        public async Task Edit(Users entity)
+        public async Task<bool> Edit(Users entity)
         {
-            await userRepository.Edit(entity);
+            return await userRepository.Edit(entity);
         }
 
 

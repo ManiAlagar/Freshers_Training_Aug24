@@ -1,26 +1,26 @@
 ﻿
  @{
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
 
-<script>
-    $(document).ready(function() 
-    {
-        if ('@TempData["Toastr"]' == "Nothing") {
+    <script>
+        $(document).ready(function() 
+        {
+            if ('@TempData["Toastr"]' == "Nothing") {
 
-        }
-        
-        else if ('@TempData["Toastr"]' == "Email or MobileNumber Already Failed" || '@TempData["Toastr"]' == "Cannot delete this Bugdet it has relation in Expense details" ||
-                '@TempData["Toastr"]' == "Budget already Exists for the category" || '@TempData["Toastr"]' == "Category has relation in Budget" || '@TempData["Toastr"]' == "Category Already Exists" || '@TempData["Toastr"]' == "Date must be between the start date and end date as in budget") {
-            toastr.warning('@TempData["Toastr"]');
-        }
-
-        else if ('@TempData["Toastr"]' != null) {
+            }
+            else if ('@TempData["Toastr"]' == "Email or MobileNumber Already exists" || '@TempData["Toastr"]' == "Cannot delete this Bugdet it has relation in Expense details" ||
+                '@TempData["Toastr"]' == "Budget Spend should be greater than Amount Spend" || '@TempData["Toastr"]' == "Budget already Exists for the category" || '@TempData["Toastr"]' == "Category has relation in Budget" || '@TempData["Toastr"]' == "Category Already Exists" || '@TempData["Toastr"]' == "Date must be between the start date and end date as in budget") {
+                    toastr.warning('@TempData["Toastr"]');
+            }
+            else if ('@TempData["Toastr"]' == "Success") {
                 toastr.success('@TempData["Toastr"]');
-        }
-        else if ('@TempData["Toastr"]' == "Success") {
-            toastr.success('@TempData["Toastr"]');
-        }
-    });
-</script>
+            }
+            else if ('@TempData["Toastr"]' != null ) {
+                toastr.success('@TempData["Toastr"]');
+            }
+         
+           
+        });
+    </script>
 }

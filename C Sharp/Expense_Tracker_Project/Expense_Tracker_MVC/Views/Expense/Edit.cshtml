@@ -20,7 +20,9 @@
             <div class="form-group mt-3">
                 <label asp-for="CategoryName" class="control-label mb-2"></label>
 
-                    <select asp-for="CategoryName" class="form-control" id="task" asp-items='@ViewBag.CategoryList' onchange="run()"> </select>
+                    <select asp-for="CategoryName" class="form-control" id="task" asp-items='@ViewBag.CategoryList' onchange="run()"> 
+                        <option value="" selected disabled> ----- Select the Category ----- </option>
+                    </select>
                     <span asp-validation-for="CategoryName" class="text-danger"></span>
             </div>
 
@@ -107,17 +109,24 @@
                 $("#Amounterror").show();
                 isSubmitted = false;
             }
-            else if (parseInt($("#amount").val()) > parseInt(balAmount) || parseInt($("#amount").val()) == 0) {
+            else if (parseFloat($("#amount").val()) > parseFloat(balAmount) || parseFloat($("#amount").val()) == 0) {
                 $("#Amounterror").text("Amount cannot be more than balance amount : " + balAmount);
                 $("#Amounterror").show();
                 isSubmitted = false;
             }
             else {
                 $("#Amounterror").hide();
-                $("#submit").removeClass('disabled');
+
+                // if(validateDate())
+                   $("#submit").removeClass('disabled');
+
                 isSubmitted = true;
             }
 
+            // if(isSubmitted)
+            //  $("#submit").removeClass('disabled');
+            //  else
+            //   $("#submit").addClass('disabled');
 
             return isSubmitted;
         }
@@ -126,6 +135,7 @@
         function validateDate() {
             const date = $("#date").val();
 
+
             var sd = $("#startDate").val();
             var startDate = new Date(sd).toLocaleDateString('en-CA');
 
@@ -133,17 +143,20 @@
 
             if (date >= startDate && date <= endDate) {
                 $("#dateerror").hide();
-                $("#submit").removeClass('disabled');
-                console.log('true')
+   
+                if(validateAmount())
+                 $("#submit").removeClass('disabled');
+                
             }
             else {
-                $("#dateerror").text("Date must be between the duartion in Budget");
+                $("#dateerror").text("Date must be between the duration in Budget");
                 // $("#dateerror").removeClass('hidden')
                 $("#dateerror").show();
-
                 $("#submit").addClass('disabled');
+                return false;
              
             }
+           
         }
 
 

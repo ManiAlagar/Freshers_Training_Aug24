@@ -25,9 +25,9 @@ namespace Expense_Tracker_API.Controllers
 
         //Login METHOD
         [HttpGet("Login")]
-        public async Task<IActionResult> Login([FromHeader]string UserName,[FromHeader] string Password)
+        public async Task<IActionResult> Login([FromHeader]string Email, [FromHeader] string? Password)
         {
-            Users user = context.Users.FirstOrDefault(u => u.UserName == UserName && u.Password == Password);
+            Users user = context.Users.FirstOrDefault(u => u.Email == Email && u.Password == Password);
             if (user != null)
             {
                 var token = await GenerateToken(user);

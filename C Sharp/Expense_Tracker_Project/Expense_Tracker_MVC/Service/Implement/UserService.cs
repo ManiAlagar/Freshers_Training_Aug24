@@ -4,6 +4,8 @@ using Expense_Tracker_MVC.Helpers;
 using Expense_Tracker_MVC.Models;
 using Newtonsoft.Json;
 using Helper.Helpers;
+using System.Net.Http.Headers;
+using System.Security.Claims;
 
 
 namespace Expense_Tracker_MVC.Service.Implement
@@ -18,14 +20,15 @@ namespace Expense_Tracker_MVC.Service.Implement
         {
             _client = client ?? throw new ArgumentNullException(nameof(client));
             this.httpContextAccessor = httpContextAccessor;
-
+            var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
         }
 
         public async Task<string> Login(Login credenntial)
         {
          
             var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://localhost:7273/api/Login/Login");
-            requestMessage.Headers.Add("UserName", credenntial.UserName);
+            //requestMessage.Headers.Add("UserName", credenntial.Username);
+            requestMessage.Headers.Add("Email", credenntial.Email);
             requestMessage.Headers.Add("Password", credenntial.Password);
 
             var response = await _client.SendAsync(requestMessage);
@@ -42,8 +45,11 @@ namespace Expense_Tracker_MVC.Service.Implement
 
         public async Task<Users> Get(int? id)
         {
+            var UserID = (httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid)?.Value);
+            var token = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
 
-            var response = await _client.GetAsync($"api/User/GetByID?id={id}");
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await _client.GetAsync($"api/User/GetByID?id={UserID}");
 
             return await response.ReadContentAsync<Users>();
         }
@@ -59,13 +65,14 @@ namespace Expense_Tracker_MVC.Service.Implement
             return flag;
         }
 
-        public async Task Edit(Users entity)
+        public async Task<bool> Edit(Users entity)
         {
+            
             HTTPHelper obj = new(_client, httpContextAccessor);
-            string url = "https://localhost:7273/api/User/Edit";
+            string url = $"https://localhost:7273/api/User/Edit/{entity.UserID}";
 
-            await obj.Put(entity, url);
-
+           var status = await obj.Put(entity, url);
+           return status;
         }
     }
 }

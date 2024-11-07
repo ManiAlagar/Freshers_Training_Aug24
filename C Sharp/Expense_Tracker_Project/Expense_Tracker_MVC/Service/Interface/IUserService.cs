@@ -11,6 +11,6 @@ namespace Expense_Tracker_MVC.Service.Interface
 
         Task<bool> Create(Users entity);
 
-        Task Edit(Users entity);
+        Task<bool> Edit(Users entity);
     }
 }

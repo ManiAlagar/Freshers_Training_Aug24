@@ -6,7 +6,10 @@
     <title>@ViewData["Title"] - Expense_Tracker_MVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Expense_Tracker_MVC.styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/Expense_Tracker_MVC.styles.css" asp-append-version="true" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header>
@@ -32,7 +35,11 @@
                         <li class="nav-item">
                             <a class="nav-link text-white-50" asp-controller="CommonModel" asp-action="Index">Expense</a>
                         </li>
-                    
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" asp-controller="User" asp-action="Index">User Details</a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link text-white-50" asp-controller="Login" asp-action="LogOut">Log Out</a>
                         </li>

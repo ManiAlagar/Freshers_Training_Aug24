@@ -37,3 +37,43 @@ E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\D
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 E:\Projects\MitrahSoft\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\appsettings.Development.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\appsettings.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Expense_Tracker_MVC.staticwebassets.runtime.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Expense_Tracker_MVC.exe
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Expense_Tracker_MVC.deps.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Expense_Tracker_MVC.runtimeconfig.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Expense_Tracker_MVC.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Expense_Tracker_MVC.pdb
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.csproj.AssemblyReference.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.GeneratedMSBuildEditorConfig.editorconfig
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.AssemblyInfoInputs.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.AssemblyInfo.cs
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.csproj.CoreCompileInputs.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.MvcApplicationPartsAssemblyInfo.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.RazorAssemblyInfo.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.RazorAssemblyInfo.cs
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.sourcelink.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\staticwebassets.build.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\staticwebassets.development.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\staticwebassets\msbuild.Expense_Tracker_MVC.Microsoft.AspNetCore.StaticWebAssets.props
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\staticwebassets\msbuild.build.Expense_Tracker_MVC.props
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Expense_Tracker_MVC.props
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Expense_Tracker_MVC.props
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\staticwebassets.pack.json
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\scopedcss\bundle\Expense_Tracker_MVC.styles.css
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\scopedcss\projectbundle\Expense_Tracker_MVC.bundle.scp.css
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_.EAFA1F3B.Up2Date
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\refint\Expense_Tracker_MVC.dll
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.pdb
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\Expense_Tracker_MVC.genruntimeconfig.cache
+E:\git\GIT DATA\Freshers_Training_Aug24\C Sharp\Expense_Tracker_Project\Expense_Tracker_MVC\obj\Debug\net8.0\ref\Expense_Tracker_MVC.dll

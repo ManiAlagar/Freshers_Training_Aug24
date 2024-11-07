@@ -6,7 +6,7 @@
 
 <h2>Expense Details</h2>
 <p>
-    <a class="btn btn-success mt-4" asp-controller="Expense" asp-action="Edit"> <i class="bi bi-person-plus"></i>  Add</a>
+    <a class="btn btn-success mt-4" asp-controller="Expense" asp-action="Edit"> <i class="bi bi-bookmark-plus-fill"></i>  Add</a>
 </p>
 <table class="table table-bordered border-2 table-striped table-hover">
     <tdead>
@@ -14,7 +14,7 @@
             <th>Category Name</th>
             <th>Description</th>
             <th>Amount</th>
-            <th>Date</th>
+            <th>Spend Date</th>
             <th>Action</th>
         </tr>
     </tdead>
@@ -29,7 +29,7 @@
 
                 <th>
                    @*  <a class="btn btn-primary btn-sm mr-2" asp-controller="Expense" asp-action="Edit" asp-route-id="@item.Id"> <i class="bi bi-pencil-square"></i>Edit</a> *@
-                    <a class="btn btn-sm btn-danger" onclick="deleteClick('@item.Id')"> <i class="bi bi-person-dash-fill"></i>Delete</a>
+                    <a class="btn btn-sm btn-danger" onclick="deleteClick('@item.Id')"> <i class="bi bi-bag-x"></i> Delete</a>
                 </th>
             </tr>
         }

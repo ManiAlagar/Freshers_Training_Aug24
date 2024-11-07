@@ -11,9 +11,7 @@
     {
         Layout = null;
     }
-
 }
-
 @{
   
   
@@ -29,24 +27,35 @@
             <hr />
         </div>
 
-        <form asp-controller="User" asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="UserID" />
+        <form asp-controller="User" asp-action="Edit" method="post">
+             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
             <div class="form-group">
                 <label asp-for="UserName" class="control-label mb-2"></label>
                 <input asp-for="UserName" class="form-control" />
                 <span asp-validation-for="UserName" class="text-danger"></span>
             </div>
 
-            <div class="form-group mt-3">
-                <label asp-for="Password" class="control-label mb-2"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
+            @if (@TempData["AddOrEdit"] == "Edit")
+            {
+                <div class="form-group mt-3">
+                    <label asp-for="Password" class="control-label mb-2"></label>
+                    <input asp-for="Password" class="form-control"  />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            }else
+            {
+                <div class="form-group mt-3" hidden>
+                    <label asp-for="Password" class="control-label mb-2"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                
+            }
 
             <div class="form-group mt-3">
                 <label asp-for="Gender" class="control-label mb-2"></label>
-                <select asp-for="Gender" class="form-control">
+                <select asp-for="Gender" class="form-control" >
                     <option disabled selected>-- Select Gender --</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
@@ -56,19 +65,33 @@
 
             <div class="form-group mt-3">
                 <label asp-for="Email" class="control-label mb-2"></label>
-                <input type="email" asp-for="Email" class="form-control" />
+                <input type="email" asp-for="Email" class="form-control"  />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
 
             <div class="form-group mt-3">
                 <label asp-for="MobileNumber" class="control-label mb-2"></label>
-                <input type="tel" asp-for="MobileNumber" class="form-control" maxlength="10" minlength="10" />
-                <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                <input type="tel" asp-for="MobileNumber" class="form-control" maxlength="10" minlength="10"  id="MobileNumber"  />
+                <span >@Html.ValidationMessageFor(model => model.MobileNumber, "", new { @class = "text-danger" })</span>
+                <span id="MobileError" class="text-danger"></span>
             </div>
 
             <div class="form-group mt-4">
-                <input type="submit" value="Save" class="btn btn-primary  btn-sm">
-                <a class="btn btn-sm btn-danger" asp-controller="Login" asp-action="Login">Back to List</a>
+                <input type="submit" id="submit" value="Save" class="btn btn-primary  btn-sm">
+
+                @if (@TempData["AddOrEdit"] == "Create")
+                {
+                    <a class="btn btn-sm btn-danger" asp-controller="Login" asp-action="Login">Back to Login</a>
+                }
+                
+                @if (@TempData["AddOrEdit"] == "Edit")
+                {
+                     <input type="hidden" asp-for="UserID"  />
+                    <a class="btn btn-sm btn-danger" asp-controller="Home" asp-action="Index">Back to Home</a>
+                }
+
+
+            
             </div>
         </form>
     </div>
@@ -77,4 +100,52 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(document).ready(function() {
+    // Reset validation errors when creating a new user
+    if ('@TempData["AddOrEdit"]' === "Create") {
+        // Clear any previous validation errors
+        $("form").validate().resetForm();
+        $("#MobileError").hide();
+    }
+    });
+    function ValidNumber() 
+    {
+        const NumberRgx = /^[0-9]$/
+        var MobileNumber = $("#MobileNumber").val();
+
+        $("#MobileError").show();
+
+        if (NumberRgx.test(MobileNumber)) 
+        {
+            $("#MobileError").hide();
+            console.log("Input is a valid Mobile number");
+            $("#submit").removeClass('disabled');
+        } 
+        else 
+        {
+            $("#submit").addClass('disabled');
+            $("#MobileError").text("Please enter a valid Mobile Number");
+            $("#MobileError").show();
+
+            console.log("Input is not a valid Mobile number");
+        }
+    }
+   
+
+
+    $(document).ready(function () {
+        if ('@TempData["Toastr"]' == "Nothing") {
+
+        }
+        else
+            toastr.warning('@TempData["Toastr"]');
+        console.log('@TempData["Toastr"]')
+    });
+</script>
+
 }

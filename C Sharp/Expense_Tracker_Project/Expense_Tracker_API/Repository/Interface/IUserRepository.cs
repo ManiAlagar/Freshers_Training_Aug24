@@ -11,6 +11,6 @@ namespace Expense_Tracker_API.Repository.Interface
 
         Task<bool> Add(Users user);
 
-        Task Edit(Users entity);
+        Task<bool> Edit(Users entity);
     }
 }
