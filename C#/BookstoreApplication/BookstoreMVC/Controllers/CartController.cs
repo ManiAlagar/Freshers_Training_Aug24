@@ -104,7 +104,8 @@ namespace BookstoreMVC.Controllers
             }
             else
             {
-                TempData["failure"] = $"Only {res} books are available in the stock";
+                //TempData["failure"] = $"Only {res} books are available in the stock";
+                TempData["failure"] = "Invalid count";
             }
             return res;
         }

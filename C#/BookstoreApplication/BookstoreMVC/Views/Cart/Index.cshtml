@@ -29,7 +29,7 @@
                         <td>@item.Title</td>
                         <td>
                             <a id="decrease" class="bi bi-dash btn-sm " onclick="decrease(@item.CartItemId,@item.Quantity);"></a>
-                            <input type="text" id="quantity" class="btn btn-sm"  value="@item.Quantity" />
+                            <input type="text" id="quantity" class="btn btn-sm"  value="@item.Quantity" readonly/>
                             <a id="increase" onclick="increase(@item.CartItemId,@item.Quantity);" class="bi bi-plus btn-sm "></a>
                         </td>
                         <td>@item.Price</td>
